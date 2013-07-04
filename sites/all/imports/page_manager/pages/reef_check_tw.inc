@@ -46,19 +46,60 @@ $handler->conf = array(
   'relationships' => array(),
 );
 $display = new panels_display();
-$display->layout = 'onecol';
+$display->layout = 'twocol_stacked';
 $display->layout_settings = array();
 $display->panel_settings = array(
   'style_settings' => array(
     'default' => NULL,
     'middle' => NULL,
+    'top' => NULL,
+    'left' => NULL,
+    'right' => NULL,
+    'bottom' => NULL,
   ),
 );
 $display->cache = array();
 $display->title = '';
 $display->content = array();
 $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-1';
+  $pane->panel = 'left';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'reef_check_tw_column-reef_check_tw_column_pane';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-1'] = $pane;
+  $display->panels['left'][0] = 'new-1';
+  $pane = new stdClass();
+  $pane->pid = 'new-2';
+  $pane->panel = 'right';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'reef_check_tw_report-reef_check_tw_report_pane';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-2'] = $pane;
+  $display->panels['right'][0] = 'new-2';
 $display->hide_title = PANELS_TITLE_FIXED;
 $display->title_pane = '0';
 $handler->conf['display'] = $display;
 $page->default_handlers[$handler->name] = $handler;
+
