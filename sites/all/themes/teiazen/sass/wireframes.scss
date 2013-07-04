@@ -16,7 +16,8 @@
   .region-sidebar-first,
   .region-sidebar-second,
   #footer,
-  .region-bottom {
+  .region-bottom,
+  .panel-pane {
     outline: 1px solid #ccc;
 
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
