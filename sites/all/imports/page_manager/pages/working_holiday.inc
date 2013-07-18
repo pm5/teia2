@@ -12,7 +12,7 @@ $page->access = array();
 $page->menu = array(
   'type' => 'normal',
   'title' => '生態工作假期',
-  'name' => 'navigation',
+  'name' => 'menu-content-menu',
   'weight' => '20',
   'parent' => array(
     'type' => 'none',
@@ -62,3 +62,4 @@ $display->hide_title = PANELS_TITLE_FIXED;
 $display->title_pane = '0';
 $handler->conf['display'] = $display;
 $page->default_handlers[$handler->name] = $handler;
+
