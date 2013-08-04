@@ -237,3 +237,35 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .region-bottom { /* Wrapper for any blocks placed in the page bottom region */
 }
+
+/*
+ * Background
+ */
+
+body.section-teia {
+  background: url("../images/bg/grass.jpg") repeat scroll 0 0 transparent;
+}
+
+body.section-e-info {
+  background: url("../images/bg/seed.jpg") repeat scroll 0 0 transparent;
+}
+
+body.section-env-trust {
+  background: url("../images/bg/dirt.jpg") repeat scroll 0 0 transparent;
+}
+
+body.section-working-holiday {
+  background: url("../images/bg/trunk.jpg") repeat scroll 0 0 transparent;
+}
+
+body.section-reef-check-tw {
+  background: url("../images/bg/water.jpg") repeat scroll 0 0 transparent;
+}
+
+#header,
+#content,
+#navigation,
+section.sidebar,
+#footer {
+  background: white;
+}
