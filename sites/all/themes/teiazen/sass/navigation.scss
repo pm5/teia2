@@ -41,7 +41,7 @@ li a.active {
 }
 
 /*
- * Navigation bar
+ * Navigation bar.  Layout wider then 960px use navigation region.
  */
 
 #navigation {
@@ -61,12 +61,46 @@ li a.active {
     margin: 0;
     padding: 0;
     text-align: left; /* LTR */
+  }
+}
 
-    li { /* A simple method to get navigation links to appear in one line. */
-      float: left; /* LTR */
-      padding: 0 10px 0 0; /* LTR */
-      list-style-type: none;
-      list-style-image: none;
+@media all and (min-width: 480px) and (max-width: 959px) {
+  #navigation {
+    ul.links,
+    ul.menu {
+      li { /* A simple method to get navigation links to appear in one line. */
+        float: left; /* LTR */
+        padding: 0 10px 0 0; /* LTR */
+        list-style-type: none;
+        list-style-image: none;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 960px) {
+  #navigation {
+    li {
+      @include zen-grid-flow-item(1, 4);
+      @include zen-float(left);
+    }
+
+    li:nth-child(4n) {
+      @include zen-grid-flow-item(1, 4, false, false);
+      @include zen-float(left);
+    }
+
+    ul.links, /* Main menu and secondary menu links */
+    ul.menu { /* Menu block links */
+      padding: 0.8em 0;
+
+      li {
+        margin: 0;
+        padding: 0.8em 0;
+        list-style: none;
+        list-style-image: none;
+        text-align: center;
+      }
     }
   }
 }

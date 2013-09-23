@@ -33,7 +33,7 @@ li a.active {
 }
 
 /*
- * Navigation bar
+ * Navigation bar.  Layout wider then 960px use navigation region.
  */
 /* line 47, ../sass/navigation.scss */
 #navigation {
@@ -62,22 +62,71 @@ li a.active {
   text-align: left;
   /* LTR */
 }
-/* line 65, ../sass/navigation.scss */
-#navigation ul.links li,
-#navigation ul.menu li {
-  /* A simple method to get navigation links to appear in one line. */
-  float: left;
-  /* LTR */
-  padding: 0 10px 0 0;
-  /* LTR */
-  list-style-type: none;
-  list-style-image: none;
-}
 
+@media all and (min-width: 480px) and (max-width: 959px) {
+  /* line 71, ../sass/navigation.scss */
+  #navigation ul.links li,
+  #navigation ul.menu li {
+    /* A simple method to get navigation links to appear in one line. */
+    float: left;
+    /* LTR */
+    padding: 0 10px 0 0;
+    /* LTR */
+    list-style-type: none;
+    list-style-image: none;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 83, ../sass/navigation.scss */
+  #navigation li {
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 15px;
+    margin-right: 5px;
+    float: left;
+  }
+  /* line 88, ../sass/navigation.scss */
+  #navigation li:nth-child(4n) {
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 15px;
+    margin-right: -15px;
+    float: left;
+  }
+  /* line 94, ../sass/navigation.scss */
+  #navigation ul.links,
+  #navigation ul.menu {
+    /* Menu block links */
+    padding: 0.8em 0;
+  }
+  /* line 97, ../sass/navigation.scss */
+  #navigation ul.links li,
+  #navigation ul.menu li {
+    margin: 0;
+    padding: 0.8em 0;
+    list-style: none;
+    list-style-image: none;
+    text-align: center;
+  }
+}
 /*
  * Main menu and Secondary menu links
  */
-/* line 84, ../sass/navigation.scss */
+/* line 118, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */

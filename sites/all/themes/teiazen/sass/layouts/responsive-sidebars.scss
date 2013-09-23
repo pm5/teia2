@@ -11,6 +11,9 @@
 
 @import "base";
 
+// Framing
+$framing-width: 4px;
+$framing-radius: 12px;
 
 // We are going to create a 980px wide, 5 column grid with 20px gutters between
 // columns (applied as 10px of left/right padding on each column).
@@ -183,9 +186,14 @@ $zen-auto-include-item-base: false;
    * Navigation region.  Placed at top right.
    */
   #navigation {
+    @include zen-grid-item(5, 8);
+    @include zen-nested-container();
     position: relative;
     top: -10em;
-    @include zen-grid-item(5, 8);
+    height: 10em;
+
+    border: solid #000 $framing-width;
+    border-radius: $framing-radius;
   }
 
   .sidebar-first {
