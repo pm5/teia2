@@ -56,7 +56,6 @@ $zen-auto-include-item-base: false;
 
 #header,
 #content,
-#navigation,
 .region-sidebar-first,
 .region-sidebar-second,
 #footer {
@@ -73,28 +72,22 @@ $zen-auto-include-item-base: false;
   @include zen-grid-container();
 }
 
-/*
- * Navigation bar
- */
+@media all and (min-width: 480px) and (max-width: 959px) {
+  $zen-column-count: 3;
 
-@media all and (min-width: 480px) {
+  /*
+   * Navigation bar
+   */
   #main {
-    padding-top: 3em; /* Move all the children of #main down to make room. */
+    padding-top: 3em;
     position: relative;
   }
   #navigation {
     position: absolute;
-    top: 0; /* Move the navbar up inside #main's padding. */
+    top: 0;
     height: 3em;
     width: $zen-grid-width;
   }
-}
-
-@media all and (min-width: 480px) and (max-width: 959px) {
-  /*
-   * Use 3 grid columns for smaller screens.
-   */
-  $zen-column-count: 3;
 
   /*
    * The layout when there is only one sidebar, the left one.
@@ -160,54 +153,61 @@ $zen-auto-include-item-base: false;
 }
 
 @media all and (min-width: 960px) {
-  /*
-   * Use 5 grid columns for larger screens.
-   */
   $zen-column-count: 12;
 
-  /*
-   * The layout when there is only one sidebar, the left one.
+  /**
+   * Header grid container.  Set to absolute position to make room for navigation region at the top right.
    */
+  #header {
+    position: absolute;
+    height: 10em;
+
+    nav, hgroup, div.region-header {
+      float: left;
+    }
+  }
+
+  /**
+   * Main grid container.  Set top padding to make room for header container.
+   */
+  #main {
+    padding-top: 10em;
+    position: relative;
+  }
+
+  #content {
+    @include zen-grid-item(9, 1);
+  }
+
+  /**
+   * Navigation region.  Placed at top right.
+   */
+  #navigation {
+    position: relative;
+    top: -10em;
+    @include zen-grid-item(5, 8);
+  }
 
   .sidebar-first {
-    #content { /* Span 4 columns, starting in 2nd column from left. */
-      @include zen-grid-item(4, 2);
+    #content {
+      @include zen-grid-item(12, 1);
     }
 
-    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+    .region-sidebar-first {
       @include zen-grid-item(1, 1);
     }
   }
 
-  /*
-   * The layout when there is only one sidebar, the right one.
-   */
-
-  .sidebar-second {
-    #content { /* Span 4 columns, starting in 1st column from left. */
-      @include zen-grid-item(4, 1);
+  .sidebar-second, .two-sidebars {
+    .region-sidebar-first {
+      position: absolute;
+      top: 13em;
+      left: 0;
+      width: 6em;
     }
 
-    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
-      @include zen-grid-item(1, 5);
-    }
-  }
-
-  /*
-   * The layout when there are two sidebars.
-   */
-
-  .two-sidebars {
-    #content { /* Span 3 columns, starting in 2nd column from left. */
-      @include zen-grid-item(8, 2);
-    }
-
-    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
-      @include zen-grid-item(1, 1);
-    }
-
-    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
-      @include zen-grid-item(2, 10);
+    .region-sidebar-second {
+      @include zen-grid-item(3, 1, right);
     }
   }
 }
