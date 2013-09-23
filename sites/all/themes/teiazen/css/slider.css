@@ -1,0 +1,34 @@
+/**
+ * @file
+ * Slider Styling.
+ */
+/* line 12, ../sass/slider.scss */
+div.view-teia-slideshow .flexslider li img {
+  float: left;
+  width: 66.66667%;
+  margin-left: 0%;
+  margin-right: -66.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  clear: left;
+}
+/* line 17, ../sass/slider.scss */
+div.view-teia-slideshow .flexslider li h3, div.view-teia-slideshow .flexslider li p, div.view-teia-slideshow .flexslider li div {
+  float: right;
+  width: 33.33333%;
+  margin-right: 0%;
+  margin-left: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  clear: right;
+}

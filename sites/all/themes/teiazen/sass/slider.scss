@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Slider Styling.
+ */
+
+@import "base";
+
+$zen-column-count:  12;
+$zen-gutter-width:  20px;
+
+div.view-teia-slideshow .flexslider li {
+  img {
+    @include zen-grid-item(8, 1);
+    clear: left;
+  }
+
+  h3, p, div {
+    @include zen-grid-item(4, 1, right);
+    clear: right;
+  }
+}
+
