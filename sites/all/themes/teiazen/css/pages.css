@@ -262,32 +262,28 @@ span.field-label {
 /*
  * Background
  */
-/* line 244, ../sass/pages.scss */
+/*
 body.section-teia {
   background: url("../images/bg/grass.jpg") repeat scroll 0 0 transparent;
 }
 
-/* line 248, ../sass/pages.scss */
 body.section-e-info {
   background: url("../images/bg/seed.jpg") repeat scroll 0 0 transparent;
 }
 
-/* line 252, ../sass/pages.scss */
 body.section-env-trust {
   background: url("../images/bg/dirt.jpg") repeat scroll 0 0 transparent;
 }
 
-/* line 256, ../sass/pages.scss */
 body.section-working-holiday {
   background: url("../images/bg/trunk.jpg") repeat scroll 0 0 transparent;
 }
 
-/* line 260, ../sass/pages.scss */
 body.section-reef-check-tw {
   background: url("../images/bg/water.jpg") repeat scroll 0 0 transparent;
 }
-
-/* line 268, ../sass/pages.scss */
+*/
+/* line 270, ../sass/pages.scss */
 #header,
 #content,
 #navigation,
