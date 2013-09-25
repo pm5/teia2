@@ -307,3 +307,38 @@ section.sidebar,
 #footer {
   background: white;
 }
+
+/**
+ * Donate Now!
+ */
+/* line 293, ../sass/pages.scss */
+div#mini-panel-front_donate_now .pane-content {
+  border: 0;
+  background: #333;
+  color: #fff;
+  border-radius: 1em;
+  padding: 2em 1.2em;
+}
+/* line 300, ../sass/pages.scss */
+div#mini-panel-front_donate_now .pane-content a, div#mini-panel-front_donate_now .pane-content a:active, div#mini-panel-front_donate_now .pane-content a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 304, ../sass/pages.scss */
+div#mini-panel-front_donate_now .pane-content a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+/* line 309, ../sass/pages.scss */
+div#mini-panel-front_donate_now .pane-content .donate-now-zh {
+  font-size: 2.5em;
+  text-align: center;
+  border-bottom: 2px #fff solid;
+  padding-bottom: 0.4em;
+}
+/* line 316, ../sass/pages.scss */
+div#mini-panel-front_donate_now .pane-content .donate-now-en {
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 0.4em;
+}
