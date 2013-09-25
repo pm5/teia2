@@ -8,15 +8,22 @@
 $zen-column-count:  12;
 $zen-gutter-width:  20px;
 
-div.view-teia-slideshow .flexslider li {
-  img {
-    @include zen-grid-item(8, 1);
-    clear: left;
-  }
+div.view-teia-slideshow .flexslider {
+  background: #ccc;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 
-  h3, p, div {
-    @include zen-grid-item(4, 1, right);
-    clear: right;
+  li {
+    figure {
+      @include zen-grid-item(8, 1);
+      clear: left;
+    }
+
+    h3, p, div {
+      @include zen-grid-item(4, 1, right);
+      clear: right;
+    }
   }
 }
 
