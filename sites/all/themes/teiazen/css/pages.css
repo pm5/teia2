@@ -248,13 +248,29 @@ span.field-label {
  * Remember to NOT add padding or margin to your .region-sidebar-second
  * (see the layout.css file.)
  */
+/* line 224, ../sass/pages.scss */
+.region-sidebar-second h2 {
+  background: #333;
+  color: #fff;
+  padding: 0 1em;
+  border-radius: 0.5em 0.5em 0 0;
+  margin-bottom: 0;
+}
+/* line 232, ../sass/pages.scss */
+.region-sidebar-second .pane-content {
+  border-bottom: 4px solid #000;
+  border-right: 4px solid #000;
+  border-left: 4px solid #000;
+  padding: 1.2em 1.5em;
+}
+
 /*
  * Footer
  */
 /*
  * Page bottom
  */
-/* line 237, ../sass/pages.scss */
+/* line 251, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }
@@ -283,7 +299,7 @@ body.section-reef-check-tw {
   background: url("../images/bg/water.jpg") repeat scroll 0 0 transparent;
 }
 */
-/* line 270, ../sass/pages.scss */
+/* line 284, ../sass/pages.scss */
 #header,
 #content,
 #navigation,
