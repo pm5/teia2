@@ -135,3 +135,25 @@ li a.active {
 
 .block-menu-block {
 }
+
+/**
+ * Sidebar content menu
+ */
+
+.region-sidebar-first {
+  ul.menu {
+    padding: 0;
+  }
+  ul.menu li {
+    list-style: none;
+    height: 4em;
+    width: 2em;
+    margin-bottom: 0.4em;
+    padding: 0.7em 1.3em;
+    border-radius: 0 1em 1em 0;
+    background: #ccc;
+  }
+  a {
+    text-decoration: none;
+  }
+}

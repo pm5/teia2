@@ -141,3 +141,24 @@ li a.active {
  * Drupal core has limited ways in which it can display its menus. To get around
  * these limitations, see http://drupal.org/project/menu_block
  */
+/**
+ * Sidebar content menu
+ */
+/* line 144, ../sass/navigation.scss */
+.region-sidebar-first ul.menu {
+  padding: 0;
+}
+/* line 147, ../sass/navigation.scss */
+.region-sidebar-first ul.menu li {
+  list-style: none;
+  height: 4em;
+  width: 2em;
+  margin-bottom: 0.4em;
+  padding: 0.7em 1.3em;
+  border-radius: 0 1em 1em 0;
+  background: #ccc;
+}
+/* line 156, ../sass/navigation.scss */
+.region-sidebar-first a {
+  text-decoration: none;
+}

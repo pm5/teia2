@@ -209,6 +209,7 @@ $zen-auto-include-item-base: false;
 
   .sidebar-second, .two-sidebars {
     .region-sidebar-first {
+      @include zen-nested-container();
       position: absolute;
       top: 13em;
       left: 0;

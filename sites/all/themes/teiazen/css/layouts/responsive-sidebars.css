@@ -250,12 +250,14 @@
 
   /* line 211, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-first, .two-sidebars .region-sidebar-first {
+    padding-left: 0;
+    padding-right: 0;
     position: absolute;
     top: 13em;
     left: 0;
     width: 6em;
   }
-  /* line 218, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 219, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-second, .two-sidebars .region-sidebar-second {
     float: right;
     width: 25%;
