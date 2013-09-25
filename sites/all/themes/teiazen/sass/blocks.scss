@@ -5,7 +5,6 @@
 
 @import "base";
 
-
 .block { /* Block wrapper */
   margin-bottom: 1.5em;
 
@@ -105,4 +104,77 @@
 }
 
 #block-user-online { /* "Who's online" block for a list of the online users */
+}
+
+/**
+ * Pane styling
+ */
+
+@media all and (min-width: 960px) {
+  $zen-column-count: 12;
+  $zen-gutter-width: 20px;
+
+  .pane-taxonomy-term-recent-pane-2small,
+  .pane-taxonomy-term-recent-pane-4small {
+
+    h2.pane-title {
+      font-size: 1em;
+      text-align: center;
+      border-top: solid 3px #000;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .view-content {
+      @include zen-grid-item(8, 1, left);
+      @include zen-nested-container();
+
+      figure {
+        @include zen-grid-item(6, 1);
+      }
+      h3, p,
+      div.field, /* e-info.org.tw bug */
+      div.update-date {
+        @include zen-grid-item(6, 1, right);
+        @include zen-clear(right);
+      }
+    }
+
+    .attachment .view-content {
+      @include zen-grid-item(4, 1, right);
+      @include zen-nested-container();
+
+      .views-row {
+        clear: both;
+      }
+    }
+  }
+
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content {
+    figure {
+      @include zen-grid-item(4, 1);
+    }
+
+    h3, p,
+    div.field, /* e-info.org.tw bug */
+    div.update-date {
+      @include zen-grid-item(8, 1, right);
+      @include zen-clear(right);
+    }
+  }
+
+  .pane-taxonomy-term-recent-pane-4small .attachment .view-content {
+    h3, p,
+    div.field, /* e-info.org.tw bug */
+    div.update-date {
+      @include zen-grid-item(12, 1, right);
+      @include zen-clear(right);
+    }
+  }
+
+  .more-link {
+    clear: both;
+  }
 }

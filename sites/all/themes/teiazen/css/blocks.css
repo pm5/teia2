@@ -2,163 +2,311 @@
  * @file
  * Block Styling
  */
-/* line 9, ../sass/blocks.scss */
+/* line 8, ../sass/blocks.scss */
 .block {
   /* Block wrapper */
   margin-bottom: 1.5em;
 }
-/* line 12, ../sass/blocks.scss */
+/* line 11, ../sass/blocks.scss */
 .block.first {
   /* The first block in the region */
 }
-/* line 15, ../sass/blocks.scss */
+/* line 14, ../sass/blocks.scss */
 .block.last {
   /* The last block in the region */
 }
-/* line 18, ../sass/blocks.scss */
+/* line 17, ../sass/blocks.scss */
 .block.odd {
   /* Zebra striping for each block in the region */
 }
-/* line 21, ../sass/blocks.scss */
+/* line 20, ../sass/blocks.scss */
 .block.even {
   /* Zebra striping for each block in the region */
 }
-/* line 24, ../sass/blocks.scss */
+/* line 23, ../sass/blocks.scss */
 .block h2.block-title {
   /* Block title */
 }
 
-/* line 29, ../sass/blocks.scss */
+/* line 28, ../sass/blocks.scss */
 #block-aggregator-category-1 {
   /* Block for the latest news items in the first category */
 }
 
-/* line 32, ../sass/blocks.scss */
+/* line 31, ../sass/blocks.scss */
 #block-aggregator-feed-1 {
   /* Block for the latest news items in the first feed */
 }
 
-/* line 35, ../sass/blocks.scss */
+/* line 34, ../sass/blocks.scss */
 #block-block-1 {
   /* First block created with "Add block" link */
 }
 
-/* line 38, ../sass/blocks.scss */
+/* line 37, ../sass/blocks.scss */
 #block-blog-recent {
   /* "Recent blog posts" block */
 }
 
-/* line 41, ../sass/blocks.scss */
+/* line 40, ../sass/blocks.scss */
 #block-book-navigation {
   /* "Book navigation" block for the current book's table of contents */
 }
 
-/* line 44, ../sass/blocks.scss */
+/* line 43, ../sass/blocks.scss */
 #block-comment-recent {
   /* "Recent comments" block */
 }
 
-/* line 47, ../sass/blocks.scss */
+/* line 46, ../sass/blocks.scss */
 #block-forum-active {
   /* "Active forum topics" block */
 }
 
-/* line 50, ../sass/blocks.scss */
+/* line 49, ../sass/blocks.scss */
 #block-forum-new {
   /* "New forum topics" block */
 }
 
-/* line 53, ../sass/blocks.scss */
+/* line 52, ../sass/blocks.scss */
 #block-locale-language {
   /* Language switcher block */
 }
 
-/* line 56, ../sass/blocks.scss */
+/* line 55, ../sass/blocks.scss */
 #block-menu-menu-NAME {
   /* Custom menu block */
 }
 
-/* line 59, ../sass/blocks.scss */
+/* line 58, ../sass/blocks.scss */
 #block-node-recent {
   /* "Recent content" block */
 }
 
-/* line 62, ../sass/blocks.scss */
+/* line 61, ../sass/blocks.scss */
 #block-node-syndicate {
   /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */
 }
 
-/* line 65, ../sass/blocks.scss */
+/* line 64, ../sass/blocks.scss */
 #block-poll-recent {
   /* "Most recent poll" block */
 }
 
-/* line 68, ../sass/blocks.scss */
+/* line 67, ../sass/blocks.scss */
 #block-profile-author-information {
   /* "Author information" block for the profile of the page's author */
 }
 
-/* line 71, ../sass/blocks.scss */
+/* line 70, ../sass/blocks.scss */
 #block-search-form {
   /* "Search form" block */
 }
 
-/* line 74, ../sass/blocks.scss */
+/* line 73, ../sass/blocks.scss */
 #block-shortcut-shortcuts {
   /* "Shortcuts" block */
 }
 
-/* line 77, ../sass/blocks.scss */
+/* line 76, ../sass/blocks.scss */
 #block-statistics-popular {
   /* "Popular content" block */
 }
 
-/* line 80, ../sass/blocks.scss */
+/* line 79, ../sass/blocks.scss */
 #block-system-main-menu {
   /* "Main menu" block */
 }
 
-/* line 83, ../sass/blocks.scss */
+/* line 82, ../sass/blocks.scss */
 #block-system-management {
   /* "Management" block for Drupal management menu */
 }
 
-/* line 86, ../sass/blocks.scss */
+/* line 85, ../sass/blocks.scss */
 #block-system-navigation {
   /* "Navigation" block for Drupal navigation menu */
 }
 
-/* line 89, ../sass/blocks.scss */
+/* line 88, ../sass/blocks.scss */
 #block-system-user-menu {
   /* "User menu" block for Drupal user menu */
 }
 
-/* line 92, ../sass/blocks.scss */
+/* line 91, ../sass/blocks.scss */
 #block-system-help {
   /* "System help" block */
 }
 
-/* line 95, ../sass/blocks.scss */
+/* line 94, ../sass/blocks.scss */
 #block-system-main {
   /* "Main page content" block */
 }
 
-/* line 98, ../sass/blocks.scss */
+/* line 97, ../sass/blocks.scss */
 #block-system-powered-by {
   /* "Powered by Drupal" block */
 }
 
-/* line 101, ../sass/blocks.scss */
+/* line 100, ../sass/blocks.scss */
 #block-user-login {
   /* "User login form" block */
 }
 
-/* line 104, ../sass/blocks.scss */
+/* line 103, ../sass/blocks.scss */
 #block-user-new {
   /* "Who's new" block for a list of the newest users */
 }
 
-/* line 107, ../sass/blocks.scss */
+/* line 106, ../sass/blocks.scss */
 #block-user-online {
   /* "Who's online" block for a list of the online users */
+}
+
+/**
+ * Pane styling
+ */
+@media all and (min-width: 960px) {
+  /* line 120, ../sass/blocks.scss */
+  .pane-taxonomy-term-recent-pane-2small h2.pane-title,
+  .pane-taxonomy-term-recent-pane-4small h2.pane-title {
+    font-size: 1em;
+    text-align: center;
+    border-top: solid 3px #000;
+  }
+  /* line 126, ../sass/blocks.scss */
+  .pane-taxonomy-term-recent-pane-2small h3,
+  .pane-taxonomy-term-recent-pane-4small h3 {
+    margin-top: 0;
+  }
+  /* line 130, ../sass/blocks.scss */
+  .pane-taxonomy-term-recent-pane-2small .view-content,
+  .pane-taxonomy-term-recent-pane-4small .view-content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 134, ../sass/blocks.scss */
+  .pane-taxonomy-term-recent-pane-2small .view-content figure,
+  .pane-taxonomy-term-recent-pane-4small .view-content figure {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 139, ../sass/blocks.scss */
+  .pane-taxonomy-term-recent-pane-2small .view-content h3, .pane-taxonomy-term-recent-pane-2small .view-content p,
+  .pane-taxonomy-term-recent-pane-2small .view-content div.field,
+  .pane-taxonomy-term-recent-pane-2small .view-content div.update-date,
+  .pane-taxonomy-term-recent-pane-4small .view-content h3,
+  .pane-taxonomy-term-recent-pane-4small .view-content p,
+  .pane-taxonomy-term-recent-pane-4small .view-content div.field,
+  .pane-taxonomy-term-recent-pane-4small .view-content div.update-date {
+    float: right;
+    width: 50%;
+    margin-right: 0%;
+    margin-left: -50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: right;
+  }
+  /* line 145, ../sass/blocks.scss */
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content,
+  .pane-taxonomy-term-recent-pane-4small .attachment .view-content {
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 149, ../sass/blocks.scss */
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content .views-row,
+  .pane-taxonomy-term-recent-pane-4small .attachment .view-content .views-row {
+    clear: both;
+  }
+
+  /* line 156, ../sass/blocks.scss */
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content figure {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 162, ../sass/blocks.scss */
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-2small .attachment .view-content p,
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.field,
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.update-date {
+    float: right;
+    width: 66.66667%;
+    margin-right: 0%;
+    margin-left: -66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: right;
+  }
+
+  /* line 171, ../sass/blocks.scss */
+  .pane-taxonomy-term-recent-pane-4small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-4small .attachment .view-content p,
+  .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.field,
+  .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.update-date {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: right;
+  }
+
+  /* line 177, ../sass/blocks.scss */
+  .more-link {
+    clear: both;
+  }
 }
