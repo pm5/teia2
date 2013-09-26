@@ -163,11 +163,15 @@ $zen-auto-include-item-base: false;
    */
   #header {
     position: absolute;
-    height: 10em;
+    height: 150px;
 
     nav, hgroup, div.region-header {
       float: left;
     }
+  }
+
+  #logo {
+    height: 150px;
   }
 
   /**
