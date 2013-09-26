@@ -105,10 +105,11 @@ li a.active {
   }
 
   .region-navigation {
-    border: solid #000 $framing-width;
-    border-radius: $framing-radius;
-
-    padding: 1.3em 2em;
+    .menu-block-wrapper {
+      border: solid #000 $framing-width;
+      border-radius: $framing-radius;
+      padding: 1.3em 1em;
+    }
   }
 }
 

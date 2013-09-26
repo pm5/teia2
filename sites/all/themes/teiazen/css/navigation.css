@@ -102,17 +102,17 @@ li a.active {
     margin-left: 5%;
   }
 
-  /* line 107, ../sass/navigation.scss */
-  .region-navigation {
+  /* line 108, ../sass/navigation.scss */
+  .region-navigation .menu-block-wrapper {
     border: solid black 4px;
     border-radius: 1.3em;
-    padding: 1.3em 2em;
+    padding: 1.3em 1em;
   }
 }
 /*
  * Main menu and Secondary menu links
  */
-/* line 125, ../sass/navigation.scss */
+/* line 126, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */
@@ -130,11 +130,11 @@ li a.active {
 /**
  * Sidebar content menu
  */
-/* line 151, ../sass/navigation.scss */
+/* line 152, ../sass/navigation.scss */
 .region-sidebar-first ul.menu {
   padding: 0;
 }
-/* line 154, ../sass/navigation.scss */
+/* line 155, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li {
   list-style: none;
   height: 4em;
@@ -144,7 +144,7 @@ li a.active {
   border-radius: 0 1em 1em 0;
   background: #ccc;
 }
-/* line 163, ../sass/navigation.scss */
+/* line 164, ../sass/navigation.scss */
 .region-sidebar-first a {
   text-decoration: none;
 }
