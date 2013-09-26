@@ -48,40 +48,28 @@ body {
 #header {
 }
 
-#logo { /* Wrapping link for logo */
-  float: left; /* LTR */
-  margin: 0;
-  padding: 16px 0 0;
+#logo img {
+  position: absolute;
+  bottom: 0px;
+  vertical-align: bottom;
+}
 
-  img {
-    vertical-align: bottom;
+.region-header {
+  #block-panels-mini-header {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 0
   }
 }
 
-#name-and-slogan { /* Wrapper for website name and slogan */
-  float: left;
-}
-
-#site-name { /* The name of the website */
-  margin: 0;
-  font-size: 2em;
-  line-height: 1.5em;
-
-  a:link,
-  a:visited {
-    color: #000;
-    text-decoration: none;
-  }
-
-  a:hover,
-  a:focus {
-    text-decoration: underline;
+.region-navigation {
+  .block {
+    position: absolute;
+    bottom: 0px;
   }
 }
 
-#site-slogan { /* The slogan (or tagline) of a website */
-  margin: 0;
-  font-size: 1em;
+#block-panels-mini-header {
 }
 
 .region-header {
