@@ -112,7 +112,7 @@
 
 @media all and (min-width: 960px) {
   $zen-column-count: 12;
-  $zen-gutter-width: 20px;
+  $zen-gutter-width: 40px;
 
   .pane-taxonomy-term-recent-pane-2small,
   .pane-taxonomy-term-recent-pane-4small {
@@ -121,6 +121,7 @@
       font-size: 1em;
       text-align: center;
       border-top: solid 3px #000;
+      margin: 0 zen-half-gutter();
     }
 
     h3 {

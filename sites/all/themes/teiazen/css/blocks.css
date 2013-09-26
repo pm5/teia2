@@ -173,21 +173,22 @@
     font-size: 1em;
     text-align: center;
     border-top: solid 3px #000;
+    margin: 0 20px;
   }
-  /* line 126, ../sass/blocks.scss */
+  /* line 127, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small h3,
   .pane-taxonomy-term-recent-pane-4small h3 {
     margin-top: 0;
   }
-  /* line 130, ../sass/blocks.scss */
+  /* line 131, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .view-content,
   .pane-taxonomy-term-recent-pane-4small .view-content {
     float: left;
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -66.66667%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -196,22 +197,22 @@
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 134, ../sass/blocks.scss */
+  /* line 135, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .view-content figure,
   .pane-taxonomy-term-recent-pane-4small .view-content figure {
     float: left;
     width: 50%;
     margin-left: 0%;
     margin-right: -50%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 139, ../sass/blocks.scss */
+  /* line 140, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .view-content h3, .pane-taxonomy-term-recent-pane-2small .view-content p,
   .pane-taxonomy-term-recent-pane-2small .view-content div.field,
   .pane-taxonomy-term-recent-pane-2small .view-content div.update-date,
@@ -223,8 +224,8 @@
     width: 50%;
     margin-right: 0%;
     margin-left: -50%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -232,15 +233,15 @@
     word-wrap: break-word;
     clear: right;
   }
-  /* line 145, ../sass/blocks.scss */
+  /* line 146, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content {
     float: right;
     width: 33.33333%;
     margin-right: 0%;
     margin-left: -33.33333%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -249,27 +250,27 @@
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 149, ../sass/blocks.scss */
+  /* line 150, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content .views-row,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content .views-row {
     clear: both;
   }
 
-  /* line 156, ../sass/blocks.scss */
+  /* line 157, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content figure {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 162, ../sass/blocks.scss */
+  /* line 163, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-2small .attachment .view-content p,
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.field,
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.update-date {
@@ -277,8 +278,8 @@
     width: 66.66667%;
     margin-right: 0%;
     margin-left: -66.66667%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -287,7 +288,7 @@
     clear: right;
   }
 
-  /* line 171, ../sass/blocks.scss */
+  /* line 172, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-4small .attachment .view-content p,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.field,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.update-date {
@@ -295,8 +296,8 @@
     width: 100%;
     margin-right: 0%;
     margin-left: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -305,7 +306,7 @@
     clear: right;
   }
 
-  /* line 177, ../sass/blocks.scss */
+  /* line 178, ../sass/blocks.scss */
   .more-link {
     clear: both;
   }
