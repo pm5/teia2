@@ -206,7 +206,7 @@
    */
   /* line 180, ../../sass/layouts/responsive-sidebars.scss */
   #main {
-    padding-top: 10em;
+    padding-top: 150px;
     position: relative;
   }
 
@@ -232,8 +232,8 @@
     padding-left: 0;
     padding-right: 0;
     position: relative;
-    top: -10em;
-    height: 10em;
+    top: -150px;
+    height: 150px;
     border: solid black 4px;
     border-radius: 12px;
   }

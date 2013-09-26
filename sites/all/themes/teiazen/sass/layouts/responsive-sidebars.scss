@@ -178,7 +178,7 @@ $zen-auto-include-item-base: false;
    * Main grid container.  Set top padding to make room for header container.
    */
   #main {
-    padding-top: 10em;
+    padding-top: 150px;
     position: relative;
   }
 
@@ -194,8 +194,8 @@ $zen-auto-include-item-base: false;
     @include zen-grid-item(5, 8);
     @include zen-nested-container();
     position: relative;
-    top: -10em;
-    height: 10em;
+    top: -150px;
+    height: 150px;
 
     border: solid #000 $framing-width;
     border-radius: $framing-radius;
