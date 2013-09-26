@@ -55,10 +55,41 @@ body {
 }
 
 .region-header {
+  font-size: small;
+  line-height: 1.5em;
+
+  a {
+    font-family: 微軟正黑體, 新細明體;
+    vertical-align: middle;
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
   #block-panels-mini-header {
     position: absolute;
     bottom: 0px;
     margin-bottom: 0
+  }
+
+  .social-network {
+    display: block;
+    float: left;
+    margin-left: 0.3em;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+    background: #ccc;
+    border-radius: 0.8em;
+
+    a {
+      color: #fff;
+      font-weight: bold;
+    }
   }
 }
 
@@ -70,22 +101,6 @@ body {
 }
 
 #block-panels-mini-header {
-}
-
-.region-header {
-  font-size: small;
-  line-height: 1.5em;
-
-  a:link,
-  a:visited {
-    color: #000;
-    text-decoration: none;
-  }
-
-  a:hover,
-  a:focus {
-    text-decoration: underline;
-  }
 }
 
 #google-cse-results-searchbox-form {
