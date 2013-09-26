@@ -95,13 +95,12 @@ li a.active {
   }
 
   #navigation {
-    li {
-      float: left;
-    }
-
-    ul.links, /* Main menu and secondary menu links */
-    ul.menu { /* Menu block links */
+    ul.menu {
+      border: solid #000 $framing-width;
+      border-radius: $framing-radius;
+      padding: 1.3em 1em;
       li {
+        float: left;
         margin: 0.2em 0;
         width: 25%;
         list-style: none;
@@ -109,23 +108,13 @@ li a.active {
         text-align: center;
       }
     }
-  }
 
-  .region-navigation {
-    .menu-block-wrapper {
-      border: solid #000 $framing-width;
-      border-radius: $framing-radius;
-      padding: 1.3em 1em;
-    }
-    .menu-block-wrapper:after {
+    ul.menu:after {
       content: "";
       display: table;
       clear: both;
     }
   }
-}
-
-.region-navigation {
 }
 
 /*

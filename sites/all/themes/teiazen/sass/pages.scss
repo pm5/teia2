@@ -95,6 +95,10 @@ body {
 
 .region-navigation {
   .block {
+    height: 100%;
+    bottom: 0px;
+  }
+  .menu-block-wrapper {
     position: absolute;
     bottom: 0px;
   }

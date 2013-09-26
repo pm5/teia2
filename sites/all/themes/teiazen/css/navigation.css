@@ -90,32 +90,22 @@ li a.active {
   }
 
   /* line 98, ../sass/navigation.scss */
-  #navigation li {
-    float: left;
-  }
-  /* line 103, ../sass/navigation.scss */
-  #navigation ul.links,
   #navigation ul.menu {
-    /* Menu block links */
+    border: solid black 4px;
+    border-radius: 1.3em;
+    padding: 1.3em 1em;
   }
-  /* line 104, ../sass/navigation.scss */
-  #navigation ul.links li,
+  /* line 102, ../sass/navigation.scss */
   #navigation ul.menu li {
+    float: left;
     margin: 0.2em 0;
     width: 25%;
     list-style: none;
     list-style-image: none;
     text-align: center;
   }
-
-  /* line 115, ../sass/navigation.scss */
-  .region-navigation .menu-block-wrapper {
-    border: solid black 4px;
-    border-radius: 1.3em;
-    padding: 1.3em 1em;
-  }
-  /* line 120, ../sass/navigation.scss */
-  .region-navigation .menu-block-wrapper:after {
+  /* line 112, ../sass/navigation.scss */
+  #navigation ul.menu:after {
     content: "";
     display: table;
     clear: both;
@@ -124,7 +114,7 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-/* line 138, ../sass/navigation.scss */
+/* line 127, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */
@@ -142,11 +132,11 @@ li a.active {
 /**
  * Sidebar content menu
  */
-/* line 164, ../sass/navigation.scss */
+/* line 153, ../sass/navigation.scss */
 .region-sidebar-first ul.menu {
   padding: 0;
 }
-/* line 167, ../sass/navigation.scss */
+/* line 156, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li {
   list-style: none;
   width: 2.5em;
