@@ -87,6 +87,10 @@ li a.active {
     a {
       font-size: large;
       font-family: 微軟正黑體, 新細明體;
+      vertical-align: middle;
+    }
+    a, a:hover, a:active, a:visited {
+      text-decoration: none;
     }
   }
 
@@ -162,14 +166,10 @@ li a.active {
   }
   ul.menu li {
     list-style: none;
-    height: 4em;
-    width: 2em;
+    width: 2.5em;
     margin-bottom: 0.4em;
-    padding: 0.7em 1.3em 0.8em 0.9em;
+    padding: 0.8em 1em;
     border-radius: 0 1em 1em 0;
     background: #ccc;
-  }
-  a {
-    text-decoration: none;
   }
 }

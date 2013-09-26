@@ -82,18 +82,23 @@ li a.active {
   ul.menu a {
     font-size: large;
     font-family: 微軟正黑體, 新細明體;
+    vertical-align: middle;
+  }
+  /* line 92, ../sass/navigation.scss */
+  ul.menu a, ul.menu a:hover, ul.menu a:active, ul.menu a:visited {
+    text-decoration: none;
   }
 
-  /* line 94, ../sass/navigation.scss */
+  /* line 98, ../sass/navigation.scss */
   #navigation li {
     float: left;
   }
-  /* line 99, ../sass/navigation.scss */
+  /* line 103, ../sass/navigation.scss */
   #navigation ul.links,
   #navigation ul.menu {
     /* Menu block links */
   }
-  /* line 100, ../sass/navigation.scss */
+  /* line 104, ../sass/navigation.scss */
   #navigation ul.links li,
   #navigation ul.menu li {
     margin: 0.2em 0;
@@ -103,13 +108,13 @@ li a.active {
     text-align: center;
   }
 
-  /* line 111, ../sass/navigation.scss */
+  /* line 115, ../sass/navigation.scss */
   .region-navigation .menu-block-wrapper {
     border: solid black 4px;
     border-radius: 1.3em;
     padding: 1.3em 1em;
   }
-  /* line 116, ../sass/navigation.scss */
+  /* line 120, ../sass/navigation.scss */
   .region-navigation .menu-block-wrapper:after {
     content: "";
     display: table;
@@ -119,7 +124,7 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-/* line 134, ../sass/navigation.scss */
+/* line 138, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */
@@ -137,21 +142,16 @@ li a.active {
 /**
  * Sidebar content menu
  */
-/* line 160, ../sass/navigation.scss */
+/* line 164, ../sass/navigation.scss */
 .region-sidebar-first ul.menu {
   padding: 0;
 }
-/* line 163, ../sass/navigation.scss */
+/* line 167, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li {
   list-style: none;
-  height: 4em;
-  width: 2em;
+  width: 2.5em;
   margin-bottom: 0.4em;
-  padding: 0.7em 1.3em 0.8em 0.9em;
+  padding: 0.8em 1em;
   border-radius: 0 1em 1em 0;
   background: #ccc;
-}
-/* line 172, ../sass/navigation.scss */
-.region-sidebar-first a {
-  text-decoration: none;
 }
