@@ -197,13 +197,14 @@
     height: 150px;
     width: 100%;
     max-width: 1200px;
+    z-index: 1;
   }
-  /* line 169, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 170, ../../sass/layouts/responsive-sidebars.scss */
   #header nav, #header hgroup {
     float: left;
   }
 
-  /* line 174, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 175, ../../sass/layouts/responsive-sidebars.scss */
   .region-header {
     float: right;
     width: 16.66667%;
@@ -211,7 +212,7 @@
     margin-left: -58.33333%;
   }
 
-  /* line 178, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 179, ../../sass/layouts/responsive-sidebars.scss */
   #logo {
     height: 150px;
   }
@@ -219,13 +220,13 @@
   /**
    * Main grid container.  Set top padding to make room for header container.
    */
-  /* line 185, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 186, ../../sass/layouts/responsive-sidebars.scss */
   #main {
     padding-top: 150px;
     position: relative;
   }
 
-  /* line 190, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 191, ../../sass/layouts/responsive-sidebars.scss */
   #content {
     float: left;
     width: 75%;
@@ -238,7 +239,7 @@
   /**
    * Navigation region.  Placed at top right.
    */
-  /* line 198, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 199, ../../sass/layouts/responsive-sidebars.scss */
   #navigation {
     float: left;
     width: 41.66667%;
@@ -246,16 +247,17 @@
     margin-right: -100%;
     position: relative;
     top: -150px;
+    z-index: 2;
   }
 
-  /* line 205, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 207, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first #content {
     float: left;
     width: 100%;
     margin-left: 0%;
     margin-right: -100%;
   }
-  /* line 209, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 211, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 8.33333%;
@@ -263,7 +265,7 @@
     margin-right: -8.33333%;
   }
 
-  /* line 215, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 217, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-first, .two-sidebars .region-sidebar-first {
     padding-left: 0;
     padding-right: 0;
@@ -272,7 +274,7 @@
     left: 0;
     width: 6em;
   }
-  /* line 223, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 225, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-second, .two-sidebars .region-sidebar-second {
     float: right;
     width: 25%;
