@@ -85,6 +85,19 @@ body {
 }
 
 .region-header {
+  font-size: small;
+  line-height: 1.5em;
+
+  a:link,
+  a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
 }
 
 #google-cse-results-searchbox-form {
