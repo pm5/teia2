@@ -87,19 +87,19 @@ li a.active {
       float: left;
     }
 
-    li:nth-child(4n) {
-      clear: left;
-    }
-
     ul.links, /* Main menu and secondary menu links */
     ul.menu { /* Menu block links */
       li {
         margin: 0;
         width: 20%;
-        margin-left: 4%;
+        margin-left: 3%;
         list-style: none;
         list-style-image: none;
         text-align: center;
+      }
+
+      li:first {
+        margin-left: 5%;
       }
     }
   }
@@ -108,7 +108,7 @@ li a.active {
     border: solid #000 $framing-width;
     border-radius: $framing-radius;
 
-    padding: 0.8em 1em;
+    padding: 1.3em 2em;
   }
 }
 

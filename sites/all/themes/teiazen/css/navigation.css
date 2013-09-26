@@ -81,31 +81,32 @@ li a.active {
   #navigation li {
     float: left;
   }
-  /* line 90, ../sass/navigation.scss */
-  #navigation li:nth-child(4n) {
-    clear: left;
-  }
-  /* line 95, ../sass/navigation.scss */
+  /* line 91, ../sass/navigation.scss */
   #navigation ul.links,
   #navigation ul.menu {
     /* Menu block links */
   }
-  /* line 96, ../sass/navigation.scss */
+  /* line 92, ../sass/navigation.scss */
   #navigation ul.links li,
   #navigation ul.menu li {
     margin: 0;
     width: 20%;
-    margin-left: 4%;
+    margin-left: 3%;
     list-style: none;
     list-style-image: none;
     text-align: center;
+  }
+  /* line 101, ../sass/navigation.scss */
+  #navigation ul.links li:first,
+  #navigation ul.menu li:first {
+    margin-left: 5%;
   }
 
   /* line 107, ../sass/navigation.scss */
   .region-navigation {
     border: solid black 4px;
     border-radius: 1.3em;
-    padding: 0.8em 1em;
+    padding: 1.3em 2em;
   }
 }
 /*
