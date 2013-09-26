@@ -87,6 +87,12 @@ body {
 .region-header {
 }
 
+#google-cse-results-searchbox-form {
+  label, input#edit-sa {
+    display: none;
+  }
+}
+
 /*
  * Main (container for everything else)
  */
