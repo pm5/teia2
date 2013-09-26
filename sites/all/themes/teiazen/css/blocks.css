@@ -167,20 +167,28 @@
  * Pane styling
  */
 @media all and (min-width: 960px) {
-  /* line 120, ../sass/blocks.scss */
-  .pane-taxonomy-term-recent-pane-2small h2.pane-title,
-  .pane-taxonomy-term-recent-pane-4small h2.pane-title {
-    font-size: 1em;
+  /* line 119, ../sass/blocks.scss */
+  #content h2.pane-title {
     text-align: center;
-    border-top: solid 3px #000;
+    font-size: 1.2em;
+    color: #666;
+    padding: 0.2em 0;
+    border-top: solid 5px #000;
     margin: 0 20px;
   }
-  /* line 127, ../sass/blocks.scss */
-  .pane-taxonomy-term-recent-pane-2small h3,
-  .pane-taxonomy-term-recent-pane-4small h3 {
+  /* line 128, ../sass/blocks.scss */
+  #content h3.field-title-field {
     margin-top: 0;
+    margin-bottom: 0;
+    color: #333;
   }
-  /* line 131, ../sass/blocks.scss */
+  /* line 134, ../sass/blocks.scss */
+  #content div.update-date {
+    color: #999;
+    font-size: smaller;
+  }
+
+  /* line 142, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .view-content,
   .pane-taxonomy-term-recent-pane-4small .view-content {
     float: left;
@@ -197,7 +205,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 135, ../sass/blocks.scss */
+  /* line 146, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .view-content figure,
   .pane-taxonomy-term-recent-pane-4small .view-content figure {
     float: left;
@@ -212,7 +220,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 140, ../sass/blocks.scss */
+  /* line 151, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .view-content h3, .pane-taxonomy-term-recent-pane-2small .view-content p,
   .pane-taxonomy-term-recent-pane-2small .view-content div.field,
   .pane-taxonomy-term-recent-pane-2small .view-content div.update-date,
@@ -233,7 +241,7 @@
     word-wrap: break-word;
     clear: right;
   }
-  /* line 146, ../sass/blocks.scss */
+  /* line 157, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content {
     float: right;
@@ -250,13 +258,13 @@
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 150, ../sass/blocks.scss */
+  /* line 161, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content .views-row,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content .views-row {
     clear: both;
   }
 
-  /* line 157, ../sass/blocks.scss */
+  /* line 168, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content figure {
     float: left;
     width: 33.33333%;
@@ -270,7 +278,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 163, ../sass/blocks.scss */
+  /* line 174, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-2small .attachment .view-content p,
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.field,
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.update-date {
@@ -288,7 +296,7 @@
     clear: right;
   }
 
-  /* line 172, ../sass/blocks.scss */
+  /* line 183, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-4small .attachment .view-content p,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.field,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.update-date {
@@ -306,7 +314,7 @@
     clear: right;
   }
 
-  /* line 178, ../sass/blocks.scss */
+  /* line 189, ../sass/blocks.scss */
   .more-link {
     clear: both;
   }
