@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * @file
  * Navigation Styling
@@ -81,21 +80,20 @@ li a.active {
   /* line 87, ../sass/navigation.scss */
   ul.menu a {
     font-size: large;
-    font-family: 微軟正黑體, 新細明體;
     vertical-align: middle;
   }
-  /* line 92, ../sass/navigation.scss */
+  /* line 91, ../sass/navigation.scss */
   ul.menu a, ul.menu a:hover, ul.menu a:active, ul.menu a:visited {
     text-decoration: none;
   }
 
-  /* line 98, ../sass/navigation.scss */
+  /* line 97, ../sass/navigation.scss */
   #navigation ul.menu {
     border: solid black 4px;
     border-radius: 1.3em;
     padding: 1.3em 1em;
   }
-  /* line 102, ../sass/navigation.scss */
+  /* line 101, ../sass/navigation.scss */
   #navigation ul.menu li {
     float: left;
     margin: 0.2em 0;
@@ -104,7 +102,7 @@ li a.active {
     list-style-image: none;
     text-align: center;
   }
-  /* line 112, ../sass/navigation.scss */
+  /* line 111, ../sass/navigation.scss */
   #navigation ul.menu:after {
     content: "";
     display: table;
@@ -114,7 +112,7 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-/* line 127, ../sass/navigation.scss */
+/* line 126, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */
@@ -132,11 +130,11 @@ li a.active {
 /**
  * Sidebar content menu
  */
-/* line 153, ../sass/navigation.scss */
+/* line 152, ../sass/navigation.scss */
 .region-sidebar-first ul.menu {
   padding: 0;
 }
-/* line 156, ../sass/navigation.scss */
+/* line 155, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li {
   list-style: none;
   width: 2.5em;

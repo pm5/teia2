@@ -16,15 +16,20 @@ body {
   padding: 0;
 }
 
+/* line 22, ../sass/pages.scss */
+#page {
+  font-family: 微軟正黑體, 新細明體;
+}
+
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
  */
-/* line 30, ../sass/pages.scss */
+/* line 31, ../sass/pages.scss */
 #skip-link {
   margin: 0;
 }
-/* line 34, ../sass/pages.scss */
+/* line 35, ../sass/pages.scss */
 #skip-link a,
 #skip-link a:visited {
   display: block;
@@ -38,21 +43,20 @@ body {
 /*
  * Header
  */
-/* line 51, ../sass/pages.scss */
+/* line 52, ../sass/pages.scss */
 #logo img {
   position: absolute;
   bottom: 0px;
   vertical-align: bottom;
 }
 
-/* line 57, ../sass/pages.scss */
+/* line 58, ../sass/pages.scss */
 .region-header {
   font-size: small;
   line-height: 1.5em;
 }
-/* line 61, ../sass/pages.scss */
+/* line 62, ../sass/pages.scss */
 .region-header a {
-  font-family: 微軟正黑體, 新細明體;
   vertical-align: middle;
   color: #000;
   text-decoration: none;
