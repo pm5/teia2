@@ -107,6 +107,10 @@ body {
   label, input#edit-sa {
     display: none;
   }
+  input#edit-query {
+    border: solid 2px #333;
+    border-radius: 1em;
+  }
 }
 
 /*
