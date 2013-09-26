@@ -82,6 +82,14 @@ li a.active {
 }
 
 @media all and (min-width: 960px) {
+
+  ul.menu {
+    a {
+      font-size: large;
+      font-family: 微軟正黑體, 新細明體;
+    }
+  }
+
   #navigation {
     li {
       float: left;
@@ -90,16 +98,11 @@ li a.active {
     ul.links, /* Main menu and secondary menu links */
     ul.menu { /* Menu block links */
       li {
-        margin: 0;
-        width: 20%;
-        margin-left: 3%;
+        margin: 0.2em 0;
+        width: 25%;
         list-style: none;
         list-style-image: none;
         text-align: center;
-      }
-
-      li:first {
-        margin-left: 5%;
       }
     }
   }
@@ -109,6 +112,11 @@ li a.active {
       border: solid #000 $framing-width;
       border-radius: $framing-radius;
       padding: 1.3em 1em;
+    }
+    .menu-block-wrapper:after {
+      content: "";
+      display: table;
+      clear: both;
     }
   }
 }

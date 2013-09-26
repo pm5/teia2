@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * @file
  * Navigation Styling
@@ -77,42 +78,48 @@ li a.active {
   }
 }
 @media all and (min-width: 960px) {
-  /* line 86, ../sass/navigation.scss */
+  /* line 87, ../sass/navigation.scss */
+  ul.menu a {
+    font-size: large;
+    font-family: 微軟正黑體, 新細明體;
+  }
+
+  /* line 94, ../sass/navigation.scss */
   #navigation li {
     float: left;
   }
-  /* line 91, ../sass/navigation.scss */
+  /* line 99, ../sass/navigation.scss */
   #navigation ul.links,
   #navigation ul.menu {
     /* Menu block links */
   }
-  /* line 92, ../sass/navigation.scss */
+  /* line 100, ../sass/navigation.scss */
   #navigation ul.links li,
   #navigation ul.menu li {
-    margin: 0;
-    width: 20%;
-    margin-left: 3%;
+    margin: 0.2em 0;
+    width: 25%;
     list-style: none;
     list-style-image: none;
     text-align: center;
   }
-  /* line 101, ../sass/navigation.scss */
-  #navigation ul.links li:first,
-  #navigation ul.menu li:first {
-    margin-left: 5%;
-  }
 
-  /* line 108, ../sass/navigation.scss */
+  /* line 111, ../sass/navigation.scss */
   .region-navigation .menu-block-wrapper {
     border: solid black 4px;
     border-radius: 1.3em;
     padding: 1.3em 1em;
   }
+  /* line 116, ../sass/navigation.scss */
+  .region-navigation .menu-block-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 /*
  * Main menu and Secondary menu links
  */
-/* line 126, ../sass/navigation.scss */
+/* line 134, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */
@@ -130,11 +137,11 @@ li a.active {
 /**
  * Sidebar content menu
  */
-/* line 152, ../sass/navigation.scss */
+/* line 160, ../sass/navigation.scss */
 .region-sidebar-first ul.menu {
   padding: 0;
 }
-/* line 155, ../sass/navigation.scss */
+/* line 163, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li {
   list-style: none;
   height: 4em;
@@ -144,7 +151,7 @@ li a.active {
   border-radius: 0 1em 1em 0;
   background: #ccc;
 }
-/* line 164, ../sass/navigation.scss */
+/* line 172, ../sass/navigation.scss */
 .region-sidebar-first a {
   text-decoration: none;
 }
