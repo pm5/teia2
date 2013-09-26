@@ -8,21 +8,31 @@
 $zen-column-count:  12;
 $zen-gutter-width:  20px;
 
-div.view-teia-slideshow .flexslider {
-  background: #ccc;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
+div.view-teia-slideshow {
+  @include zen-grid-item(12, 1);
+
+  .flexslider {
+    background: #ccc;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
 
   li {
     figure {
-      @include zen-grid-item(8, 1);
-      clear: left;
+      @include zen-grid-flow-item(8, 12, false, false);
+      @include zen-float(left);
+      @include zen-clear(left);
     }
 
     h3, p, div {
-      @include zen-grid-item(4, 1, right);
-      clear: right;
+      @include zen-grid-flow-item(4, 12, false, false);
+      @include zen-float(right);
+      @include zen-clear(right);
+    }
+
+    .more-link {
+      text-align: left;
     }
   }
 }

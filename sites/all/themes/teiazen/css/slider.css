@@ -3,18 +3,29 @@
  * Slider Styling.
  */
 /* line 11, ../sass/slider.scss */
+div.view-teia-slideshow {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 14, ../sass/slider.scss */
 div.view-teia-slideshow .flexslider {
   background: #ccc;
   border: none;
   border-radius: 0;
   box-shadow: none;
 }
-/* line 18, ../sass/slider.scss */
-div.view-teia-slideshow .flexslider li figure {
-  float: left;
+/* line 22, ../sass/slider.scss */
+div.view-teia-slideshow li figure {
   width: 66.66667%;
-  margin-left: 0%;
-  margin-right: -66.66667%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -22,14 +33,15 @@ div.view-teia-slideshow .flexslider li figure {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  padding-left: 0;
+  padding-right: 6.66667px;
+  margin-right: -6.66667px;
+  float: left;
   clear: left;
 }
-/* line 23, ../sass/slider.scss */
-div.view-teia-slideshow .flexslider li h3, div.view-teia-slideshow .flexslider li p, div.view-teia-slideshow .flexslider li div {
-  float: right;
+/* line 28, ../sass/slider.scss */
+div.view-teia-slideshow li h3, div.view-teia-slideshow li p, div.view-teia-slideshow li div {
   width: 33.33333%;
-  margin-right: 0%;
-  margin-left: -33.33333%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -37,5 +49,13 @@ div.view-teia-slideshow .flexslider li h3, div.view-teia-slideshow .flexslider l
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  padding-left: 0;
+  padding-right: 13.33333px;
+  margin-right: -13.33333px;
+  float: right;
   clear: right;
+}
+/* line 34, ../sass/slider.scss */
+div.view-teia-slideshow li .more-link {
+  text-align: left;
 }
