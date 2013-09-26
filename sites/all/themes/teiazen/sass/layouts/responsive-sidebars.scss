@@ -173,7 +173,7 @@ $zen-auto-include-item-base: false;
   }
 
   .region-header {
-    @include zen-grid-item(2, 6, right);
+    @include zen-grid-item(3, 6, right);
   }
 
   #logo {
