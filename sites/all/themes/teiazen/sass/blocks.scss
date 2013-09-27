@@ -5,6 +5,8 @@
 
 @import "base";
 
+$separator-color: #333;
+
 .block { /* Block wrapper */
   margin-bottom: 1.5em;
 
@@ -119,10 +121,12 @@
     h2.pane-title {
       text-align: center;
       font-size: 1.2em;
+      letter-spacing: 0.4em;
       color: #666;
-      padding: 0.2em 0;
-      border-top: solid 5px #000;
-      margin: 0 zen-half-gutter();
+      padding: 0;
+      border-top: solid 5px $separator-color;
+      border-bottom: solid 1px #ddd;
+      margin: 0 zen-half-gutter() 0.8em;
     }
 
     h3.field-title-field {
