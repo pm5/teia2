@@ -6,7 +6,7 @@
 @import "base";
 
 $zen-column-count:  12;
-$zen-gutter-width:  40px;
+$zen-gutter-width:  30px;
 
 div.view-teia-slideshow {
   @include zen-grid-item(12, 1);
