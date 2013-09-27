@@ -135,7 +135,7 @@ $separator-color: #333;
       color: #333;
     }
 
-    div.update-date {
+    div.post-date {
       color: #999;
       font-size: smaller;
     }
@@ -152,7 +152,7 @@ $separator-color: #333;
       }
       h3, p,
       div.field, /* e-info.org.tw bug */
-      div.update-date {
+      div.post-date {
         @include zen-grid-item(6, 1, right);
         @include zen-clear(right);
       }
@@ -175,7 +175,7 @@ $separator-color: #333;
 
     h3, p,
     div.field, /* e-info.org.tw bug */
-    div.update-date {
+    div.post-date {
       @include zen-grid-item(8, 1, right);
       @include zen-clear(right);
     }
@@ -184,7 +184,7 @@ $separator-color: #333;
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content {
     h3, p,
     div.field, /* e-info.org.tw bug */
-    div.update-date {
+    div.post-date {
       @include zen-grid-item(12, 1, right);
       @include zen-clear(right);
     }

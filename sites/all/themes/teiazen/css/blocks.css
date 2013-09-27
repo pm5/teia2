@@ -185,7 +185,7 @@
     color: #333;
   }
   /* line 138, ../sass/blocks.scss */
-  #content div.update-date {
+  #content div.post-date {
     color: #999;
     font-size: smaller;
   }
@@ -225,11 +225,11 @@
   /* line 155, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .view-content h3, .pane-taxonomy-term-recent-pane-2small .view-content p,
   .pane-taxonomy-term-recent-pane-2small .view-content div.field,
-  .pane-taxonomy-term-recent-pane-2small .view-content div.update-date,
+  .pane-taxonomy-term-recent-pane-2small .view-content div.post-date,
   .pane-taxonomy-term-recent-pane-4small .view-content h3,
   .pane-taxonomy-term-recent-pane-4small .view-content p,
   .pane-taxonomy-term-recent-pane-4small .view-content div.field,
-  .pane-taxonomy-term-recent-pane-4small .view-content div.update-date {
+  .pane-taxonomy-term-recent-pane-4small .view-content div.post-date {
     float: right;
     width: 50%;
     margin-right: 0%;
@@ -283,7 +283,7 @@
   /* line 178, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-2small .attachment .view-content p,
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.field,
-  .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.update-date {
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.post-date {
     float: right;
     width: 66.66667%;
     margin-right: 0%;
@@ -301,7 +301,7 @@
   /* line 187, ../sass/blocks.scss */
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-4small .attachment .view-content p,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.field,
-  .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.update-date {
+  .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.post-date {
     float: right;
     width: 100%;
     margin-right: 0%;
