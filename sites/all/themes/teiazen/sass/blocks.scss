@@ -5,8 +5,6 @@
 
 @import "base";
 
-$separator-color: #333;
-
 .block { /* Block wrapper */
   margin-bottom: 1.5em;
 
@@ -108,88 +106,3 @@ $separator-color: #333;
 #block-user-online { /* "Who's online" block for a list of the online users */
 }
 
-/**
- * Pane styling
- */
-
-@media all and (min-width: 960px) {
-  $zen-column-count: 12;
-  $zen-gutter-width: 30px;
-
-  #content {
-
-    h2.pane-title {
-      text-align: center;
-      font-size: 1.2em;
-      letter-spacing: 0.4em;
-      color: #666;
-      padding: 0;
-      border-top: solid 5px $separator-color;
-      border-bottom: solid 1px #ddd;
-      margin: 0 zen-half-gutter() 0.8em;
-    }
-
-    h3.field-title-field {
-      margin-top: 0;
-      margin-bottom: 0;
-      color: #333;
-    }
-
-    div.post-date {
-      color: #999;
-      font-size: smaller;
-    }
-  }
-
-  .pane-taxonomy-term-recent-pane-2small,
-  .pane-taxonomy-term-recent-pane-4small {
-    .view-content {
-      @include zen-grid-item(8, 1, left);
-      @include zen-nested-container();
-
-      figure {
-        @include zen-grid-item(6, 1);
-      }
-      h3, p,
-      div.field, /* e-info.org.tw bug */
-      div.post-date {
-        @include zen-grid-item(6, 1, right);
-        @include zen-clear(right);
-      }
-    }
-
-    .attachment .view-content {
-      @include zen-grid-item(4, 1, right);
-      @include zen-nested-container();
-    }
-  }
-
-  .pane-taxonomy-term-recent-pane-2small .attachment .view-content {
-    figure {
-      @include zen-grid-item(4, 1);
-    }
-
-    h3, p,
-    div.field, /* e-info.org.tw bug */
-    div.post-date {
-      @include zen-grid-item(8, 1, right);
-      @include zen-clear(right);
-    }
-    .views-row-2 {
-      margin-top: 1em;
-    }
-  }
-
-  .pane-taxonomy-term-recent-pane-4small .attachment .view-content {
-    h3, p,
-    div.field, /* e-info.org.tw bug */
-    div.post-date {
-      @include zen-grid-item(12, 1, right);
-      @include zen-clear(right);
-    }
-  }
-
-  .more-link {
-    clear: both;
-  }
-}

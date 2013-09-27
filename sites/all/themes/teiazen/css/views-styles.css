@@ -65,3 +65,213 @@
   display: table;
   clear: both;
 }
+
+/**
+ * Pane styling
+ */
+@media all and (min-width: 960px) {
+  /* line 69, ../sass/views-styles.scss */
+  #content h2.pane-title {
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 0.4em;
+    color: #666;
+    padding: 0;
+    border-top: solid 5px #333333;
+    border-bottom: solid 1px #ddd;
+    margin: 0 15px 0.8em;
+  }
+  /* line 80, ../sass/views-styles.scss */
+  #content h3.field-title-field {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #333;
+  }
+  /* line 86, ../sass/views-styles.scss */
+  #content div.post-date {
+    color: #999;
+    font-size: smaller;
+  }
+  /* line 91, ../sass/views-styles.scss */
+  #content div.more-link {
+    color: #666;
+    font-size: smaller;
+  }
+
+  /* line 98, ../sass/views-styles.scss */
+  .pane-taxonomy-term-pane figure {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 105, ../sass/views-styles.scss */
+  .pane-taxonomy-term-pane h3, .pane-taxonomy-term-pane p,
+  .pane-taxonomy-term-pane div.field,
+  .pane-taxonomy-term-pane div.post-date,
+  .pane-taxonomy-term-pane div.more-link {
+    float: right;
+    width: 66.66667%;
+    margin-right: 0%;
+    margin-left: -66.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: right;
+  }
+  /* line 109, ../sass/views-styles.scss */
+  .pane-taxonomy-term-pane div.more-link {
+    text-align: left;
+  }
+  /* line 112, ../sass/views-styles.scss */
+  .pane-taxonomy-term-pane div.more-link:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+  }
+  /* line 118, ../sass/views-styles.scss */
+  .pane-taxonomy-term-pane .views-row {
+    margin-top: 1em;
+  }
+  /* line 121, ../sass/views-styles.scss */
+  .pane-taxonomy-term-pane .views-row.views-row-first {
+    margin-top: 0em;
+  }
+
+  /* line 128, ../sass/views-styles.scss */
+  .pane-taxonomy-term-recent-pane-2small .view-content,
+  .pane-taxonomy-term-recent-pane-4small .view-content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 132, ../sass/views-styles.scss */
+  .pane-taxonomy-term-recent-pane-2small .view-content figure,
+  .pane-taxonomy-term-recent-pane-4small .view-content figure {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 137, ../sass/views-styles.scss */
+  .pane-taxonomy-term-recent-pane-2small .view-content h3, .pane-taxonomy-term-recent-pane-2small .view-content p,
+  .pane-taxonomy-term-recent-pane-2small .view-content div.field,
+  .pane-taxonomy-term-recent-pane-2small .view-content div.post-date,
+  .pane-taxonomy-term-recent-pane-4small .view-content h3,
+  .pane-taxonomy-term-recent-pane-4small .view-content p,
+  .pane-taxonomy-term-recent-pane-4small .view-content div.field,
+  .pane-taxonomy-term-recent-pane-4small .view-content div.post-date {
+    float: right;
+    width: 50%;
+    margin-right: 0%;
+    margin-left: -50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: right;
+  }
+  /* line 143, ../sass/views-styles.scss */
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content,
+  .pane-taxonomy-term-recent-pane-4small .attachment .view-content {
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 150, ../sass/views-styles.scss */
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content figure {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 156, ../sass/views-styles.scss */
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-2small .attachment .view-content p,
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.field,
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.post-date {
+    float: right;
+    width: 66.66667%;
+    margin-right: 0%;
+    margin-left: -66.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: right;
+  }
+  /* line 160, ../sass/views-styles.scss */
+  .pane-taxonomy-term-recent-pane-2small .attachment .view-content .views-row-2 {
+    margin-top: 1em;
+  }
+
+  /* line 168, ../sass/views-styles.scss */
+  .pane-taxonomy-term-recent-pane-4small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-4small .attachment .view-content p,
+  .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.field,
+  .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.post-date {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: right;
+  }
+}
