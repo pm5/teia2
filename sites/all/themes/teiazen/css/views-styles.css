@@ -53,3 +53,15 @@
   -o-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
 }
+
+/* line 47, ../sass/views-styles.scss */
+.views-row {
+  clear: both;
+}
+
+/* line 51, ../sass/views-styles.scss */
+.views-row-last:after {
+  content: "";
+  display: table;
+  clear: both;
+}

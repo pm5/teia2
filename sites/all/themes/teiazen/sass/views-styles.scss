@@ -43,3 +43,13 @@
     }
   }
 }
+
+.views-row {
+  clear: both;
+}
+
+.views-row-last:after {
+  content: "";
+  display: table;
+  clear: both;
+}
