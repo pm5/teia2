@@ -223,4 +223,11 @@ $zen-auto-include-item-base: false;
       @include zen-grid-item(3, 1, right);
     }
   }
+
+  .breadcrumb,
+  #page-title,
+  .node {
+    padding-left: zen-half-gutter();
+    padding-right: zen-half-gutter();
+  }
 }

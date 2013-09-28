@@ -274,4 +274,12 @@
     margin-left: 0%;
     margin-right: -25%;
   }
+
+  /* line 229, ../../sass/layouts/responsive-sidebars.scss */
+  .breadcrumb,
+  #page-title,
+  .node {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
