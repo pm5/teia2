@@ -29,6 +29,14 @@
   ul.links { /* Node links. See also the ul.links declaration in the pages.css. */
   }
 
+  figure.field-title-image {
+    width: 33.3333%;
+    float: right;
+    padding-left: zen-half-gutter();
+    padding-right: zen-half-gutter();
+    padding-bottom: zen-half-gutter();
+  }
+
 }
 
 .node-promoted { /* A node that has been promoted to the front page */
