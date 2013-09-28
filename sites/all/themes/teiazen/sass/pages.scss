@@ -21,6 +21,12 @@ body {
 
 #page {
   font-family: 微軟正黑體, 新細明體;
+  a, a:active, a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 /*
@@ -327,13 +333,8 @@ div#mini-panel-front_donate_now {
     border-radius: 1em;
     padding: 2em 1.2em;
 
-    a, a:active, a:visited {
+    a, a:active, a:visited, a:hover {
       color: #fff;
-      text-decoration: none;
-    }
-    a:hover {
-      color: #fff;
-      text-decoration: underline;
     }
 
     .donate-now-zh {
