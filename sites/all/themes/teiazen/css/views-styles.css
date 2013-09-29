@@ -111,6 +111,7 @@
   .panel-pane:after {
     content: ".";
     display: block;
+    height: 0px;
     visibility: hidden;
     clear: both;
   }
@@ -118,14 +119,14 @@
   /**
    * Taxonomy term
    */
-  /* line 107, ../sass/views-styles.scss */
+  /* line 108, ../sass/views-styles.scss */
   .view-taxonomy-term h3.field-title-field {
     margin-top: 0;
     margin-bottom: 0;
     color: #333;
   }
 
-  /* line 115, ../sass/views-styles.scss */
+  /* line 116, ../sass/views-styles.scss */
   .pane-taxonomy-term-pane figure {
     float: left;
     width: 33.33333%;
@@ -139,7 +140,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 122, ../sass/views-styles.scss */
+  /* line 123, ../sass/views-styles.scss */
   .pane-taxonomy-term-pane h3, .pane-taxonomy-term-pane p,
   .pane-taxonomy-term-pane div.field,
   .pane-taxonomy-term-pane div.post-date,
@@ -157,19 +158,19 @@
     word-wrap: break-word;
     clear: right;
   }
-  /* line 126, ../sass/views-styles.scss */
+  /* line 127, ../sass/views-styles.scss */
   .pane-taxonomy-term-pane .views-row {
     margin-top: 1em;
   }
-  /* line 129, ../sass/views-styles.scss */
+  /* line 130, ../sass/views-styles.scss */
   .pane-taxonomy-term-pane .views-row.views-row-first {
     margin-top: 0em;
   }
-  /* line 132, ../sass/views-styles.scss */
+  /* line 133, ../sass/views-styles.scss */
   .pane-taxonomy-term-pane div.more-link {
     text-align: left;
   }
-  /* line 135, ../sass/views-styles.scss */
+  /* line 136, ../sass/views-styles.scss */
   .pane-taxonomy-term-pane div.more-link:after {
     content: ".";
     display: block;
@@ -177,7 +178,7 @@
     clear: both;
   }
 
-  /* line 144, ../sass/views-styles.scss */
+  /* line 145, ../sass/views-styles.scss */
   .view-taxonomy-term.view-display-id-latest_attachment .view-content {
     float: left;
     width: 66.66667%;
@@ -193,7 +194,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 148, ../sass/views-styles.scss */
+  /* line 149, ../sass/views-styles.scss */
   .view-taxonomy-term.view-display-id-latest_attachment figure.field-title-image {
     float: left;
     width: 50%;
@@ -207,7 +208,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 154, ../sass/views-styles.scss */
+  /* line 155, ../sass/views-styles.scss */
   .view-taxonomy-term.view-display-id-latest_attachment h3, .view-taxonomy-term.view-display-id-latest_attachment p,
   .view-taxonomy-term.view-display-id-latest_attachment div.field,
   .view-taxonomy-term.view-display-id-latest_attachment div.post-date,
@@ -226,7 +227,7 @@
     clear: right;
   }
 
-  /* line 161, ../sass/views-styles.scss */
+  /* line 162, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane .view-content {
     float: right;
     width: 33.33333%;
@@ -242,7 +243,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 165, ../sass/views-styles.scss */
+  /* line 166, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane figure.field-title-image {
     float: left;
     width: 33.33333%;
@@ -256,7 +257,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 171, ../sass/views-styles.scss */
+  /* line 172, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane h3, .pane-taxonomy-term-recent-pane p,
   .pane-taxonomy-term-recent-pane div.field,
   .pane-taxonomy-term-recent-pane div.post-date,
@@ -275,7 +276,7 @@
     clear: right;
   }
 
-  /* line 178, ../sass/views-styles.scss */
+  /* line 179, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-5 .view-content {
     float: right;
     width: 33.33333%;
@@ -290,7 +291,7 @@
     word-wrap: break-word;
   }
 
-  /* line 186, ../sass/views-styles.scss */
+  /* line 187, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-4small .attachment .view-content p,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.field,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.post-date {
@@ -311,7 +312,7 @@
   /**
    * Slider
    */
-  /* line 197, ../sass/views-styles.scss */
+  /* line 198, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow {
     float: left;
     width: 100%;
@@ -325,14 +326,14 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 200, ../sass/views-styles.scss */
+  /* line 201, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow .flexslider {
     background: #ccc;
     border: none;
     border-radius: 0;
     box-shadow: none;
   }
-  /* line 208, ../sass/views-styles.scss */
+  /* line 209, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow li figure {
     width: 66.66667%;
     padding-left: 15px;
@@ -348,7 +349,7 @@
     float: left;
     clear: left;
   }
-  /* line 214, ../sass/views-styles.scss */
+  /* line 215, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow li h3, .pane-teia-slideshow-pane div.view-teia-slideshow li p, .pane-teia-slideshow-pane div.view-teia-slideshow li div {
     width: 33.33333%;
     padding-left: 15px;
@@ -364,7 +365,7 @@
     float: right;
     clear: right;
   }
-  /* line 220, ../sass/views-styles.scss */
+  /* line 221, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow li .more-link {
     text-align: left;
   }

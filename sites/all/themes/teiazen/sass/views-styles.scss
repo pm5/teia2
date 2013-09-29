@@ -95,6 +95,7 @@ $separator-color: #333;
   .panel-pane:after {
     content: ".";
     display: block;
+    height: 0px;
     visibility: hidden;
     clear: both;
   }
