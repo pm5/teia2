@@ -40,7 +40,7 @@ ul li.leaf {
  */
 
 li a.active {
-  color: #000;
+  color: $black-active;
 }
 
 /*
@@ -95,7 +95,7 @@ li a.active {
 
   #navigation {
     ul.menu {
-      border: solid #000 $framing-width;
+      border: solid $dark $framing-width;
       border-radius: $framing-radius;
       padding: 1.3em 1em;
       li {

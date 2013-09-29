@@ -9,7 +9,6 @@
 
 @import "base";
 
-
 /*
  * Body
  */
@@ -21,11 +20,15 @@ body {
 
 #page {
   font-family: 微軟正黑體, 新細明體;
+  color: $black-text;
+
   a, a:active, a:visited {
     text-decoration: none;
+    color: $black-link;
   }
-  a:hover {
+  a:hover, a:focus; {
     text-decoration: underline;
+    color: $black-hover;
   }
 }
 
@@ -65,17 +68,6 @@ body {
   font-size: small;
   line-height: 1.5em;
 
-  a {
-    vertical-align: middle;
-    color: #000;
-    text-decoration: none;
-  }
-
-  a:hover,
-  a:focus {
-    text-decoration: underline;
-  }
-
   #block-panels-mini-header {
     position: absolute;
     bottom: 0px;
@@ -89,11 +81,11 @@ body {
     height: 2em;
     width: 2em;
     text-align: center;
-    background: #ccc;
+    background: $dark-lighter;
     border-radius: 0.8em;
 
     a {
-      color: #fff;
+      color: $white-background;
       font-weight: bold;
     }
   }
@@ -118,7 +110,7 @@ body {
     display: none;
   }
   input#edit-query {
-    border: solid 2px #333;
+    border: solid 2px $dark-darker;
     border-radius: 1em;
   }
 }
@@ -258,17 +250,17 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .region-sidebar-second {
   h2 {
-    background: #333;
-    color: #fff;
+    background: $light;
+    color: $white-background;
     padding: 0 1em;
     border-radius: 0.5em 0.5em 0 0;
     margin-bottom: 0;
   }
 
   .pane-content {
-    border-bottom: 4px solid #000;
-    border-right: 4px solid #000;
-    border-left: 4px solid #000;
+    border-bottom: 4px solid $light;
+    border-right: 4px solid $light;
+    border-left: 4px solid $light;
     padding: 1.2em 1.5em;
   }
 }
@@ -278,6 +270,9 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 #footer {
+    display: block;
+    height: 10em;
+    background: $light;
 }
 
 /*
@@ -318,7 +313,7 @@ body.section-reef-check-tw {
 #navigation,
 section.sidebar,
 #footer {
-  background: white;
+  background: $white-background;
 }
 
 /**
@@ -328,19 +323,19 @@ section.sidebar,
 div#mini-panel-front_donate_now {
   .pane-content {
     border: 0;
-    background: #333;
-    color: #fff;
+    background: $light;
+    color: $white-background;
     border-radius: 1em;
     padding: 2em 1.2em;
 
     a, a:active, a:visited, a:hover {
-      color: #fff;
+      color: $white-background;
     }
 
     .donate-now-zh {
       font-size: 2.5em;
       text-align: center;
-      border-bottom: 2px #fff solid;
+      border-bottom: 2px $white-background solid;
       padding-bottom: 0.4em;
     }
 
