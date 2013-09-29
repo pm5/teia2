@@ -337,19 +337,15 @@ body.section-reef-check-tw {
   background: url("../images/bg/water.jpg") repeat scroll 0 0 transparent;
 }
 */
-/* line 315, ../sass/pages.scss */
-#header,
-#content,
-#navigation,
-section.sidebar,
-#footer {
+/* line 311, ../sass/pages.scss */
+body {
   background: whitesmoke;
 }
 
 /**
  * Donate Now!
  */
-/* line 324, ../sass/pages.scss */
+/* line 327, ../sass/pages.scss */
 div#mini-panel-front_donate_now .pane-content {
   border: 0;
   background: #4f915e;
@@ -357,18 +353,18 @@ div#mini-panel-front_donate_now .pane-content {
   border-radius: 1em;
   padding: 2em 1.2em;
 }
-/* line 331, ../sass/pages.scss */
+/* line 334, ../sass/pages.scss */
 div#mini-panel-front_donate_now .pane-content a, div#mini-panel-front_donate_now .pane-content a:active, div#mini-panel-front_donate_now .pane-content a:visited, div#mini-panel-front_donate_now .pane-content a:hover {
   color: whitesmoke;
 }
-/* line 335, ../sass/pages.scss */
+/* line 338, ../sass/pages.scss */
 div#mini-panel-front_donate_now .pane-content .donate-now-zh {
   font-size: 2.5em;
   text-align: center;
   border-bottom: 2px whitesmoke solid;
   padding-bottom: 0.4em;
 }
-/* line 342, ../sass/pages.scss */
+/* line 345, ../sass/pages.scss */
 div#mini-panel-front_donate_now .pane-content .donate-now-en {
   font-size: 1.5em;
   text-align: center;

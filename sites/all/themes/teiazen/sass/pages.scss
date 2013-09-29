@@ -308,12 +308,15 @@ body.section-reef-check-tw {
 }
 */
 
+body {
+  background: $white-background;
+}
+
 #header,
 #content,
 #navigation,
 section.sidebar,
 #footer {
-  background: $white-background;
 }
 
 /**
