@@ -281,28 +281,10 @@
     word-wrap: break-word;
   }
 
-  /* line 184, ../sass/views-styles.scss */
-  .pane-taxonomy-term-recent-pane-4small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-4small .attachment .view-content p,
-  .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.field,
-  .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.post-date {
-    float: right;
-    width: 100%;
-    margin-right: 0%;
-    margin-left: -100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    clear: right;
-  }
-
   /**
    * Slider
    */
-  /* line 195, ../sass/views-styles.scss */
+  /* line 186, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow {
     float: left;
     width: 100%;
@@ -316,14 +298,14 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 198, ../sass/views-styles.scss */
+  /* line 189, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow .flexslider {
     background: #ccc;
     border: none;
     border-radius: 0;
     box-shadow: none;
   }
-  /* line 206, ../sass/views-styles.scss */
+  /* line 197, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow li figure {
     width: 66.66667%;
     padding-left: 15px;
@@ -339,7 +321,7 @@
     float: left;
     clear: left;
   }
-  /* line 212, ../sass/views-styles.scss */
+  /* line 203, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow li h3, .pane-teia-slideshow-pane div.view-teia-slideshow li p, .pane-teia-slideshow-pane div.view-teia-slideshow li div {
     width: 33.33333%;
     padding-left: 15px;
@@ -355,7 +337,7 @@
     float: right;
     clear: right;
   }
-  /* line 218, ../sass/views-styles.scss */
+  /* line 209, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow li .more-link {
     text-align: left;
   }
