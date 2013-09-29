@@ -131,26 +131,75 @@
     clear: right;
   }
   /* line 109, ../sass/views-styles.scss */
+  .pane-taxonomy-term-pane .views-row {
+    margin-top: 1em;
+  }
+  /* line 112, ../sass/views-styles.scss */
+  .pane-taxonomy-term-pane .views-row.views-row-first {
+    margin-top: 0em;
+  }
+  /* line 115, ../sass/views-styles.scss */
   .pane-taxonomy-term-pane div.more-link {
     text-align: left;
   }
-  /* line 112, ../sass/views-styles.scss */
+  /* line 118, ../sass/views-styles.scss */
   .pane-taxonomy-term-pane div.more-link:after {
     content: ".";
     display: block;
     visibility: hidden;
     clear: both;
   }
-  /* line 118, ../sass/views-styles.scss */
-  .pane-taxonomy-term-pane .views-row {
-    margin-top: 1em;
+
+  /* line 127, ../sass/views-styles.scss */
+  .view-taxonomy-term.view-display-id-latest_attachment .view-content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 0;
   }
-  /* line 121, ../sass/views-styles.scss */
-  .pane-taxonomy-term-pane .views-row.views-row-first {
-    margin-top: 0em;
+  /* line 131, ../sass/views-styles.scss */
+  .view-taxonomy-term.view-display-id-latest_attachment figure.field-title-image {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 137, ../sass/views-styles.scss */
+  .view-taxonomy-term.view-display-id-latest_attachment h3, .view-taxonomy-term.view-display-id-latest_attachment p,
+  .view-taxonomy-term.view-display-id-latest_attachment div.field,
+  .view-taxonomy-term.view-display-id-latest_attachment div.post-date,
+  .view-taxonomy-term.view-display-id-latest_attachment div.more-link {
+    float: right;
+    width: 50%;
+    margin-right: 0%;
+    margin-left: -50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: right;
   }
 
-  /* line 128, ../sass/views-styles.scss */
+  /* line 145, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-2small .view-content,
   .pane-taxonomy-term-recent-pane-4small .view-content {
     float: left;
@@ -167,7 +216,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 132, ../sass/views-styles.scss */
+  /* line 149, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-2small .view-content figure,
   .pane-taxonomy-term-recent-pane-4small .view-content figure {
     float: left;
@@ -182,7 +231,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 137, ../sass/views-styles.scss */
+  /* line 154, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-2small .view-content h3, .pane-taxonomy-term-recent-pane-2small .view-content p,
   .pane-taxonomy-term-recent-pane-2small .view-content div.field,
   .pane-taxonomy-term-recent-pane-2small .view-content div.post-date,
@@ -203,7 +252,7 @@
     word-wrap: break-word;
     clear: right;
   }
-  /* line 143, ../sass/views-styles.scss */
+  /* line 160, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content {
     float: right;
@@ -221,7 +270,7 @@
     padding-right: 0;
   }
 
-  /* line 150, ../sass/views-styles.scss */
+  /* line 167, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content figure {
     float: left;
     width: 33.33333%;
@@ -235,7 +284,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 156, ../sass/views-styles.scss */
+  /* line 173, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-2small .attachment .view-content p,
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.field,
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.post-date {
@@ -252,12 +301,12 @@
     word-wrap: break-word;
     clear: right;
   }
-  /* line 160, ../sass/views-styles.scss */
+  /* line 177, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content .views-row-2 {
     margin-top: 1em;
   }
 
-  /* line 168, ../sass/views-styles.scss */
+  /* line 185, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-4small .attachment .view-content p,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.field,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.post-date {

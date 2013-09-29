@@ -106,6 +106,12 @@ $separator-color: #333;
       @include zen-grid-item(8, 1, right);
       @include zen-clear(right);
     }
+    .views-row {
+      margin-top: 1em;
+    }
+    .views-row.views-row-first {
+      margin-top: 0em;
+    }
     div.more-link {
       text-align: left;
     }
@@ -115,11 +121,22 @@ $separator-color: #333;
       visibility: hidden;
       clear: both;
     }
-    .views-row {
-      margin-top: 1em;
+  }
+
+  .view-taxonomy-term.view-display-id-latest_attachment {
+    .view-content {
+      @include zen-grid-item(8, 1);
+      @include zen-nested-container();
     }
-    .views-row.views-row-first {
-      margin-top: 0em;
+    figure.field-title-image {
+      @include zen-grid-item(6, 1);
+    }
+    h3, p,
+    div.field, /* e-info.org.tw bug */
+    div.post-date,
+    div.more-link {
+      @include zen-grid-item(6, 1, right);
+      @include zen-clear(right);
     }
   }
 
