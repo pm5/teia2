@@ -381,10 +381,11 @@
     word-wrap: break-word;
   }
 
-  /* line 227, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 228, ../../sass/layouts/responsive-sidebars.scss */
   .breadcrumb,
   #page-title,
-  .node {
+  .node,
+  .view {
     padding-left: 15px;
     padding-right: 15px;
   }
