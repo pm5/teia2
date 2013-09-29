@@ -94,6 +94,13 @@ $separator-color: #333;
     }
   }
 
+  .panel-pane:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+  }
+
   .pane-taxonomy-term-pane {
     figure {
       @include zen-grid-item(4, 1);
