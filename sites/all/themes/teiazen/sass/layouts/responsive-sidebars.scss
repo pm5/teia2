@@ -33,7 +33,7 @@ $main-top: 160px;
 
 // You can generate more efficient CSS if you manually apply the
 // zen-grid-item-base mixin to all grid items from within a single ruleset.
-$zen-auto-include-item-base: false;
+$zen-auto-include-item-base: true;
 // $zen-auto-include-flow-item-base: false;
 
 
@@ -54,8 +54,6 @@ $zen-auto-include-item-base: false;
 // See the note about $zen-auto-include-item-base above.
 
 #header,
-#content,
-.region,
 #footer {
   @include zen-grid-item-base();
 }
