@@ -169,7 +169,7 @@
   }
 
   /* line 142, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-latest_attachment .view-content {
+  .attachment > .view-taxonomy-term.view-display-id-latest_attachment .view-content {
     float: left;
     width: 66.66667%;
     margin-left: 0%;
@@ -185,7 +185,7 @@
     padding-right: 0;
   }
   /* line 146, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-latest_attachment figure.field-title-image {
+  .attachment > .view-taxonomy-term.view-display-id-latest_attachment figure.field-title-image {
     float: left;
     width: 50%;
     margin-left: 0%;
@@ -199,10 +199,10 @@
     word-wrap: break-word;
   }
   /* line 152, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-latest_attachment h3, .view-taxonomy-term.view-display-id-latest_attachment p,
-  .view-taxonomy-term.view-display-id-latest_attachment div.field,
-  .view-taxonomy-term.view-display-id-latest_attachment div.post-date,
-  .view-taxonomy-term.view-display-id-latest_attachment div.more-link {
+  .attachment > .view-taxonomy-term.view-display-id-latest_attachment h3, .attachment > .view-taxonomy-term.view-display-id-latest_attachment p,
+  .attachment > .view-taxonomy-term.view-display-id-latest_attachment div.field,
+  .attachment > .view-taxonomy-term.view-display-id-latest_attachment div.post-date,
+  .attachment > .view-taxonomy-term.view-display-id-latest_attachment div.more-link {
     float: right;
     width: 50%;
     margin-right: 0%;
