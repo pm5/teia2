@@ -77,12 +77,6 @@ $separator-color: #333;
       margin: 0 zen-half-gutter() 0.8em;
     }
 
-    h3.field-title-field {
-      margin-top: 0;
-      margin-bottom: 0;
-      color: #333;
-    }
-
     div.post-date {
       color: #999;
       font-size: smaller;
@@ -99,6 +93,18 @@ $separator-color: #333;
     display: block;
     visibility: hidden;
     clear: both;
+  }
+
+  /**
+   * Taxonomy term
+   */
+
+  .views-taxonomy-term {
+    h3.field-title-field {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #333;
+    }
   }
 
   .pane-taxonomy-term-pane {
@@ -164,19 +170,9 @@ $separator-color: #333;
     }
   }
 
-  .pane-taxonomy-term-recent-pane-2small .attachment .view-content {
-    figure {
-      @include zen-grid-item(4, 1);
-    }
-
-    h3, p,
-    div.field, /* e-info.org.tw bug */
-    div.post-date {
-      @include zen-grid-item(8, 1, right);
-      @include zen-clear(right);
-    }
-    .views-row-2 {
-      margin-top: 1em;
+  .pane-taxonomy-term-recent-pane-5 {
+    .view-content {
+      @include zen-grid-item(4, 1, right);
     }
   }
 
@@ -188,4 +184,8 @@ $separator-color: #333;
       @include zen-clear(right);
     }
   }
+
+  /**
+   * Slider
+   */
 }
