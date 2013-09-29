@@ -101,6 +101,7 @@ $separator-color: #333;
    */
 
   .view-taxonomy-term {
+    @include zen-nested-container();
     h3.field-title-field {
       margin-top: 0;
       margin-bottom: 0;
@@ -171,7 +172,7 @@ $separator-color: #333;
     }
   }
 
-  .pane-taxonomy-term-recent-pane-5 {
+  .view-display-id-recent_pane_5 {
     .view-content {
       @include zen-grid-item(4, 1, right);
     }
