@@ -99,7 +99,7 @@ $separator-color: #333;
    * Taxonomy term
    */
 
-  .views-taxonomy-term {
+  .view-taxonomy-term {
     h3.field-title-field {
       margin-top: 0;
       margin-bottom: 0;
@@ -188,4 +188,35 @@ $separator-color: #333;
   /**
    * Slider
    */
+  
+  .pane-teia-slideshow-pane {
+    div.view-teia-slideshow {
+      @include zen-grid-item(12, 1);
+
+      .flexslider {
+        background: #ccc;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      li {
+        figure {
+          @include zen-grid-flow-item(8, 12, false, false);
+          @include zen-float(left);
+          @include zen-clear(left);
+        }
+
+        h3, p, div {
+          @include zen-grid-flow-item(4, 12, false, false);
+          @include zen-float(right);
+          @include zen-clear(right);
+        }
+
+        .more-link {
+          text-align: left;
+        }
+      }
+    }
+  }
 }

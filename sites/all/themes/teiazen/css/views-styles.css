@@ -104,7 +104,7 @@
    * Taxonomy term
    */
   /* line 103, ../sass/views-styles.scss */
-  .views-taxonomy-term h3.field-title-field {
+  .view-taxonomy-term h3.field-title-field {
     margin-top: 0;
     margin-bottom: 0;
     color: #333;
@@ -296,4 +296,61 @@
   /**
    * Slider
    */
+  /* line 193, ../sass/views-styles.scss */
+  .pane-teia-slideshow-pane div.view-teia-slideshow {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 196, ../sass/views-styles.scss */
+  .pane-teia-slideshow-pane div.view-teia-slideshow .flexslider {
+    background: #ccc;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  /* line 204, ../sass/views-styles.scss */
+  .pane-teia-slideshow-pane div.view-teia-slideshow li figure {
+    width: 66.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 10px;
+    margin-right: -10px;
+    float: left;
+    clear: left;
+  }
+  /* line 210, ../sass/views-styles.scss */
+  .pane-teia-slideshow-pane div.view-teia-slideshow li h3, .pane-teia-slideshow-pane div.view-teia-slideshow li p, .pane-teia-slideshow-pane div.view-teia-slideshow li div {
+    width: 33.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 20px;
+    margin-right: -20px;
+    float: right;
+    clear: right;
+  }
+  /* line 216, ../sass/views-styles.scss */
+  .pane-teia-slideshow-pane div.view-teia-slideshow li .more-link {
+    text-align: left;
+  }
 }
