@@ -140,26 +140,20 @@ $separator-color: #333;
     }
   }
 
-  .pane-taxonomy-term-recent-pane-2small,
-  .pane-taxonomy-term-recent-pane-4small {
+  .pane-taxonomy-term-recent-pane {
     .view-content {
-      @include zen-grid-item(8, 1, left);
-      @include zen-nested-container();
-
-      figure {
-        @include zen-grid-item(6, 1);
-      }
-      h3, p,
-      div.field, /* e-info.org.tw bug */
-      div.post-date {
-        @include zen-grid-item(6, 1, right);
-        @include zen-clear(right);
-      }
-    }
-
-    .attachment .view-content {
       @include zen-grid-item(4, 1, right);
       @include zen-nested-container();
+    }
+    figure.field-title-image {
+      @include zen-grid-item(4, 1);
+    }
+    h3, p,
+    div.field, /* e-info.org.tw bug */
+    div.post-date,
+    div.more-link {
+      @include zen-grid-item(8, 1, right);
+      @include zen-clear(right);
     }
   }
 

@@ -199,62 +199,8 @@
     clear: right;
   }
 
-  /* line 145, ../sass/views-styles.scss */
-  .pane-taxonomy-term-recent-pane-2small .view-content,
-  .pane-taxonomy-term-recent-pane-4small .view-content {
-    float: left;
-    width: 66.66667%;
-    margin-left: 0%;
-    margin-right: -66.66667%;
-    padding-left: 15px;
-    padding-right: 15px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* line 149, ../sass/views-styles.scss */
-  .pane-taxonomy-term-recent-pane-2small .view-content figure,
-  .pane-taxonomy-term-recent-pane-4small .view-content figure {
-    float: left;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: -50%;
-    padding-left: 15px;
-    padding-right: 15px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  /* line 154, ../sass/views-styles.scss */
-  .pane-taxonomy-term-recent-pane-2small .view-content h3, .pane-taxonomy-term-recent-pane-2small .view-content p,
-  .pane-taxonomy-term-recent-pane-2small .view-content div.field,
-  .pane-taxonomy-term-recent-pane-2small .view-content div.post-date,
-  .pane-taxonomy-term-recent-pane-4small .view-content h3,
-  .pane-taxonomy-term-recent-pane-4small .view-content p,
-  .pane-taxonomy-term-recent-pane-4small .view-content div.field,
-  .pane-taxonomy-term-recent-pane-4small .view-content div.post-date {
-    float: right;
-    width: 50%;
-    margin-right: 0%;
-    margin-left: -50%;
-    padding-left: 15px;
-    padding-right: 15px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    clear: right;
-  }
-  /* line 160, ../sass/views-styles.scss */
-  .pane-taxonomy-term-recent-pane-2small .attachment .view-content,
-  .pane-taxonomy-term-recent-pane-4small .attachment .view-content {
+  /* line 144, ../sass/views-styles.scss */
+  .pane-taxonomy-term-recent-pane .view-content {
     float: right;
     width: 33.33333%;
     margin-right: 0%;
@@ -269,8 +215,40 @@
     padding-left: 0;
     padding-right: 0;
   }
+  /* line 148, ../sass/views-styles.scss */
+  .pane-taxonomy-term-recent-pane figure.field-title-image {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 154, ../sass/views-styles.scss */
+  .pane-taxonomy-term-recent-pane h3, .pane-taxonomy-term-recent-pane p,
+  .pane-taxonomy-term-recent-pane div.field,
+  .pane-taxonomy-term-recent-pane div.post-date,
+  .pane-taxonomy-term-recent-pane div.more-link {
+    float: right;
+    width: 66.66667%;
+    margin-right: 0%;
+    margin-left: -66.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: right;
+  }
 
-  /* line 167, ../sass/views-styles.scss */
+  /* line 161, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content figure {
     float: left;
     width: 33.33333%;
@@ -284,7 +262,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 173, ../sass/views-styles.scss */
+  /* line 167, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-2small .attachment .view-content p,
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.field,
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content div.post-date {
@@ -301,12 +279,12 @@
     word-wrap: break-word;
     clear: right;
   }
-  /* line 177, ../sass/views-styles.scss */
+  /* line 171, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-2small .attachment .view-content .views-row-2 {
     margin-top: 1em;
   }
 
-  /* line 185, ../sass/views-styles.scss */
+  /* line 179, ../sass/views-styles.scss */
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content h3, .pane-taxonomy-term-recent-pane-4small .attachment .view-content p,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.field,
   .pane-taxonomy-term-recent-pane-4small .attachment .view-content div.post-date {
