@@ -218,7 +218,7 @@
   }
 
   /* line 159, ../sass/views-styles.scss */
-  .pane-taxonomy-term-recent-pane .view-content {
+  .view-taxonomy-term.view-display-id-recent_pane .view-content {
     float: right;
     width: 33.33333%;
     margin-right: 0%;
@@ -234,7 +234,7 @@
     padding-right: 0;
   }
   /* line 163, ../sass/views-styles.scss */
-  .pane-taxonomy-term-recent-pane figure.field-title-image {
+  .view-taxonomy-term.view-display-id-recent_pane figure.field-title-image {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
@@ -248,10 +248,10 @@
     word-wrap: break-word;
   }
   /* line 169, ../sass/views-styles.scss */
-  .pane-taxonomy-term-recent-pane h3, .pane-taxonomy-term-recent-pane p,
-  .pane-taxonomy-term-recent-pane div.field,
-  .pane-taxonomy-term-recent-pane div.post-date,
-  .pane-taxonomy-term-recent-pane div.more-link {
+  .view-taxonomy-term.view-display-id-recent_pane h3, .view-taxonomy-term.view-display-id-recent_pane p,
+  .view-taxonomy-term.view-display-id-recent_pane div.field,
+  .view-taxonomy-term.view-display-id-recent_pane div.post-date,
+  .view-taxonomy-term.view-display-id-recent_pane div.more-link {
     float: right;
     width: 66.66667%;
     margin-right: 0%;
@@ -267,7 +267,7 @@
   }
 
   /* line 176, ../sass/views-styles.scss */
-  .view-display-id-recent_pane_5 .view-content {
+  .view-taxonomy-term.view-display-id-recent_pane_5 .view-content {
     float: right;
     width: 33.33333%;
     margin-right: 0%;

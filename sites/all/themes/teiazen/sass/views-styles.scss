@@ -155,7 +155,7 @@ $separator-color: #333;
     }
   }
 
-  .pane-taxonomy-term-recent-pane {
+  .view-taxonomy-term.view-display-id-recent_pane {
     .view-content {
       @include zen-grid-item(4, 1, right);
       @include zen-nested-container();
@@ -172,7 +172,7 @@ $separator-color: #333;
     }
   }
 
-  .view-display-id-recent_pane_5 {
+  .view-taxonomy-term.view-display-id-recent_pane_5 {
     .view-content {
       @include zen-grid-item(4, 1, right);
     }
