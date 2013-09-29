@@ -148,16 +148,35 @@ li a.active {
  * Sidebar content menu
  */
 
+#page .region-sidebar-first ul.menu li {
+  a, a:active, a:visited {
+    color: $white-background;
+  }
+}
+
 .region-sidebar-first {
   ul.menu {
     padding: 0;
-  }
-  ul.menu li {
-    list-style: none;
-    width: 2.5em;
-    margin-bottom: 0.4em;
-    padding: 0.8em 1em;
-    border-radius: 0 1em 1em 0;
-    background: #ccc;
+
+    li {
+      list-style: none;
+      width: 2.5em;
+      margin-bottom: 0.4em;
+      padding: 0.8em 1em;
+      border-radius: 0 1em 1em 0;
+    }
+
+    li.first {
+      background: #b09474;
+    }
+    li:nth-child(2) {
+      background: #9e7d63;
+    }
+    li:nth-child(3) {
+      background: #745e4f;
+    }
+    li:nth-child(4) {
+      background: #5c4b43;
+    }
   }
 }

@@ -134,15 +134,35 @@ li a.active {
  * Sidebar content menu
  */
 /* line 152, ../sass/navigation.scss */
+#page .region-sidebar-first ul.menu li a, #page .region-sidebar-first ul.menu li a:active, #page .region-sidebar-first ul.menu li a:visited {
+  color: whitesmoke;
+}
+
+/* line 158, ../sass/navigation.scss */
 .region-sidebar-first ul.menu {
   padding: 0;
 }
-/* line 155, ../sass/navigation.scss */
+/* line 161, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li {
   list-style: none;
   width: 2.5em;
   margin-bottom: 0.4em;
   padding: 0.8em 1em;
   border-radius: 0 1em 1em 0;
-  background: #ccc;
+}
+/* line 169, ../sass/navigation.scss */
+.region-sidebar-first ul.menu li.first {
+  background: #b09474;
+}
+/* line 172, ../sass/navigation.scss */
+.region-sidebar-first ul.menu li:nth-child(2) {
+  background: #9e7d63;
+}
+/* line 175, ../sass/navigation.scss */
+.region-sidebar-first ul.menu li:nth-child(3) {
+  background: #745e4f;
+}
+/* line 178, ../sass/navigation.scss */
+.region-sidebar-first ul.menu li:nth-child(4) {
+  background: #5c4b43;
 }
