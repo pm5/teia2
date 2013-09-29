@@ -65,18 +65,18 @@ body {
 }
 
 /* line 67, ../sass/pages.scss */
-.region-header {
+#page .region-header {
   font-size: small;
   line-height: 1.5em;
 }
 /* line 71, ../sass/pages.scss */
-.region-header #block-panels-mini-header {
+#page .region-header #block-panels-mini-header {
   position: absolute;
   bottom: 0px;
   margin-bottom: 0;
 }
 /* line 77, ../sass/pages.scss */
-.region-header .social-network {
+#page .region-header .social-network {
   display: block;
   float: left;
   margin-left: 0.3em;
@@ -87,7 +87,7 @@ body {
   border-radius: 0.8em;
 }
 /* line 87, ../sass/pages.scss */
-.region-header .social-network a {
+#page .region-header .social-network a {
   color: whitesmoke;
   font-weight: bold;
 }
