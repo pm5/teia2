@@ -88,6 +88,10 @@ $separator-color: #333;
     }
   }
 
+  .view {
+    @include zen-grid-item(1, 12);
+  }
+
   .panel-pane:after {
     content: ".";
     display: block;
