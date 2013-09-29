@@ -58,8 +58,6 @@
  * Pane styling
  */
 
-$separator-color: #333;
-
 @media all and (min-width: 960px) {
   $zen-column-count: 12;
   $zen-gutter-width: 30px;
@@ -70,20 +68,20 @@ $separator-color: #333;
       text-align: center;
       font-size: 1.2em;
       letter-spacing: 0.4em;
-      color: #666;
+      color: $black-header;
       padding: 0;
-      border-top: solid 5px $separator-color;
+      border-top: solid 5px $light-lighter;
       border-bottom: solid 1px #ddd;
       margin: 0 zen-half-gutter() 0.8em;
     }
 
     div.post-date {
-      color: #999;
+      color: $black-text;
       font-size: smaller;
     }
 
     div.more-link {
-      color: #666;
+      color: $dark;
       font-size: smaller
     }
   }
@@ -107,7 +105,7 @@ $separator-color: #333;
     h3.field-title-field {
       margin-top: 0;
       margin-bottom: 0;
-      color: #333;
+      color: $light-darker;
     }
   }
 
