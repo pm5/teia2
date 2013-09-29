@@ -109,7 +109,7 @@ $separator-color: #333;
     }
   }
 
-  .pane-taxonomy-term-pane {
+  .view-taxonomy-term.view-display-id-pane {
     figure {
       @include zen-grid-item(4, 1);
     }

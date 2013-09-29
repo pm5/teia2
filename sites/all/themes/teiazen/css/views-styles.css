@@ -117,7 +117,7 @@
   }
 
   /* line 113, ../sass/views-styles.scss */
-  .pane-taxonomy-term-pane figure {
+  .view-taxonomy-term.view-display-id-pane figure {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
@@ -131,10 +131,10 @@
     word-wrap: break-word;
   }
   /* line 120, ../sass/views-styles.scss */
-  .pane-taxonomy-term-pane h3, .pane-taxonomy-term-pane p,
-  .pane-taxonomy-term-pane div.field,
-  .pane-taxonomy-term-pane div.post-date,
-  .pane-taxonomy-term-pane div.more-link {
+  .view-taxonomy-term.view-display-id-pane h3, .view-taxonomy-term.view-display-id-pane p,
+  .view-taxonomy-term.view-display-id-pane div.field,
+  .view-taxonomy-term.view-display-id-pane div.post-date,
+  .view-taxonomy-term.view-display-id-pane div.more-link {
     float: right;
     width: 66.66667%;
     margin-right: 0%;
@@ -149,19 +149,19 @@
     clear: right;
   }
   /* line 124, ../sass/views-styles.scss */
-  .pane-taxonomy-term-pane .views-row {
+  .view-taxonomy-term.view-display-id-pane .views-row {
     margin-top: 1em;
   }
   /* line 127, ../sass/views-styles.scss */
-  .pane-taxonomy-term-pane .views-row.views-row-first {
+  .view-taxonomy-term.view-display-id-pane .views-row.views-row-first {
     margin-top: 0em;
   }
   /* line 130, ../sass/views-styles.scss */
-  .pane-taxonomy-term-pane div.more-link {
+  .view-taxonomy-term.view-display-id-pane div.more-link {
     text-align: left;
   }
   /* line 133, ../sass/views-styles.scss */
-  .pane-taxonomy-term-pane div.more-link:after {
+  .view-taxonomy-term.view-display-id-pane div.more-link:after {
     content: ".";
     display: block;
     visibility: hidden;
