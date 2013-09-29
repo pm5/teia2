@@ -250,7 +250,7 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .region-sidebar-second {
   h2 {
-    background: $light;
+    background: $light-color;
     color: $white-background;
     padding: 0 1em;
     border-radius: 0.5em 0.5em 0 0;
@@ -258,9 +258,9 @@ span.field-label { /* The inline field label used by the Fences module */
   }
 
   .pane-content {
-    border-bottom: 4px solid $light;
-    border-right: 4px solid $light;
-    border-left: 4px solid $light;
+    border-bottom: 4px solid $light-color;
+    border-right: 4px solid $light-color;
+    border-left: 4px solid $light-color;
     padding: 1.2em 1.5em;
   }
 }
@@ -272,7 +272,7 @@ span.field-label { /* The inline field label used by the Fences module */
 #footer {
     display: block;
     height: 10em;
-    background: $light;
+    background: $light-color;
 }
 
 /*
@@ -323,7 +323,7 @@ section.sidebar,
 div#mini-panel-front_donate_now {
   .pane-content {
     border: 0;
-    background: $light;
+    background: $light-color;
     color: $white-background;
     border-radius: 1em;
     padding: 2em 1.2em;
