@@ -152,6 +152,10 @@
     }
   }
 
+  .view-taxonomy-term.view-display-id-no_title_image_pane {
+    @include zen-grid-item(12, 1);
+  }
+
   .latest-attachment-full .view-display-id-latest_attachment > .view-content {
     @include zen-grid-item(12, 1);
   }
