@@ -285,14 +285,15 @@ span.field-label {
 /* line 258, ../sass/pages.scss */
 #footer {
   display: block;
-  height: 10em;
+  min-height: 10em;
   background: #4f915e;
+  color: white;
 }
 
 /*
  * Page bottom
  */
-/* line 268, ../sass/pages.scss */
+/* line 269, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }
@@ -321,7 +322,7 @@ body.section-reef-check-tw {
   background: url("../images/bg/water.jpg") repeat scroll 0 0 transparent;
 }
 */
-/* line 297, ../sass/pages.scss */
+/* line 298, ../sass/pages.scss */
 body {
   background: white;
 }

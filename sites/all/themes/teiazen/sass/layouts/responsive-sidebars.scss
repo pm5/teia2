@@ -222,6 +222,13 @@ $zen-auto-include-item-base: true;
     }
   }
 
+  /**
+   * Footer hack.
+   */
+  #footer #block-panels-mini-footer {
+    @include zen-grid-item(6, 4);
+  }
+
   .breadcrumb,
   #page-title,
   .node,

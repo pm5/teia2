@@ -384,7 +384,25 @@
     word-wrap: break-word;
   }
 
+  /**
+   * Footer hack.
+   */
   /* line 228, ../../sass/layouts/responsive-sidebars.scss */
+  #footer #block-panels-mini-footer {
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: -75%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  /* line 235, ../../sass/layouts/responsive-sidebars.scss */
   .breadcrumb,
   #page-title,
   .node,
