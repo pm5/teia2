@@ -190,16 +190,19 @@
   /**
    * Slider
    */
-  
+
+  .view-content .flexslider {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
   .pane-teia-slideshow-pane {
     div.view-teia-slideshow {
       @include zen-grid-item(12, 1);
 
-      .flexslider {
+      .view-content .flexslider {
         background: #ccc;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
       }
 
       li {
@@ -219,6 +222,13 @@
           text-align: left;
         }
       }
+    }
+  }
+
+  .pane-node-slider-pane {
+    .flexslider {
+      margin-bottom: 0px;
+      margin-top: 1.5em;
     }
   }
 }
