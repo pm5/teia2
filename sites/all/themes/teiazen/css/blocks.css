@@ -212,3 +212,9 @@ div#block-panels-mini-donate-now .donate-now-en {
   border-left: 4px solid #4f915e;
   border-radius: 1.5em 1.5em 0 0;
 }
+/* line 158, ../sass/blocks.scss */
+.region-sidebar-second h2.pane-title,
+.region-sidebar-second .pane-content > p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
