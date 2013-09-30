@@ -37,6 +37,11 @@
     padding-bottom: zen-half-gutter();
   }
 
+  ul.links.inline:after {
+    content: "";
+    display: block;
+    height: 1.5em;
+  }
 }
 
 .node-promoted { /* A node that has been promoted to the front page */
