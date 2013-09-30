@@ -135,7 +135,7 @@ li a.active {
  */
 /* line 152, ../sass/navigation.scss */
 #page .region-sidebar-first ul.menu li a, #page .region-sidebar-first ul.menu li a:active, #page .region-sidebar-first ul.menu li a:visited {
-  color: whitesmoke;
+  color: white;
 }
 
 /* line 158, ../sass/navigation.scss */

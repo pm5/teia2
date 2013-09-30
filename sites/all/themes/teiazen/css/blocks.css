@@ -173,19 +173,19 @@
 div#block-panels-mini-donate-now {
   border: 0;
   background: #4f915e;
-  color: whitesmoke;
+  color: white;
   border-radius: 1em;
   padding: 2em 1.2em;
 }
 /* line 120, ../sass/blocks.scss */
 div#block-panels-mini-donate-now a, div#block-panels-mini-donate-now a:active, div#block-panels-mini-donate-now a:visited, div#block-panels-mini-donate-now a:hover {
-  color: whitesmoke;
+  color: white;
 }
 /* line 124, ../sass/blocks.scss */
 div#block-panels-mini-donate-now .donate-now-zh {
   font-size: 2.5em;
   text-align: center;
-  border-bottom: 2px whitesmoke solid;
+  border-bottom: 2px white solid;
   padding-bottom: 0.4em;
 }
 /* line 131, ../sass/blocks.scss */
@@ -201,7 +201,7 @@ div#block-panels-mini-donate-now .donate-now-en {
 /* line 143, ../sass/blocks.scss */
 .region-sidebar-second h2.block-title {
   background: #4f915e;
-  color: whitesmoke;
+  color: white;
   padding: 0 1em;
   border-radius: 0.8em 0.8em 0 0;
 }

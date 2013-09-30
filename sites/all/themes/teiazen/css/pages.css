@@ -88,7 +88,7 @@ body {
 }
 /* line 87, ../sass/pages.scss */
 #page .region-header .social-network a {
-  color: whitesmoke;
+  color: white;
   font-weight: bold;
 }
 
@@ -323,5 +323,5 @@ body.section-reef-check-tw {
 */
 /* line 297, ../sass/pages.scss */
 body {
-  background: whitesmoke;
+  background: white;
 }
