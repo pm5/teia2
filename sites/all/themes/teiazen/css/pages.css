@@ -279,26 +279,10 @@ span.field-label {
  * Remember to NOT add padding or margin to your .region-sidebar-second
  * (see the layout.css file.)
  */
-/* line 252, ../sass/pages.scss */
-.region-sidebar-second h2 {
-  background: #4f915e;
-  color: whitesmoke;
-  padding: 0 1em;
-  border-radius: 0.5em 0.5em 0 0;
-  margin-bottom: 0;
-}
-/* line 260, ../sass/pages.scss */
-.region-sidebar-second .pane-content {
-  border-bottom: 4px solid #4f915e;
-  border-right: 4px solid #4f915e;
-  border-left: 4px solid #4f915e;
-  padding: 1.2em 1.5em;
-}
-
 /*
  * Footer
  */
-/* line 272, ../sass/pages.scss */
+/* line 258, ../sass/pages.scss */
 #footer {
   display: block;
   height: 10em;
@@ -308,7 +292,7 @@ span.field-label {
 /*
  * Page bottom
  */
-/* line 282, ../sass/pages.scss */
+/* line 268, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }
@@ -337,36 +321,7 @@ body.section-reef-check-tw {
   background: url("../images/bg/water.jpg") repeat scroll 0 0 transparent;
 }
 */
-/* line 311, ../sass/pages.scss */
+/* line 297, ../sass/pages.scss */
 body {
   background: whitesmoke;
-}
-
-/**
- * Donate Now!
- */
-/* line 327, ../sass/pages.scss */
-div#mini-panel-front_donate_now .pane-content {
-  border: 0;
-  background: #4f915e;
-  color: whitesmoke;
-  border-radius: 1em;
-  padding: 2em 1.2em;
-}
-/* line 334, ../sass/pages.scss */
-div#mini-panel-front_donate_now .pane-content a, div#mini-panel-front_donate_now .pane-content a:active, div#mini-panel-front_donate_now .pane-content a:visited, div#mini-panel-front_donate_now .pane-content a:hover {
-  color: whitesmoke;
-}
-/* line 338, ../sass/pages.scss */
-div#mini-panel-front_donate_now .pane-content .donate-now-zh {
-  font-size: 2.5em;
-  text-align: center;
-  border-bottom: 2px whitesmoke solid;
-  padding-bottom: 0.4em;
-}
-/* line 345, ../sass/pages.scss */
-div#mini-panel-front_donate_now .pane-content .donate-now-en {
-  font-size: 1.5em;
-  text-align: center;
-  padding-top: 0.4em;
 }

@@ -249,20 +249,6 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 .region-sidebar-second {
-  h2 {
-    background: $light-color;
-    color: $white-background;
-    padding: 0 1em;
-    border-radius: 0.5em 0.5em 0 0;
-    margin-bottom: 0;
-  }
-
-  .pane-content {
-    border-bottom: 4px solid $light-color;
-    border-right: 4px solid $light-color;
-    border-left: 4px solid $light-color;
-    padding: 1.2em 1.5em;
-  }
 }
 
 /*
@@ -319,33 +305,3 @@ section.sidebar,
 #footer {
 }
 
-/**
- * Donate Now!
- */
-
-div#mini-panel-front_donate_now {
-  .pane-content {
-    border: 0;
-    background: $light-color;
-    color: $white-background;
-    border-radius: 1em;
-    padding: 2em 1.2em;
-
-    a, a:active, a:visited, a:hover {
-      color: $white-background;
-    }
-
-    .donate-now-zh {
-      font-size: 2.5em;
-      text-align: center;
-      border-bottom: 2px $white-background solid;
-      padding-bottom: 0.4em;
-    }
-
-    .donate-now-en {
-      font-size: 1.5em;
-      text-align: center;
-      padding-top: 0.4em;
-    }
-  }
-}
