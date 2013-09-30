@@ -138,10 +138,21 @@
     }
   }
 
-  .attachment > .view-taxonomy-term.view-display-id-latest_attachment {
-    .view-content {
+  .latest-attachment-full .view-display-id-latest_attachment {
+    > .view-content {
+      @include zen-grid-item(12, 1);
+    }
+  }
+  .latest-attachment-full > .view-content {
+    @include zen-grid-item(12, 1);
+    @include zen-clear(both);
+  }
+
+  .latest-attachment-2 .view-display-id-latest_attachment {
+    > .view-content {
       @include zen-grid-item(8, 1);
       @include zen-nested-container();
+      @include zen-clear(left);
     }
     figure.field-title-image {
       @include zen-grid-item(6, 1);
@@ -154,9 +165,13 @@
       @include zen-clear(right);
     }
   }
+  .latest-attachment-2 > .view-content {
+    @include zen-clear(right);
+    @include zen-grid-item(4, 1, right);
+  }
 
   .view-taxonomy-term.view-display-id-recent_pane {
-    .view-content {
+    > .view-content {
       @include zen-grid-item(4, 1, right);
       @include zen-nested-container();
     }
@@ -169,12 +184,6 @@
     div.more-link {
       @include zen-grid-item(8, 1, right);
       @include zen-clear(right);
-    }
-  }
-
-  .view-taxonomy-term.view-display-id-recent_pane_6 {
-    .view-content {
-      @include zen-grid-item(4, 1, right);
     }
   }
 
