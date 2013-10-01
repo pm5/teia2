@@ -218,3 +218,12 @@ div#block-panels-mini-donate-now .donate-now-en {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/**
+ * Mini panels
+ */
+/* line 169, ../sass/blocks.scss */
+.pane-teia-link-slider-pane .flexslider {
+  margin-bottom: 0px;
+  margin-top: 1.5em;
+}

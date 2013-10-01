@@ -387,10 +387,4 @@
   .pane-teia-slideshow-pane div.view-teia-slideshow li .more-link {
     text-align: left;
   }
-
-  /* line 229, ../sass/views-styles.scss */
-  .pane-teia-link-slider-pane .flexslider {
-    margin-bottom: 0px;
-    margin-top: 1.5em;
-  }
 }
