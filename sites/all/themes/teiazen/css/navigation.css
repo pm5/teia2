@@ -143,6 +143,10 @@ li a.active {
   padding: 0;
 }
 /* line 161, ../sass/navigation.scss */
+.region-sidebar-first ul.menu a:hover, .region-sidebar-first ul.menu a:focus {
+  text-decoration: none;
+}
+/* line 165, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li {
   list-style: none;
   width: 2.5em;
@@ -150,19 +154,23 @@ li a.active {
   padding: 0.8em 1em;
   border-radius: 0 1em 1em 0;
 }
-/* line 169, ../sass/navigation.scss */
+/* line 173, ../sass/navigation.scss */
+.region-sidebar-first ul.menu li.leaf:hover {
+  background: #91c888;
+}
+/* line 176, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li.first {
   background: #b09474;
 }
-/* line 172, ../sass/navigation.scss */
+/* line 179, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(2) {
   background: #9e7d63;
 }
-/* line 175, ../sass/navigation.scss */
+/* line 182, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(3) {
   background: #745e4f;
 }
-/* line 178, ../sass/navigation.scss */
+/* line 185, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(4) {
   background: #5c4b43;
 }

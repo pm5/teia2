@@ -158,6 +158,10 @@ li a.active {
   ul.menu {
     padding: 0;
 
+    a:hover, a:focus {
+      text-decoration: none;
+    }
+
     li {
       list-style: none;
       width: 2.5em;
@@ -166,6 +170,9 @@ li a.active {
       border-radius: 0 1em 1em 0;
     }
 
+    li.leaf:hover {
+      background: #91c888;
+    }
     li.first {
       background: #b09474;
     }
