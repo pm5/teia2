@@ -406,12 +406,13 @@
     word-wrap: break-word;
   }
 
-  /* line 235, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 236, ../../sass/layouts/responsive-sidebars.scss */
   .breadcrumb,
   #page-title,
   .node,
+  div.panel-pane div.node,
   .view {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
