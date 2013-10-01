@@ -62,11 +62,12 @@
   clear: both;
 }
 
-/* line 51, ../sass/views-styles.scss */
-.views-row-last:after {
+/* line 50, ../sass/views-styles.scss */
+.views-row:after {
   content: "";
-  display: table;
+  display: block;
   clear: both;
+  height: 0.5em;
 }
 
 /**

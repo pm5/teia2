@@ -47,11 +47,11 @@
 .views-row {
   clear: both;
 }
-
-.views-row-last:after {
+.views-row:after {
   content: "";
-  display: table;
+  display: block;
   clear: both;
+  height: 0.5em;
 }
 
 /**
