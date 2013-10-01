@@ -111,17 +111,29 @@
  */
 
 div#block-panels-mini-donate-now {
-  border: 0;
-  background: $light-color;
-  color: $white-background;
-  border-radius: 1em;
-  padding: 2em 1.2em;
-
-  a, a:active, a:visited, a:hover {
+  border: none;
+  a#donate-now {
+    display: block;
+    border: 0;
+    background: $light-color;
     color: $white-background;
+    border-radius: 1.5em;
+    padding: 2em 1.2em;
+    text-decoration: none;
+  }
+  a#donate-now:active, a#donate-now:visited {
+    color: $white-background;
+    background: $light-color;
+    text-decoration: none;
+  }
+  a#donate-now:hover {
+    color: $white-background;
+    background: $light-lighter;
+    text-decoration: none;
   }
 
   .donate-now-zh {
+    display: block;
     font-size: 2.5em;
     text-align: center;
     border-bottom: 2px $white-background solid;
@@ -129,6 +141,7 @@ div#block-panels-mini-donate-now {
   }
 
   .donate-now-en {
+    display: block;
     font-size: 1.5em;
     text-align: center;
     padding-top: 0.4em;
