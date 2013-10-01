@@ -158,11 +158,8 @@ li a.active {
   ul.menu {
     padding: 0;
 
-    a:hover, a:focus {
-      text-decoration: none;
-    }
-
-    li {
+    li a {
+      display: block;
       list-style: none;
       width: 2.5em;
       margin-bottom: 0.4em;
@@ -170,19 +167,22 @@ li a.active {
       border-radius: 0 1em 1em 0;
     }
 
-    li.leaf:hover {
-      background: #91c888;
+    li.leaf a:hover,
+    li.leaf a:focus {
+      text-decoration: none;
+      background: $light-color;
     }
-    li.first {
+
+    li.first a {
       background: #b09474;
     }
-    li:nth-child(2) {
+    li:nth-child(2) a {
       background: #9e7d63;
     }
-    li:nth-child(3) {
+    li:nth-child(3) a {
       background: #745e4f;
     }
-    li:nth-child(4) {
+    li:nth-child(4) a {
       background: #5c4b43;
     }
   }
