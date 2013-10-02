@@ -105,7 +105,15 @@ li a.active {
     list-style-image: none;
     text-align: center;
   }
-  /* line 111, ../sass/navigation.scss */
+  /* line 110, ../sass/navigation.scss */
+  #navigation ul.menu a, #navigation ul.menu a:active, #navigation ul.menu a:visited {
+    color: #b09474;
+  }
+  /* line 113, ../sass/navigation.scss */
+  #navigation ul.menu a:hover {
+    color: #4f915e;
+  }
+  /* line 118, ../sass/navigation.scss */
   #navigation ul.menu:after {
     content: "";
     display: table;
@@ -115,7 +123,7 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-/* line 126, ../sass/navigation.scss */
+/* line 133, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */
@@ -133,16 +141,16 @@ li a.active {
 /**
  * Sidebar content menu
  */
-/* line 152, ../sass/navigation.scss */
+/* line 159, ../sass/navigation.scss */
 #page .region-sidebar-first ul.menu li a, #page .region-sidebar-first ul.menu li a:active, #page .region-sidebar-first ul.menu li a:visited {
   color: white;
 }
 
-/* line 158, ../sass/navigation.scss */
+/* line 165, ../sass/navigation.scss */
 .region-sidebar-first ul.menu {
   padding: 0;
 }
-/* line 161, ../sass/navigation.scss */
+/* line 168, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li a {
   display: block;
   list-style: none;
@@ -151,25 +159,25 @@ li a.active {
   padding: 0.8em 1em;
   border-radius: 0 1em 1em 0;
 }
-/* line 171, ../sass/navigation.scss */
+/* line 178, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li.leaf a:hover,
 .region-sidebar-first ul.menu li.leaf a:focus {
   text-decoration: none;
   background: #4f915e;
 }
-/* line 176, ../sass/navigation.scss */
+/* line 183, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li.first a {
   background: #b09474;
 }
-/* line 179, ../sass/navigation.scss */
+/* line 186, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(2) a {
   background: #9e7d63;
 }
-/* line 182, ../sass/navigation.scss */
+/* line 189, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(3) a {
   background: #745e4f;
 }
-/* line 185, ../sass/navigation.scss */
+/* line 192, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(4) a {
   background: #5c4b43;
 }

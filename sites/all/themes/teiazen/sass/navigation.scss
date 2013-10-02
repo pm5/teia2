@@ -106,6 +106,13 @@ li a.active {
         list-style-image: none;
         text-align: center;
       }
+
+      a, a:active, a:visited {
+        color: $dark-lighter;
+      }
+      a:hover {
+        color: $light-color;
+      }
     }
 
     ul.menu:after {
