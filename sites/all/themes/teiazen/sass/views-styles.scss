@@ -116,6 +116,7 @@
 
     h3, p,
     div.field, /* e-info.org.tw bug */
+    div.event-nodeapi, /* e-info.org.tw bug */
     div.post-date,
     div.more-link {
       @include zen-grid-item(8, 1, right);
@@ -145,6 +146,7 @@
     }
     h3, p,
     div.field, /* e-info.org.tw bug */
+    div.event-nodeapi, /* e-info.org.tw bug */
     div.post-date,
     div.more-link {
       @include zen-grid-item(8, 1, right);
@@ -175,6 +177,7 @@
     }
     h3, p,
     div.field, /* e-info.org.tw bug */
+    div.event-nodeapi, /* e-info.org.tw bug */
     div.post-date,
     div.more-link {
       @include zen-grid-item(6, 1, right);
