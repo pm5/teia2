@@ -371,8 +371,11 @@
     float: left;
     clear: left;
   }
-  /* line 218, ../sass/views-styles.scss */
-  .pane-teia-slideshow-pane div.view-teia-slideshow li h3, .pane-teia-slideshow-pane div.view-teia-slideshow li p, .pane-teia-slideshow-pane div.view-teia-slideshow li div {
+  /* line 221, ../sass/views-styles.scss */
+  .pane-teia-slideshow-pane div.view-teia-slideshow li h3,
+  .pane-teia-slideshow-pane div.view-teia-slideshow li p,
+  .pane-teia-slideshow-pane div.view-teia-slideshow li div.post-date,
+  .pane-teia-slideshow-pane div.view-teia-slideshow li div.more-link {
     width: 33.33333%;
     padding-left: 15px;
     padding-right: 15px;
@@ -387,17 +390,17 @@
     float: right;
     clear: right;
   }
-  /* line 224, ../sass/views-styles.scss */
+  /* line 227, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow li h3 {
     color: #466b54;
-    font-size: larger;
+    font-size: largest;
   }
-  /* line 229, ../sass/views-styles.scss */
-  .pane-teia-slideshow-pane div.view-teia-slideshow li div.post-date {
+  /* line 232, ../sass/views-styles.scss */
+  .pane-teia-slideshow-pane div.view-teia-slideshow li .post-date {
     color: #adadad;
     font-size: smaller;
   }
-  /* line 234, ../sass/views-styles.scss */
+  /* line 237, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow li .more-link {
     text-align: left;
   }

@@ -215,7 +215,10 @@
           @include zen-clear(left);
         }
 
-        h3, p, div {
+        h3,
+        p,
+        div.post-date,
+        div.more-link {
           @include zen-grid-flow-item(4, 12, false, false);
           @include zen-float(right);
           @include zen-clear(right);
@@ -223,10 +226,10 @@
 
         h3 {
           color: $light-darker;
-          font-size: larger;
+          font-size: largest;
         }
 
-        div.post-date {
+        .post-date {
           color: $grey-text;
           font-size: smaller;
         }

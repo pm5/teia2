@@ -227,6 +227,14 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 .more-link { /* Aggregator, blog, and forum more link */
+  a, a:active, a:visited {
+    text-decoration: none;
+    color: $dark-color;
+  }
+  a:hover, a:focus {
+    text-decoration: underline;
+    color: $dark-darker;
+  }
 }
 
 /*
