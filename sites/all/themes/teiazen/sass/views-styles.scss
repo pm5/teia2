@@ -205,7 +205,7 @@
       @include zen-grid-item(12, 1);
 
       .view-content .flexslider {
-        background: #ccc;
+        background: $light-shadow;
       }
 
       li {
@@ -226,12 +226,17 @@
 
         h3 {
           color: $light-darker;
-          font-size: largest;
+          font-size: 1.5em;
+          margin-bottom: 0.1em;
         }
 
         .post-date {
           color: $grey-text;
           font-size: smaller;
+        }
+
+        p {
+          margin-top: 0.4em;
         }
 
         .more-link {
