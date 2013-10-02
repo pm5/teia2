@@ -23,12 +23,12 @@ body {
 /* line 23, ../sass/pages.scss */
 body a, body a:active, body a:visited {
   text-decoration: none;
-  color: #5c4b43;
+  color: #4f915e;
 }
 /* line 27, ../sass/pages.scss */
 body a:hover, body a:focus {
   text-decoration: underline;
-  color: #5c4b43;
+  color: #4f915e;
 }
 
 /*
