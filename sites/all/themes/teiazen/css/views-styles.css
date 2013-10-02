@@ -388,6 +388,16 @@
     clear: right;
   }
   /* line 224, ../sass/views-styles.scss */
+  .pane-teia-slideshow-pane div.view-teia-slideshow li h3 {
+    color: #466b54;
+    font-size: larger;
+  }
+  /* line 229, ../sass/views-styles.scss */
+  .pane-teia-slideshow-pane div.view-teia-slideshow li div.post-date {
+    color: #adadad;
+    font-size: smaller;
+  }
+  /* line 234, ../sass/views-styles.scss */
   .pane-teia-slideshow-pane div.view-teia-slideshow li .more-link {
     text-align: left;
   }

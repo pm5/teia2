@@ -221,6 +221,16 @@
           @include zen-clear(right);
         }
 
+        h3 {
+          color: $light-darker;
+          font-size: larger;
+        }
+
+        div.post-date {
+          color: $grey-text;
+          font-size: smaller;
+        }
+
         .more-link {
           text-align: left;
         }
