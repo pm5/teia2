@@ -231,8 +231,8 @@ div#block-panels-mini-donate-now .donate-now-en {
 /* line 171, ../sass/blocks.scss */
 .region-sidebar-second h2.pane-title,
 .region-sidebar-second .pane-content > p {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /**
@@ -242,6 +242,6 @@ div#block-panels-mini-donate-now .donate-now-en {
 .pane-teia-link-slider-pane .flexslider {
   margin-bottom: 0px;
   margin-top: 1.5em;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }

@@ -169,8 +169,8 @@ div#block-panels-mini-donate-now {
 
   h2.pane-title,
   .pane-content > p {   // custom content pane
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: zen-half-gutter();
+    padding-right: zen-half-gutter();
   }
 }
 
@@ -182,7 +182,7 @@ div#block-panels-mini-donate-now {
   .flexslider {
     margin-bottom: 0px;
     margin-top: 1.5em;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: zen-half-gutter();
+    padding-right: zen-half-gutter();
   }
 }
