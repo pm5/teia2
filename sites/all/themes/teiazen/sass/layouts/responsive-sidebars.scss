@@ -232,8 +232,7 @@ $zen-auto-include-item-base: true;
   .breadcrumb,
   #page-title,
   .node,
-  div.panel-pane div.node,
-  .view {
+  div.panel-pane div.node {
     padding-left: zen-half-gutter() !important;
     padding-right: zen-half-gutter() !important;
   }
