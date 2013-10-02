@@ -7,37 +7,37 @@
 /**
  * Color
  */
-/* line 11, ../sass/nodes.scss */
+/* line 13, ../sass/nodes.scss */
 .node {
   /* Node wrapper */
 }
-/* line 13, ../sass/nodes.scss */
+/* line 15, ../sass/nodes.scss */
 .preview .node {
   /* Preview of the content before submitting new or updated content */
   /* background-color: #ffffea; */
   /* Drupal core uses a #ffffea background */
 }
-/* line 17, ../sass/nodes.scss */
+/* line 19, ../sass/nodes.scss */
 .node .node-title {
   /* Node title */
 }
-/* line 20, ../sass/nodes.scss */
+/* line 22, ../sass/nodes.scss */
 .node .user-picture {
   /* The picture of the node author */
 }
-/* line 23, ../sass/nodes.scss */
+/* line 25, ../sass/nodes.scss */
 .node .submitted {
   /* The "posted by" information */
 }
-/* line 26, ../sass/nodes.scss */
+/* line 28, ../sass/nodes.scss */
 .node .content {
   /* Node's content wrapper */
 }
-/* line 29, ../sass/nodes.scss */
+/* line 31, ../sass/nodes.scss */
 .node ul.links {
   /* Node links. See also the ul.links declaration in the pages.css. */
 }
-/* line 32, ../sass/nodes.scss */
+/* line 34, ../sass/nodes.scss */
 .node figure.field-title-image {
   width: 33.3333%;
   float: right;
@@ -45,29 +45,29 @@
   padding-right: 0;
   padding-bottom: 10px;
 }
-/* line 40, ../sass/nodes.scss */
+/* line 42, ../sass/nodes.scss */
 .node ul.links.inline:after {
   content: "";
   display: block;
   height: 1.5em;
 }
 
-/* line 47, ../sass/nodes.scss */
+/* line 49, ../sass/nodes.scss */
 .node-promoted {
   /* A node that has been promoted to the front page */
 }
 
-/* line 50, ../sass/nodes.scss */
+/* line 52, ../sass/nodes.scss */
 .node-sticky {
   /* A sticky node (displayed before others in a list) */
 }
 
-/* line 53, ../sass/nodes.scss */
+/* line 55, ../sass/nodes.scss */
 .node-by-viewer {
   /* A node created by the current user */
 }
 
-/* line 56, ../sass/nodes.scss */
+/* line 58, ../sass/nodes.scss */
 .node-teaser {
   /* A node displayed as teaser */
 }
@@ -77,23 +77,23 @@
  * it is. If you create a new content type called "my-custom-type", it will
  * receive a "node-my-custom-type" class.
  */
-/* line 65, ../sass/nodes.scss */
+/* line 67, ../sass/nodes.scss */
 .node-page {
   /* Page content node */
 }
 
-/* line 68, ../sass/nodes.scss */
+/* line 70, ../sass/nodes.scss */
 .node-article {
   /* Article content node */
 }
 
-/* line 71, ../sass/nodes.scss */
+/* line 73, ../sass/nodes.scss */
 .node-unpublished {
   /* Unpublished nodes */
   /* background-color: #fff4f4; */
   /* Drupal core uses a #fff4f4 background */
 }
-/* line 74, ../sass/nodes.scss */
+/* line 76, ../sass/nodes.scss */
 .node-unpublished p.unpublished {
   /* The word "Unpublished" displayed underneath the content. */
   height: 0;
@@ -108,7 +108,44 @@
   word-wrap: break-word;
 }
 
-/* line 79, ../sass/nodes.scss */
+/* line 81, ../sass/nodes.scss */
 .pane-node-created {
   color: #adadad;
+}
+
+/**
+ * TEIA Newsletter
+ */
+/* line 90, ../sass/nodes.scss */
+.node.node-teia-newsletter figure.field-title-image {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  clear: both;
+}
+/* line 98, ../sass/nodes.scss */
+.node.node-teia-newsletter .field-newsletter-section-name,
+.node.node-teia-newsletter h3.field-newsletter-section-title,
+.node.node-teia-newsletter p,
+.node.node-teia-newsletter div.field-newsletter-section-link {
+  float: right;
+  width: 66.66667%;
+  margin-right: 0%;
+  margin-left: -66.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  clear: right;
 }
