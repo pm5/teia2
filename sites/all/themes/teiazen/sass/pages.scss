@@ -73,19 +73,7 @@ body {
   }
 
   .social-network {
-    display: block;
-    float: left;
     margin-left: 0.3em;
-    height: 2em;
-    width: 2em;
-    text-align: center;
-    background: $dark-lighter;
-    border-radius: 0.8em;
-
-    a {
-      color: $white-background;
-      font-weight: bold;
-    }
   }
 }
 
