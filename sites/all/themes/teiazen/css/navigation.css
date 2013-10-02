@@ -105,15 +105,7 @@ li a.active {
     list-style-image: none;
     text-align: center;
   }
-  /* line 110, ../sass/navigation.scss */
-  #navigation ul.menu a, #navigation ul.menu a:active, #navigation ul.menu a:visited {
-    color: #b09474;
-  }
-  /* line 113, ../sass/navigation.scss */
-  #navigation ul.menu a:hover {
-    color: #4f915e;
-  }
-  /* line 118, ../sass/navigation.scss */
+  /* line 111, ../sass/navigation.scss */
   #navigation ul.menu:after {
     content: "";
     display: table;
@@ -123,34 +115,40 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-/* line 133, ../sass/navigation.scss */
-#secondary-menu {
-  float: right;
-  /* LTR */
+/* line 127, ../sass/navigation.scss */
+#header a, #header a:active, #header a:visited,
+nav.breadcrumb a,
+nav.breadcrumb a:active,
+nav.breadcrumb a:visited,
+#navigation a,
+#navigation a:active,
+#navigation a:visited,
+.block-menu a,
+.block-menu a:active,
+.block-menu a:visited {
+  color: #b09474;
+}
+/* line 130, ../sass/navigation.scss */
+#header a:hover,
+nav.breadcrumb a:hover,
+#navigation a:hover,
+.block-menu a:hover {
+  color: #4f915e;
 }
 
-/*
- * Menu blocks
- */
-/*
- * "Menu block" blocks
- *
- * Drupal core has limited ways in which it can display its menus. To get around
- * these limitations, see http://drupal.org/project/menu_block
- */
 /**
  * Sidebar content menu
  */
-/* line 159, ../sass/navigation.scss */
+/* line 140, ../sass/navigation.scss */
 #page .region-sidebar-first ul.menu li a, #page .region-sidebar-first ul.menu li a:active, #page .region-sidebar-first ul.menu li a:visited {
   color: white;
 }
 
-/* line 165, ../sass/navigation.scss */
+/* line 146, ../sass/navigation.scss */
 .region-sidebar-first ul.menu {
   padding: 0;
 }
-/* line 168, ../sass/navigation.scss */
+/* line 149, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li a {
   display: block;
   list-style: none;
@@ -159,25 +157,25 @@ li a.active {
   padding: 0.8em 1em;
   border-radius: 0 1em 1em 0;
 }
-/* line 178, ../sass/navigation.scss */
+/* line 159, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li.leaf a:hover,
 .region-sidebar-first ul.menu li.leaf a:focus {
   text-decoration: none;
   background: #4f915e;
 }
-/* line 183, ../sass/navigation.scss */
+/* line 164, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li.first a {
   background: #b09474;
 }
-/* line 186, ../sass/navigation.scss */
+/* line 167, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(2) a {
   background: #9e7d63;
 }
-/* line 189, ../sass/navigation.scss */
+/* line 170, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(3) a {
   background: #745e4f;
 }
-/* line 192, ../sass/navigation.scss */
+/* line 173, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(4) a {
   background: #5c4b43;
 }

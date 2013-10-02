@@ -106,13 +106,6 @@ li a.active {
         list-style-image: none;
         text-align: center;
       }
-
-      a, a:active, a:visited {
-        color: $dark-lighter;
-      }
-      a:hover {
-        color: $light-color;
-      }
     }
 
     ul.menu:after {
@@ -127,28 +120,16 @@ li a.active {
  * Main menu and Secondary menu links
  */
 
-#main-menu {
-}
-
-#secondary-menu {
-  float: right; /* LTR */
-}
-
-/*
- * Menu blocks
- */
-
+#header,
+nav.breadcrumb,
+#navigation,
 .block-menu {
-}
-
-/*
- * "Menu block" blocks
- *
- * Drupal core has limited ways in which it can display its menus. To get around
- * these limitations, see http://drupal.org/project/menu_block
- */
-
-.block-menu-block {
+  a, a:active, a:visited {
+    color: $dark-lighter;
+  }
+  a:hover {
+    color: $light-color;
+  }
 }
 
 /**
