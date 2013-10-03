@@ -116,7 +116,12 @@
 /**
  * TEIA Newsletter
  */
-/* line 90, ../sass/nodes.scss */
+/* line 89, ../sass/nodes.scss */
+.node.node-teia-newsletter {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 92, ../sass/nodes.scss */
 .node.node-teia-newsletter figure.field-title-image {
   float: left;
   width: 33.33333%;
@@ -131,7 +136,7 @@
   word-wrap: break-word;
   clear: both;
 }
-/* line 98, ../sass/nodes.scss */
+/* line 100, ../sass/nodes.scss */
 .node.node-teia-newsletter .field-newsletter-section-name,
 .node.node-teia-newsletter h3.field-newsletter-section-title,
 .node.node-teia-newsletter p,

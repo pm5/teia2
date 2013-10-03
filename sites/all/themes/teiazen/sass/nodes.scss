@@ -87,6 +87,8 @@ $zen-gutter-width:  20px;
  */
 
 .node.node-teia-newsletter {
+  @include zen-nested-container();
+
   figure.field-title-image {
     @include zen-grid-item(4, 1);
     @include zen-clear(both);
