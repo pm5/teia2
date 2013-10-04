@@ -31,14 +31,6 @@ $zen-gutter-width:  20px;
   ul.links { /* Node links. See also the ul.links declaration in the pages.css. */
   }
 
-  figure.field-title-image {
-    width: 33.3333%;
-    float: right;
-    padding-left: zen-half-gutter();
-    padding-right: 0;
-    padding-bottom: zen-half-gutter();
-  }
-
   ul.links.inline:after {
     content: "";
     display: block;

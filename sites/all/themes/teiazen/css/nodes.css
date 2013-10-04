@@ -38,36 +38,28 @@
   /* Node links. See also the ul.links declaration in the pages.css. */
 }
 /* line 34, ../sass/nodes.scss */
-.node figure.field-title-image {
-  width: 33.3333%;
-  float: right;
-  padding-left: 10px;
-  padding-right: 0;
-  padding-bottom: 10px;
-}
-/* line 42, ../sass/nodes.scss */
 .node ul.links.inline:after {
   content: "";
   display: block;
   height: 1.5em;
 }
 
-/* line 49, ../sass/nodes.scss */
+/* line 41, ../sass/nodes.scss */
 .node-promoted {
   /* A node that has been promoted to the front page */
 }
 
-/* line 52, ../sass/nodes.scss */
+/* line 44, ../sass/nodes.scss */
 .node-sticky {
   /* A sticky node (displayed before others in a list) */
 }
 
-/* line 55, ../sass/nodes.scss */
+/* line 47, ../sass/nodes.scss */
 .node-by-viewer {
   /* A node created by the current user */
 }
 
-/* line 58, ../sass/nodes.scss */
+/* line 50, ../sass/nodes.scss */
 .node-teaser {
   /* A node displayed as teaser */
 }
@@ -77,23 +69,23 @@
  * it is. If you create a new content type called "my-custom-type", it will
  * receive a "node-my-custom-type" class.
  */
-/* line 67, ../sass/nodes.scss */
+/* line 59, ../sass/nodes.scss */
 .node-page {
   /* Page content node */
 }
 
-/* line 70, ../sass/nodes.scss */
+/* line 62, ../sass/nodes.scss */
 .node-article {
   /* Article content node */
 }
 
-/* line 73, ../sass/nodes.scss */
+/* line 65, ../sass/nodes.scss */
 .node-unpublished {
   /* Unpublished nodes */
   /* background-color: #fff4f4; */
   /* Drupal core uses a #fff4f4 background */
 }
-/* line 76, ../sass/nodes.scss */
+/* line 68, ../sass/nodes.scss */
 .node-unpublished p.unpublished {
   /* The word "Unpublished" displayed underneath the content. */
   height: 0;
@@ -108,7 +100,7 @@
   word-wrap: break-word;
 }
 
-/* line 81, ../sass/nodes.scss */
+/* line 73, ../sass/nodes.scss */
 .pane-node-created {
   color: #adadad;
 }
@@ -116,12 +108,12 @@
 /**
  * TEIA Newsletter
  */
-/* line 89, ../sass/nodes.scss */
+/* line 81, ../sass/nodes.scss */
 .node.node-teia-newsletter {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 92, ../sass/nodes.scss */
+/* line 84, ../sass/nodes.scss */
 .node.node-teia-newsletter figure.field-title-image {
   float: left;
   width: 33.33333%;
@@ -136,7 +128,7 @@
   word-wrap: break-word;
   clear: both;
 }
-/* line 100, ../sass/nodes.scss */
+/* line 92, ../sass/nodes.scss */
 .node.node-teia-newsletter .field-newsletter-section-name,
 .node.node-teia-newsletter h3.field-newsletter-section-title,
 .node.node-teia-newsletter p,
@@ -154,7 +146,7 @@
   word-wrap: break-word;
   clear: right;
 }
-/* line 105, ../sass/nodes.scss */
+/* line 97, ../sass/nodes.scss */
 .node.node-teia-newsletter h3.field-newsletter-section-title {
   margin-top: 0.3em;
 }
