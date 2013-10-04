@@ -101,4 +101,8 @@ $zen-gutter-width:  20px;
     @include zen-grid-item(8, 1, right);
     @include zen-clear(right);
   }
+
+  h3.field-newsletter-section-title {
+    margin-top: 0.3em;
+  }
 }

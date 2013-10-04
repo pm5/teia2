@@ -154,3 +154,7 @@
   word-wrap: break-word;
   clear: right;
 }
+/* line 105, ../sass/nodes.scss */
+.node.node-teia-newsletter h3.field-newsletter-section-title {
+  margin-top: 0.3em;
+}
