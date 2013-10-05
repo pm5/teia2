@@ -81,10 +81,19 @@
       font-size: smaller;
     }
 
-    div.more-link {
+    div.more-link,
+    ul.inline li.node-readmore {
       color: $dark-color;
-      font-size: smaller
+      font-size: smaller;
     }
+    div.more-link {
+      text-align: right;
+    }
+    ul.inline li.node-readmore {
+      float: right;
+      padding: 0 0 0 1em;
+    }
+
   }
 
   #content {
@@ -128,9 +137,6 @@
     }
     .views-row.views-row-first {
       margin-top: 0em;
-    }
-    div.more-link {
-      text-align: left;
     }
     div.more-link:after {
       content: ".";
