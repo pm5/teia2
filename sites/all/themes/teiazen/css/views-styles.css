@@ -405,8 +405,4 @@
   .pane-teia-slideshow-pane div.view-teia-slideshow li p {
     margin-top: 0.4em;
   }
-  /* line 242, ../sass/views-styles.scss */
-  .pane-teia-slideshow-pane div.view-teia-slideshow li .more-link {
-    text-align: left;
-  }
 }
