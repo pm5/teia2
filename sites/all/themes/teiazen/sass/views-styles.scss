@@ -47,11 +47,11 @@
 .views-row {
   clear: both;
 }
-
-.views-row-last:after {
+.views-row:after {
   content: "";
-  display: table;
+  display: block;
   clear: both;
+  height: 0.5em;
 }
 
 /**
@@ -60,7 +60,7 @@
 
 @media all and (min-width: 960px) {
   $zen-column-count: 12;
-  $zen-gutter-width: 30px;
+  $zen-gutter-width: 20px;
 
   #content {
 
@@ -75,15 +75,25 @@
       margin: 0 zen-half-gutter() 0.8em;
     }
 
-    div.post-date {
-      color: $black-text;
+    div.post-date,
+    div.working-holiday-program {
+      color: $grey-text;
       font-size: smaller;
     }
 
-    div.more-link {
-      color: $dark;
-      font-size: smaller
+    div.more-link,
+    ul.inline li.node-readmore {
+      color: $dark-color;
+      font-size: smaller;
     }
+    div.more-link {
+      text-align: right;
+    }
+    ul.inline li.node-readmore {
+      float: right;
+      padding: 0 0 0 1em;
+    }
+
   }
 
   #content {
@@ -105,7 +115,7 @@
     h3.field-title-field {
       margin-top: 0;
       margin-bottom: 0;
-      color: $light-darker;
+      color: $light-color;
     }
   }
 
@@ -116,6 +126,7 @@
 
     h3, p,
     div.field, /* e-info.org.tw bug */
+    div.event-nodeapi, /* e-info.org.tw bug */
     div.post-date,
     div.more-link {
       @include zen-grid-item(8, 1, right);
@@ -127,9 +138,6 @@
     .views-row.views-row-first {
       margin-top: 0em;
     }
-    div.more-link {
-      text-align: left;
-    }
     div.more-link:after {
       content: ".";
       display: block;
@@ -138,33 +146,14 @@
     }
   }
 
-  .attachment > .view-taxonomy-term.view-display-id-latest_attachment {
-    .view-content {
-      @include zen-grid-item(8, 1);
-      @include zen-nested-container();
-    }
-    figure.field-title-image {
-      @include zen-grid-item(6, 1);
-    }
-    h3, p,
-    div.field, /* e-info.org.tw bug */
-    div.post-date,
-    div.more-link {
-      @include zen-grid-item(6, 1, right);
-      @include zen-clear(right);
-    }
-  }
-
+  .view-taxonomy-term.view-display-id-recent_pane-6,
   .view-taxonomy-term.view-display-id-recent_pane {
-    .view-content {
-      @include zen-grid-item(4, 1, right);
-      @include zen-nested-container();
-    }
     figure.field-title-image {
       @include zen-grid-item(4, 1);
     }
     h3, p,
     div.field, /* e-info.org.tw bug */
+    div.event-nodeapi, /* e-info.org.tw bug */
     div.post-date,
     div.more-link {
       @include zen-grid-item(8, 1, right);
@@ -172,25 +161,58 @@
     }
   }
 
-  .view-taxonomy-term.view-display-id-recent_pane_6 {
-    .view-content {
-      @include zen-grid-item(4, 1, right);
+  .view-taxonomy-term.view-display-id-no_title_image_pane {
+    @include zen-grid-item(12, 1);
+  }
+
+  .latest-attachment-full .view-display-id-latest_attachment > .view-content {
+    @include zen-grid-item(12, 1);
+  }
+  .latest-attachment-full > .view-content {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+  }
+
+  .latest-attachment-2 .view-display-id-latest_attachment {
+    > .view-content {
+      @include zen-grid-item(8, 1);
+      @include zen-nested-container();
+      @include zen-clear(left);
+    }
+    figure.field-title-image {
+      @include zen-grid-item(6, 1);
+    }
+    h3, p,
+    div.field, /* e-info.org.tw bug */
+    div.event-nodeapi, /* e-info.org.tw bug */
+    div.post-date,
+    div.more-link {
+      @include zen-grid-item(6, 1, right);
+      @include zen-clear(right);
     }
   }
+  .latest-attachment-2 > .view-content {
+    @include zen-clear(right);
+    @include zen-grid-item(4, 1, right);
+  }
+
 
   /**
    * Slider
    */
-  
+
+  .view-content .flexslider {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
   .pane-teia-slideshow-pane {
     div.view-teia-slideshow {
       @include zen-grid-item(12, 1);
 
-      .flexslider {
-        background: #ccc;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
+      .view-content .flexslider {
+        background: $white-shadow;
       }
 
       li {
@@ -200,14 +222,27 @@
           @include zen-clear(left);
         }
 
-        h3, p, div {
+        h3,
+        p,
+        div.post-date,
+        div.more-link {
           @include zen-grid-flow-item(4, 12, false, false);
           @include zen-float(right);
           @include zen-clear(right);
         }
 
-        .more-link {
-          text-align: left;
+        h3 {
+          font-size: 1.5em;
+          margin-bottom: 0.1em;
+        }
+
+        .post-date {
+          color: $grey-text;
+          font-size: smaller;
+        }
+
+        p {
+          margin-top: 0.4em;
         }
       }
     }

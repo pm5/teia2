@@ -7,6 +7,8 @@
 
 @import "base";
 
+$zen-column-count:  12;
+$zen-gutter-width:  20px;
 
 .node { /* Node wrapper */
 
@@ -29,14 +31,11 @@
   ul.links { /* Node links. See also the ul.links declaration in the pages.css. */
   }
 
-  figure.field-title-image {
-    width: 33.3333%;
-    float: right;
-    padding-left: zen-half-gutter();
-    padding-right: 0;
-    padding-bottom: zen-half-gutter();
+  ul.links.inline:after {
+    content: "";
+    display: block;
+    height: 1.5em;
   }
-
 }
 
 .node-promoted { /* A node that has been promoted to the front page */
@@ -68,5 +67,34 @@
 
   p.unpublished { /* The word "Unpublished" displayed underneath the content. */
     @include unpublished-div;
+  }
+}
+
+.pane-node-created {
+  color: $grey-text;
+}
+
+/**
+ * TEIA Newsletter
+ */
+
+.node.node-teia-newsletter {
+  @include zen-nested-container();
+
+  figure.field-title-image {
+    @include zen-grid-item(4, 1);
+    @include zen-clear(both);
+  }
+
+  .field-newsletter-section-name,
+  h3.field-newsletter-section-title,
+  p,
+  div.field-newsletter-section-link {
+    @include zen-grid-item(8, 1, right);
+    @include zen-clear(right);
+  }
+
+  h3.field-newsletter-section-title {
+    margin-top: 0.3em;
   }
 }

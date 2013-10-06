@@ -2,6 +2,9 @@
  * @file
  * Block Styling
  */
+/**
+ * Color
+ */
 /* line 8, ../sass/blocks.scss */
 .block {
   /* Block wrapper */
@@ -161,4 +164,84 @@
 /* line 106, ../sass/blocks.scss */
 #block-user-online {
   /* "Who's online" block for a list of the online users */
+}
+
+/**
+ * Donate Now!
+ */
+/* line 113, ../sass/blocks.scss */
+div#block-panels-mini-donate-now {
+  border: none;
+}
+/* line 115, ../sass/blocks.scss */
+div#block-panels-mini-donate-now a#donate-now {
+  display: block;
+  border: 0;
+  background: #4f915e;
+  color: white;
+  border-radius: 1.5em;
+  padding: 2em 1.2em;
+  text-decoration: none;
+}
+/* line 124, ../sass/blocks.scss */
+div#block-panels-mini-donate-now a#donate-now:active, div#block-panels-mini-donate-now a#donate-now:visited {
+  color: white;
+  background: #4f915e;
+  text-decoration: none;
+}
+/* line 129, ../sass/blocks.scss */
+div#block-panels-mini-donate-now a#donate-now:hover {
+  color: white;
+  background: #91c888;
+  text-decoration: none;
+}
+/* line 135, ../sass/blocks.scss */
+div#block-panels-mini-donate-now .donate-now-zh {
+  display: block;
+  font-size: 2.5em;
+  text-align: center;
+  border-bottom: 2px white solid;
+  padding-bottom: 0.4em;
+}
+/* line 143, ../sass/blocks.scss */
+div#block-panels-mini-donate-now .donate-now-en {
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 0.4em;
+}
+
+/**
+ * Second sidebar
+ */
+/* line 156, ../sass/blocks.scss */
+.region-sidebar-second h2.block-title {
+  background: #4f915e;
+  color: white;
+  padding: 0 1em;
+  border-radius: 0.8em 0.8em 0 0;
+}
+/* line 163, ../sass/blocks.scss */
+.region-sidebar-second .block {
+  border-bottom: 4px solid #4f915e;
+  border-right: 4px solid #4f915e;
+  border-left: 4px solid #4f915e;
+  border-radius: 1.5em 1.5em 0 0;
+}
+/* line 171, ../sass/blocks.scss */
+.region-sidebar-second h2.pane-title,
+.region-sidebar-second .pane-content > p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/**
+ * Mini panels
+ */
+/* line 182, ../sass/blocks.scss */
+.pane-teia-link-slider-pane .flexslider {
+  margin-bottom: 0px;
+  margin-top: 1.5em;
+  padding-left: 10px;
+  padding-right: 10px;
 }
