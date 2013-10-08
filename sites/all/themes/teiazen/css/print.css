@@ -4,6 +4,9 @@
  *
  * We provide some sane print styling for Drupal using Zen's layout method.
  */
+/**
+ * Color
+ */
 @media print {
   /* line 14, ../sass/print.scss */
   a:link,

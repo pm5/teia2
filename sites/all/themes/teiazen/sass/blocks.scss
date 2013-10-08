@@ -106,3 +106,83 @@
 #block-user-online { /* "Who's online" block for a list of the online users */
 }
 
+/**
+ * Donate Now!
+ */
+
+div#block-panels-mini-donate-now {
+  border: none;
+  a#donate-now {
+    display: block;
+    border: 0;
+    background: $light-color;
+    color: $white-background;
+    border-radius: 1.5em;
+    padding: 2em 1.2em;
+    text-decoration: none;
+  }
+  a#donate-now:active, a#donate-now:visited {
+    color: $white-background;
+    background: $light-color;
+    text-decoration: none;
+  }
+  a#donate-now:hover {
+    color: $white-background;
+    background: $light-lighter;
+    text-decoration: none;
+  }
+
+  .donate-now-zh {
+    display: block;
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom: 2px $white-background solid;
+    padding-bottom: 0.4em;
+  }
+
+  .donate-now-en {
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 0.4em;
+  }
+}
+
+/**
+ * Second sidebar
+ */
+
+.region-sidebar-second {
+  h2.block-title {
+    background: $light-color;
+    color: $white-background;
+    padding: 0 1em;
+    border-radius: 0.8em 0.8em 0 0;
+  }
+
+  .block {
+    border-bottom: 4px solid $light-color;
+    border-right: 4px solid $light-color;
+    border-left: 4px solid $light-color;
+    border-radius: 1.5em 1.5em 0 0;
+  }
+
+  h2.pane-title,
+  .pane-content > p {   // custom content pane
+    padding-left: zen-half-gutter();
+    padding-right: zen-half-gutter();
+  }
+}
+
+/**
+ * Mini panels
+ */
+
+.pane-teia-link-slider-pane {
+  .flexslider {
+    margin-bottom: 0px;
+    margin-top: 1.5em;
+    padding-left: zen-half-gutter();
+    padding-right: zen-half-gutter();
+  }
+}

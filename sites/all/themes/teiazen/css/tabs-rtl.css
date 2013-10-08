@@ -2,6 +2,9 @@
  * @file
  * RTL companion for the tabs.css file.
  */
+/**
+ * Color
+ */
 /* line 11, ../sass/tabs-rtl.scss */
 ul.primary li,
 ul.secondary li {

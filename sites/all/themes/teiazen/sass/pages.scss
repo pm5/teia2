@@ -16,9 +16,7 @@
 body {
   margin: 0;
   padding: 0;
-}
 
-#page {
   font-family: 微軟正黑體, 新細明體;
   color: $black-text;
 
@@ -26,7 +24,7 @@ body {
     text-decoration: none;
     color: $black-link;
   }
-  a:hover, a:focus; {
+  a:hover, a:focus {
     text-decoration: underline;
     color: $black-hover;
   }
@@ -64,7 +62,7 @@ body {
   vertical-align: bottom;
 }
 
-.region-header {
+#page .region-header {
   font-size: small;
   line-height: 1.5em;
 
@@ -75,19 +73,7 @@ body {
   }
 
   .social-network {
-    display: block;
-    float: left;
     margin-left: 0.3em;
-    height: 2em;
-    width: 2em;
-    text-align: center;
-    background: $dark-lighter;
-    border-radius: 0.8em;
-
-    a {
-      color: $white-background;
-      font-weight: bold;
-    }
   }
 }
 
@@ -152,6 +138,10 @@ h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin: 0;
+}
+
+h3 {
+  color: $light-color;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
@@ -229,6 +219,14 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 .more-link { /* Aggregator, blog, and forum more link */
+  a, a:active, a:visited {
+    text-decoration: none;
+    color: $dark-color;
+  }
+  a:hover, a:focus {
+    text-decoration: underline;
+    color: $dark-darker;
+  }
 }
 
 /*
@@ -249,20 +247,6 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 .region-sidebar-second {
-  h2 {
-    background: $light;
-    color: $white-background;
-    padding: 0 1em;
-    border-radius: 0.5em 0.5em 0 0;
-    margin-bottom: 0;
-  }
-
-  .pane-content {
-    border-bottom: 4px solid $light;
-    border-right: 4px solid $light;
-    border-left: 4px solid $light;
-    padding: 1.2em 1.5em;
-  }
 }
 
 /*
@@ -271,8 +255,9 @@ span.field-label { /* The inline field label used by the Fences module */
 
 #footer {
     display: block;
-    height: 10em;
-    background: $light;
+    min-height: 10em;
+    background: $light-color;
+    color: $white-background;
 }
 
 /*
@@ -308,41 +293,14 @@ body.section-reef-check-tw {
 }
 */
 
+body {
+  background: $white-background;
+}
+
 #header,
 #content,
 #navigation,
 section.sidebar,
 #footer {
-  background: $white-background;
 }
 
-/**
- * Donate Now!
- */
-
-div#mini-panel-front_donate_now {
-  .pane-content {
-    border: 0;
-    background: $light;
-    color: $white-background;
-    border-radius: 1em;
-    padding: 2em 1.2em;
-
-    a, a:active, a:visited, a:hover {
-      color: $white-background;
-    }
-
-    .donate-now-zh {
-      font-size: 2.5em;
-      text-align: center;
-      border-bottom: 2px $white-background solid;
-      padding-bottom: 0.4em;
-    }
-
-    .donate-now-en {
-      font-size: 1.5em;
-      text-align: center;
-      padding-top: 0.4em;
-    }
-  }
-}

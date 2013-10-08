@@ -95,7 +95,7 @@ li a.active {
 
   #navigation {
     ul.menu {
-      border: solid $dark $framing-width;
+      border: solid $dark-color $framing-width;
       border-radius: $framing-radius;
       padding: 1.3em 1em;
       li {
@@ -120,44 +120,58 @@ li a.active {
  * Main menu and Secondary menu links
  */
 
-#main-menu {
-}
-
-#secondary-menu {
-  float: right; /* LTR */
-}
-
-/*
- * Menu blocks
- */
-
+#header,
+nav.breadcrumb,
+#navigation,
 .block-menu {
-}
-
-/*
- * "Menu block" blocks
- *
- * Drupal core has limited ways in which it can display its menus. To get around
- * these limitations, see http://drupal.org/project/menu_block
- */
-
-.block-menu-block {
+  a, a:active, a:visited {
+    color: $dark-color;
+  }
+  a:hover {
+    color: $light-color;
+  }
 }
 
 /**
  * Sidebar content menu
  */
 
+#page .region-sidebar-first ul.menu li {
+  a, a:active, a:visited {
+    color: $white-background;
+  }
+}
+
 .region-sidebar-first {
   ul.menu {
     padding: 0;
-  }
-  ul.menu li {
-    list-style: none;
-    width: 2.5em;
-    margin-bottom: 0.4em;
-    padding: 0.8em 1em;
-    border-radius: 0 1em 1em 0;
-    background: #ccc;
+
+    li a {
+      display: block;
+      list-style: none;
+      width: 2.5em;
+      margin-bottom: 0.4em;
+      padding: 0.8em 1em;
+      border-radius: 0 1em 1em 0;
+    }
+
+    li.leaf a:hover,
+    li.leaf a:focus {
+      text-decoration: none;
+      background: $light-color;
+    }
+
+    li.first a {
+      background: #b09474;
+    }
+    li:nth-child(2) a {
+      background: #9e7d63;
+    }
+    li:nth-child(3) a {
+      background: #745e4f;
+    }
+    li:nth-child(4) a {
+      background: #5c4b43;
+    }
   }
 }
