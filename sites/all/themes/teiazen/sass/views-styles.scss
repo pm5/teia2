@@ -66,17 +66,22 @@
 
     h2.pane-title {
       text-align: center;
-      font-size: 1.2em;
+      font-size: large;
       letter-spacing: 0.4em;
       color: $black-header;
       padding: 0;
       border-top: solid 5px $light-lighter;
       border-bottom: solid 1px #ddd;
-      margin: 0 zen-half-gutter() 0.8em;
+      a {
+        color: $black-header;
+      }
+      a:hover, a:focus {
+        text-decoration: underline;
+        color: $black-hover;
+      }
     }
 
-    div.publish-date,
-    div.working-holiday-program {
+    div.publish-date {
       color: $grey-text;
     }
 
@@ -89,23 +94,16 @@
       padding: 0 0 0 1em;
     }
 
-  }
-
-  #content {
     .panel-pane:after {
       content: "";
       display: block;
       visibility: hidden;
       clear: both;
     }
+
   }
 
-  /**
-   * Taxonomy term
-   */
-
-  .view-taxonomy-term {
-    @include zen-nested-container();
+  .view {
     h3.field-title-field {
       margin-top: 0;
       margin-bottom: 0;
@@ -113,19 +111,11 @@
     }
   }
 
-  .view-taxonomy-term.view-display-id-pane {
-    figure {
-      @include zen-grid-item(4, 1);
-    }
+  /**
+   * Taxonomy term
+   */
 
-    h3, p,
-    div.field, /* e-info.org.tw bug */
-    div.event-nodeapi, /* e-info.org.tw bug */
-    div.publish-date,
-    div.more-link {
-      @include zen-grid-item(8, 1, right);
-      @include zen-clear(right);
-    }
+  .view-taxonomy-term.view-display-id-pane {
     .views-row {
       margin-top: 1em;
     }
@@ -140,56 +130,30 @@
     }
   }
 
-  .view-taxonomy-term.view-display-id-recent_pane-6,
-  .view-taxonomy-term.view-display-id-recent_pane {
+  .view-taxonomy-term.view-display-id-recent_pane-6 > .view-content,
+  .view-taxonomy-term.view-display-id-recent_pane > .view-content {
+    @include zen-grid-flow-item(6, 12, false, false);
+    @include zen-float(right);
+    @include zen-clear(right);
+  }
+  .view-taxonomy-term.view-display-id-recent_pane > .view-content {
     figure.field-title-image {
-      @include zen-grid-item(4, 1);
+      @include zen-grid-flow-item(4, 12);
+      @include zen-float(left);
+      @include zen-clear(left);
     }
-    h3, p,
-    div.field, /* e-info.org.tw bug */
-    div.event-nodeapi, /* e-info.org.tw bug */
-    div.publish-date,
-    div.more-link {
-      @include zen-grid-item(8, 1, right);
+    div.field-content {
+      @include zen-grid-flow-item(8, 12, false, false);
+      @include zen-float(right);
       @include zen-clear(right);
     }
-  }
-
-  .view-taxonomy-term.view-display-id-no_title_image_pane {
-    @include zen-grid-item(12, 1);
-  }
-
-  .latest-attachment-full .view-display-id-latest_attachment > .view-content {
-    @include zen-grid-item(12, 1);
-  }
-  .latest-attachment-full > .view-content {
-    @include zen-clear();
-    @include zen-grid-item(12, 1);
   }
 
   .latest-attachment-2 .view-display-id-latest_attachment {
-    > .view-content {
-      @include zen-grid-item(8, 1);
-      @include zen-nested-container();
-      @include zen-clear(left);
-    }
-    figure.field-title-image {
-      @include zen-grid-item(6, 1);
-    }
-    h3, p,
-    div.field, /* e-info.org.tw bug */
-    div.event-nodeapi, /* e-info.org.tw bug */
-    div.publish-date,
-    div.more-link {
-      @include zen-grid-item(6, 1, right);
-      @include zen-clear(right);
-    }
+    @include zen-grid-flow-item(6, 12);
+    @include zen-float(left);
+    @include zen-clear(left);
   }
-  .latest-attachment-2 > .view-content {
-    @include zen-clear(right);
-    @include zen-grid-item(4, 1, right);
-  }
-
 
   /**
    * Slider

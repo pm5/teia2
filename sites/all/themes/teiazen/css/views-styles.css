@@ -77,31 +77,37 @@
   /* line 67, ../sass/views-styles.scss */
   #content h2.pane-title {
     text-align: center;
-    font-size: 1.2em;
+    font-size: large;
     letter-spacing: 0.4em;
     color: #717071;
     padding: 0;
     border-top: solid 5px #91c888;
     border-bottom: solid 1px #ddd;
-    margin: 0 10px 0.8em;
   }
-  /* line 79, ../sass/views-styles.scss */
-  #content div.publish-date,
-  #content div.working-holiday-program {
-    color: #adadad;
+  /* line 75, ../sass/views-styles.scss */
+  #content h2.pane-title a {
+    color: #717071;
+  }
+  /* line 78, ../sass/views-styles.scss */
+  #content h2.pane-title a:hover, #content h2.pane-title a:focus {
+    text-decoration: underline;
+    color: #4f915e;
   }
   /* line 84, ../sass/views-styles.scss */
+  #content div.publish-date {
+    color: #adadad;
+  }
+  /* line 89, ../sass/views-styles.scss */
   #content div.more-link,
   #content ul.inline li.node-readmore {
     color: #745e4f;
   }
-  /* line 87, ../sass/views-styles.scss */
+  /* line 92, ../sass/views-styles.scss */
   #content ul.inline li.node-readmore {
     float: right;
     padding: 0 0 0 1em;
   }
-
-  /* line 95, ../sass/views-styles.scss */
+  /* line 97, ../sass/views-styles.scss */
   #content .panel-pane:after {
     content: "";
     display: block;
@@ -109,63 +115,25 @@
     clear: both;
   }
 
-  /**
-   * Taxonomy term
-   */
   /* line 107, ../sass/views-styles.scss */
-  .view-taxonomy-term {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* line 109, ../sass/views-styles.scss */
-  .view-taxonomy-term h3.field-title-field {
+  .view h3.field-title-field {
     margin-top: 0;
     margin-bottom: 0;
     color: #4f915e;
   }
 
-  /* line 117, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-pane figure {
-    float: left;
-    width: 33.33333%;
-    margin-left: 0%;
-    margin-right: -33.33333%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  /* line 125, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-pane h3, .view-taxonomy-term.view-display-id-pane p,
-  .view-taxonomy-term.view-display-id-pane div.field,
-  .view-taxonomy-term.view-display-id-pane div.event-nodeapi,
-  .view-taxonomy-term.view-display-id-pane div.publish-date,
-  .view-taxonomy-term.view-display-id-pane div.more-link {
-    float: right;
-    width: 66.66667%;
-    margin-right: 0%;
-    margin-left: -66.66667%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    clear: right;
-  }
-  /* line 129, ../sass/views-styles.scss */
+  /**
+   * Taxonomy term
+   */
+  /* line 119, ../sass/views-styles.scss */
   .view-taxonomy-term.view-display-id-pane .views-row {
     margin-top: 1em;
   }
-  /* line 132, ../sass/views-styles.scss */
+  /* line 122, ../sass/views-styles.scss */
   .view-taxonomy-term.view-display-id-pane .views-row.views-row-first {
     margin-top: 0em;
   }
-  /* line 135, ../sass/views-styles.scss */
+  /* line 125, ../sass/views-styles.scss */
   .view-taxonomy-term.view-display-id-pane div.more-link:after {
     content: "";
     display: block;
@@ -173,99 +141,10 @@
     clear: both;
   }
 
-  /* line 145, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-recent_pane-6 figure.field-title-image,
-  .view-taxonomy-term.view-display-id-recent_pane figure.field-title-image {
-    float: left;
-    width: 33.33333%;
-    margin-left: 0%;
-    margin-right: -33.33333%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  /* line 152, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-recent_pane-6 h3, .view-taxonomy-term.view-display-id-recent_pane-6 p,
-  .view-taxonomy-term.view-display-id-recent_pane-6 div.field,
-  .view-taxonomy-term.view-display-id-recent_pane-6 div.event-nodeapi,
-  .view-taxonomy-term.view-display-id-recent_pane-6 div.publish-date,
-  .view-taxonomy-term.view-display-id-recent_pane-6 div.more-link,
-  .view-taxonomy-term.view-display-id-recent_pane h3,
-  .view-taxonomy-term.view-display-id-recent_pane p,
-  .view-taxonomy-term.view-display-id-recent_pane div.field,
-  .view-taxonomy-term.view-display-id-recent_pane div.event-nodeapi,
-  .view-taxonomy-term.view-display-id-recent_pane div.publish-date,
-  .view-taxonomy-term.view-display-id-recent_pane div.more-link {
-    float: right;
-    width: 66.66667%;
-    margin-right: 0%;
-    margin-left: -66.66667%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    clear: right;
-  }
-
-  /* line 158, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-no_title_image_pane {
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-
-  /* line 162, ../sass/views-styles.scss */
-  .latest-attachment-full .view-display-id-latest_attachment > .view-content {
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-
-  /* line 165, ../sass/views-styles.scss */
-  .latest-attachment-full > .view-content {
-    clear: left;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-
-  /* line 171, ../sass/views-styles.scss */
-  .latest-attachment-2 .view-display-id-latest_attachment > .view-content {
-    float: left;
-    width: 66.66667%;
-    margin-left: 0%;
-    margin-right: -66.66667%;
+  /* line 134, ../sass/views-styles.scss */
+  .view-taxonomy-term.view-display-id-recent_pane-6 > .view-content,
+  .view-taxonomy-term.view-display-id-recent_pane > .view-content {
+    width: 50%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -274,50 +153,15 @@
     box-sizing: border-box;
     word-wrap: break-word;
     padding-left: 0;
-    padding-right: 0;
-    clear: left;
-  }
-  /* line 176, ../sass/views-styles.scss */
-  .latest-attachment-2 .view-display-id-latest_attachment figure.field-title-image {
-    float: left;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: -50%;
-    padding-left: 10px;
     padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  /* line 183, ../sass/views-styles.scss */
-  .latest-attachment-2 .view-display-id-latest_attachment h3, .latest-attachment-2 .view-display-id-latest_attachment p,
-  .latest-attachment-2 .view-display-id-latest_attachment div.field,
-  .latest-attachment-2 .view-display-id-latest_attachment div.event-nodeapi,
-  .latest-attachment-2 .view-display-id-latest_attachment div.publish-date,
-  .latest-attachment-2 .view-display-id-latest_attachment div.more-link {
+    margin-right: -10px;
     float: right;
-    width: 50%;
-    margin-right: 0%;
-    margin-left: -50%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
     clear: right;
   }
 
-  /* line 188, ../sass/views-styles.scss */
-  .latest-attachment-2 > .view-content {
-    clear: right;
-    float: right;
+  /* line 140, ../sass/views-styles.scss */
+  .view-taxonomy-term.view-display-id-recent_pane > .view-content figure.field-title-image {
     width: 33.33333%;
-    margin-right: 0%;
-    margin-left: -33.33333%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -325,6 +169,44 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 13.33333px;
+    margin-right: 6.66667px;
+    float: left;
+    clear: left;
+  }
+  /* line 145, ../sass/views-styles.scss */
+  .view-taxonomy-term.view-display-id-recent_pane > .view-content div.field-content {
+    width: 66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 6.66667px;
+    margin-right: -6.66667px;
+    float: right;
+    clear: right;
+  }
+
+  /* line 152, ../sass/views-styles.scss */
+  .latest-attachment-2 .view-display-id-latest_attachment {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 10px;
+    margin-right: 10px;
+    float: left;
+    clear: left;
   }
 
   /**
@@ -333,7 +215,7 @@
   /*
    * Normalize Flexslider default theming.
    */
-  /* line 201, ../sass/views-styles.scss */
+  /* line 165, ../sass/views-styles.scss */
   .flexslider {
     border: none;
     border-radius: 0;
@@ -341,7 +223,7 @@
     margin-bottom: 35px;
   }
 
-  /* line 207, ../sass/views-styles.scss */
+  /* line 171, ../sass/views-styles.scss */
   .flex-control-nav {
     bottom: -30px;
   }
@@ -349,15 +231,15 @@
   /*
    * Top slider
    */
-  /* line 215, ../sass/views-styles.scss */
+  /* line 179, ../sass/views-styles.scss */
   div.view-teia-slideshow .view-content .flexslider {
     background: whitesmoke;
   }
-  /* line 219, ../sass/views-styles.scss */
+  /* line 183, ../sass/views-styles.scss */
   div.view-teia-slideshow li {
     overflow: hidden;
   }
-  /* line 223, ../sass/views-styles.scss */
+  /* line 187, ../sass/views-styles.scss */
   div.view-teia-slideshow figure {
     width: 66.66667%;
     padding-left: 10px;
@@ -373,7 +255,7 @@
     float: left;
     clear: left;
   }
-  /* line 230, ../sass/views-styles.scss */
+  /* line 194, ../sass/views-styles.scss */
   div.view-teia-slideshow div.slideshow-text,
   div.view-teia-slideshow div.more-link {
     width: 33.33333%;
@@ -390,21 +272,21 @@
     position: absolute;
     padding-right: 30px;
   }
-  /* line 235, ../sass/views-styles.scss */
+  /* line 199, ../sass/views-styles.scss */
   div.view-teia-slideshow div.slideshow-text {
     top: 0;
     right: 0;
     padding-top: 1em;
     padding-bottom: 1em;
   }
-  /* line 241, ../sass/views-styles.scss */
+  /* line 205, ../sass/views-styles.scss */
   div.view-teia-slideshow div.more-link {
     bottom: 0;
     right: 0;
     z-index: 1;
     padding-bottom: 1em;
   }
-  /* line 247, ../sass/views-styles.scss */
+  /* line 211, ../sass/views-styles.scss */
   div.view-teia-slideshow div.more-link:before {
     position: absolute;
     left: 0;
@@ -420,15 +302,15 @@
     background-image: linear-gradient(rgba(245, 245, 245, 0), #f5f5f5, #f5f5f5, #f5f5f5);
     z-index: -1;
   }
-  /* line 259, ../sass/views-styles.scss */
+  /* line 223, ../sass/views-styles.scss */
   div.view-teia-slideshow h3 {
     font-size: x-large;
   }
-  /* line 260, ../sass/views-styles.scss */
+  /* line 224, ../sass/views-styles.scss */
   div.view-teia-slideshow div.publish-date {
     color: #adadad;
   }
-  /* line 261, ../sass/views-styles.scss */
+  /* line 225, ../sass/views-styles.scss */
   div.view-teia-slideshow h3, div.view-teia-slideshow div.publish-date, div.view-teia-slideshow p {
     margin-top: 0.3em;
     margin-bottom: 0.3em;
