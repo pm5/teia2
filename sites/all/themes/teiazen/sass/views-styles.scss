@@ -51,7 +51,7 @@
   content: "";
   display: block;
   clear: both;
-  height: 0.5em;
+  visibility: hidden;
 }
 
 /**
@@ -102,6 +102,13 @@
       clear: both;
     }
 
+    .node-teaser {
+      p, pre {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+      }
+    }
+
   }
 
   .view {
@@ -109,6 +116,10 @@
       margin-top: 0;
       margin-bottom: 0;
       color: $light-color;
+    }
+    p, pre {
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
     }
   }
 
@@ -122,12 +133,6 @@
     }
     .views-row.views-row-first {
       margin-top: 0em;
-    }
-    div.more-link:after {
-      content: "";
-      display: block;
-      visibility: hidden;
-      clear: both;
     }
   }
 
