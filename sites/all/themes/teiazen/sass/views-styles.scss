@@ -136,6 +136,24 @@
     }
   }
 
+  .view-taxonomy-term.view-display-id-pane {
+    figure.field-title-image {
+      @include zen-grid-flow-item(4, 12);
+      @include zen-float(left);
+      @include zen-clear(left);
+    }
+    div.field-content {
+      @include zen-grid-flow-item(8, 12, false, false);
+      @include zen-float(right);
+      @include zen-clear(right);
+    }
+    div.more-link {
+      @include zen-grid-flow-item(8, 12, false, false);
+      @include zen-float(right);
+      @include zen-clear(right);
+    }
+  }
+
   .view-taxonomy-term.view-display-id-recent_pane_compact > .view-content,
   .view-taxonomy-term.view-display-id-recent_pane > .view-content {
     @include zen-grid-flow-item(6, 12, false, false);

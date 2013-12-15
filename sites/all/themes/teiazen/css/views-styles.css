@@ -146,6 +146,55 @@
   }
 
   /* line 140, ../sass/views-styles.scss */
+  .view-taxonomy-term.view-display-id-pane figure.field-title-image {
+    width: 33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 13.33333px;
+    margin-right: 6.66667px;
+    float: left;
+    clear: left;
+  }
+  /* line 145, ../sass/views-styles.scss */
+  .view-taxonomy-term.view-display-id-pane div.field-content {
+    width: 66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 6.66667px;
+    margin-right: -6.66667px;
+    float: right;
+    clear: right;
+  }
+  /* line 150, ../sass/views-styles.scss */
+  .view-taxonomy-term.view-display-id-pane div.more-link {
+    width: 66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 6.66667px;
+    margin-right: -6.66667px;
+    float: right;
+    clear: right;
+  }
+
+  /* line 158, ../sass/views-styles.scss */
   .view-taxonomy-term.view-display-id-recent_pane_compact > .view-content,
   .view-taxonomy-term.view-display-id-recent_pane > .view-content {
     width: 50%;
@@ -163,7 +212,7 @@
     clear: right;
   }
 
-  /* line 146, ../sass/views-styles.scss */
+  /* line 164, ../sass/views-styles.scss */
   .view-taxonomy-term.view-display-id-recent_pane > .view-content figure.field-title-image {
     width: 33.33333%;
     padding-left: 10px;
@@ -179,7 +228,7 @@
     float: left;
     clear: left;
   }
-  /* line 151, ../sass/views-styles.scss */
+  /* line 169, ../sass/views-styles.scss */
   .view-taxonomy-term.view-display-id-recent_pane > .view-content div.field-content {
     width: 66.66667%;
     padding-left: 10px;
@@ -196,7 +245,7 @@
     clear: right;
   }
 
-  /* line 158, ../sass/views-styles.scss */
+  /* line 176, ../sass/views-styles.scss */
   .latest-attachment-2 .view-display-id-latest_attachment {
     width: 50%;
     padding-left: 10px;
@@ -219,7 +268,7 @@
   /*
    * Normalize Flexslider default theming.
    */
-  /* line 171, ../sass/views-styles.scss */
+  /* line 189, ../sass/views-styles.scss */
   .flexslider {
     border: none;
     border-radius: 0;
@@ -227,7 +276,7 @@
     margin-bottom: 35px;
   }
 
-  /* line 177, ../sass/views-styles.scss */
+  /* line 195, ../sass/views-styles.scss */
   .flex-control-nav {
     bottom: -30px;
   }
@@ -235,15 +284,15 @@
   /*
    * Top slider
    */
-  /* line 185, ../sass/views-styles.scss */
+  /* line 203, ../sass/views-styles.scss */
   div.view-teia-slideshow .view-content .flexslider {
     background: whitesmoke;
   }
-  /* line 189, ../sass/views-styles.scss */
+  /* line 207, ../sass/views-styles.scss */
   div.view-teia-slideshow li {
     overflow: hidden;
   }
-  /* line 193, ../sass/views-styles.scss */
+  /* line 211, ../sass/views-styles.scss */
   div.view-teia-slideshow figure {
     width: 66.66667%;
     padding-left: 10px;
@@ -259,7 +308,7 @@
     float: left;
     clear: left;
   }
-  /* line 200, ../sass/views-styles.scss */
+  /* line 218, ../sass/views-styles.scss */
   div.view-teia-slideshow div.slideshow-text,
   div.view-teia-slideshow div.more-link {
     width: 33.33333%;
@@ -276,21 +325,21 @@
     position: absolute;
     padding-right: 30px;
   }
-  /* line 205, ../sass/views-styles.scss */
+  /* line 223, ../sass/views-styles.scss */
   div.view-teia-slideshow div.slideshow-text {
     top: 0;
     right: 0;
     padding-top: 1em;
     padding-bottom: 1em;
   }
-  /* line 211, ../sass/views-styles.scss */
+  /* line 229, ../sass/views-styles.scss */
   div.view-teia-slideshow div.more-link {
     bottom: 0;
     right: 0;
     z-index: 1;
     padding-bottom: 1em;
   }
-  /* line 217, ../sass/views-styles.scss */
+  /* line 235, ../sass/views-styles.scss */
   div.view-teia-slideshow div.more-link:before {
     position: absolute;
     left: 0;
@@ -306,15 +355,15 @@
     background-image: linear-gradient(rgba(245, 245, 245, 0), #f5f5f5, #f5f5f5, #f5f5f5);
     z-index: -1;
   }
-  /* line 229, ../sass/views-styles.scss */
+  /* line 247, ../sass/views-styles.scss */
   div.view-teia-slideshow h3 {
     font-size: x-large;
   }
-  /* line 230, ../sass/views-styles.scss */
+  /* line 248, ../sass/views-styles.scss */
   div.view-teia-slideshow div.publish-date {
     color: #adadad;
   }
-  /* line 231, ../sass/views-styles.scss */
+  /* line 249, ../sass/views-styles.scss */
   div.view-teia-slideshow h3, div.view-teia-slideshow div.publish-date, div.view-teia-slideshow p {
     margin-top: 0.3em;
     margin-bottom: 0.3em;
