@@ -78,16 +78,11 @@
     div.post-date,
     div.working-holiday-program {
       color: $grey-text;
-      font-size: smaller;
     }
 
     div.more-link,
     ul.inline li.node-readmore {
       color: $dark-color;
-      font-size: smaller;
-    }
-    div.more-link {
-      text-align: right;
     }
     ul.inline li.node-readmore {
       float: right;
@@ -201,50 +196,47 @@
    * Slider
    */
 
-  .view-content .flexslider {
+  /*
+   * Normalize Flexslider default theming.
+   */
+  .flexslider {
     border: none;
     border-radius: 0;
     box-shadow: none;
   }
 
-  .pane-teia-slideshow-pane {
-    div.view-teia-slideshow {
-      @include zen-grid-item(12, 1);
+  /*
+   * Top slider
+   */
+  div.view-teia-slideshow {
+    .view-content .flexslider {
+      background: $white-shadow;
+    }
 
-      .view-content .flexslider {
-        background: $white-shadow;
-      }
+    figure {
+      @include zen-grid-flow-item(8, 12, false, true);
+      @include zen-float(left);
+      @include zen-clear(left);
+    }
 
-      li {
-        figure {
-          @include zen-grid-flow-item(8, 12, false, false);
-          @include zen-float(left);
-          @include zen-clear(left);
-        }
+    h3, p, div.post-date, div.more-link {
+      @include zen-grid-flow-item(4, 12, false, false);
+      @include zen-float(left);
+      padding-right: 3 * zen-half-gutter($gutter-side: right);
+    }
 
-        h3,
-        p,
-        div.post-date,
-        div.more-link {
-          @include zen-grid-flow-item(4, 12, false, false);
-          @include zen-float(right);
-          @include zen-clear(right);
-        }
+    h3 {
+      font-size: x-large;
+    }
 
-        h3 {
-          font-size: 1.5em;
-          margin-bottom: 0.1em;
-        }
+    .post-date {
+      color: $grey-text;
+    }
 
-        .post-date {
-          color: $grey-text;
-          font-size: smaller;
-        }
-
-        p {
-          margin-top: 0.4em;
-        }
-      }
+    .more-link {
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
   }
 }

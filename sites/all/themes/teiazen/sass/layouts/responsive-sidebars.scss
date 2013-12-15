@@ -114,7 +114,6 @@ $zen-auto-include-item-base: true;
 
   #content {
     @include zen-grid-item(9, 1);
-    @include zen-nested-container();
   }
 
   /**
