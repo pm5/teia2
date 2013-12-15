@@ -82,26 +82,6 @@
       }
     }
 
-    div.publish-date {
-      color: $grey-text;
-    }
-
-    div.more-link,
-    ul.inline li.node-readmore {
-      color: $dark-color;
-    }
-    ul.inline li.node-readmore {
-      float: right;
-      padding: 0 0 0 1em;
-    }
-
-    .panel-pane:after {
-      content: "";
-      display: block;
-      visibility: hidden;
-      clear: both;
-    }
-
     .node-teaser {
       p, pre {
         margin-top: 0.2em;
@@ -120,6 +100,18 @@
     p, pre {
       margin-top: 0.2em;
       margin-bottom: 0.2em;
+    }
+    div.publish-date {
+      color: $grey-text;
+    }
+
+    div.more-link,
+    ul.inline li.node-readmore {
+      color: $dark-color;
+    }
+    ul.inline li.node-readmore {
+      float: right;
+      padding: 0 0 0 1em;
     }
   }
 
