@@ -14,7 +14,7 @@
 /*
  * Center the page.
  */
-@media all and (min-width: 1380px) {
+@media all and (min-width: 960px) {
   /* line 46, ../../sass/layouts/responsive-sidebars.scss */
   #page,
   .region-bottom {
@@ -23,7 +23,7 @@
     max-width: 1200px;
   }
 }
-@media all and (min-width: 480px) and (max-width: 1379px) {
+@media all and (min-width: 480px) and (max-width: 959px) {
   /* line 54, ../../sass/layouts/responsive-sidebars.scss */
   #page,
   .region-bottom {
@@ -86,9 +86,9 @@
   /* line 99, ../../sass/layouts/responsive-sidebars.scss */
   .region-header {
     float: right;
-    width: 25%;
-    margin-right: 41.66667%;
-    margin-left: -66.66667%;
+    width: 27.27273%;
+    margin-right: 45.45455%;
+    margin-left: -72.72727%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -99,21 +99,36 @@
     height: 130px;
   }
 
+  /* line 104, ../../sass/layouts/responsive-sidebars.scss */
+  #logo {
+    float: left;
+    width: 18.18182%;
+    margin-left: 0%;
+    margin-right: -18.18182%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
   /**
    * Main grid container.  Set top padding to make room for header container.
    */
-  /* line 110, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 111, ../../sass/layouts/responsive-sidebars.scss */
   #main {
     padding-top: 160px;
     position: relative;
   }
 
-  /* line 115, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 116, ../../sass/layouts/responsive-sidebars.scss */
   #content {
     float: left;
-    width: 75%;
-    margin-left: 0%;
-    margin-right: -75%;
+    width: 72.72727%;
+    margin-left: 9.09091%;
+    margin-right: -81.81818%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -126,12 +141,12 @@
   /**
    * Navigation region.  Placed at top right.
    */
-  /* line 122, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 123, ../../sass/layouts/responsive-sidebars.scss */
   .region-navigation {
     float: left;
-    width: 41.66667%;
-    margin-left: 58.33333%;
-    margin-right: -100%;
+    width: 45.45455%;
+    margin-left: 63.63636%;
+    margin-right: -109.09091%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -145,12 +160,12 @@
     z-index: 2;
   }
 
-  /* line 131, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 132, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first #content {
     float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
+    width: 100.0%;
+    margin-left: 9.09091%;
+    margin-right: -109.09091%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -159,12 +174,12 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 135, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 136, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
-    width: 8.33333%;
+    width: 9.09091%;
     margin-left: 0%;
-    margin-right: -8.33333%;
+    margin-right: -9.09091%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -174,7 +189,7 @@
     word-wrap: break-word;
   }
 
-  /* line 141, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 142, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-first, .two-sidebars .region-sidebar-first {
     padding-left: 0;
     padding-right: 0;
@@ -183,12 +198,12 @@
     left: 0;
     width: 6em;
   }
-  /* line 149, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 150, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-second, .two-sidebars .region-sidebar-second {
     float: right;
-    width: 25%;
+    width: 18.18182%;
     margin-right: 0%;
-    margin-left: -25%;
+    margin-left: -18.18182%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -201,12 +216,12 @@
   /**
    * Footer hack.
    */
-  /* line 157, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 158, ../../sass/layouts/responsive-sidebars.scss */
   #footer #block-panels-mini-footer {
     float: left;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: -75%;
+    width: 54.54545%;
+    margin-left: 27.27273%;
+    margin-right: -81.81818%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -214,14 +229,5 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-  }
-
-  /* line 164, ../../sass/layouts/responsive-sidebars.scss */
-  .breadcrumb,
-  #page-title,
-  .node,
-  div.panel-pane div.node {
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
