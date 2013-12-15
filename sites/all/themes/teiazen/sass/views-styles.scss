@@ -93,9 +93,8 @@
 
   #content {
     .panel-pane:after {
-      content: ".";
+      content: "";
       display: block;
-      height: 2em;
       visibility: hidden;
       clear: both;
     }
@@ -134,7 +133,7 @@
       margin-top: 0em;
     }
     div.more-link:after {
-      content: ".";
+      content: "";
       display: block;
       visibility: hidden;
       clear: both;
@@ -203,6 +202,10 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
+    margin-bottom: 35px;
+  }
+  .flex-control-nav {
+    bottom: -30px;
   }
 
   /*
@@ -232,21 +235,21 @@
     div.slideshow-text {
       top: 0;
       right: 0;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
+      padding-top: 1em;
+      padding-bottom: 1em;
     }
     div.more-link {
       bottom: 0;
       right: 0;
       z-index: 1;
-      padding-bottom: 0.7em;
+      padding-bottom: 1em;
     }
     div.more-link:before {
       position: absolute;
       left: 0;
       right: 0;
       bottom: 0;
-      height: 3.8em;
+      height: 4.4em;
       content: "";
       display: block;
       @include background-image(linear-gradient(rgba(245, 245, 245, 0), $white-shadow, $white-shadow, $white-shadow));
