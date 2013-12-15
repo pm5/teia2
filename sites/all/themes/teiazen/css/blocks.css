@@ -172,8 +172,9 @@
 /* line 113, ../sass/blocks.scss */
 div#block-panels-mini-donate-now {
   border: none;
+  padding: 0;
 }
-/* line 115, ../sass/blocks.scss */
+/* line 116, ../sass/blocks.scss */
 div#block-panels-mini-donate-now a#donate-now {
   display: block;
   border: 0;
@@ -183,19 +184,19 @@ div#block-panels-mini-donate-now a#donate-now {
   padding: 2em 1.2em;
   text-decoration: none;
 }
-/* line 124, ../sass/blocks.scss */
+/* line 125, ../sass/blocks.scss */
 div#block-panels-mini-donate-now a#donate-now:active, div#block-panels-mini-donate-now a#donate-now:visited {
   color: white;
   background: #4f915e;
   text-decoration: none;
 }
-/* line 129, ../sass/blocks.scss */
+/* line 130, ../sass/blocks.scss */
 div#block-panels-mini-donate-now a#donate-now:hover {
   color: white;
   background: #91c888;
   text-decoration: none;
 }
-/* line 135, ../sass/blocks.scss */
+/* line 136, ../sass/blocks.scss */
 div#block-panels-mini-donate-now .donate-now-zh {
   display: block;
   font-size: 2.5em;
@@ -203,7 +204,7 @@ div#block-panels-mini-donate-now .donate-now-zh {
   border-bottom: 2px white solid;
   padding-bottom: 0.4em;
 }
-/* line 143, ../sass/blocks.scss */
+/* line 144, ../sass/blocks.scss */
 div#block-panels-mini-donate-now .donate-now-en {
   display: block;
   font-size: 1.5em;
@@ -214,34 +215,50 @@ div#block-panels-mini-donate-now .donate-now-en {
 /**
  * Second sidebar
  */
-/* line 156, ../sass/blocks.scss */
+/* line 157, ../sass/blocks.scss */
 .region-sidebar-second h2.block-title {
-  background: #4f915e;
   color: white;
-  padding: 0 1em;
-  border-radius: 0.8em 0.8em 0 0;
+  position: absolute;
+  top: -2em;
 }
 /* line 163, ../sass/blocks.scss */
 .region-sidebar-second .block {
-  border-bottom: 4px solid #4f915e;
-  border-right: 4px solid #4f915e;
-  border-left: 4px solid #4f915e;
+  border-color: #4f915e;
   border-radius: 1.5em 1.5em 0 0;
+  border-style: solid;
+  border-width: 3.5em 4px 4px;
+  padding: 1em 20px;
 }
-/* line 171, ../sass/blocks.scss */
-.region-sidebar-second h2.pane-title,
-.region-sidebar-second .pane-content > p {
-  padding-left: 10px;
-  padding-right: 10px;
+/* line 170, ../sass/blocks.scss */
+.region-sidebar-second .block p, .region-sidebar-second .block pre {
+  margin-top: 0.2em;
+}
+/* line 175, ../sass/blocks.scss */
+.region-sidebar-second .block div.more-link,
+.region-sidebar-second .block ul.inline li.node-readmore {
+  color: #745e4f;
+}
+/* line 178, ../sass/blocks.scss */
+.region-sidebar-second .block ul.inline li.node-readmore {
+  float: right;
+  padding: 0;
 }
 
 /**
- * Mini panels
+ * Panels
  */
-/* line 182, ../sass/blocks.scss */
+/* line 190, ../sass/blocks.scss */
 .pane-teia-link-slider-pane .flexslider {
   margin-bottom: 0px;
   margin-top: 1.5em;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+/* line 198, ../sass/blocks.scss */
+.panel-pane:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
 }

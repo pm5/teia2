@@ -112,6 +112,7 @@
 
 div#block-panels-mini-donate-now {
   border: none;
+  padding: 0;
   a#donate-now {
     display: block;
     border: 0;
@@ -154,28 +155,35 @@ div#block-panels-mini-donate-now {
 
 .region-sidebar-second {
   h2.block-title {
-    background: $light-color;
     color: $white-background;
-    padding: 0 1em;
-    border-radius: 0.8em 0.8em 0 0;
+    position: absolute;
+    top: -2em;
   }
 
   .block {
-    border-bottom: 4px solid $light-color;
-    border-right: 4px solid $light-color;
-    border-left: 4px solid $light-color;
+    border-color: $light-color;
     border-radius: 1.5em 1.5em 0 0;
-  }
+    border-style: solid;
+    border-width: 3.5em 4px 4px;
+    padding: 1em 2 * zen-half-gutter();
 
-  h2.pane-title,
-  .pane-content > p {   // custom content pane
-    padding-left: zen-half-gutter();
-    padding-right: zen-half-gutter();
+    p, pre {
+      margin-top: 0.2em;
+    }
+
+    div.more-link,
+    ul.inline li.node-readmore {
+      color: $dark-color;
+    }
+    ul.inline li.node-readmore {
+      float: right;
+      padding: 0;
+    }
   }
 }
 
 /**
- * Mini panels
+ * Panels
  */
 
 .pane-teia-link-slider-pane {
@@ -185,4 +193,11 @@ div#block-panels-mini-donate-now {
     padding-left: zen-half-gutter();
     padding-right: zen-half-gutter();
   }
+}
+
+.panel-pane:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
 }
