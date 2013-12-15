@@ -75,7 +75,7 @@
       margin: 0 zen-half-gutter() 0.8em;
     }
 
-    div.post-date,
+    div.publish-date,
     div.working-holiday-program {
       color: $grey-text;
     }
@@ -122,7 +122,7 @@
     h3, p,
     div.field, /* e-info.org.tw bug */
     div.event-nodeapi, /* e-info.org.tw bug */
-    div.post-date,
+    div.publish-date,
     div.more-link {
       @include zen-grid-item(8, 1, right);
       @include zen-clear(right);
@@ -149,7 +149,7 @@
     h3, p,
     div.field, /* e-info.org.tw bug */
     div.event-nodeapi, /* e-info.org.tw bug */
-    div.post-date,
+    div.publish-date,
     div.more-link {
       @include zen-grid-item(8, 1, right);
       @include zen-clear(right);
@@ -180,7 +180,7 @@
     h3, p,
     div.field, /* e-info.org.tw bug */
     div.event-nodeapi, /* e-info.org.tw bug */
-    div.post-date,
+    div.publish-date,
     div.more-link {
       @include zen-grid-item(6, 1, right);
       @include zen-clear(right);
@@ -213,30 +213,52 @@
       background: $white-shadow;
     }
 
+    li {
+      overflow: hidden;
+    }
+
     figure {
       @include zen-grid-flow-item(8, 12, false, true);
       @include zen-float(left);
       @include zen-clear(left);
     }
 
-    h3, p, div.post-date, div.more-link {
+    div.slideshow-text,
+    div.more-link {
       @include zen-grid-flow-item(4, 12, false, false);
-      @include zen-float(left);
-      padding-right: 3 * zen-half-gutter($gutter-side: right);
-    }
-
-    h3 {
-      font-size: x-large;
-    }
-
-    .post-date {
-      color: $grey-text;
-    }
-
-    .more-link {
       position: absolute;
+      padding-right: 3 * zen-half-gutter();
+    }
+    div.slideshow-text {
+      top: 0;
+      right: 0;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+    div.more-link {
       bottom: 0;
       right: 0;
+      z-index: 1;
+      padding-bottom: 0.7em;
     }
+    div.more-link:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 3.8em;
+      content: "";
+      display: block;
+      @include background-image(linear-gradient(rgba(245, 245, 245, 0), $white-shadow, $white-shadow, $white-shadow));
+      z-index: -1;
+    }
+
+    h3 { font-size: x-large; }
+    div.publish-date { color: $grey-text; }
+    h3, div.publish-date, p {
+      margin-top: 0.3em;
+      margin-bottom: 0.3em;
+    }
+
   }
 }
