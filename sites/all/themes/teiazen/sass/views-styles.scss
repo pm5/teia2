@@ -211,7 +211,7 @@
     div.more-link:before {
       position: absolute;
       left: 0;
-      right: 0;
+      right: 3 * zen-half-gutter();
       bottom: 0;
       height: 4.4em;
       content: "";

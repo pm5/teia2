@@ -290,7 +290,7 @@
   div.view-teia-slideshow div.more-link:before {
     position: absolute;
     left: 0;
-    right: 0;
+    right: 30px;
     bottom: 0;
     height: 4.4em;
     content: "";
