@@ -169,12 +169,12 @@
 /**
  * Donate Now!
  */
-/* line 113, ../sass/blocks.scss */
-div#block-panels-mini-donate-now {
+/* line 114, ../sass/blocks.scss */
+div#block-panels-mini-donate-now .block-content {
   border: none;
   padding: 0;
 }
-/* line 116, ../sass/blocks.scss */
+/* line 118, ../sass/blocks.scss */
 div#block-panels-mini-donate-now a#donate-now {
   display: block;
   border: 0;
@@ -184,19 +184,19 @@ div#block-panels-mini-donate-now a#donate-now {
   padding: 2em 1.2em;
   text-decoration: none;
 }
-/* line 125, ../sass/blocks.scss */
+/* line 127, ../sass/blocks.scss */
 div#block-panels-mini-donate-now a#donate-now:active, div#block-panels-mini-donate-now a#donate-now:visited {
   color: white;
   background: #4f915e;
   text-decoration: none;
 }
-/* line 130, ../sass/blocks.scss */
+/* line 132, ../sass/blocks.scss */
 div#block-panels-mini-donate-now a#donate-now:hover {
   color: white;
   background: #91c888;
   text-decoration: none;
 }
-/* line 136, ../sass/blocks.scss */
+/* line 138, ../sass/blocks.scss */
 div#block-panels-mini-donate-now .donate-now-zh {
   display: block;
   font-size: 2.5em;
@@ -204,7 +204,7 @@ div#block-panels-mini-donate-now .donate-now-zh {
   border-bottom: 2px white solid;
   padding-bottom: 0.4em;
 }
-/* line 144, ../sass/blocks.scss */
+/* line 146, ../sass/blocks.scss */
 div#block-panels-mini-donate-now .donate-now-en {
   display: block;
   font-size: 1.5em;
@@ -215,31 +215,34 @@ div#block-panels-mini-donate-now .donate-now-en {
 /**
  * Second sidebar
  */
-/* line 157, ../sass/blocks.scss */
+/* line 159, ../sass/blocks.scss */
 .region-sidebar-second h2.block-title {
   color: white;
-  position: absolute;
-  top: -2em;
+  background: #4f915e;
+  border-radius: 1em 1em 0 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 0.3em;
+  text-align: center;
 }
-/* line 163, ../sass/blocks.scss */
-.region-sidebar-second .block {
+/* line 169, ../sass/blocks.scss */
+.region-sidebar-second .block-content {
   border-color: #4f915e;
-  border-radius: 1.5em 1.5em 0 0;
   border-style: solid;
-  border-width: 3.5em 4px 4px;
-  padding: 1em 20px;
-}
-/* line 170, ../sass/blocks.scss */
-.region-sidebar-second .block p, .region-sidebar-second .block pre {
-  margin-top: 0.2em;
+  border-width: 0 4px 4px 4px;
+  padding: 1em 10px;
 }
 /* line 175, ../sass/blocks.scss */
-.region-sidebar-second .block div.more-link,
-.region-sidebar-second .block ul.inline li.node-readmore {
+.region-sidebar-second .block-content p, .region-sidebar-second .block-content pre {
+  margin-top: 0.2em;
+}
+/* line 180, ../sass/blocks.scss */
+.region-sidebar-second .block-content div.more-link,
+.region-sidebar-second .block-content ul.inline li.node-readmore {
   color: #745e4f;
 }
-/* line 178, ../sass/blocks.scss */
-.region-sidebar-second .block ul.inline li.node-readmore {
+/* line 183, ../sass/blocks.scss */
+.region-sidebar-second .block-content ul.inline li.node-readmore {
   float: right;
   padding: 0;
 }
@@ -247,7 +250,7 @@ div#block-panels-mini-donate-now .donate-now-en {
 /**
  * Panels
  */
-/* line 190, ../sass/blocks.scss */
+/* line 195, ../sass/blocks.scss */
 .pane-teia-link-slider-pane .flexslider {
   margin-bottom: 0px;
   margin-top: 1.5em;
@@ -255,7 +258,7 @@ div#block-panels-mini-donate-now .donate-now-en {
   padding-right: 10px;
 }
 
-/* line 198, ../sass/blocks.scss */
+/* line 203, ../sass/blocks.scss */
 .panel-pane:after {
   content: "";
   display: block;

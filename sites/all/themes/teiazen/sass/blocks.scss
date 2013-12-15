@@ -111,8 +111,10 @@
  */
 
 div#block-panels-mini-donate-now {
-  border: none;
-  padding: 0;
+  .block-content {
+    border: none;
+    padding: 0;
+  }
   a#donate-now {
     display: block;
     border: 0;
@@ -156,16 +158,19 @@ div#block-panels-mini-donate-now {
 .region-sidebar-second {
   h2.block-title {
     color: $white-background;
-    position: absolute;
-    top: -2em;
+    background: $light-color;
+    border-radius: 1em 1em 0 0;
+    padding-left: zen-half-gutter();
+    padding-right: zen-half-gutter();
+    letter-spacing: 0.3em;
+    text-align: center;
   }
 
-  .block {
+  .block-content {
     border-color: $light-color;
-    border-radius: 1.5em 1.5em 0 0;
     border-style: solid;
-    border-width: 3.5em 4px 4px;
-    padding: 1em 2 * zen-half-gutter();
+    border-width: 0 4px 4px 4px;
+    padding: 1em zen-half-gutter();
 
     p, pre {
       margin-top: 0.2em;
