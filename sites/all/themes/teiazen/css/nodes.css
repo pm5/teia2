@@ -115,10 +115,7 @@
 }
 /* line 84, ../sass/nodes.scss */
 .node.node-teia-newsletter figure.field-title-image {
-  float: left;
   width: 33.33333%;
-  margin-left: 0%;
-  margin-right: -33.33333%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -126,17 +123,18 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  padding-left: 0;
+  padding-right: 13.33333px;
+  margin-right: 6.66667px;
+  float: left;
   clear: both;
 }
-/* line 92, ../sass/nodes.scss */
+/* line 93, ../sass/nodes.scss */
 .node.node-teia-newsletter .field-newsletter-section-name,
 .node.node-teia-newsletter h3.field-newsletter-section-title,
 .node.node-teia-newsletter p,
 .node.node-teia-newsletter div.field-newsletter-section-link {
-  float: right;
   width: 66.66667%;
-  margin-right: 0%;
-  margin-left: -66.66667%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -144,9 +142,13 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  padding-left: 0;
+  padding-right: 6.66667px;
+  margin-right: -6.66667px;
+  float: right;
   clear: right;
 }
-/* line 97, ../sass/nodes.scss */
+/* line 99, ../sass/nodes.scss */
 .node.node-teia-newsletter h3.field-newsletter-section-title {
   margin-top: 0.3em;
 }

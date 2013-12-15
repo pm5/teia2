@@ -82,7 +82,8 @@ $zen-gutter-width:  20px;
   @include zen-nested-container();
 
   figure.field-title-image {
-    @include zen-grid-item(4, 1);
+    @include zen-grid-flow-item(4, 12);
+    @include zen-float(left);
     @include zen-clear(both);
   }
 
@@ -90,7 +91,8 @@ $zen-gutter-width:  20px;
   h3.field-newsletter-section-title,
   p,
   div.field-newsletter-section-link {
-    @include zen-grid-item(8, 1, right);
+    @include zen-grid-flow-item(8, 12, false, false);
+    @include zen-float(right);
     @include zen-clear(right);
   }
 
