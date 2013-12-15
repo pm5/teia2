@@ -206,3 +206,9 @@ div#block-panels-mini-donate-now {
   visibility: hidden;
   clear: both;
 }
+
+#content {
+  .panel-pane {
+    margin-bottom: 1.5em;
+  }
+}

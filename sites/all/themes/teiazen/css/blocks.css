@@ -265,3 +265,8 @@ div#block-panels-mini-donate-now .donate-now-en {
   visibility: hidden;
   clear: both;
 }
+
+/* line 211, ../sass/blocks.scss */
+#content .panel-pane {
+  margin-bottom: 1.5em;
+}
