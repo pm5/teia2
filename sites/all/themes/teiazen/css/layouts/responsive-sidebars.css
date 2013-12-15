@@ -215,13 +215,4 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-
-  /* line 164, ../../sass/layouts/responsive-sidebars.scss */
-  .breadcrumb,
-  #page-title,
-  .node,
-  div.panel-pane div.node {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }

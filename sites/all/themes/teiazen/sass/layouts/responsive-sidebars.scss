@@ -158,11 +158,4 @@ $zen-auto-include-item-base: true;
     @include zen-grid-item(6, 4);
   }
 
-  .breadcrumb,
-  #page-title,
-  .node,
-  div.panel-pane div.node {
-    padding-left: zen-half-gutter();
-    padding-right: zen-half-gutter();
-  }
 }
