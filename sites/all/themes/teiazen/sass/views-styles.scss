@@ -70,6 +70,7 @@
       letter-spacing: 0.4em;
       color: $black-header;
       padding: 0;
+      margin-top: 0;
       border-top: solid 5px $light-lighter;
       border-bottom: solid 1px #ddd;
       a {
@@ -130,7 +131,7 @@
     }
   }
 
-  .view-taxonomy-term.view-display-id-recent_pane-6 > .view-content,
+  .view-taxonomy-term.view-display-id-recent_pane_compact > .view-content,
   .view-taxonomy-term.view-display-id-recent_pane > .view-content {
     @include zen-grid-flow-item(6, 12, false, false);
     @include zen-float(right);
