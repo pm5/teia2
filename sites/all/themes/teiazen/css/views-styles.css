@@ -134,19 +134,19 @@
   }
 
   /**
-   * Taxonomy term
+   * View panes
    */
   /* line 131, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-pane .views-row {
+  .view-display-id-pane .views-row {
     margin-top: 1em;
   }
   /* line 134, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-pane .views-row.views-row-first {
+  .view-display-id-pane .views-row.views-row-first {
     margin-top: 0em;
   }
 
   /* line 140, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-pane figure.field-title-image {
+  .view-display-id-pane figure.field-title-image {
     width: 33.33333%;
     padding-left: 10px;
     padding-right: 10px;
@@ -162,7 +162,7 @@
     clear: left;
   }
   /* line 145, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-pane div.field-content {
+  .view-display-id-pane div.field-content {
     width: 66.66667%;
     padding-left: 10px;
     padding-right: 10px;
@@ -178,7 +178,7 @@
     clear: right;
   }
   /* line 150, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-pane div.more-link {
+  .view-display-id-pane div.more-link {
     width: 66.66667%;
     padding-left: 10px;
     padding-right: 10px;
@@ -195,8 +195,8 @@
   }
 
   /* line 158, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-recent_pane_compact > .view-content,
-  .view-taxonomy-term.view-display-id-recent_pane > .view-content {
+  .view-display-id-recent_pane_compact > .view-content,
+  .view-display-id-recent_pane > .view-content {
     width: 50%;
     padding-left: 10px;
     padding-right: 10px;
@@ -213,7 +213,7 @@
   }
 
   /* line 164, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-recent_pane > .view-content figure.field-title-image {
+  .view-display-id-recent_pane > .view-content figure.field-title-image {
     width: 33.33333%;
     padding-left: 10px;
     padding-right: 10px;
@@ -229,7 +229,7 @@
     clear: left;
   }
   /* line 169, ../sass/views-styles.scss */
-  .view-taxonomy-term.view-display-id-recent_pane > .view-content div.field-content {
+  .view-display-id-recent_pane > .view-content div.field-content {
     width: 66.66667%;
     padding-left: 10px;
     padding-right: 10px;

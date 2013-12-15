@@ -124,10 +124,10 @@
   }
 
   /**
-   * Taxonomy term
+   * View panes
    */
 
-  .view-taxonomy-term.view-display-id-pane {
+  .view-display-id-pane {
     .views-row {
       margin-top: 1em;
     }
@@ -136,7 +136,7 @@
     }
   }
 
-  .view-taxonomy-term.view-display-id-pane {
+  .view-display-id-pane {
     figure.field-title-image {
       @include zen-grid-flow-item(4, 12);
       @include zen-float(left);
@@ -154,13 +154,13 @@
     }
   }
 
-  .view-taxonomy-term.view-display-id-recent_pane_compact > .view-content,
-  .view-taxonomy-term.view-display-id-recent_pane > .view-content {
+  .view-display-id-recent_pane_compact > .view-content,
+  .view-display-id-recent_pane > .view-content {
     @include zen-grid-flow-item(6, 12, false, false);
     @include zen-float(right);
     @include zen-clear(right);
   }
-  .view-taxonomy-term.view-display-id-recent_pane > .view-content {
+  .view-display-id-recent_pane > .view-content {
     figure.field-title-image {
       @include zen-grid-flow-item(4, 12);
       @include zen-float(left);
