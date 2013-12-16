@@ -121,7 +121,7 @@ $zen-auto-include-item-base: true;
    * Navigation region.  Placed at top right.
    */
   .region-navigation {
-    @include zen-grid-item(5, 8);
+    @include zen-grid-item(5, 7);
     position: relative;
     top: -$main-top;
     height: $header-height;
