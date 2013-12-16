@@ -41,7 +41,7 @@ $zen-auto-include-item-base: true;
  * Center the page.
  */
 
-@media all and (min-width: 1380px) {
+@media all and (min-width: 960px) {
   #page,
   .region-bottom {
     margin-left: auto;
@@ -49,7 +49,7 @@ $zen-auto-include-item-base: true;
     max-width: $max-width;
   }
 }
-@media all and (min-width: 480px) and (max-width: 1379px) {
+@media all and (min-width: 480px) and (max-width: 959px) {
   #page,
   .region-bottom {
     margin-left: 85px;
@@ -102,6 +102,7 @@ $zen-auto-include-item-base: true;
   }
 
   #logo {
+    @include zen-grid-item(2, 1);
   }
 
   /**
@@ -113,7 +114,7 @@ $zen-auto-include-item-base: true;
   }
 
   #content {
-    @include zen-grid-item(9, 1);
+    @include zen-grid-item(8, 2);
   }
 
   /**
@@ -129,7 +130,7 @@ $zen-auto-include-item-base: true;
 
   .sidebar-first {
     #content {
-      @include zen-grid-item(12, 1);
+      @include zen-grid-item(11, 2);
     }
 
     .region-sidebar-first {
