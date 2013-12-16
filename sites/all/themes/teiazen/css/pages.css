@@ -23,7 +23,7 @@ body {
 /* line 23, ../sass/pages.scss */
 body a, body a:active, body a:visited {
   text-decoration: none;
-  color: #4f915e;
+  color: #466b54;
 }
 /* line 27, ../sass/pages.scss */
 body a:hover, body a:focus {
@@ -133,7 +133,7 @@ h3.title {
 
 /* line 143, ../sass/pages.scss */
 h3 {
-  color: #4f915e;
+  color: #466b54;
 }
 
 /* line 147, ../sass/pages.scss */
