@@ -87,7 +87,6 @@ $zen-gutter-width:  20px;
     @include zen-clear(both);
   }
 
-  .field-newsletter-section-name,
   h3.field-newsletter-section-title,
   p,
   div.field-newsletter-section-link {
@@ -97,6 +96,31 @@ $zen-gutter-width:  20px;
   }
 
   h3.field-newsletter-section-title {
-    margin-top: 0.3em;
+    margin-top: 0;
+    margin-bottom: 0.1em;
+  }
+
+  p {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+
+  div.field-newsletter-section-link {
+    text-align: right;
+  }
+
+  .pane-node-field-newsletter-section {
+    .field-newsletter-section-name {
+      @include zen-grid-flow-item(2, 12, false, false);
+      @include zen-float(left);
+    }
+    h3.field-newsletter-section-title {
+      @include zen-grid-flow-item(6, 12, false, false);
+      @include zen-float(right);
+      @include zen-clear(right);
+    }
+    div.field-newsletter-section-link {
+      margin-bottom: 1.5em;
+    }
   }
 }
