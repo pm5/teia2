@@ -79,7 +79,7 @@ $zen-auto-include-item-base: true;
 }
 
 @media all and (min-width: 960px) {
-  $zen-column-count: 12;
+  $zen-column-count: 11;
 
   /**
    * Header grid container.  Set to absolute position to make room for navigation region at the top right.
@@ -148,7 +148,7 @@ $zen-auto-include-item-base: true;
     }
 
     .region-sidebar-second {
-      @include zen-grid-item(3, 1, right);
+      @include zen-grid-item(2, 1, right);
     }
   }
 

@@ -90,9 +90,9 @@
   /* line 99, ../../sass/layouts/responsive-sidebars.scss */
   .region-header {
     float: left;
-    width: 25%;
-    margin-left: 41.66667%;
-    margin-right: -66.66667%;
+    width: 27.27273%;
+    margin-left: 45.45455%;
+    margin-right: -72.72727%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -106,9 +106,9 @@
   /* line 104, ../../sass/layouts/responsive-sidebars.scss */
   #logo {
     float: right;
-    width: 16.66667%;
+    width: 18.18182%;
     margin-right: 0%;
-    margin-left: -16.66667%;
+    margin-left: -18.18182%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -130,9 +130,9 @@
   /* line 116, ../../sass/layouts/responsive-sidebars.scss */
   #content {
     float: right;
-    width: 66.66667%;
-    margin-right: 8.33333%;
-    margin-left: -75%;
+    width: 72.72727%;
+    margin-right: 9.09091%;
+    margin-left: -81.81818%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -148,9 +148,9 @@
   /* line 123, ../../sass/layouts/responsive-sidebars.scss */
   .region-navigation {
     float: right;
-    width: 41.66667%;
-    margin-right: 58.33333%;
-    margin-left: -100%;
+    width: 45.45455%;
+    margin-right: 63.63636%;
+    margin-left: -109.09091%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -167,9 +167,9 @@
   /* line 132, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first #content {
     float: right;
-    width: 91.66667%;
-    margin-right: 8.33333%;
-    margin-left: -100%;
+    width: 100.0%;
+    margin-right: 9.09091%;
+    margin-left: -109.09091%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -181,9 +181,9 @@
   /* line 136, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first .region-sidebar-first {
     float: right;
-    width: 8.33333%;
+    width: 9.09091%;
     margin-right: 0%;
-    margin-left: -8.33333%;
+    margin-left: -9.09091%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -205,9 +205,9 @@
   /* line 150, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-second, .two-sidebars .region-sidebar-second {
     float: left;
-    width: 25%;
+    width: 18.18182%;
     margin-left: 0%;
-    margin-right: -25%;
+    margin-right: -18.18182%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -223,9 +223,9 @@
   /* line 158, ../../sass/layouts/responsive-sidebars.scss */
   #footer #block-panels-mini-footer {
     float: right;
-    width: 50%;
-    margin-right: 25%;
-    margin-left: -75%;
+    width: 54.54545%;
+    margin-right: 27.27273%;
+    margin-left: -81.81818%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
