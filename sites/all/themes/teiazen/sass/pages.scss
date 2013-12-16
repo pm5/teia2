@@ -141,7 +141,7 @@ h3.title { /* Comment title */
 }
 
 h3 {
-  color: $light-color;
+  color: $light-darker;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
@@ -216,6 +216,10 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 .feed-icon { /* The link to the RSS or Atom feed for the current list of content */
+}
+
+li {
+  list-style: disc;
 }
 
 .more-link { /* Aggregator, blog, and forum more link */
