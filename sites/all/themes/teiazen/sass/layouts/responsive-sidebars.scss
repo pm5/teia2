@@ -97,7 +97,7 @@ $zen-auto-include-item-base: true;
   }
 
   .region-header {
-    @include zen-grid-item(3, 6, right);
+    @include zen-grid-item(2, 5);
     height: $header-height;
   }
 

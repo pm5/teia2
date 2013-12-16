@@ -85,10 +85,10 @@
 
   /* line 99, ../../sass/layouts/responsive-sidebars.scss */
   .region-header {
-    float: right;
-    width: 27.27273%;
-    margin-right: 45.45455%;
-    margin-left: -72.72727%;
+    float: left;
+    width: 18.18182%;
+    margin-left: 36.36364%;
+    margin-right: -54.54545%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
