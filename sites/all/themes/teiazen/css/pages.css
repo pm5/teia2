@@ -252,15 +252,20 @@ span.field-label {
 }
 
 /* line 221, ../sass/pages.scss */
+li {
+  list-style: disc;
+}
+
+/* line 225, ../sass/pages.scss */
 .more-link {
   /* Aggregator, blog, and forum more link */
 }
-/* line 222, ../sass/pages.scss */
+/* line 226, ../sass/pages.scss */
 .more-link a, .more-link a:active, .more-link a:visited {
   text-decoration: none;
   color: #745e4f;
 }
-/* line 226, ../sass/pages.scss */
+/* line 230, ../sass/pages.scss */
 .more-link a:hover, .more-link a:focus {
   text-decoration: underline;
   color: #595757;
@@ -281,7 +286,7 @@ span.field-label {
 /*
  * Footer
  */
-/* line 256, ../sass/pages.scss */
+/* line 260, ../sass/pages.scss */
 #footer {
   display: block;
   min-height: 10em;
@@ -292,7 +297,7 @@ span.field-label {
 /*
  * Page bottom
  */
-/* line 267, ../sass/pages.scss */
+/* line 271, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }
@@ -321,7 +326,7 @@ body.section-reef-check-tw {
   background: url("../images/bg/water.jpg") repeat scroll 0 0 transparent;
 }
 */
-/* line 296, ../sass/pages.scss */
+/* line 300, ../sass/pages.scss */
 body {
   background: white;
 }
