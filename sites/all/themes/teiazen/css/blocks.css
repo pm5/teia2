@@ -248,9 +248,21 @@ div#block-panels-mini-donate-now .donate-now-en {
 }
 
 /**
+ * Footer
+ */
+/* line 195, ../sass/blocks.scss */
+#footer a, #footer a:visited, #footer a:hover, #footer a:active {
+  color: white;
+}
+/* line 198, ../sass/blocks.scss */
+#footer a:hover, #footer a:active {
+  text-decoration: underline;
+}
+
+/**
  * Panels
  */
-/* line 194, ../sass/blocks.scss */
+/* line 207, ../sass/blocks.scss */
 .panel-pane:after {
   content: "";
   display: block;
@@ -258,7 +270,7 @@ div#block-panels-mini-donate-now .donate-now-en {
   clear: both;
 }
 
-/* line 202, ../sass/blocks.scss */
+/* line 215, ../sass/blocks.scss */
 #content .panel-pane {
   margin-bottom: 1.5em;
 }

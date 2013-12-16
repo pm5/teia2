@@ -188,6 +188,19 @@ div#block-panels-mini-donate-now {
 }
 
 /**
+ * Footer
+ */
+
+#footer {
+  a, a:visited, a:hover, a:active {
+    color: $white-background;
+  }
+  a:hover, a:active {
+    text-decoration: underline;
+  }
+}
+
+/**
  * Panels
  */
 
