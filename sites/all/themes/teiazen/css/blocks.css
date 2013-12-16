@@ -199,7 +199,7 @@ div#block-panels-mini-donate-now a#donate-now:hover {
 /* line 138, ../sass/blocks.scss */
 div#block-panels-mini-donate-now .donate-now-zh {
   display: block;
-  font-size: 2.5em;
+  font-size: xx-large;
   text-align: center;
   border-bottom: 2px white solid;
   padding-bottom: 0.4em;
@@ -207,7 +207,7 @@ div#block-panels-mini-donate-now .donate-now-zh {
 /* line 146, ../sass/blocks.scss */
 div#block-panels-mini-donate-now .donate-now-en {
   display: block;
-  font-size: 1.5em;
+  font-size: xx-large;
   text-align: center;
   padding-top: 0.4em;
 }
