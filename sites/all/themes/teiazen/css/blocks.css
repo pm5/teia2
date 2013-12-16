@@ -250,15 +250,7 @@ div#block-panels-mini-donate-now .donate-now-en {
 /**
  * Panels
  */
-/* line 195, ../sass/blocks.scss */
-.pane-teia-link-slider-pane .flexslider {
-  margin-bottom: 0px;
-  margin-top: 1.5em;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-/* line 203, ../sass/blocks.scss */
+/* line 194, ../sass/blocks.scss */
 .panel-pane:after {
   content: "";
   display: block;
@@ -266,7 +258,7 @@ div#block-panels-mini-donate-now .donate-now-en {
   clear: both;
 }
 
-/* line 211, ../sass/blocks.scss */
+/* line 202, ../sass/blocks.scss */
 #content .panel-pane {
   margin-bottom: 1.5em;
 }
