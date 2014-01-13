@@ -43,4 +43,4 @@ Thumbs.db
 .sass-cache
 
 # settings
-settings-*.php
+settings*.php
