@@ -159,4 +159,22 @@ $zen-auto-include-item-base: true;
     @include zen-grid-item(6, 4);
   }
 
+  /**
+   * Panels layout
+   */
+  .zen-3-columns #content {
+    .panel-3col-33-stacked .panel-col-first {
+      @include zen-grid-flow-item(4, 12);
+    }
+    .panel-3col-33-stacked .panel-col {
+      @include zen-grid-flow-item(4, 12);
+    }
+    .panel-3col-33-stacked .panel-col-last {
+      @include zen-grid-flow-item(4, 12, false, false);
+    }
+    .panel-3col-33-stacked .inside {
+      margin: 0;
+    }
+  }
+
 }
