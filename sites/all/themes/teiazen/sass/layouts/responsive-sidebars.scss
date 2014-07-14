@@ -41,6 +41,7 @@ $zen-auto-include-item-base: true;
  * Center the page.
  */
 
+/*
 @media all and (min-width: 960px) {
   #page,
   .region-bottom {
@@ -49,6 +50,8 @@ $zen-auto-include-item-base: true;
     max-width: $max-width;
   }
 }
+*/
+/*
 @media all and (min-width: 480px) and (max-width: 959px) {
   #page,
   .region-bottom {
@@ -57,6 +60,7 @@ $zen-auto-include-item-base: true;
     max-width: $max-width;
   }
 }
+*/
 
 /*
  * Apply the shared properties of grid items in a single, efficient ruleset.
@@ -78,7 +82,10 @@ $zen-auto-include-item-base: true;
   @include zen-grid-container();
 }
 
+/*
 @media all and (min-width: 960px) {
+*/
+@media all {
   $zen-column-count: 11;
 
   /**
