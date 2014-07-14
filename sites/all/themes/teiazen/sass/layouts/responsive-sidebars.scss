@@ -88,6 +88,10 @@ $zen-auto-include-item-base: true;
 @media all {
   $zen-column-count: 11;
 
+  #page {
+    min-width: 960px;
+  }
+
   /**
    * Header grid container.  Set to absolute position to make room for navigation region at the top right.
    */
