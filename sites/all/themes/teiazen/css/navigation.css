@@ -68,37 +68,40 @@ li a.active {
   /* LTR */
 }
 
+/*
 @media all and (min-width: 480px) and (max-width: 959px) {
-  /* line 74, ../sass/navigation.scss */
-  #navigation ul.links li,
-  #navigation ul.menu li {
-    /* A simple method to get navigation links to appear in one line. */
-    float: left;
-    /* LTR */
-    padding: 0 10px 0 0;
-    /* LTR */
-    list-style-type: none;
-    list-style-image: none;
+  #navigation {
+    ul.links,
+    ul.menu {
+      li {
+        float: left;
+        padding: 0 10px 0 0;
+        list-style-type: none;
+        list-style-image: none;
+      }
+    }
   }
 }
-@media all and (min-width: 960px) {
-  /* line 87, ../sass/navigation.scss */
+*/
+/*@media all and (min-width: 960px) {*/
+@media all {
+  /* line 90, ../sass/navigation.scss */
   ul.menu a {
     font-size: large;
     vertical-align: middle;
   }
-  /* line 91, ../sass/navigation.scss */
+  /* line 94, ../sass/navigation.scss */
   ul.menu a, ul.menu a:hover, ul.menu a:active, ul.menu a:visited {
     text-decoration: none;
   }
 
-  /* line 97, ../sass/navigation.scss */
+  /* line 100, ../sass/navigation.scss */
   #navigation ul.menu {
     border: solid #745e4f 4px;
     border-radius: 1.3em;
     padding: 1.3em 1em;
   }
-  /* line 101, ../sass/navigation.scss */
+  /* line 104, ../sass/navigation.scss */
   #navigation ul.menu li {
     float: left;
     margin: 0.2em 0;
@@ -107,7 +110,7 @@ li a.active {
     list-style-image: none;
     text-align: center;
   }
-  /* line 111, ../sass/navigation.scss */
+  /* line 114, ../sass/navigation.scss */
   #navigation ul.menu:after {
     content: "";
     display: table;
@@ -117,7 +120,7 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-/* line 127, ../sass/navigation.scss */
+/* line 130, ../sass/navigation.scss */
 #header a, #header a:active, #header a:visited,
 nav.breadcrumb a,
 nav.breadcrumb a:active,
@@ -130,7 +133,7 @@ nav.breadcrumb a:visited,
 .block-menu a:visited {
   color: #745e4f;
 }
-/* line 130, ../sass/navigation.scss */
+/* line 133, ../sass/navigation.scss */
 #header a:hover,
 nav.breadcrumb a:hover,
 #navigation a:hover,
@@ -141,16 +144,16 @@ nav.breadcrumb a:hover,
 /**
  * Sidebar content menu
  */
-/* line 140, ../sass/navigation.scss */
+/* line 143, ../sass/navigation.scss */
 #page .region-sidebar-first ul.menu li a, #page .region-sidebar-first ul.menu li a:active, #page .region-sidebar-first ul.menu li a:visited {
   color: white;
 }
 
-/* line 146, ../sass/navigation.scss */
+/* line 149, ../sass/navigation.scss */
 .region-sidebar-first ul.menu {
   padding: 0;
 }
-/* line 149, ../sass/navigation.scss */
+/* line 152, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li a {
   display: block;
   list-style: none;
@@ -159,25 +162,25 @@ nav.breadcrumb a:hover,
   padding: 0.8em 1em;
   border-radius: 0 1em 1em 0;
 }
-/* line 159, ../sass/navigation.scss */
+/* line 162, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li.leaf a:hover,
 .region-sidebar-first ul.menu li.leaf a:focus {
   text-decoration: none;
   background: #4f915e;
 }
-/* line 164, ../sass/navigation.scss */
+/* line 167, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li.first a {
   background: #b09474;
 }
-/* line 167, ../sass/navigation.scss */
+/* line 170, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(2) a {
   background: #9e7d63;
 }
-/* line 170, ../sass/navigation.scss */
+/* line 173, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(3) a {
   background: #745e4f;
 }
-/* line 173, ../sass/navigation.scss */
+/* line 176, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(4) a {
   background: #5c4b43;
 }

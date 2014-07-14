@@ -67,21 +67,24 @@ li a.active {
   }
 }
 
+/*
 @media all and (min-width: 480px) and (max-width: 959px) {
   #navigation {
     ul.links,
     ul.menu {
-      li { /* A simple method to get navigation links to appear in one line. */
-        float: left; /* LTR */
-        padding: 0 10px 0 0; /* LTR */
+      li {
+        float: left;
+        padding: 0 10px 0 0;
         list-style-type: none;
         list-style-image: none;
       }
     }
   }
 }
+*/
 
-@media all and (min-width: 960px) {
+/*@media all and (min-width: 960px) {*/
+@media all {
 
   ul.menu {
     a {
