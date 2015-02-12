@@ -49,7 +49,7 @@ li a.active {
 #navigation .block {
   margin-bottom: 0;
 }
-/* line 58, ../sass/navigation.scss */
+/* line 57, ../sass/navigation.scss */
 #navigation .block-menu .block-title,
 #navigation .block-menu-block .block-title {
   position: absolute !important;
@@ -58,7 +58,7 @@ li a.active {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* line 63, ../sass/navigation.scss */
+/* line 62, ../sass/navigation.scss */
 #navigation ul.links,
 #navigation ul.menu {
   /* Menu block links */
@@ -146,7 +146,7 @@ nav.breadcrumb a:hover,
  */
 /* line 143, ../sass/navigation.scss */
 #page .region-sidebar-first ul.menu li a, #page .region-sidebar-first ul.menu li a:active, #page .region-sidebar-first ul.menu li a:visited {
-  color: white;
+  color: #ffffff;
 }
 
 /* line 149, ../sass/navigation.scss */
@@ -162,7 +162,7 @@ nav.breadcrumb a:hover,
   padding: 0.8em 1em;
   border-radius: 0 1em 1em 0;
 }
-/* line 162, ../sass/navigation.scss */
+/* line 161, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li.leaf a:hover,
 .region-sidebar-first ul.menu li.leaf a:focus {
   text-decoration: none;
@@ -174,13 +174,17 @@ nav.breadcrumb a:hover,
 }
 /* line 170, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(2) a {
-  background: #9e7d63;
+  background: #9d8063;
 }
 /* line 173, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(3) a {
-  background: #745e4f;
+  background: #8c715b;
 }
 /* line 176, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(4) a {
+  background: #77604f;
+}
+/* line 179, ../sass/navigation.scss */
+.region-sidebar-first ul.menu li:nth-child(5) a {
   background: #5c4b43;
 }
