@@ -1,5 +1,5 @@
 window.onload = function () {
-  
+
   /* IE getElementsByClassName() polyfill */
   if (typeof document.getElementsByClassName!='function') {
     document.getElementsByClassName = function() {
@@ -85,7 +85,7 @@ function checkLogin (source) {
 function getQueryParams(qs) {
   qs = qs.split("+").join(" ");
   var params = {},
-      tokens, 
+      tokens,
       re = /[?&]?([^=]+)=([^&]*)/g;
 
   while (tokens = re.exec(qs)) {
@@ -180,7 +180,7 @@ function tooltipGenerate(matchedNames) {
 
     var tooltipTitle = document.createElement('h2');
     tooltipTitle.setAttribute('id', 'species-tooltip-title-text-'+n);
-    tooltipTitle.innerHTML = matchedNames[n].chinese_vernacular_name + '<small>ä»¥ä¸‹æ˜¯å¯èƒ½çš„ç‰©ç¨®è³‡è¨Š</small>';
+    tooltipTitle.innerHTML = matchedNames[n].chinese_vernacular_name + '<small>以下是可能的物種資訊</small>';
     tooltipTitleContainer.appendChild(tooltipTitle);
 
     var tooltipContentContainer = document.createElement('div');
@@ -201,7 +201,7 @@ function tooltipGenerate(matchedNames) {
     tooltipContentContainer.appendChild(namesList);
 
     var closeButton = document.createElement('div');
-    var closeLabel = document.createTextNode('â•³');
+    var closeLabel = document.createTextNode('╳');
     closeButton.setAttribute('class', 'species-tooltip-close');
     closeButton.appendChild(closeLabel);
     newTooltipBox.appendChild(closeButton);
@@ -240,7 +240,7 @@ function tooltipGenerate(matchedNames) {
     newTooltipBox.appendChild(resetButton);
 
     resetButton.addEventListener('click', function() {
-      var r = confirm("ç¢ºå®šé‡æ–°æŠ“å–ç‰©ç¨®å?");
+      var r = confirm("確定重新抓取物種名?");
       if (r) {
         call_ner_api (true);
       }
@@ -280,7 +280,7 @@ function tooltipPosition(tooltipDiv, evt) {
   tooltipDiv.style.position = "absolute";
   tooltipDiv.style.top = (spanOffset.posy + (evt.target.offsetHeight * 2)) + "px";
 
-  /* æœƒè¶…å‡ºç¯„åœçš„æŠŠå®ƒåéŽä¾†åå·¦å‘ˆç¾ */
+  /* 會超出範圍的把它反過來偏左呈現 */
   if (tooltipDiv.offsetWidth + spanOffset.posx > document.body.clientWidth) {
     tooltipDiv.style.right = (document.body.clientWidth - spanOffset.posx) + "px";
     tooltipDiv.setAttribute('class', 'species-tooltip shiftright');
@@ -318,7 +318,7 @@ function removeMatchedChineseVernacularNames(vname, id, tip) {
     if (httpRequest.readyState==4 && httpRequest.status==200) {
       console.log(httpRequest.responseText);
       if (httpRequest.responseText == 'VALID USER') {
-        var r = confirm("ç¢ºå®šåˆªé™¤?");
+        var r = confirm("確定刪除?");
         if (r) {
           var paragraphs = document.getElementsByTagName('p');
           for (var i = 0; i < paragraphs.length; i++) {
@@ -356,22 +356,25 @@ function markMatchedChineseVernacularNames(matchedNames) {
   var paragraphs = document.getElementsByTagName('p');
 
   for (var j = 0; j < matchedNames.length; j++) {
+    var nameMatched = false;
     for (var i = 0; i < paragraphs.length; i++) {
-      var div = document.createElement("div");
-      div.innerHTML = paragraphs[i].innerHTML;
-      var text = div.textContent || div.innerText || "";
-      if ( text.match(matchedNames[j].chinese_vernacular_name) && matchedNames[j].scientific_name[0].namecode != 0 ) {
-        var spanWrapper = document.createElement('span');
-        spanWrapper.setAttribute('class', 'species-span species-span-id-' + j);
-        spanWrapper.appendChild(document.createTextNode(matchedNames[j].chinese_vernacular_name));
+      var paraParts = paragraphs[i].innerHTML.split(/<.+?>/);
 
-        text = text.replace(matchedNames[j].chinese_vernacular_name, spanWrapper.outerHTML);
-        div.innerHTML = div.innerHTML.replace(div.textContent, text);
-        paragraphs[i].innerHTML = div.innerHTML;
+      paraParts.forEach(function (ppart) {
+        if (nameMatched) return;
+        if ( ppart.match(matchedNames[j].chinese_vernacular_name) && matchedNames[j].scientific_name[0].namecode != 0 ) {
+          var spanWrapper = document.createElement('span');
+          spanWrapper.setAttribute('class', 'species-span species-span-id-' + j);
+          spanWrapper.appendChild(document.createTextNode(matchedNames[j].chinese_vernacular_name));
 
-        // ensure that once matched, then skip to next loop.
-        break;
-      }
+          new_ppart = ppart.replace(matchedNames[j].chinese_vernacular_name, spanWrapper.outerHTML);
+          paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(ppart, new_ppart);
+
+          // ensure that once matched, then skip to next loop.
+          nameMatched = true;
+        }
+      });
+      if (nameMatched) break;
     }
   }
 }
