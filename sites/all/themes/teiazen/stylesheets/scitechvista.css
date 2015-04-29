@@ -1,0 +1,142 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 13, ../sass/scitechvista.scss */
+span.species-span {
+  /*border-bottom: 2px solid lighten($heavy-green, 20%);*/
+  color: #BF982C;
+  cursor: help;
+}
+/* line 18, ../sass/scitechvista.scss */
+span.species-span:hover {
+  /*border-bottom: 2px solid lighten($heavy-green, 10%);*/
+  text-decoration: underline;
+}
+
+/* line 25, ../sass/scitechvista.scss */
+div.species-tooltip {
+  background-color: #fdfdfb;
+  background-image: url(http://taibif.tw/ner/images/powered-v2.png), linear-gradient(#fdfdfb, #f3f3e2);
+  background-position: bottom right, top;
+  background-repeat: no-repeat, repeat;
+  position: relative;
+  display: block;
+  width: 480px;
+  height: 170px;
+  padding: 0;
+  margin: 0;
+  -webkit-box-shadow: #666666 0px 4px 4px;
+  -moz-box-shadow: #666666 0px 4px 4px;
+  box-shadow: #666666 0px 4px 4px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+/* line 40, ../sass/scitechvista.scss */
+div.species-tooltip:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  border-style: solid;
+  border-width: 0 15px 15px;
+  border-color: #fdfdfb transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+/* line 55, ../sass/scitechvista.scss */
+div.species-tooltip.shiftright:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 440px;
+  border-style: solid;
+  border-width: 0 15px 15px;
+  border-color: #fdfdfb transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+/* line 69, ../sass/scitechvista.scss */
+div.species-tooltip div.species-tooltip-title {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin: 0;
+  margin-top: 0.6em;
+  padding: 0;
+}
+/* line 77, ../sass/scitechvista.scss */
+div.species-tooltip div.species-tooltip-title h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #666;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  padding-left: 1em;
+  border-bottom: 3px ridge #9ed365;
+  text-shadow: #cccccc 1px 1px 1px;
+}
+/* line 87, ../sass/scitechvista.scss */
+div.species-tooltip div.species-tooltip-title h2 small {
+  font-size: small;
+  padding-left: 0.5em;
+  color: #888;
+}
+/* line 95, ../sass/scitechvista.scss */
+div.species-tooltip div.species-tooltip-content {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+/* line 102, ../sass/scitechvista.scss */
+div.species-tooltip div.species-tooltip-content ul {
+  /*display: block;*/
+  margin: 1em 1em;
+  height: 66px;
+  overflow: auto;
+  font-size: small;
+}
+/* line 109, ../sass/scitechvista.scss */
+div.species-tooltip div.species-tooltip-content ul li {
+  list-style-type: disc !important;
+  list-style-position: inside;
+  /*color: #666;*/
+  color: #446626;
+}
+/* line 114, ../sass/scitechvista.scss */
+div.species-tooltip div.species-tooltip-content ul li a {
+  /*color: darken($basic-green, 30%);*/
+  color: #446626;
+}
+/* line 122, ../sass/scitechvista.scss */
+div.species-tooltip div.species-tooltip-close {
+  color: #85c83d;
+  text-shadow: #517c23 0px -1px 0px;
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 136, ../sass/scitechvista.scss */
+div#species-explorer span.tag {
+  color: #fff;
+  background-color: #476a26;
+  border-bottom: none;
+  padding: 0 0.5em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
