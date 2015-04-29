@@ -80,6 +80,7 @@ stylesheets[all][] = stylesheets/scitechvista.css
 
 ; Optionally add some JavaScripts to your theme.
 
+scripts[] = js/JSON-js/json2.js
 scripts[] = js/name-explorer.js
 
 
