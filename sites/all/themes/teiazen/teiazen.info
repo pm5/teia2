@@ -64,6 +64,8 @@ stylesheets[all][] = css/fields.css
 stylesheets[all][] = css/print.css
 stylesheets[all][] = css/color.css
 
+stylesheets[all][] = stylesheets/scitechvista.css
+
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.
 ; Instead, Zen now adds conditional-comment-included classes to the html
 ; element, such as .lt-ie9, .lt-ie8, .lt-ie7. More information on this
@@ -78,7 +80,7 @@ stylesheets[all][] = css/color.css
 
 ; Optionally add some JavaScripts to your theme.
 
-;scripts[] = js/script.js
+scripts[] = js/name-explorer.js
 
 
 
