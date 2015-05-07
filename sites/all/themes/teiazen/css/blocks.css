@@ -274,3 +274,12 @@ div#block-panels-mini-donate-now .donate-now-en {
 #content .panel-pane {
   margin-bottom: 1.5em;
 }
+
+/** XXX clearfix for superfish block for unknown reason*/
+#block-superfish-1:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
