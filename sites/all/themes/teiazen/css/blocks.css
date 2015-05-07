@@ -283,3 +283,6 @@ div#block-panels-mini-donate-now .donate-now-en {
   clear: both;
   visibility: hidden;
 }
+#block-superfish-1 {
+  margin-bottom: 0;
+}
