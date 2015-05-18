@@ -7,8 +7,7 @@
 /**
  * Implements hook_ctools_plugin_api().
  */
-function debut_highlighted_ctools_plugin_api() {
-  list($module, $api) = func_get_args();
+function debut_highlighted_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -17,8 +16,8 @@ function debut_highlighted_ctools_plugin_api() {
 /**
  * Implements hook_views_api().
  */
-function debut_highlighted_views_api() {
-  return array("version" => "3.0");
+function debut_highlighted_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
 }
 
 /**
@@ -27,80 +26,52 @@ function debut_highlighted_views_api() {
 function debut_highlighted_image_default_styles() {
   $styles = array();
 
-  // Exported image style: highlighted
+  // Exported image style: highlighted.
   $styles['highlighted'] = array(
-    'name' => 'highlighted',
+    'label' => 'Highlighted',
     'effects' => array(
-      2 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
-        'effect callback' => 'image_scale_effect',
-        'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'image_scale_form',
-        'summary theme' => 'image_scale_summary',
-        'module' => 'image',
+      3 => array(
         'name' => 'image_scale',
         'data' => array(
-          'width' => '830',
+          'width' => 830,
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
-      3 => array(
-        'label' => 'Crop',
-        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
-        'effect callback' => 'image_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_crop_form',
-        'summary theme' => 'image_crop_summary',
-        'module' => 'image',
+      4 => array(
         'name' => 'image_crop',
         'data' => array(
-          'width' => '830',
-          'height' => '360',
+          'width' => 830,
+          'height' => 360,
           'anchor' => 'center-center',
         ),
-        'weight' => '2',
+        'weight' => 2,
       ),
     ),
   );
 
-  // Exported image style: highlighted_full
+  // Exported image style: highlighted_full.
   $styles['highlighted_full'] = array(
-    'name' => 'highlighted_full',
+    'label' => 'Highlighted full',
     'effects' => array(
-      6 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
-        'effect callback' => 'image_scale_effect',
-        'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'image_scale_form',
-        'summary theme' => 'image_scale_summary',
-        'module' => 'image',
+      1 => array(
         'name' => 'image_scale',
         'data' => array(
-          'width' => '930',
+          'width' => 1140,
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
-      7 => array(
-        'label' => 'Crop',
-        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
-        'effect callback' => 'image_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_crop_form',
-        'summary theme' => 'image_crop_summary',
-        'module' => 'image',
+      2 => array(
         'name' => 'image_crop',
         'data' => array(
-          'width' => '930',
-          'height' => '300',
+          'width' => 1140,
+          'height' => 300,
           'anchor' => 'center-center',
         ),
-        'weight' => '2',
+        'weight' => 2,
       ),
     ),
   );
@@ -122,5 +93,6 @@ function debut_highlighted_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

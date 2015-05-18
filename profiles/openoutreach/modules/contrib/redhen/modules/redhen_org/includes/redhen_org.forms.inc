@@ -110,10 +110,18 @@ function redhen_org_org_delete_form($form, &$form_state, $org) {
 function redhen_org_org_delete_form_submit($form, &$form_state) {
   $org = $form_state['redhen_org'];
 
-  redhen_org_delete_multiple(array($org->org_id));
-  drupal_set_message(t('%label has been deleted.', array('%label' => $org->label)));
-  watchdog('redhen_org', 'Deleted organization %label.', array('%label' => $org->label), WATCHDOG_NOTICE);
-  $form_state['redirect'] = 'redhen/org';
+  if ($org->isDefaultRevision()) {
+    redhen_org_delete_multiple(array($org->org_id));
+    drupal_set_message(t('%label has been deleted.', array('%label' => $org->label)));
+    watchdog('redhen_org', 'Deleted organization %label.', array('%label' => $org->label), WATCHDOG_NOTICE);
+    $form_state['redirect'] = 'redhen/org';
+  }
+  else {
+    entity_revision_delete('redhen_org', $org->revision_id);
+    drupal_set_message(t('Revision %label has been deleted.', array('%label' => $org->label)));
+    watchdog('redhen_org', 'Deleted organization revision %label.', array('%label' => $org->label), WATCHDOG_NOTICE);
+    $form_state['redirect'] = 'redhen/org/' . $org->org_id . '/revisions';
+  }
 }
 
 /**
@@ -132,7 +140,7 @@ function redhen_org_org_archive_form($form, &$form_state, $org) {
   $form = confirm_form($form,
     t('Are you sure you want to archive %label?', array('%label' => $org->label)),
     entity_uri('redhen_org', $org),
-    '<p>' . t('Archiving this organization cannot be undone.') . '</p>',
+    '<p>' . t('Archive this organization.') . '</p>',
     t('Archive'),
     t('Cancel'),
     'confirm'
@@ -155,6 +163,47 @@ function redhen_org_org_archive_form_submit($form, &$form_state) {
   }
   $url = entity_uri($org->entityType(), $org);
   drupal_goto($url['path']);
+}
+
+/**
+ * Form callback: confirmation form for unarchiving an organization.
+ *
+ * @param $org
+ *   The org object to be activated.
+ *
+ * @see confirm_form()
+ */
+function redhen_org_org_unarchive_form($form, &$form_state, $org) {
+  $form_state['redhen_org'] = $org;
+
+  $form['#submit'][] = 'redhen_org_org_unarchive_form_submit';
+
+  $form = confirm_form($form,
+    t('Are you sure you want to unarchive %label?', array('%label' => $org->label())),
+    entity_uri('redhen_org', $org),
+    '<p>' . t('Activate this organization.') . '</p>',
+    t('Unarchive'),
+    t('Cancel'),
+    'confirm'
+  );
+
+  return $form;
+}
+
+/**
+ * Submit callback for redhen_org_org_unarchive_form().
+ */
+function redhen_org_org_unarchive_form_submit($form, &$form_state) {
+  $org = $form_state['redhen_org'];
+
+  if ($org->setState(REDHEN_STATE_ACTIVE)) {
+    drupal_set_message(t('%label has been unarchived.', array('%label' => $org->label())));
+  }
+  else {
+    drupal_set_message(t('%label was not unarchived.', array('%label' => $org->label())), WATCHDOG_ERROR);
+  }
+  $url = entity_uri($org->entityType(), $org);
+  $form_state['redirect'] = $url['path'];
 }
 
 /**

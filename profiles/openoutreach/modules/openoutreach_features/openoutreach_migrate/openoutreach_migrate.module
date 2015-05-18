@@ -1,12 +1,42 @@
 <?php
 
 /**
+ * Implements hook_modules_enabled().
+ *
+ * When any module is enabled, process any corresponding migrations.
+ */
+function openoutreach_migrate_modules_enabled($modules) {
+  migrate_static_registration();
+  openoutreach_migrate_enable_migrate_support();
+  openoutreach_process_imports($modules);
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ *
+ * Move our hook_modules_enabled() implementation to after that of Features so
+ * that fields are created in time to migrate into them.
+ */
+function openoutreach_migrate_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'modules_enabled') {
+    $group = $implementations['openoutreach_migrate'];
+    unset($implementations['openoutreach_migrate']);
+    $implementations['openoutreach_migrate'] = $group;
+  }
+}
+
+/**
  * Implements hook_migrate_api().
  */
 function openoutreach_migrate_migrate_api() {
   $api = array(
     'api' => 2,
     'migrations' => array(),
+    'groups' => array(
+      'openoutreach' => array(
+        'title' => t('Open Outreach'),
+      ),
+    ),
     'field handlers' => array(
       'OpenOutreachMigrateTaxonomyTermReferenceFieldHandler',
     ),
@@ -14,9 +44,11 @@ function openoutreach_migrate_migrate_api() {
 
   $map = openoutreach_migrate_map();
 
-  // Only add a class if its corresponding module is enabled.
   foreach ($map as $class_name => $module_name) {
-    $api['migrations'][$class_name] = array('class_name' => $class_name);
+    $api['migrations'][$class_name] = array(
+      'class_name' => $class_name,
+      'group_name' => 'openoutreach',
+    );
   }
   return $api;
 }
@@ -40,6 +72,7 @@ function openoutreach_migrate_map() {
   // Allow other modules to alter the migrations to, for example, use
   // a custom class.
   drupal_alter('openoutreach_migrate_map', $map);
+  // Only add a class if its corresponding module is enabled.
   return array_filter($map, 'module_exists');
 }
 

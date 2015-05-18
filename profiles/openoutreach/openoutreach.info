@@ -1,9 +1,11 @@
 name = "Open Outreach"
 description = "Open Outreach provides a highly usable and feature rich website suited to small and medium sized non-profits and community organizations."
 distribution_name = "Open Outreach"
+exclusive = TRUE
 core = "7.x"
 dependencies[] = "admin_menu_toolbar"
 dependencies[] = "advanced_help"
+dependencies[] = "apps_compatible"
 dependencies[] = "block"
 dependencies[] = "color"
 dependencies[] = "comment"
@@ -14,7 +16,7 @@ dependencies[] = "dashboard"
 dependencies[] = "dblog"
 dependencies[] = "features"
 dependencies[] = "field_ui"
-dependencies[] = "file"
+dependencies[] = "file_entity"
 dependencies[] = "help"
 dependencies[] = "image"
 dependencies[] = "libraries"
@@ -86,9 +88,10 @@ subprofiles[membership][features][debut_seo] = TRUE
 subprofiles[membership][features][debut_social] = TRUE
 subprofiles[membership][features][debut_wysiwyg] = TRUE
 subprofiles[membership][features][openoutreach_front_page] = TRUE
-; Information added by Drupal.org packaging script on 2014-06-02
-version = "7.x-1.7"
+
+; Information added by Drupal.org packaging script on 2015-04-30
+version = "7.x-1.19"
 core = "7.x"
 project = "openoutreach"
-datestamp = "1401733129"
+datestamp = "1430415789"
 

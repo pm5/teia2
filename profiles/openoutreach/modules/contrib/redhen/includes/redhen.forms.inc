@@ -39,9 +39,9 @@ function redhen_filter_form($form, &$form_state, $entity_type) {
         $default_value = isset($_GET['properties'][$key]) ? $_GET['properties'][$key] : NULL;
         if ($prop['type'] == 'date' && !empty($default_value)) {
           $default_value['from'] = ($default_value['from'] == '') ? '' :
-            format_date(strtotime($default_value['from']), 'medium', 'm/d/Y');
+            format_date(strtotime($default_value['from']));
           $default_value['to'] = ($default_value['to'] == '') ? '' :
-            format_date(strtotime($default_value['to']), 'medium', 'm/d/Y');
+            format_date(strtotime($default_value['to']));
         }
 
         if ($prop['type'] == 'date') {
@@ -218,6 +218,12 @@ function redhen_filter_form_fields(&$form, &$form_state, $entity_type, $bundle) 
       $instance['required'] = FALSE;
       $instance['description'] = '';
       $field_info['cardinality'] = 1;
+
+      // Filter out field types we know break the filter form.
+      $black_list = redhen_filter_form_blacklist();
+      if (in_array($field_info['type'], $black_list)) {
+        continue;
+      }
 
       // Set up specific field types.
       switch ($field_info['type']) {
