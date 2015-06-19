@@ -1,12 +1,21 @@
 <?php
 
+/**
+ * Implements hook_init().
+ */
+function teia_language_init() {
+  //dpm('woot!');
+}
+
 function teia_language_language_negotiation_info_alter(&$language_providers)
 {
+  //dpm('wee!');
   $language_provider[LOCALE_LANGUAGE_NEGOTIATION_URL]['callbacks']['url_rewrite'] = 'teia_language_url_rewrite_url';
 }
 
 function teia_language_url_rewrite_url(&$path, &$options)
 {
+  //dpm('wat!');
   $language = _teia_language_get_language($options);
   if ($language->language === language_default()->language) {
     return;
