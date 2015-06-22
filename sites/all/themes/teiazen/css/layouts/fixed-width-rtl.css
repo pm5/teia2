@@ -89,17 +89,17 @@
 .sidebar-first #content {
   /* Span 4 columns, starting in 2nd column from left. */
   float: right;
-  width: 764px;
-  margin-right: 196px;
-  margin-left: -980px;
+  width: 336.36364px;
+  margin-right: 89.09091px;
+  margin-left: -445.45455px;
 }
 /* line 99, ../../sass/layouts/fixed-width.scss */
 .sidebar-first .region-sidebar-first {
   /* Span 1 column, starting in 1st column from left. */
   float: right;
-  width: 176px;
+  width: 69.09091px;
   margin-right: 0px;
-  margin-left: -196px;
+  margin-left: -89.09091px;
 }
 
 /*
@@ -109,17 +109,17 @@
 .sidebar-second #content {
   /* Span 4 columns, starting in 1st column from left. */
   float: right;
-  width: 764px;
+  width: 336.36364px;
   margin-right: 0px;
-  margin-left: -784px;
+  margin-left: -356.36364px;
 }
 /* line 113, ../../sass/layouts/fixed-width.scss */
 .sidebar-second .region-sidebar-second {
   /* Span 1 column, starting in 5th column from left. */
   float: right;
-  width: 176px;
-  margin-right: 784px;
-  margin-left: -980px;
+  width: 69.09091px;
+  margin-right: 356.36364px;
+  margin-left: -445.45455px;
 }
 
 /*
@@ -129,23 +129,23 @@
 .two-sidebars #content {
   /* Span 3 columns, starting in 2nd column from left. */
   float: right;
-  width: 568px;
-  margin-right: 196px;
-  margin-left: -784px;
+  width: 247.27273px;
+  margin-right: 89.09091px;
+  margin-left: -356.36364px;
 }
 /* line 127, ../../sass/layouts/fixed-width.scss */
 .two-sidebars .region-sidebar-first {
   /* Span 1 column, starting in 1st column from left. */
   float: right;
-  width: 176px;
+  width: 69.09091px;
   margin-right: 0px;
-  margin-left: -196px;
+  margin-left: -89.09091px;
 }
 /* line 131, ../../sass/layouts/fixed-width.scss */
 .two-sidebars .region-sidebar-second {
   /* Span 1 column, starting in 5th column from left. */
   float: right;
-  width: 176px;
-  margin-right: 784px;
-  margin-left: -980px;
+  width: 69.09091px;
+  margin-right: 356.36364px;
+  margin-left: -445.45455px;
 }

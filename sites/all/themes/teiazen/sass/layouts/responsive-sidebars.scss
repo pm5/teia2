@@ -13,7 +13,7 @@
 
 $max-width: 1200px;
 
-$zen-column-count:  5;
+$zen-column-count:  11;
 $zen-gutter-width:  20px;
 
 $header-height: 130px;
@@ -86,7 +86,6 @@ $zen-auto-include-item-base: true;
 @media all and (min-width: 960px) {
 */
 @media all {
-  $zen-column-count: 11;
 
   #page {
     min-width: 960px;

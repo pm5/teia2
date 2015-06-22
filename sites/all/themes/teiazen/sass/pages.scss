@@ -304,3 +304,14 @@ section.sidebar,
 #footer {
 }
 
+/** XXX clearfix for superfish block for unknown reason*/
+#block-superfish-1:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#block-superfish-1 {
+  margin-bottom: 0;
+}

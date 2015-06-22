@@ -325,3 +325,18 @@ body.section-reef-check-tw {
 body {
   background: #ffffff;
 }
+
+/** XXX clearfix for superfish block for unknown reason*/
+/* line 308, ../sass/pages.scss */
+#block-superfish-1:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 315, ../sass/pages.scss */
+#block-superfish-1 {
+  margin-bottom: 0;
+}
