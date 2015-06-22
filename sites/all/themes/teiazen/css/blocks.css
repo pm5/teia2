@@ -179,20 +179,20 @@ div#block-panels-mini-donate-now a#donate-now {
   display: block;
   border: 0;
   background: #4f915e;
-  color: white;
+  color: #ffffff;
   border-radius: 1.5em;
   padding: 2em 1.2em;
   text-decoration: none;
 }
 /* line 127, ../sass/blocks.scss */
 div#block-panels-mini-donate-now a#donate-now:active, div#block-panels-mini-donate-now a#donate-now:visited {
-  color: white;
+  color: #ffffff;
   background: #4f915e;
   text-decoration: none;
 }
 /* line 132, ../sass/blocks.scss */
 div#block-panels-mini-donate-now a#donate-now:hover {
-  color: white;
+  color: #ffffff;
   background: #91c888;
   text-decoration: none;
 }
@@ -201,7 +201,7 @@ div#block-panels-mini-donate-now .donate-now-zh {
   display: block;
   font-size: xx-large;
   text-align: center;
-  border-bottom: 2px white solid;
+  border-bottom: 2px #ffffff solid;
   padding-bottom: 0.4em;
 }
 /* line 146, ../sass/blocks.scss */
@@ -217,7 +217,7 @@ div#block-panels-mini-donate-now .donate-now-en {
  */
 /* line 159, ../sass/blocks.scss */
 .region-sidebar-second h2.block-title {
-  color: white;
+  color: #ffffff;
   background: #4f915e;
   border-radius: 1em 1em 0 0;
   padding-left: 10px;
@@ -236,7 +236,7 @@ div#block-panels-mini-donate-now .donate-now-en {
 .region-sidebar-second .block-content p, .region-sidebar-second .block-content pre {
   margin-top: 0.2em;
 }
-/* line 180, ../sass/blocks.scss */
+/* line 179, ../sass/blocks.scss */
 .region-sidebar-second .block-content div.more-link,
 .region-sidebar-second .block-content ul.inline li.node-readmore {
   color: #745e4f;
@@ -252,7 +252,7 @@ div#block-panels-mini-donate-now .donate-now-en {
  */
 /* line 195, ../sass/blocks.scss */
 #footer a, #footer a:visited, #footer a:hover, #footer a:active {
-  color: white;
+  color: #ffffff;
 }
 /* line 198, ../sass/blocks.scss */
 #footer a:hover, #footer a:active {
@@ -273,16 +273,4 @@ div#block-panels-mini-donate-now .donate-now-en {
 /* line 215, ../sass/blocks.scss */
 #content .panel-pane {
   margin-bottom: 1.5em;
-}
-
-/** XXX clearfix for superfish block for unknown reason*/
-#block-superfish-1:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-#block-superfish-1 {
-  margin-bottom: 0;
 }

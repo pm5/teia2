@@ -39,7 +39,7 @@ body a:hover, body a:focus {
 #skip-link {
   margin: 0;
 }
-/* line 42, ../sass/pages.scss */
+/* line 41, ../sass/pages.scss */
 #skip-link a,
 #skip-link a:visited {
   display: block;
@@ -120,7 +120,7 @@ body a:hover, body a:focus {
   padding: 0;
 }
 
-/* line 139, ../sass/pages.scss */
+/* line 134, ../sass/pages.scss */
 h1.title,
 h2.node-title,
 h2.block-title,
@@ -166,7 +166,7 @@ div.status {
   /* Normal priority messages */
 }
 
-/* line 168, ../sass/pages.scss */
+/* line 167, ../sass/pages.scss */
 div.warning,
 tr.warning {
   /* Medium priority messages */
@@ -174,7 +174,7 @@ tr.warning {
   /* Drupal core uses: 1px solid #f0c020 */
 }
 
-/* line 173, ../sass/pages.scss */
+/* line 172, ../sass/pages.scss */
 div.error,
 tr.error {
   /* High priority messages. See also the .error declaration below. */
@@ -286,7 +286,7 @@ span.field-label {
   display: block;
   min-height: 10em;
   background: #4f915e;
-  color: white;
+  color: #ffffff;
 }
 
 /*
@@ -323,5 +323,5 @@ body.section-reef-check-tw {
 */
 /* line 296, ../sass/pages.scss */
 body {
-  background: white;
+  background: #ffffff;
 }
