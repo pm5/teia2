@@ -6,7 +6,7 @@ DB_USER=root
 DB_PASS=foobar
 
 apt-get update
-apt-get install -y php5 php5-gd php5-curl php5-sqlite php-pear unzip php5-mysql php5-pgsql apache2 libapache2-mod-php5 curl
+apt-get install -y php5 php5-gd php5-curl php5-sqlite php-pear unzip php5-mysql php5-pgsql php5-memcached apache2 libapache2-mod-php5 curl memcached
 
 pear channel-discover pear.drush.org
 pear install drush/drush
