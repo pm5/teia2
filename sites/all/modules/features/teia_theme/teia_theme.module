@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the teia_theme feature.
+ */
+
+include_once 'teia_theme.features.inc';
