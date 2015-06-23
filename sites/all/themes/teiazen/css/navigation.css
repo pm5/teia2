@@ -193,45 +193,45 @@ nav.breadcrumb a:hover,
 }
 
 /* line 186, ../sass/navigation.scss */
-.sf-menu.sf-main-menu.sf-horizontal {
+.sf-menu.main-menu.sf-horizontal {
   width: 100%;
   background: #b09474;
 }
 /* line 191, ../sass/navigation.scss */
-.sf-menu.sf-main-menu.sf-horizontal a {
+.sf-menu.main-menu.sf-horizontal a {
   color: #ffffff;
   border: 0;
 }
 /* line 196, ../sass/navigation.scss */
-.sf-menu.sf-main-menu.sf-horizontal li, .sf-menu.sf-main-menu.sf-horizontal.sf-navbar {
+.sf-menu.main-menu.sf-horizontal li, .sf-menu.main-menu.sf-horizontal.sf-navbar {
   background: #b09474;
 }
 /* line 199, ../sass/navigation.scss */
-.sf-menu.sf-main-menu.sf-horizontal li.active-trail, .sf-menu.sf-main-menu.sf-horizontal.sf-navbar.active-trail {
+.sf-menu.main-menu.sf-horizontal li.active-trail, .sf-menu.main-menu.sf-horizontal.sf-navbar.active-trail {
   background: #8c715b;
 }
 /* line 204, ../sass/navigation.scss */
-.sf-menu.sf-main-menu.sf-horizontal li li {
+.sf-menu.main-menu.sf-horizontal li li {
   background: #9d8063;
 }
 /* line 206, ../sass/navigation.scss */
-.sf-menu.sf-main-menu.sf-horizontal li li.active-trail {
+.sf-menu.main-menu.sf-horizontal li li.active-trail {
   background: #77604f;
 }
 /* line 211, ../sass/navigation.scss */
-.sf-menu.sf-main-menu.sf-horizontal li li li {
+.sf-menu.main-menu.sf-horizontal li li li {
   background: #8c715b;
 }
 /* line 213, ../sass/navigation.scss */
-.sf-menu.sf-main-menu.sf-horizontal li li li.active-trail {
+.sf-menu.main-menu.sf-horizontal li li li.active-trail {
   background: #5c4b43;
 }
 /* line 218, ../sass/navigation.scss */
-.sf-menu.sf-main-menu.sf-horizontal li:hover,
-.sf-menu.sf-main-menu.sf-horizontal li.sfHover,
-.sf-menu.sf-main-menu.sf-horizontal a:focus,
-.sf-menu.sf-main-menu.sf-horizontal a:hover,
-.sf-menu.sf-main-menu.sf-horizontal a:active {
+.sf-menu.main-menu.sf-horizontal li:hover,
+.sf-menu.main-menu.sf-horizontal li.sfHover,
+.sf-menu.main-menu.sf-horizontal a:focus,
+.sf-menu.main-menu.sf-horizontal a:hover,
+.sf-menu.main-menu.sf-horizontal a:active {
   background: #5c4b43;
   outline: 0;
 }
