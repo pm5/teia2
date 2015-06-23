@@ -95,37 +95,13 @@ li a.active {
       text-decoration: none;
     }
   }
-
-  #navigation {
-    ul.menu {
-      border: solid $dark-color $framing-width;
-      border-radius: $framing-radius;
-      padding: 1.3em 1em;
-      li {
-        float: left;
-        margin: 0.2em 0;
-        width: 25%;
-        list-style: none;
-        list-style-image: none;
-        text-align: center;
-      }
-    }
-
-    ul.menu:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-  }
 }
 
 /*
  * Main menu and Secondary menu links
  */
 
-#header,
 nav.breadcrumb,
-#navigation,
 .block-menu {
   a, a:active, a:visited {
     color: $dark-color;

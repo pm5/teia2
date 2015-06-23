@@ -73,14 +73,16 @@
 <div id="page">
 
   <header id="header" role="banner">
-
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-
   </header>
+
+  <nav id="navigation">
+    <?php print render($page['navigation']); ?>
+  </nav><!-- /#navigation -->
 
   <div id="main">
 
@@ -102,12 +104,6 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div><!-- /#content -->
-
-    <div id="navigation">
-
-      <?php print render($page['navigation']); ?>
-
-    </div><!-- /#navigation -->
 
     <?php
       // Render the sidebars to see if there's anything in them.

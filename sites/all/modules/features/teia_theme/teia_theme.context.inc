@@ -26,9 +26,9 @@ function teia_theme_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'menu-menu-secondary-menu' => array(
-          'module' => 'menu',
-          'delta' => 'menu-secondary-menu',
+        'menu_block-17' => array(
+          'module' => 'menu_block',
+          'delta' => '17',
           'region' => 'header',
           'weight' => '-10',
         ),
@@ -43,6 +43,12 @@ function teia_theme_context_default_contexts() {
           'delta' => '2',
           'region' => 'navigation',
           'weight' => '-9',
+        ),
+        'menu_block-2' => array(
+          'module' => 'menu_block',
+          'delta' => '2',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
         ),
       ),
     ),

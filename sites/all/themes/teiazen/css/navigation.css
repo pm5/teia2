@@ -97,49 +97,19 @@ li a.active {
   ul.menu a, ul.menu a:hover, ul.menu a:active, ul.menu a:visited {
     text-decoration: none;
   }
-
-  /* line 100, ../sass/navigation.scss */
-  #navigation ul.menu {
-    border: solid #745e4f 4px;
-    border-radius: 1.3em;
-    padding: 1.3em 1em;
-  }
-  /* line 104, ../sass/navigation.scss */
-  #navigation ul.menu li {
-    float: left;
-    margin: 0.2em 0;
-    width: 25%;
-    list-style: none;
-    list-style-image: none;
-    text-align: center;
-  }
-  /* line 114, ../sass/navigation.scss */
-  #navigation ul.menu:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 /*
  * Main menu and Secondary menu links
  */
-/* line 130, ../sass/navigation.scss */
-#header a, #header a:active, #header a:visited,
-nav.breadcrumb a,
-nav.breadcrumb a:active,
-nav.breadcrumb a:visited,
-#navigation a,
-#navigation a:active,
-#navigation a:visited,
+/* line 106, ../sass/navigation.scss */
+nav.breadcrumb a, nav.breadcrumb a:active, nav.breadcrumb a:visited,
 .block-menu a,
 .block-menu a:active,
 .block-menu a:visited {
   color: #745e4f;
 }
-/* line 133, ../sass/navigation.scss */
-#header a:hover,
+/* line 109, ../sass/navigation.scss */
 nav.breadcrumb a:hover,
-#navigation a:hover,
 .block-menu a:hover {
   color: #4f915e;
 }
@@ -147,16 +117,16 @@ nav.breadcrumb a:hover,
 /**
  * Sidebar content menu
  */
-/* line 143, ../sass/navigation.scss */
+/* line 119, ../sass/navigation.scss */
 #page .region-sidebar-first ul.menu li a, #page .region-sidebar-first ul.menu li a:active, #page .region-sidebar-first ul.menu li a:visited {
   color: #ffffff;
 }
 
-/* line 149, ../sass/navigation.scss */
+/* line 125, ../sass/navigation.scss */
 .region-sidebar-first ul.menu {
   padding: 0;
 }
-/* line 152, ../sass/navigation.scss */
+/* line 128, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li a {
   display: block;
   list-style: none;
@@ -165,68 +135,68 @@ nav.breadcrumb a:hover,
   padding: 0.8em 1em;
   border-radius: 0 1em 1em 0;
 }
-/* line 161, ../sass/navigation.scss */
+/* line 137, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li.leaf a:hover,
 .region-sidebar-first ul.menu li.leaf a:focus {
   text-decoration: none;
   background: #4f915e;
 }
-/* line 167, ../sass/navigation.scss */
+/* line 143, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li.first a {
   background: #b09474;
 }
-/* line 170, ../sass/navigation.scss */
+/* line 146, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(2) a {
   background: #9d8063;
 }
-/* line 173, ../sass/navigation.scss */
+/* line 149, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(3) a {
   background: #8c715b;
 }
-/* line 176, ../sass/navigation.scss */
+/* line 152, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(4) a {
   background: #77604f;
 }
-/* line 179, ../sass/navigation.scss */
+/* line 155, ../sass/navigation.scss */
 .region-sidebar-first ul.menu li:nth-child(5) a {
   background: #5c4b43;
 }
 
-/* line 186, ../sass/navigation.scss */
+/* line 162, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal {
   width: 100%;
   background: #b09474;
 }
-/* line 191, ../sass/navigation.scss */
+/* line 167, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal a {
   color: #ffffff;
   border: 0;
 }
-/* line 196, ../sass/navigation.scss */
+/* line 172, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal li, .sf-menu.main-menu.sf-horizontal.sf-navbar {
   background: #b09474;
 }
-/* line 199, ../sass/navigation.scss */
+/* line 175, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal li.active-trail, .sf-menu.main-menu.sf-horizontal.sf-navbar.active-trail {
   background: #8c715b;
 }
-/* line 204, ../sass/navigation.scss */
+/* line 180, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal li li {
   background: #9d8063;
 }
-/* line 206, ../sass/navigation.scss */
+/* line 182, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal li li.active-trail {
   background: #77604f;
 }
-/* line 211, ../sass/navigation.scss */
+/* line 187, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal li li li {
   background: #8c715b;
 }
-/* line 213, ../sass/navigation.scss */
+/* line 189, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal li li li.active-trail {
   background: #5c4b43;
 }
-/* line 218, ../sass/navigation.scss */
+/* line 194, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal li:hover,
 .sf-menu.main-menu.sf-horizontal li.sfHover,
 .sf-menu.main-menu.sf-horizontal a:focus,

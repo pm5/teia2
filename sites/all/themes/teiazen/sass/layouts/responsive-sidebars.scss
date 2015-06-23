@@ -11,11 +11,10 @@
 
 @import "base";
 
-$zen-column-count:  11;
+$zen-column-count:  12;
 $zen-gutter-width:  20px;
 
 $header-height: 130px;
-$main-top: 160px;
 
 // IE6-7 don't support box-sizing: border-box. We can fix this in 1 of 3 ways:
 // - Drop support for IE 6/7. :-) In the _base.scss, set $legacy-support-for-ie6
@@ -32,8 +31,7 @@ $main-top: 160px;
 // You can generate more efficient CSS if you manually apply the
 // zen-grid-item-base mixin to all grid items from within a single ruleset.
 $zen-auto-include-item-base: true;
-// $zen-auto-include-flow-item-base: false;
-
+$zen-auto-include-flow-item-base: false;
 
 /*
  * Center the page.
@@ -61,23 +59,18 @@ $zen-auto-include-item-base: true;
 */
 
 /*
- * Apply the shared properties of grid items in a single, efficient ruleset.
- */
-// See the note about $zen-auto-include-item-base above.
-
-#header,
-#footer {
-  @include zen-grid-item-base();
-}
-
-/*
  * Containers for grid items and flow items.
  */
 
 #header,
+#navigation,
 #main,
 #footer {
   @include zen-grid-container();
+}
+
+#page {
+  margin: 0 auto;
 }
 
 /*
@@ -86,39 +79,31 @@ $zen-auto-include-item-base: true;
 @media all {
 
   #page {
-    min-width: $wide-width;
+    width: $wide-width;
   }
 
   /**
    * Header grid container.  Set to absolute position to make room for navigation region at the top right.
    */
   #header {
-    position: absolute;
     height: $header-height;
     width: 100%;
-    max-width: $wide-width;
-    z-index: 1;
-
-    nav, hgroup {
-      float: left;
-    }
   }
 
   .region-header {
-    @include zen-grid-item(2, 5);
+    @include zen-grid-item(5, 7);
     height: $header-height;
   }
 
   #logo {
-    @include zen-grid-item(3, 2);
+    @include zen-grid-item(5, 2);
+    display: block;
   }
 
   /**
    * Main grid container.  Set top padding to make room for header container.
    */
   #main {
-    padding-top: $main-top;
-    position: relative;
   }
 
   #content {
@@ -129,20 +114,17 @@ $zen-auto-include-item-base: true;
    * Navigation region.  Placed at top right.
    */
   .region-navigation {
-    @include zen-grid-item(5, 7);
-    position: relative;
-    top: -$main-top;
-    height: $header-height;
-    z-index: 2;
+    @include zen-grid-item(10, 2);
+    margin-bottom: zen-half-gutter();
   }
 
   .sidebar-first {
     #content {
-      @include zen-grid-item(11, 2);
+      @include zen-grid-item(8, 2);
     }
 
     .region-sidebar-first {
-      @include zen-grid-item(1, 1);
+      @include zen-grid-item(2, 0);
     }
   }
 
@@ -156,7 +138,7 @@ $zen-auto-include-item-base: true;
     }
 
     .region-sidebar-second {
-      @include zen-grid-item(2, 1, right);
+      @include zen-grid-item(3, 1, right);
     }
   }
 
