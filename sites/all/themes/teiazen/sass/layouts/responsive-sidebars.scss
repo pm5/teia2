@@ -15,6 +15,7 @@ $zen-column-count:  12;
 $zen-gutter-width:  20px;
 
 $header-height: 130px;
+$navigation-height: 55px;
 
 // IE6-7 don't support box-sizing: border-box. We can fix this in 1 of 3 ways:
 // - Drop support for IE 6/7. :-) In the _base.scss, set $legacy-support-for-ie6
@@ -118,28 +119,18 @@ $zen-auto-include-flow-item-base: false;
     margin-bottom: zen-half-gutter();
   }
 
-  .sidebar-first {
-    #content {
-      @include zen-grid-item(8, 2);
-    }
-
-    .region-sidebar-first {
-      @include zen-grid-item(2, 0);
+  .region-sidebar-first {
+    @include zen-nested-container();
+    position: absolute;
+    left: 0;
+    width: 6em;
+    ul.menu {
+      margin: 0;
     }
   }
 
-  .sidebar-second, .two-sidebars {
-    .region-sidebar-first {
-      @include zen-nested-container();
-      position: absolute;
-      top: 13em;
-      left: 0;
-      width: 6em;
-    }
-
-    .region-sidebar-second {
-      @include zen-grid-item(3, 1, right);
-    }
+  .region-sidebar-second {
+    @include zen-grid-item(3, 1, right);
   }
 
   /**

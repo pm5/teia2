@@ -110,7 +110,11 @@
       $sidebar_first  = render($page['sidebar_first']);
       $sidebar_second = render($page['sidebar_second']);
     ?>
-
+    <?php if ($sidebar_first): ?>
+      <aside class="sidebars">
+        <?php print $sidebar_first; ?>
+      </aside><!-- /.sidebars -->
+    <?php endif; ?>
     <?php if ($sidebar_second): ?>
       <aside class="sidebars">
         <?php print $sidebar_second; ?>
@@ -119,11 +123,6 @@
 
   </div><!-- /#main -->
 
-  <?php if ($sidebar_first): ?>
-    <aside class="sidebars">
-      <?php print $sidebar_first; ?>
-    </aside><!-- /.sidebars -->
-  <?php endif; ?>
 
   <?php print render($page['footer']); ?>
 
