@@ -165,19 +165,62 @@ nav.breadcrumb,
     }
 
     li.first a {
-      background: #b09474;
+      background: $content-menu-first;
     }
     li:nth-child(2) a {
-      background: #9d8063;
+      background: $content-menu-second;
     }
     li:nth-child(3) a {
-      background: #8c715b;
+      background: $content-menu-third;
     }
     li:nth-child(4) a {
-      background: #77604f;
+      background: $content-menu-fourth;
     }
     li:nth-child(5) a {
-      background: #5c4b43;
+      background: $content-menu-fifth;
     }
+  }
+}
+
+.sf-menu.sf-main-menu.sf-horizontal {
+  & {
+    width: 100%;
+    background: $content-menu-first;
+  }
+
+  a {
+    color: $white-background;
+    border: 0;
+  }
+
+  li,
+  &.sf-navbar {
+    background: $content-menu-first;
+    &.active-trail {
+      background: $content-menu-third;
+    }
+  }
+
+  li li {
+    background: $content-menu-second;
+    &.active-trail {
+      background: $content-menu-fourth;
+    }
+  }
+
+  li li li {
+    background: $content-menu-third;
+    &.active-trail {
+      background: $content-menu-fifth;
+    }
+  }
+
+  li:hover,
+  li.sfHover,
+  a:focus,
+  a:hover,
+  a:active {
+    background: $content-menu-fifth;
+    outline: 0;
   }
 }

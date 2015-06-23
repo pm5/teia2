@@ -11,8 +11,6 @@
 
 @import "base";
 
-$max-width: 1200px;
-
 $zen-column-count:  11;
 $zen-gutter-width:  20px;
 
@@ -88,7 +86,7 @@ $zen-auto-include-item-base: true;
 @media all {
 
   #page {
-    min-width: 960px;
+    min-width: $wide-width;
   }
 
   /**
@@ -98,7 +96,7 @@ $zen-auto-include-item-base: true;
     position: absolute;
     height: $header-height;
     width: 100%;
-    max-width: $max-width;
+    max-width: $wide-width;
     z-index: 1;
 
     nav, hgroup {
