@@ -165,12 +165,12 @@ nav.breadcrumb a:hover,
 /* line 162, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal {
   width: 100%;
-  background: #b09474;
 }
-/* line 167, ../sass/navigation.scss */
+/* line 166, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal a {
   color: #ffffff;
   border: 0;
+  padding: 0.75em 0.7em;
 }
 /* line 172, ../sass/navigation.scss */
 .sf-menu.main-menu.sf-horizontal li, .sf-menu.main-menu.sf-horizontal.sf-navbar {
