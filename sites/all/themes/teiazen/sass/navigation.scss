@@ -36,14 +36,6 @@ $framing-radius: 1.3em;
 /*}*/
 
 /*
- * The active item in a Drupal menu
- */
-
-li a.active {
-  color: $black-active;
-}
-
-/*
  * Navigation bar.  Layout wider then 960px use navigation region.
  */
 
@@ -97,20 +89,6 @@ li a.active {
   }
 }
 
-/*
- * Main menu and Secondary menu links
- */
-
-nav.breadcrumb,
-.block-menu {
-  a, a:active, a:visited {
-    color: $dark-color;
-  }
-  a:hover {
-    color: $light-color;
-  }
-}
-
 /**
  * Sidebar content menu
  */
@@ -158,6 +136,10 @@ nav.breadcrumb,
   }
 }
 
+/**
+ * Main menu
+ */
+
 .sf-menu.main-menu.sf-horizontal {
   & {
     width: 100%;
@@ -198,5 +180,39 @@ nav.breadcrumb,
   a:active {
     background: $content-menu-fifth;
     outline: 0;
+  }
+}
+
+/**
+ * Secondary menu
+ */
+
+.menu-name-menu-secondary-menu {
+  .menu {
+    padding: 0;
+    text-align: right;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    padding: 0.35em 0.7em;
+    color: $white-background;
+    &.active,
+    &:focus,
+    &:hover,
+    &:visited {
+      color: $white-background;
+    }
+    background: $light-color;
+    &:hover {
+      background: $light-darker;
+    }
+  }
+  li.last a {
+    background: $bright-color;
+    &:hover {
+      background: $bright-darker;
+    }
   }
 }
