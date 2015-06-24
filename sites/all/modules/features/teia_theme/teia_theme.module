@@ -65,17 +65,17 @@ function teia_theme_block_view($delta = '') {
   if ($delta == 'teia_theme_language_menu') {
     return array(
       'subject' => '<none>',
-      'content' => '<div class="menu" id="lang-menu"><a href="http://www-2013.e-info.org.tw/">舊版</a> / <a href="/en">English</a></div>',
+      'content' => '<div class="menu" id="lang-menu"><a href="http://www-2013.e-info.org.tw/" target="_blank">舊版</a> / <a href="/en">English</a></div>',
     );
   } else if ($delta == 'teia_theme_facebook_link') {
     return array(
       'subject' => '<none>',
-      'content' => '<div class="social-network" id="facebook"><a href="https://www.facebook.com/TEIA.npo"><img src="/sites/all/themes/teiazen/images/fb16.png" /></a></div>',
+      'content' => '<div class="social-network" id="facebook"><a href="https://www.facebook.com/TEIA.npo" target="_blank"><img src="/sites/all/themes/teiazen/images/fb16.png" /></a></div>',
     );
   } else if ($delta == 'teia_theme_twitter_link') {
     return array(
       'subject' => '<none>',
-      'content' => '<div class="social-network" id="twitter"><a href="http://twitter.com/teiatw"><img src="/sites/all/themes/teiazen/images/tw16.png" /></a></div>',
+      'content' => '<div class="social-network" id="twitter"><a href="http://twitter.com/teiatw" target="_blank"><img src="/sites/all/themes/teiazen/images/tw16.png" /></a></div>',
     );
   }
 }
