@@ -10,6 +10,7 @@ apt-get install -y php5 php5-gd php5-curl php5-sqlite php-pear unzip php5-mysql 
 
 pear channel-discover pear.drush.org
 pear install drush/drush
+chown vagrant /usr/share/php/drush/lib
 
 sed -i 's/AllowOverride None/AllowOverride all/g' /etc/apache2/apache2.conf
 sed -i 's/\/var\/www\/html/\/var\/www/g' /etc/apache2/sites-enabled/000-default
@@ -31,3 +32,4 @@ cat > /home/vagrant/.my.cnf <<END
 [client]
 password=$DB_PASS
 END
+
