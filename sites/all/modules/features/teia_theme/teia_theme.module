@@ -5,3 +5,78 @@
  */
 
 include_once 'teia_theme.features.inc';
+
+function teia_theme_menu_block_get_menus() {
+  $menus = array();
+  $menus['menu-secondary-menu'] = '';
+  $menus['menu-content-menu'] = '';
+  return $menus;
+}
+
+function teia_theme_menu_block_blocks()
+{
+  return array(
+    'teia_theme_secondary_menu' => array(
+      'menu_name' => 'menu-secondary-menu',
+      'parent_mlid' => 0,
+      'title_link' => FALSE,
+      'admin_title' => 'Secondary menu',
+      'level' => 0,
+      'follow' => 0,
+      'depth' => 2,
+      'expanded' => TRUE,
+      'sort' => FALSE,
+    ),
+    'teia_theme_content_menu' => array(
+      'menu_name' => 'menu-content-menu',
+      'parent_mlid' => 0,
+      'title_link' => FALSE,
+      'admin_title' => 'Content menu',
+      'level' => 0,
+      'follow' => 0,
+      'depth' => 2,
+      'expanded' => TRUE,
+      'sort' => FALSE,
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function teia_theme_block_info() {
+  $blocks = array();
+  $blocks['teia_theme_language_menu'] = array(
+    'info' => t('Language menu'),
+  );
+  $blocks['teia_theme_facebook_link'] = array(
+    'info' => t('Facebook link'),
+  );
+  $blocks['teia_theme_twitter_link'] = array(
+    'info' => t('Twitter link'),
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function teia_theme_block_view($delta = '') {
+  if ($delta == 'teia_theme_language_menu') {
+    return array(
+      'subject' => '<none>',
+      'content' => '<div class="menu" id="lang-menu"><a href="http://www-2013.e-info.org.tw/">舊版</a> / <a href="/en">English</a></div>',
+    );
+  } else if ($delta == 'teia_theme_facebook_link') {
+    return array(
+      'subject' => '<none>',
+      'content' => '<p><span class="social-network" id="facebook"><a href="https://www.facebook.com/TEIA.npo"><img src="/sites/all/themes/teiazen/images/fb16.png" /></a></span></p>',
+    );
+  } else if ($delta == 'teia_theme_twitter_link') {
+    return array(
+      'subject' => '<none>',
+      'content' => '<p><span class="social-network" id="twitter"><a href="http://twitter.com/teiatw"><img src="/sites/all/themes/teiazen/images/tw16.png" /></a></span></p>',
+    );
+  }
+}
+

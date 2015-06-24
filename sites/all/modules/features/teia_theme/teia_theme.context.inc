@@ -26,11 +26,35 @@ function teia_theme_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'menu_block-17' => array(
+        'menu_block-teia_theme_secondary_menu' => array(
           'module' => 'menu_block',
-          'delta' => '17',
+          'delta' => 'teia_theme_secondary_menu',
           'region' => 'header',
-          'weight' => '-10',
+          'weight' => '-44',
+        ),
+        'teia_theme-teia_theme_language_menu' => array(
+          'module' => 'teia_theme',
+          'delta' => 'teia_theme_language_menu',
+          'region' => 'header',
+          'weight' => '-5',
+        ),
+        'teia_theme-teia_theme_facebook_link' => array(
+          'module' => 'teia_theme',
+          'delta' => 'teia_theme_facebook_link',
+          'region' => 'header',
+          'weight' => '-4',
+        ),
+        'teia_theme-teia_theme_twitter_link' => array(
+          'module' => 'teia_theme',
+          'delta' => 'teia_theme_twitter_link',
+          'region' => 'header',
+          'weight' => '-3',
+        ),
+        'google_cse-google_cse' => array(
+          'module' => 'google_cse',
+          'delta' => 'google_cse',
+          'region' => 'header',
+          'weight' => '-40',
         ),
         'superfish-1' => array(
           'module' => 'superfish',
@@ -44,9 +68,9 @@ function teia_theme_context_default_contexts() {
           'region' => 'navigation',
           'weight' => '-9',
         ),
-        'menu_block-2' => array(
+        'menu_block-teia_theme_content_menu' => array(
           'module' => 'menu_block',
-          'delta' => '2',
+          'delta' => 'teia_theme_content_menu',
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
