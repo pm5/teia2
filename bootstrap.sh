@@ -11,7 +11,8 @@ apt-get install -y php5 php5-gd php5-curl php5-sqlite php-pear unzip php5-mysql 
 pear channel-discover pear.drush.org
 pear install drush/drush
 
-sed -i 's/AllowOverride None/AllowOverride all/g' /etc/apache2/sites-enabled/000-default
+sed -i 's/AllowOverride None/AllowOverride all/g' /etc/apache2/apache2.conf
+sed -i 's/\/var\/www\/html/\/var\/www/g' /etc/apache2/sites-enabled/000-default
 sudo a2enmod rewrite
 sudo a2enmod expires
 sudo a2enmod auth_basic
