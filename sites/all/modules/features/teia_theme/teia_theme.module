@@ -70,12 +70,12 @@ function teia_theme_block_view($delta = '') {
   } else if ($delta == 'teia_theme_facebook_link') {
     return array(
       'subject' => '<none>',
-      'content' => '<p><span class="social-network" id="facebook"><a href="https://www.facebook.com/TEIA.npo"><img src="/sites/all/themes/teiazen/images/fb16.png" /></a></span></p>',
+      'content' => '<div class="social-network" id="facebook"><a href="https://www.facebook.com/TEIA.npo"><img src="/sites/all/themes/teiazen/images/fb16.png" /></a></div>',
     );
   } else if ($delta == 'teia_theme_twitter_link') {
     return array(
       'subject' => '<none>',
-      'content' => '<p><span class="social-network" id="twitter"><a href="http://twitter.com/teiatw"><img src="/sites/all/themes/teiazen/images/tw16.png" /></a></span></p>',
+      'content' => '<div class="social-network" id="twitter"><a href="http://twitter.com/teiatw"><img src="/sites/all/themes/teiazen/images/tw16.png" /></a></div>',
     );
   }
 }

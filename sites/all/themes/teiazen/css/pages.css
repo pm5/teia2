@@ -335,3 +335,40 @@ body {
 #block-superfish-1 {
   margin-bottom: 0;
 }
+
+/* line 314, ../sass/pages.scss */
+.region-header {
+  position: relative;
+}
+
+/* line 317, ../sass/pages.scss */
+#block-teia-theme-teia-theme-language-menu {
+  position: absolute;
+  left: 285px;
+  margin-top: 6px;
+}
+
+/* line 322, ../sass/pages.scss */
+#block-teia-theme-teia-theme-facebook-link {
+  position: absolute;
+  left: 379px;
+}
+
+/* line 326, ../sass/pages.scss */
+#block-teia-theme-teia-theme-twitter-link {
+  position: absolute;
+  left: 420px;
+}
+
+/* line 330, ../sass/pages.scss */
+#block-google-cse-google-cse {
+  position: absolute;
+  left: 470px;
+  margin-top: 6px;
+}
+
+/* line 335, ../sass/pages.scss */
+#logo {
+  position: relative;
+  top: 17px;
+}

@@ -311,3 +311,28 @@ section.sidebar,
 #block-superfish-1 {
   margin-bottom: 0;
 }
+.region-header {
+  position: relative;
+}
+#block-teia-theme-teia-theme-language-menu {
+  position: absolute;
+  left: 285px;
+  margin-top: 6px;
+}
+#block-teia-theme-teia-theme-facebook-link {
+  position: absolute;
+  left: 379px;
+}
+#block-teia-theme-teia-theme-twitter-link {
+  position: absolute;
+  left: 420px;
+}
+#block-google-cse-google-cse {
+  position: absolute;
+  left: 470px;
+  margin-top: 6px;
+}
+#logo {
+  position: relative;
+  top: 17px;
+}
