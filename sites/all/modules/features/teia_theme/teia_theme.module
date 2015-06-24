@@ -66,7 +66,7 @@ function teia_theme_block_view($delta = '') {
     global $language;
     return array(
       'subject' => '<none>',
-      'content' => '<div class="menu" id="lang-menu"><a href="http://www-2013.e-info.org.tw/" target="_blank">舊版</a> / ' . ($language->language === 'en' ? '<a href="/zh-hant">中文</a>' : '<a href="/en">English</a></div>'),
+      'content' => '<div class="menu" id="lang-menu"><a href="http://www-2013.e-info.org.tw/" target="_blank">舊版</a> / ' . ($language->language === 'en' ? '<a href="/zh-hant">中文</a>' : '<a href="/en">English</a>') . '</div>',
     );
   } else if ($delta == 'teia_theme_facebook_link') {
     return array(
