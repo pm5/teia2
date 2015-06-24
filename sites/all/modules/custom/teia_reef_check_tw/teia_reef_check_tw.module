@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the TEIA Reef Check TW feature.
- */
-
-include_once 'teia_reef_check_tw.features.inc';
