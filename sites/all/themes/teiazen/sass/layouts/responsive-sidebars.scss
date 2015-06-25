@@ -27,7 +27,7 @@ $navigation-height: 55px;
 // - Use the same CSS unit for grid width and gutter width (use px for both or
 //   use % for both, etc.) and set the box-sizing variable to content-box.
 //   $zen-box-sizing: content-box;
-
+$zen-box-sizing: border-box;
 
 // You can generate more efficient CSS if you manually apply the
 // zen-grid-item-base mixin to all grid items from within a single ruleset.
@@ -146,13 +146,19 @@ $zen-auto-include-flow-item-base: false;
    * Panels layout
    */
   .use-zen-columns #content {
+    .panel-panel {
+      @include box-sizing(border-box);
+    }
     .panel-3col-33-stacked .panel-col-first {
+      @include box-sizing(border-box);
       @include zen-grid-flow-item(4, 12);
     }
     .panel-3col-33-stacked .panel-col {
+      @include box-sizing(border-box);
       @include zen-grid-flow-item(4, 12);
     }
     .panel-3col-33-stacked .panel-col-last {
+      @include box-sizing(border-box);
       @include zen-grid-flow-item(4, 12, false, false);
     }
     .panel-3col-33-stacked .inside {

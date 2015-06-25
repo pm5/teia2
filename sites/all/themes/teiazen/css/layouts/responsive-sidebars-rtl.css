@@ -207,45 +207,60 @@
    * Panels layout
    */
   /* line 149, ../../sass/layouts/responsive-sidebars.scss */
-  .use-zen-columns #content .panel-3col-33-stacked .panel-col-first {
-    width: 33.33333%;
-    padding-right: 0;
-    padding-left: 13.33333px;
-    margin-left: 6.66667px;
+  .use-zen-columns #content .panel-panel {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
   /* line 152, ../../sass/layouts/responsive-sidebars.scss */
-  .use-zen-columns #content .panel-3col-33-stacked .panel-col {
+  .use-zen-columns #content .panel-3col-33-stacked .panel-col-first {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     width: 33.33333%;
     padding-right: 0;
     padding-left: 13.33333px;
     margin-left: 6.66667px;
   }
-  /* line 155, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 156, ../../sass/layouts/responsive-sidebars.scss */
+  .use-zen-columns #content .panel-3col-33-stacked .panel-col {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    padding-right: 0;
+    padding-left: 13.33333px;
+    margin-left: 6.66667px;
+  }
+  /* line 160, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-3col-33-stacked .panel-col-last {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     width: 33.33333%;
     padding-right: 0;
     padding-left: 13.33333px;
     margin-left: -13.33333px;
   }
-  /* line 158, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 164, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-3col-33-stacked .inside {
     margin: 0;
   }
-  /* line 163, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 169, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-2col-stacked .panel-col-first {
     width: 50%;
     padding-right: 0;
     padding-left: 10px;
     margin-left: 10px;
   }
-  /* line 166, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 172, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-2col-stacked .panel-col-last {
     width: 50%;
     padding-right: 0;
     padding-left: 10px;
     margin-left: -10px;
   }
-  /* line 169, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 175, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-2col-stacked .inside {
     margin: 0;
   }
