@@ -188,6 +188,15 @@
 /**
  * Secondary menu
  */
+/* line 190, ../sass/navigation.scss */
+.menu-name-menu-secondary-menu {
+  /*li.last a {*/
+  /*background: $bright-color;*/
+  /*&:hover {*/
+  /*background: $bright-darker;*/
+  /*}*/
+  /*}*/
+}
 /* line 191, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu .menu {
   padding: 0;
@@ -210,12 +219,4 @@
 /* line 208, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu a:hover {
   background: #466b54;
-}
-/* line 212, ../sass/navigation.scss */
-.menu-name-menu-secondary-menu li.last a {
-  background: #ff9900;
-}
-/* line 214, ../sass/navigation.scss */
-.menu-name-menu-secondary-menu li.last a:hover {
-  background: #bf8630;
 }
