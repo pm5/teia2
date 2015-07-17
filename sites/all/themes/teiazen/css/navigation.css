@@ -82,7 +82,7 @@
 @media all {
   /* line 82, ../sass/navigation.scss */
   ul.menu a {
-    font-size: large;
+    font-size: 18px;
     vertical-align: middle;
   }
   /* line 86, ../sass/navigation.scss */
