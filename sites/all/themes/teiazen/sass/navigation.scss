@@ -187,6 +187,14 @@ $framing-radius: 1.3em;
  * Secondary menu
  */
 
+#block-menu-block-teia-theme-secondary-menu {
+  width: 100%;
+  margin-bottom: 0;
+  .menu {
+    margin-bottom: 1em;
+  }
+}
+
 .menu-name-menu-secondary-menu {
   .menu {
     padding: 0;

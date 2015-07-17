@@ -189,6 +189,16 @@
  * Secondary menu
  */
 /* line 190, ../sass/navigation.scss */
+#block-menu-block-teia-theme-secondary-menu {
+  width: 100%;
+  margin-bottom: 0;
+}
+/* line 193, ../sass/navigation.scss */
+#block-menu-block-teia-theme-secondary-menu .menu {
+  margin-bottom: 1em;
+}
+
+/* line 198, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu {
   /*li.last a {*/
   /*background: $bright-color;*/
@@ -197,26 +207,26 @@
   /*}*/
   /*}*/
 }
-/* line 191, ../sass/navigation.scss */
+/* line 199, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu .menu {
   padding: 0;
   text-align: right;
 }
-/* line 195, ../sass/navigation.scss */
+/* line 203, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu li {
   display: inline-block;
 }
-/* line 198, ../sass/navigation.scss */
+/* line 206, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu a {
   padding: 0.35em 0.7em;
   color: #ffffff;
   background: #4f915e;
 }
-/* line 201, ../sass/navigation.scss */
+/* line 209, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu a.active, .menu-name-menu-secondary-menu a:focus, .menu-name-menu-secondary-menu a:hover, .menu-name-menu-secondary-menu a:visited {
   color: #ffffff;
 }
-/* line 208, ../sass/navigation.scss */
+/* line 216, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu a:hover {
   background: #466b54;
 }

@@ -59,18 +59,11 @@ body {
 }
 
 #page .region-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
   font-size: small;
   line-height: 1.5em;
-
-  #block-panels-mini-header {
-    position: absolute;
-    bottom: 0px;
-    margin-bottom: 0
-  }
-
-  .social-network {
-    margin-left: 0.3em;
-  }
 }
 
 .region-navigation {
@@ -315,21 +308,15 @@ section.sidebar,
   position: relative;
 }
 #block-teia-theme-teia-theme-language-menu {
-  position: absolute;
-  left: 285px;
+  margin-right: 10px;
   margin-top: 6px;
 }
 #block-teia-theme-teia-theme-facebook-link {
-  position: absolute;
-  left: 379px;
 }
 #block-teia-theme-teia-theme-twitter-link {
-  position: absolute;
-  left: 420px;
+  margin-right: 10px;
 }
 #block-google-cse-google-cse {
-  position: absolute;
-  left: 470px;
   margin-top: 6px;
 }
 #logo {
