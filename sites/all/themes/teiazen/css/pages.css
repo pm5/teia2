@@ -340,17 +340,22 @@ body {
   margin-top: 6px;
 }
 
-/* line 316, ../sass/pages.scss */
+/* line 314, ../sass/pages.scss */
+#block-teia-theme-teia-theme-facebook-link {
+  margin-right: 6px;
+}
+
+/* line 317, ../sass/pages.scss */
 #block-teia-theme-teia-theme-twitter-link {
   margin-right: 10px;
 }
 
-/* line 319, ../sass/pages.scss */
+/* line 320, ../sass/pages.scss */
 #block-google-cse-google-cse {
   margin-top: 6px;
 }
 
-/* line 322, ../sass/pages.scss */
+/* line 323, ../sass/pages.scss */
 #logo {
   position: relative;
   top: 17px;
