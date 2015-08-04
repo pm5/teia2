@@ -206,19 +206,21 @@ div#block-panels-mini-donate-now .donate-now-zh {
   text-align: center;
   border-bottom: 2px #ffffff solid;
   padding-bottom: 0.4em;
+  line-height: 1.2em;
 }
-/* line 146, ../sass/blocks.scss */
+/* line 147, ../sass/blocks.scss */
 div#block-panels-mini-donate-now .donate-now-en {
   display: block;
   font-size: xx-large;
   text-align: center;
   padding-top: 0.4em;
+  line-height: 1.2em;
 }
 
 /**
  * Second sidebar
  */
-/* line 159, ../sass/blocks.scss */
+/* line 161, ../sass/blocks.scss */
 .region-sidebar-second h2.block-title {
   color: #ffffff;
   background: #4f915e;
@@ -228,23 +230,23 @@ div#block-panels-mini-donate-now .donate-now-en {
   letter-spacing: 0.3em;
   text-align: center;
 }
-/* line 169, ../sass/blocks.scss */
+/* line 171, ../sass/blocks.scss */
 .region-sidebar-second .block-content {
   border-color: #4f915e;
   border-style: solid;
   border-width: 0 4px 4px 4px;
   padding: 1em 10px;
 }
-/* line 175, ../sass/blocks.scss */
+/* line 177, ../sass/blocks.scss */
 .region-sidebar-second .block-content p, .region-sidebar-second .block-content pre {
   margin-top: 0.2em;
 }
-/* line 179, ../sass/blocks.scss */
+/* line 181, ../sass/blocks.scss */
 .region-sidebar-second .block-content div.more-link,
 .region-sidebar-second .block-content ul.inline li.node-readmore {
   color: #745e4f;
 }
-/* line 183, ../sass/blocks.scss */
+/* line 185, ../sass/blocks.scss */
 .region-sidebar-second .block-content ul.inline li.node-readmore {
   float: right;
   padding: 0;
@@ -253,11 +255,11 @@ div#block-panels-mini-donate-now .donate-now-en {
 /**
  * Footer
  */
-/* line 195, ../sass/blocks.scss */
+/* line 197, ../sass/blocks.scss */
 #footer a, #footer a:visited, #footer a:hover, #footer a:active {
   color: #ffffff;
 }
-/* line 198, ../sass/blocks.scss */
+/* line 200, ../sass/blocks.scss */
 #footer a:hover, #footer a:active {
   text-decoration: underline;
 }
@@ -265,7 +267,7 @@ div#block-panels-mini-donate-now .donate-now-en {
 /**
  * Panels
  */
-/* line 207, ../sass/blocks.scss */
+/* line 209, ../sass/blocks.scss */
 .panel-pane:after {
   content: "";
   display: block;
@@ -273,7 +275,7 @@ div#block-panels-mini-donate-now .donate-now-en {
   clear: both;
 }
 
-/* line 215, ../sass/blocks.scss */
+/* line 217, ../sass/blocks.scss */
 #content .panel-pane {
   margin-bottom: 1.5em;
 }
