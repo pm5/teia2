@@ -20,7 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     web.vm.provider :virtualbox do |vb|
       vb.customize [
         "modifyvm", :id,
-        "--name", "drupal_web",
+        "--name", "TEIA_web",
         "--memory", "1024"
       ]
     end
@@ -37,7 +37,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     db.vm.provider :virtualbox do |vb|
       vb.customize [
         "modifyvm", :id,
-        "--name", "drupal_db",
+        "--name", "TEIA_db",
         "--memory", "1024"
       ]
     end
