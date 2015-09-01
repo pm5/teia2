@@ -1,0 +1,50 @@
+---
+- name: ensure db packages are the latest
+  apt: name={{ item }} state=latest
+  with_items:
+    - mysql-server
+    # for ansible
+    - python-mysqldb
+
+- name: ensure mysql is listening to all
+  lineinfile: >
+    dest=/etc/mysql/my.cnf
+    regexp=^bind-address
+    line="bind-address = *"
+    backrefs=yes
+  register: mysqlconf
+
+- name: ensure mysql is restarted when needed
+  service: name=mysql state=restarted
+  when: mysqlconf.changed
+
+- name: ensure drupal database user is present
+  mysql_user: >
+    name=drupal
+    password=foobar
+    host=%
+    login_user=root
+    login_password=""
+    priv="drupal.*:ALL"
+
+- name: ensure drupal database is present
+  mysql_db: >
+    name=drupal
+    login_user=root
+    login_password=""
+  register: dbdb
+
+- name: copy database dump file to db server when it exists
+  ignore_errors: yes
+  copy: src=database.mysql.gz dest=/tmp
+  register: dbfile
+
+- name: ensure database is provisioned when needed
+  mysql_db: >
+    name=drupal
+    login_user=root
+    login_password=""
+    target=/tmp/database.mysql.gz
+    state=import
+  when: dbfile and dbdb.changed
+  register: dbdata

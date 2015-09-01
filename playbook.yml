@@ -1,0 +1,21 @@
+---
+- hosts: all
+  sudo: yes
+  tasks:
+    - name: ensure apt cache is the latest
+      apt: update_cache=yes upgrade=yes cache_valid_time=86400
+
+- hosts: web
+  sudo: yes
+  roles:
+    - apache
+
+- hosts: db
+  sudo: yes
+  roles:
+    - postgresql
+    - memcache
+
+- hosts: web
+  roles:
+    - drupal7

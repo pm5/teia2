@@ -1,0 +1,28 @@
+---
+- name: ensure drupal7 packages are the latest
+  apt: name={{ item }} state=latest
+  sudo: yes
+  with_items:
+    - curl
+    - unzip
+    - drush
+    - mysql-client
+    - postgresql-client
+
+- name: ensure drupal settings is the present when database is provisioned
+  template: >
+    src=settings.php
+    dest=/var/www/sites/default/settings.php
+    force=no
+  when: hostvars.db.dbdata
+
+- name: ensure files directory is present
+  file: dest=/var/www/sites/default/files mode=0777 state=directory
+
+- name: ensure files directory is provisioned when needed
+  ignore_errors: yes
+  sudo: yes
+  unarchive: src=files.tar.gz dest=/var/www/sites/default/files owner=www-data group=www-data
+
+- name: ensure registry_rebuild is present
+  command: drush dl registry_rebuild

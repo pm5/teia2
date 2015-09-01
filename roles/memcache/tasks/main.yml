@@ -1,0 +1,11 @@
+---
+- name: ensure memcache packages are the latest
+  apt: name=memcached state=latest
+
+- name: ensure memcache listens to all
+  lineinfile: name=/etc/memcached.conf regexp=^-l state=absent
+  register: memcacheconf
+
+- name: ensure memcache is restarted if needed
+  service: name=memcached state=restarted
+  when: memcacheconf.changed
