@@ -13,7 +13,7 @@
 - hosts: db
   sudo: yes
   roles:
-    - postgresql
+    - mysql
     - memcache
 
 - hosts: web
