@@ -1,8 +1,6 @@
 
-協會官網
+[協會官網](http://www.e-info.org.tw/)
 ========
-
-A Vagrant + Ansible environment for Drupal development.
 
 Usage
 -----
