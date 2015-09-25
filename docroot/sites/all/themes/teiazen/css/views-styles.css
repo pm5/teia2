@@ -128,16 +128,16 @@
    * View panes
    */
   /* line 124, ../sass/views-styles.scss */
-  .view-display-id-pane .views-row {
+  .list-pane .views-row {
     margin-top: 1em;
   }
   /* line 127, ../sass/views-styles.scss */
-  .view-display-id-pane .views-row.views-row-first {
+  .list-pane .views-row.views-row-first {
     margin-top: 0em;
   }
 
   /* line 133, ../sass/views-styles.scss */
-  .view-display-id-pane figure.field-title-image {
+  .list-pane figure.field-title-image {
     width: 33.33333%;
     padding-left: 10px;
     padding-right: 10px;
@@ -153,7 +153,7 @@
     clear: left;
   }
   /* line 138, ../sass/views-styles.scss */
-  .view-display-id-pane div.field-content {
+  .list-pane div.field-content {
     width: 66.66667%;
     padding-left: 10px;
     padding-right: 10px;
@@ -169,7 +169,7 @@
     clear: right;
   }
   /* line 143, ../sass/views-styles.scss */
-  .view-display-id-pane div.more-link {
+  .list-pane div.more-link {
     width: 66.66667%;
     padding-left: 10px;
     padding-right: 10px;

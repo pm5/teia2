@@ -120,7 +120,7 @@
    * View panes
    */
 
-  .view-display-id-pane {
+  .list-pane {
     .views-row {
       margin-top: 1em;
     }
@@ -129,7 +129,7 @@
     }
   }
 
-  .view-display-id-pane {
+  .list-pane {
     figure.field-title-image {
       @include zen-grid-flow-item(4, 12);
       @include zen-float(left);
