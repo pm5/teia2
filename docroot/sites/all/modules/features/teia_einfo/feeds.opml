@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="1.1">
+    <head>
+        <title>環境資訊中心</title>
+        <dateModified>Tue 9, Sep 2015 16:42:00</dateModified>
+        <ownerName>TEIA</ownerName>
+        <ownerEmail>service@e-info.org.tw</ownerEmail>
+    </head>
+    <body>
+        <outline text="最新環境報導" xmlUrl="http://e-info.org.tw/taxonomy/term/32618/0/feed"/>
+        <outline text="自然之窗" xmlUrl="http://green.ngo.org.tw/video/feed"/>
+        <outline text="環境通訊網" xmlUrl="http://enw.e-info.org.tw/rss.xml"/>
+        <outline text="台灣濕地網" xmlUrl="http://wetland.e-info.org.tw/?format%3Dfeed%26type%3Drss"/>
+        <outline text="水資源日" xmlUrl="http://waterday.e-info.org.tw/?format%3Dfeed%26type%3Drss"/>
+        <outline text="透視中國環境" xmlUrl="http://e-info.org.tw/taxonomy/term/41991+445+25954/all/feed"/>
+    </body>
+</opml>

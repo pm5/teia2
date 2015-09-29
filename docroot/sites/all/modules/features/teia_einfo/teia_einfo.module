@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the teia_einfo feature.
+ */
+
+include_once 'teia_einfo.features.inc';
