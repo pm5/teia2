@@ -215,7 +215,7 @@ $databases['default']['default'] = array(
   'database' => 'drupal',
   'username' => 'drupal',
   'password' => 'foobar',
-  'host' => '192.168.10.3',
+  'host' => '192.168.63.3',
   'prefix' => '',
 );
 
