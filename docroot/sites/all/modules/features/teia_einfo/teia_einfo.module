@@ -26,4 +26,77 @@ function teia_einfo_block_view_aggregator_feed_6_alter(&$data, $block) {
   $data['content'] = '<p>自2006年起投入台兩岸環境交流，與不同的合作媒體、NGO與個人，至今已在中國環境議題上匯集廣泛的內容。</p>' . $data['content'];
 }
 
+/**
+ * Implements hook_block_info().
+ */
+function teia_einfo_block_info() {
+  $blocks = array();
+  $blocks['teia_einfo_about'] = array(
+    'info' => t('關於環境資訊中心'),
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'region' => 'sidebar_second',
+    'pages' => "e-info\ne-info/*"
+  );
+  $blocks['teia_einfo_top_ten_tw'] = array(
+    'info' => t('2014 台灣十大環境新聞'),
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'region' => 'sidebar_second',
+    'pages' => "e-info\ne-info/*"
+  );
+  $blocks['teia_einfo_top_ten_intl'] = array(
+    'info' => t('2014 國際十大環境新聞'),
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'region' => 'sidebar_second',
+    'pages' => "e-info\ne-info/*"
+  );
+  return $blocks;
+}
 
+/**
+ * Implements hook_block_view().
+ */
+function teia_einfo_block_view($delta = '') {
+  if ($delta === 'teia_einfo_about') {
+    return array(
+      'subject' => t('關於環境資訊中心'),
+      'content' => '<p>台灣環境資訊協會所設立的獨立媒體，當台灣或世界各地發生環境事件，我們透過採訪報導、編輯、翻譯並記錄國內外環境新聞，藉由網路傳遞至世界各地。</p>
+      <p><a href="http://bit.ly/1CJXz9i">※守護環境知情權，捐款支持環境資訊中心！</a></p>',
+    );
+  } else if ($delta === 'teia_einfo_top_ten_tw') {
+    return array(
+      'subject' => t('2014 台灣十大環境新聞'),
+      'content' => '
+        <ol style="list-style-type: decimal">
+        <li><a href="http://e-info.org.tw/node/96274">大埔案四戶勝訴 還地、原屋重建還在等</a></li>
+        <li><a href="http://e-info.org.tw/node/97114">食安不安 修法細節斡旋再三</a></li>
+        <li><a href="http://e-info.org.tw/node/104553">三義外環道恐傷棲地 守護石虎公民動員</a></li>
+        <li><a href="http://e-info.org.tw/node/104537">自經區拼開放 恐衝擊在地農業與糧食安全</a></li>
+        <li><a href="http://e-info.org.tw/node/104534">美麗灣環評再敗訴 台東縣府稱避業者求償續興訟</a></li>
+        <li><a href="http://e-info.org.tw/node/104965">有害變一般？ 廢五金標準擬修改惹議</a></li>
+        <li><a href="http://e-info.org.tw/node/104536">高雄氣爆炸出石化業沈痾 民間要求產業轉型</a></li>
+        <li><a href="http://e-info.org.tw/node/104587">有毒爐碴填農地 污染風險無法管</a></li>
+        <li><a href="http://e-info.org.tw/node/104535">雪谷纜車威脅台灣黑熊家園</a></li>
+        <li><a href="http://e-info.org.tw/node/104538">假農舍占農地 宜蘭公民行動護蘭陽地景</a></li>
+        </ol>
+      '
+    );
+  } else if ($delta === 'teia_einfo_top_ten_intl') {
+    return array(
+      'subject' => t('2014 國際十大環境新聞'),
+      'content' => '
+        <ol style="list-style-type: decimal">
+        <li><a href="http://e-info.org.tw/node/104126">雨林劣化 巴西學者發表警世研究</a></li>
+        <li><a href="http://e-info.org.tw/node/104127">2ºC是極限 聯合國：能源必須轉型</a></li>
+        <li><a href="http://e-info.org.tw/node/104539">全球物種加速流失 保育成績慘不忍睹</a></li>
+        <li><a href="http://e-info.org.tw/node/104540">食物鏈頂層動物消失 生態失衡強烈衝擊環境</a></li>
+        <li><a href="http://e-info.org.tw/node/96212">塑膠微珠新環境危機 污水處理也沒轍</a></li>
+        <li><a href="http://e-info.org.tw/node/104541">塑料垃圾無所不及 大幅佔領歐洲海床</a></li>
+        <li><a href="http://e-info.org.tw/node/104444">全球最大海洋保護區 歐巴馬說了算</a></li>
+        <li><a href="http://e-info.org.tw/node/104542">給後代永續遺產 澳洲首設大堡礁信託</a></li>
+        <li><a href="http://e-info.org.tw/node/104628">中國霧霾太嚴重 重現藍天端賴政府決心</a></li>
+        <li><a href="http://e-info.org.tw/node/104445">伐木勘油遭荼毒 原始部落求援！</a></li>
+        </ol>
+      '
+    );
+  }
+}
