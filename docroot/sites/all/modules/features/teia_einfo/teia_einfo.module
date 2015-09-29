@@ -35,19 +35,22 @@ function teia_einfo_block_info() {
     'info' => t('關於環境資訊中心'),
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'region' => 'sidebar_second',
-    'pages' => "e-info\ne-info/*"
+    'pages' => "e-info\ne-info/*",
+    'status' => TRUE,
   );
   $blocks['teia_einfo_top_ten_tw'] = array(
     'info' => t('2014 台灣十大環境新聞'),
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'region' => 'sidebar_second',
-    'pages' => "e-info\ne-info/*"
+    'pages' => "e-info\ne-info/*",
+    'status' => TRUE,
   );
   $blocks['teia_einfo_top_ten_intl'] = array(
     'info' => t('2014 國際十大環境新聞'),
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'region' => 'sidebar_second',
-    'pages' => "e-info\ne-info/*"
+    'pages' => "e-info\ne-info/*",
+    'status' => TRUE,
   );
   return $blocks;
 }
