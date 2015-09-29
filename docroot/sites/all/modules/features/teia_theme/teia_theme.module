@@ -58,16 +58,26 @@ function teia_theme_block_info() {
   return $blocks;
 }
 
+function teia_theme_block_languae_menu_view()
+{
+  global $language;
+  return array(
+    'subject' => '<none>',
+    'content' =>
+      '<div class="menu" id="lang-menu">'
+      . ($language->language === 'zh-hant' ? '<a href="/en/about">English</a>' : '<a href="/zh-hant">中文</a>')
+      . ' / '
+      . ($language->language === 'ja' ? '<a href="/en/about">English</a>' : '<a href="/ja/about">日本語</a>')
+      . '</div>',
+  );
+}
+
 /**
  * Implements hook_block_view().
  */
 function teia_theme_block_view($delta = '') {
   if ($delta == 'teia_theme_language_menu') {
-    global $language;
-    return array(
-      'subject' => '<none>',
-      'content' => '<div class="menu" id="lang-menu">' . ($language->language === 'ja' ? '<a href="/zh-hant">中文</a>' : '<a href="/ja/about">日本語</a>') . ' / ' . ($language->language === 'en' ? '<a href="/zh-hant">中文</a>' : '<a href="/en">English</a>') . '</div>',
-    );
+    return teia_theme_block_languae_menu_view();
   } else if ($delta == 'teia_theme_facebook_link') {
     return array(
       'subject' => '<none>',
