@@ -5,3 +5,25 @@
  */
 
 include_once 'teia_einfo.features.inc';
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function teia_einfo_block_view_alter(&$data, $block) {
+}
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ */
+function teia_einfo_block_view_aggregator_feed_3_alter(&$data, $block) {
+  $data['content'] = '<p>以環境節日結合活潑的繪本風格，有系統提供環境新聞及環境教育訊息給大眾，並舉辦線上紀錄片影片影展、綠繪本徵件比賽，以輕鬆有趣而多元的方式接收環境資訊，並方便教師和環境教育從業人員，運用網站資源於課堂及講座使用，讓大眾進一步了解環境教育，增加公眾環境教育的學習管道。</p>' . $data['content'];
+}
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ */
+function teia_einfo_block_view_aggregator_feed_6_alter(&$data, $block) {
+  $data['content'] = '<p>自2006年起投入台兩岸環境交流，與不同的合作媒體、NGO與個人，至今已在中國環境議題上匯集廣泛的內容。</p>' . $data['content'];
+}
+
+
