@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       ]
     end
     web.vm.network :forwarded_port, guest: 80, host: 8080
-    web.vm.network :private_network, ip: "192.168.63.2"    # for NFS
+    web.vm.network :private_network, ip: "192.168.10.2"    # for NFS
     web.vm.synced_folder "docroot", "/var/www", :nfs => true
     web.vm.synced_folder "log", "/var/log/drupal7",
       owner: "vagrant",
@@ -41,7 +41,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         "--memory", "1024"
       ]
     end
-    db.vm.network :private_network, ip: "192.168.63.3"
+    db.vm.network :private_network, ip: "192.168.10.3"
     db.vm.network :forwarded_port, guest: 3306, host: 3306
     db.vm.network :forwarded_port, guest: 5432, host: 5432
     db.vm.network :forwarded_port, guest: 11211, host: 11211
