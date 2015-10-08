@@ -65,9 +65,9 @@ function teia_theme_block_languae_menu_view()
     'subject' => '<none>',
     'content' =>
       '<div class="menu" id="lang-menu">'
-      . ($language->language === 'zh-hant' ? '<a href="/en/about">English</a>' : '<a href="/zh-hant">中文</a>')
+      . ($language->language === 'zh-hant' ? '<a href="/en">English</a>' : '<a href="/zh-hant">中文</a>')
       . ' / '
-      . ($language->language === 'ja' ? '<a href="/en/about">English</a>' : '<a href="/ja/about">日本語</a>')
+      . ($language->language === 'ja' ? '<a href="/en">English</a>' : '<a href="/ja/about">日本語</a>')
       . '</div>',
   );
 }
