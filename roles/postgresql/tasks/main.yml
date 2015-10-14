@@ -70,5 +70,5 @@
   sudo: yes
   sudo_user: postgres
   shell: gunzip -c /tmp/database.pgsql.gz | psql -d drupal
-  when: db.changed or dbfile.changed
+  when: dbfile.changed
   register: dbdata
