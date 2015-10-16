@@ -172,13 +172,15 @@
 /**
  * Donate Now!
  */
-/* line 114, ../sass/blocks.scss */
-div#block-panels-mini-donate-now .block-content {
+/* line 115, ../sass/blocks.scss */
+#block-teia-theme-teia-donate-now .block-content,
+#block-teia-theme-teia-nature-valley-donate-now .block-content {
   border: none;
   padding: 0;
 }
-/* line 118, ../sass/blocks.scss */
-div#block-panels-mini-donate-now a#donate-now {
+/* line 119, ../sass/blocks.scss */
+#block-teia-theme-teia-donate-now a#donate-now,
+#block-teia-theme-teia-nature-valley-donate-now a#donate-now {
   display: block;
   border: 0;
   background: #4f915e;
@@ -187,20 +189,24 @@ div#block-panels-mini-donate-now a#donate-now {
   padding: 2em 1.2em;
   text-decoration: none;
 }
-/* line 127, ../sass/blocks.scss */
-div#block-panels-mini-donate-now a#donate-now:active, div#block-panels-mini-donate-now a#donate-now:visited {
+/* line 128, ../sass/blocks.scss */
+#block-teia-theme-teia-donate-now a#donate-now:active, #block-teia-theme-teia-donate-now a#donate-now:visited,
+#block-teia-theme-teia-nature-valley-donate-now a#donate-now:active,
+#block-teia-theme-teia-nature-valley-donate-now a#donate-now:visited {
   color: #ffffff;
   background: #4f915e;
   text-decoration: none;
 }
-/* line 132, ../sass/blocks.scss */
-div#block-panels-mini-donate-now a#donate-now:hover {
+/* line 133, ../sass/blocks.scss */
+#block-teia-theme-teia-donate-now a#donate-now:hover,
+#block-teia-theme-teia-nature-valley-donate-now a#donate-now:hover {
   color: #ffffff;
   background: #91c888;
   text-decoration: none;
 }
-/* line 138, ../sass/blocks.scss */
-div#block-panels-mini-donate-now .donate-now-zh {
+/* line 139, ../sass/blocks.scss */
+#block-teia-theme-teia-donate-now .donate-now-zh,
+#block-teia-theme-teia-nature-valley-donate-now .donate-now-zh {
   display: block;
   font-size: xx-large;
   text-align: center;
@@ -208,8 +214,9 @@ div#block-panels-mini-donate-now .donate-now-zh {
   padding-bottom: 0.4em;
   line-height: 1.2em;
 }
-/* line 147, ../sass/blocks.scss */
-div#block-panels-mini-donate-now .donate-now-en {
+/* line 148, ../sass/blocks.scss */
+#block-teia-theme-teia-donate-now .donate-now-en,
+#block-teia-theme-teia-nature-valley-donate-now .donate-now-en {
   display: block;
   font-size: xx-large;
   text-align: center;
@@ -220,7 +227,7 @@ div#block-panels-mini-donate-now .donate-now-en {
 /**
  * Second sidebar
  */
-/* line 161, ../sass/blocks.scss */
+/* line 162, ../sass/blocks.scss */
 .region-sidebar-second h2.block-title {
   color: #ffffff;
   background: #4f915e;
@@ -230,23 +237,23 @@ div#block-panels-mini-donate-now .donate-now-en {
   letter-spacing: 0.3em;
   text-align: center;
 }
-/* line 171, ../sass/blocks.scss */
+/* line 172, ../sass/blocks.scss */
 .region-sidebar-second .block-content {
   border-color: #4f915e;
   border-style: solid;
   border-width: 0 4px 4px 4px;
   padding: 1em 10px;
 }
-/* line 177, ../sass/blocks.scss */
+/* line 178, ../sass/blocks.scss */
 .region-sidebar-second .block-content p, .region-sidebar-second .block-content pre {
   margin-top: 0.2em;
 }
-/* line 181, ../sass/blocks.scss */
+/* line 182, ../sass/blocks.scss */
 .region-sidebar-second .block-content div.more-link,
 .region-sidebar-second .block-content ul.inline li.node-readmore {
   color: #745e4f;
 }
-/* line 185, ../sass/blocks.scss */
+/* line 186, ../sass/blocks.scss */
 .region-sidebar-second .block-content ul.inline li.node-readmore {
   float: right;
   padding: 0;
@@ -255,11 +262,11 @@ div#block-panels-mini-donate-now .donate-now-en {
 /**
  * Footer
  */
-/* line 197, ../sass/blocks.scss */
+/* line 198, ../sass/blocks.scss */
 #footer a, #footer a:visited, #footer a:hover, #footer a:active {
   color: #ffffff;
 }
-/* line 200, ../sass/blocks.scss */
+/* line 201, ../sass/blocks.scss */
 #footer a:hover, #footer a:active {
   text-decoration: underline;
 }
@@ -267,7 +274,7 @@ div#block-panels-mini-donate-now .donate-now-en {
 /**
  * Panels
  */
-/* line 209, ../sass/blocks.scss */
+/* line 210, ../sass/blocks.scss */
 .panel-pane:after {
   content: "";
   display: block;
@@ -275,7 +282,7 @@ div#block-panels-mini-donate-now .donate-now-en {
   clear: both;
 }
 
-/* line 217, ../sass/blocks.scss */
+/* line 218, ../sass/blocks.scss */
 #content .panel-pane {
   margin-bottom: 1.5em;
 }

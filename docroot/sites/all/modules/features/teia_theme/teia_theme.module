@@ -41,6 +41,20 @@ function teia_theme_menu_block_blocks()
   );
 }
 
+function teia_theme_block_languae_menu_view()
+{
+  global $language;
+  return array(
+    'subject' => '<none>',
+    'content' =>
+      '<div class="menu" id="lang-menu">'
+      . ($language->language === 'zh-hant' ? '<a href="/en">English</a>' : '<a href="/zh-hant">中文</a>')
+      . ' / '
+      . ($language->language === 'ja' ? '<a href="/en">English</a>' : '<a href="/ja/about">日本語</a>')
+      . '</div>',
+  );
+}
+
 /**
  * Implements hook_block_info().
  */
@@ -55,21 +69,13 @@ function teia_theme_block_info() {
   $blocks['teia_theme_twitter_link'] = array(
     'info' => t('Twitter link'),
   );
-  return $blocks;
-}
-
-function teia_theme_block_languae_menu_view()
-{
-  global $language;
-  return array(
-    'subject' => '<none>',
-    'content' =>
-      '<div class="menu" id="lang-menu">'
-      . ($language->language === 'zh-hant' ? '<a href="/en">English</a>' : '<a href="/zh-hant">中文</a>')
-      . ' / '
-      . ($language->language === 'ja' ? '<a href="/en">English</a>' : '<a href="/ja/about">日本語</a>')
-      . '</div>',
+  $blocks['teia_donate_now'] = array(
+    'info' => t('協會募款鍵'),
   );
+  $blocks['teia_nature_valley_donate_now'] = array(
+    'info' => t('自然谷募款鍵'),
+  );
+  return $blocks;
 }
 
 /**
@@ -87,6 +93,16 @@ function teia_theme_block_view($delta = '') {
     return array(
       'subject' => '<none>',
       'content' => '<div class="social-network" id="twitter"><a href="http://twitter.com/teiatw" target="_blank"><img src="/sites/all/themes/teiazen/images/tw16.png" /></a></div>',
+    );
+  } else if ($delta === 'teia_donate_now') {
+    return array(
+      'subject' => '<none>',
+      'content' => '<div><a href="https://e-info.neticrm.tw/civicrm/contribute/transact?reset=1&amp;id=9" id="donate-now" target="_blank"><span class="donate-now-zh">立即捐款</span><span class="donate-now-en">Donate Now!</span></a></div>',
+    );
+  } else if ($delta === 'teia_nature_valley_donate_now') {
+    return array(
+      'subject' => '<none>',
+      'content' => '<div><a href="https://e-info.neticrm.tw/civicrm/contribute/transact?reset=1&amp;id=67" id="donate-now" target="_blank"><span class="donate-now-zh">加入自然谷環境信託基地定期捐款</span><span class="donate-now-en">Donate</span></a></div>',
     );
   }
 }
