@@ -2,7 +2,8 @@
 /**
  * @file field--fences-div-div-div.tpl.php
  * This file is identical to Drupal's default field markup, which uses
- * multiple nested <div> elements.
+ * multiple nested <div> elements. Note: This template is never used; instead
+ * Drupal core's theme_field() is used.
  *
  * @see http://developers.whatwg.org/grouping-content.html#the-div-element
  */

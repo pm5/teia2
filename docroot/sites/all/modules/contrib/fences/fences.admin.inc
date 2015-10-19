@@ -220,7 +220,7 @@ function _fences_form_field_ui_field_edit_form_alter(&$form, &$form_state) {
   $suggestion = fences_get_suggestion($form['#instance']['entity_type'], $form['#instance']['bundle'], $form['#instance']['field_name']);
 
   // Make the default markup selection match the Fences default markup setting.
-  $default_markup = variable_get('fences_default_markup', 0) ? 'div' : '';
+  $default_markup = variable_get('fences_default_markup', 0) ? 'div' : 'div_div_div';
 
   $form['instance']['fences_wrapper'] = array(
     '#type' => 'select',
