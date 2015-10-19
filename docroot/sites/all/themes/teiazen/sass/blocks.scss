@@ -116,41 +116,8 @@
     border: none;
     padding: 0;
   }
-  a#donate-now {
-    display: block;
-    border: 0;
-    background: $light-color;
-    color: $white-background;
-    border-radius: 1.5em;
-    padding: 2em 1.2em;
-    text-decoration: none;
-  }
-  a#donate-now:active, a#donate-now:visited {
-    color: $white-background;
-    background: $light-color;
-    text-decoration: none;
-  }
-  a#donate-now:hover {
-    color: $white-background;
-    background: $light-lighter;
-    text-decoration: none;
-  }
-
-  .donate-now-zh {
-    display: block;
-    font-size: xx-large;
-    text-align: center;
-    border-bottom: 2px $white-background solid;
-    padding-bottom: 0.4em;
-    line-height: 1.2em;
-  }
-
-  .donate-now-en {
-    display: block;
-    font-size: xx-large;
-    text-align: center;
-    padding-top: 0.4em;
-    line-height: 1.2em;
+  a {
+    padding: 0;
   }
 }
 
