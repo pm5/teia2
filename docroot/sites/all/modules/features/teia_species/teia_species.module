@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the teia_species feature.
+ */
+
+include_once 'teia_species.features.inc';
