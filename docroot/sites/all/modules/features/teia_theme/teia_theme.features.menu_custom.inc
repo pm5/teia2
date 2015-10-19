@@ -53,6 +53,5 @@ function teia_theme_menu_default_menu_custom() {
   t('環境資訊中心、環境信託中心、生態工作假期、珊瑚礁體檢內容的選單。');
   t('頁首右上角四個選項的選單。');
 
-
   return $menus;
 }

@@ -13,66 +13,25 @@ function teia_theme_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'teia_theme';
-  $context->description = 'TEIA 版型相關設定。';
+  $context->name = 'teia_donate';
+  $context->description = '募款鍵';
   $context->tag = 'TEIA';
   $context->conditions = array(
     'path' => array(
       'values' => array(
-        '*' => '*',
+        '~natural-valley' => '~natural-valley',
+        '~natural-valley/*' => '~natural-valley/*',
       ),
     ),
   );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'menu_block-teia_theme_secondary_menu' => array(
-          'module' => 'menu_block',
-          'delta' => 'teia_theme_secondary_menu',
-          'region' => 'header',
-          'weight' => '-44',
-        ),
-        'teia_theme-teia_theme_language_menu' => array(
+        'teia_theme-teia_donate_now' => array(
           'module' => 'teia_theme',
-          'delta' => 'teia_theme_language_menu',
-          'region' => 'header',
-          'weight' => '-5',
-        ),
-        'teia_theme-teia_theme_facebook_link' => array(
-          'module' => 'teia_theme',
-          'delta' => 'teia_theme_facebook_link',
-          'region' => 'header',
-          'weight' => '-4',
-        ),
-        'teia_theme-teia_theme_twitter_link' => array(
-          'module' => 'teia_theme',
-          'delta' => 'teia_theme_twitter_link',
-          'region' => 'header',
-          'weight' => '-3',
-        ),
-        'google_cse-google_cse' => array(
-          'module' => 'google_cse',
-          'delta' => 'google_cse',
-          'region' => 'header',
-          'weight' => '-40',
-        ),
-        'superfish-1' => array(
-          'module' => 'superfish',
-          'delta' => '1',
-          'region' => 'navigation',
-          'weight' => '-10',
-        ),
-        'superfish-2' => array(
-          'module' => 'superfish',
-          'delta' => '2',
-          'region' => 'navigation',
-          'weight' => '-9',
-        ),
-        'menu_block-teia_theme_content_menu' => array(
-          'module' => 'menu_block',
-          'delta' => 'teia_theme_content_menu',
-          'region' => 'sidebar_first',
-          'weight' => '-10',
+          'delta' => 'teia_donate_now',
+          'region' => 'sidebar_second',
+          'weight' => '-50',
         ),
       ),
     ),
@@ -82,8 +41,42 @@ function teia_theme_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('TEIA');
-  t('TEIA 版型相關設定。');
-  $export['teia_theme'] = $context;
+  t('募款鍵');
+  $export['teia_donate'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'teia_natural_valley';
+  $context->description = '自然谷';
+  $context->tag = 'TEIA';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'natural-valley' => 'natural-valley',
+        'natural-valley/*' => 'natural-valley/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'teia_theme-teia_nature_valley_donate_now' => array(
+          'module' => 'teia_theme',
+          'delta' => 'teia_nature_valley_donate_now',
+          'region' => 'sidebar_second',
+          'weight' => '-50',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('TEIA');
+  t('自然谷');
+  $export['teia_natural_valley'] = $context;
 
   return $export;
 }
