@@ -146,3 +146,4 @@ features[variable][] = superfish_wrapul_1
 features[variable][] = superfish_wrapul_2
 features[variable][] = superfish_zebra_1
 features[variable][] = superfish_zebra_2
+stylesheets[all][] = teia_theme.css

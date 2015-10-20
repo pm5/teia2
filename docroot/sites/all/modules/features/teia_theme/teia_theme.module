@@ -97,12 +97,12 @@ function teia_theme_block_view($delta = '') {
   } else if ($delta === 'teia_donate_now') {
     return array(
       'subject' => '<none>',
-      'content' => '<div><a href="https://e-info.neticrm.tw/civicrm/contribute/transact?reset=1&amp;id=9" id="donate-now" target="_blank"><img src="/' . drupal_get_path('module', 'teia_theme') . '/images/donate-now.jpg" width="280" height="107"/></a></div>',
+      'content' => '<div><a href="https://e-info.neticrm.tw/civicrm/contribute/transact?reset=1&amp;id=9" id="donate-now" target="_blank"></a></div>',
     );
   } else if ($delta === 'teia_nature_valley_donate_now') {
     return array(
       'subject' => '<none>',
-      'content' => '<div><a href="https://e-info.neticrm.tw/civicrm/contribute/transact?reset=1&amp;id=67" id="donate-now" target="_blank"><img src="/' . drupal_get_path('module', 'teia_theme') . '/images/donate-natural-valley.jpg" width="280" height="107"/></a></div>',
+      'content' => '<div><a href="https://e-info.neticrm.tw/civicrm/contribute/transact?reset=1&amp;id=67" id="donate-now" target="_blank"></a></div>',
     );
   }
 }
