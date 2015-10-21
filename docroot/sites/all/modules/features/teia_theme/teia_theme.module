@@ -75,6 +75,9 @@ function teia_theme_block_info() {
   $blocks['teia_nature_valley_donate_now'] = array(
     'info' => t('自然谷募款鍵'),
   );
+  $blocks['teia_footer_copyright'] = array(
+    'info' => t('頁尾版權聲明'),
+  );
   return $blocks;
 }
 
@@ -104,6 +107,11 @@ function teia_theme_block_view($delta = '') {
       'subject' => '<none>',
       'content' => '<div><a href="https://e-info.neticrm.tw/civicrm/contribute/transact?reset=1&amp;id=67" id="donate-now" target="_blank"></a></div>',
     );
+  } else if ($delta === 'teia_footer_copyright') {
+    global $language;
+    return array(
+      'subject' => '<none>',
+      'content' => ($language->language === 'zh-hant' ? '<p><a href="http://www.e-info.org.tw/">社團法人台灣環境資訊協會</a> <a href="http://www.e-info.org.tw/">http://www.e-info.org.tw/</a> Copyright&copy;2001<br />本站圖文版權屬台灣環境資訊協會所有，歡迎非營利轉載引用<br /><span style="line-height: 1.5em;">地址：台灣台北市 116 文山區萬隆街38號</span><br /><span style="line-height: 1.5em;">電話：02-2933-2233 FAX：02-2933-2120</span><br /><span style="line-height: 1.5em;">Since 2001</span><br /><span style="line-height: 1.5em;">瀏覽網站最佳瀏覽器-建議使用 IE9、Chrome、Firefox、Safari。</span></p>' : '<p><a href="http://www.e-info.org.tw/">Taiwan Environmental Information Association</a> <a href="http://www.e-info.org.tw/">http://www.e-info.org.tw/</a> Copyright&copy;2001<br />All rights reserved. Permission granted for non-commercial use.<br /><span style="line-height: 1.5em;">Add: No.38, Wanlong St., Wenshan Dist., Taipei 116, Taiwan</span><br /><span style="line-height: 1.5em;">Tel: +886-2-2933-2233  FAX: +886-2-2933-2120</span><br /><span style="line-height: 1.5em;">Since 2001</span><br /><span style="line-height: 1.5em;">Best viewed in IE9, Chrome, Firefox and Safari.</span></p>'),
+    );
   }
 }
-
