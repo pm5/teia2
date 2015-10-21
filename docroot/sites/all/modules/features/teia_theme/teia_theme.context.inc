@@ -78,5 +78,38 @@ function teia_theme_context_default_contexts() {
   t('自然谷');
   $export['teia_natural_valley'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'teia_theme';
+  $context->description = '全站設定';
+  $context->tag = 'TEIA';
+  $context->conditions = array(
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'teia_theme-teia_footer_copyright' => array(
+          'module' => 'teia_theme',
+          'delta' => 'teia_footer_copyright',
+          'region' => 'footer',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('TEIA');
+  t('全站設定');
+  $export['teia_theme'] = $context;
+
   return $export;
 }
