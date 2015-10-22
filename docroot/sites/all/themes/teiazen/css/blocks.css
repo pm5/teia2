@@ -170,24 +170,9 @@
 }
 
 /**
- * Donate Now!
- */
-/* line 115, ../sass/blocks.scss */
-#block-teia-theme-teia-donate-now .block-content,
-#block-teia-theme-teia-nature-valley-donate-now .block-content {
-  border: none;
-  padding: 0;
-}
-/* line 119, ../sass/blocks.scss */
-#block-teia-theme-teia-donate-now a,
-#block-teia-theme-teia-nature-valley-donate-now a {
-  padding: 0;
-}
-
-/**
  * Second sidebar
  */
-/* line 129, ../sass/blocks.scss */
+/* line 114, ../sass/blocks.scss */
 .region-sidebar-second h2.block-title {
   color: #ffffff;
   background: #4f915e;
@@ -197,23 +182,23 @@
   letter-spacing: 0.3em;
   text-align: center;
 }
-/* line 139, ../sass/blocks.scss */
+/* line 124, ../sass/blocks.scss */
 .region-sidebar-second .block-content {
   border-color: #4f915e;
   border-style: solid;
   border-width: 0 4px 4px 4px;
   padding: 1em 10px;
 }
-/* line 145, ../sass/blocks.scss */
+/* line 130, ../sass/blocks.scss */
 .region-sidebar-second .block-content p, .region-sidebar-second .block-content pre {
   margin-top: 0.2em;
 }
-/* line 149, ../sass/blocks.scss */
+/* line 134, ../sass/blocks.scss */
 .region-sidebar-second .block-content div.more-link,
 .region-sidebar-second .block-content ul.inline li.node-readmore {
   color: #745e4f;
 }
-/* line 153, ../sass/blocks.scss */
+/* line 138, ../sass/blocks.scss */
 .region-sidebar-second .block-content ul.inline li.node-readmore {
   float: right;
   padding: 0;
@@ -222,11 +207,11 @@
 /**
  * Footer
  */
-/* line 165, ../sass/blocks.scss */
+/* line 150, ../sass/blocks.scss */
 #footer a, #footer a:visited, #footer a:hover, #footer a:active {
   color: #ffffff;
 }
-/* line 168, ../sass/blocks.scss */
+/* line 153, ../sass/blocks.scss */
 #footer a:hover, #footer a:active {
   text-decoration: underline;
 }
@@ -234,7 +219,7 @@
 /**
  * Panels
  */
-/* line 177, ../sass/blocks.scss */
+/* line 162, ../sass/blocks.scss */
 .panel-pane:after {
   content: "";
   display: block;
@@ -242,7 +227,7 @@
   clear: both;
 }
 
-/* line 185, ../sass/blocks.scss */
+/* line 170, ../sass/blocks.scss */
 #content .panel-pane {
   margin-bottom: 1.5em;
 }
