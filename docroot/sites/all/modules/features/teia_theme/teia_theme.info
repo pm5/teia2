@@ -153,3 +153,4 @@ features[variable][] = superfish_wrapul_2
 features[variable][] = superfish_zebra_1
 features[variable][] = superfish_zebra_2
 features[views_view][] = node
+features[views_view][] = taxonomy_term
