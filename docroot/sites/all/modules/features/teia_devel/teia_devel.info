@@ -1,10 +1,10 @@
-name = teia_devel
+name = 開發環境
 core = 7.x
-package = Features
+package = TEIA
 dependencies[] = ctools
-dependencies[] = strongarm
 dependencies[] = devel
 dependencies[] = devel_generate
+dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[variable][] = block_cache
