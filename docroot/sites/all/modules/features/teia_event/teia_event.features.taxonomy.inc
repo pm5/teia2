@@ -10,7 +10,7 @@
 function teia_event_taxonomy_default_vocabularies() {
   return array(
     'teia_event_type' => array(
-      'name' => '相關活動類型',
+      'name' => '活動類型',
       'machine_name' => 'teia_event_type',
       'description' => '',
       'hierarchy' => 0,

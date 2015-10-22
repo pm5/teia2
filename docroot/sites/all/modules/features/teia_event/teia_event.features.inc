@@ -19,7 +19,7 @@ function teia_event_ctools_plugin_api($module = NULL, $api = NULL) {
 function teia_event_node_info() {
   $items = array(
     'teia_event' => array(
-      'name' => t('相關活動'),
+      'name' => t('活動'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
