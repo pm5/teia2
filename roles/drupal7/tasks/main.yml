@@ -1,7 +1,7 @@
 ---
 - name: ensure drupal7 packages are the latest
   apt: name={{ item }} state=latest
-  sudo: yes
+  become: yes
   with_items:
     - curl
     - unzip
@@ -21,7 +21,7 @@
 
 - name: ensure files directory is provisioned when needed
   ignore_errors: yes
-  sudo: yes
+  become: yes
   unarchive: src=files.tar.gz dest=/var/www/sites/default/files owner=www-data group=www-data
 
 - name: ensure registry_rebuild is present
