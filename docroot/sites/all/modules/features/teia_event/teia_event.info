@@ -20,7 +20,6 @@ features[features_api][] = api:2
 features[field_base][] = field_event_date
 features[field_base][] = field_event_link
 features[field_base][] = field_teia_event_type
-features[field_base][] = field_title_image
 features[field_instance][] = node-teia_event-body
 features[field_instance][] = node-teia_event-field_event_date
 features[field_instance][] = node-teia_event-field_event_link
