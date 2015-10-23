@@ -1,17 +1,17 @@
 ---
 - hosts: all
-  sudo: yes
+  become: yes
   tasks:
     - name: ensure apt cache is the latest
       apt: update_cache=yes upgrade=yes cache_valid_time=86400
 
 - hosts: web
-  sudo: yes
+  become: yes
   roles:
     - apache
 
 - hosts: db
-  sudo: yes
+  become: yes
   roles:
     - postgresql
     - memcache
