@@ -242,11 +242,16 @@ span.field-label { /* The inline field label used by the Fences module */
  * Footer
  */
 
+.footer.wrapper {
+  display: block;
+  min-height: 10em;
+  background: $light-color;
+  color: $white-background;
+}
+
 #footer {
-    display: block;
-    min-height: 10em;
-    background: $light-color;
-    color: $white-background;
+  width: 50%;
+  margin: 0px auto;
 }
 
 /*

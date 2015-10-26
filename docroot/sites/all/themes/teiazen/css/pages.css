@@ -270,17 +270,23 @@ span.field-label {
  * Footer
  */
 /* line 245, ../sass/pages.scss */
-#footer {
+.footer.wrapper {
   display: block;
   min-height: 10em;
   background: #4f915e;
   color: #ffffff;
 }
 
+/* line 252, ../sass/pages.scss */
+#footer {
+  width: 50%;
+  margin: 0px auto;
+}
+
 /*
  * Page bottom
  */
-/* line 256, ../sass/pages.scss */
+/* line 261, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }
@@ -309,13 +315,13 @@ body.section-reef-check-tw {
   background: url("../images/bg/water.jpg") repeat scroll 0 0 transparent;
 }
 */
-/* line 285, ../sass/pages.scss */
+/* line 290, ../sass/pages.scss */
 body {
   background: #ffffff;
 }
 
 /** XXX clearfix for superfish block for unknown reason*/
-/* line 297, ../sass/pages.scss */
+/* line 302, ../sass/pages.scss */
 #block-superfish-1:after {
   content: ".";
   display: block;
@@ -324,38 +330,38 @@ body {
   visibility: hidden;
 }
 
-/* line 304, ../sass/pages.scss */
+/* line 309, ../sass/pages.scss */
 #block-superfish-1 {
   margin-bottom: 0;
 }
 
-/* line 307, ../sass/pages.scss */
+/* line 312, ../sass/pages.scss */
 .region-header {
   position: relative;
 }
 
-/* line 310, ../sass/pages.scss */
+/* line 315, ../sass/pages.scss */
 #block-teia-theme-teia-theme-language-menu {
   margin-right: 10px;
   margin-top: 6px;
 }
 
-/* line 314, ../sass/pages.scss */
+/* line 319, ../sass/pages.scss */
 #block-teia-theme-teia-theme-facebook-link {
   margin-right: 6px;
 }
 
-/* line 317, ../sass/pages.scss */
+/* line 322, ../sass/pages.scss */
 #block-teia-theme-teia-theme-twitter-link {
   margin-right: 10px;
 }
 
-/* line 320, ../sass/pages.scss */
+/* line 325, ../sass/pages.scss */
 #block-google-cse-google-cse {
   margin-top: 6px;
 }
 
-/* line 323, ../sass/pages.scss */
+/* line 328, ../sass/pages.scss */
 #logo {
   position: relative;
   top: 17px;
