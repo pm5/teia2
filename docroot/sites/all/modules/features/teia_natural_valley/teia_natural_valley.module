@@ -13,9 +13,11 @@ function teia_natural_valley_block_info() {
   $blocks = array();
   $blocks['teia_donate_now'] = array(
     'info' => t('自然谷: 募款鍵'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
   );
   $blocks['teia_footer'] = array(
     'info' => t('自然谷: 頁尾'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
   );
   return $blocks;
 }
@@ -30,9 +32,12 @@ function teia_natural_valley_block_view($delta = '') {
       'content' => '<div><a href="https://e-info.neticrm.tw/civicrm/contribute/transact?reset=1&amp;id=67" id="donate-now" target="_blank"></a></div>',
     );
   } else if ($delta === 'teia_footer') {
+    $block_path = drupal_lookup_path("source", "block/natural-valley/footer");
+    $block_node = menu_get_object("node", 1, $block_path);
+    $block_body = field_get_items('node', $block_node, 'body');
     return array(
       'subject' => '<none>',
-      'content' => '<div>foobar</div>',
+      'content' => $block_body[0]['value'],
     );
   }
 }
