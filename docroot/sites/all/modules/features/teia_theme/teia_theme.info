@@ -1,5 +1,5 @@
-name = TEIA Theme
-description = TEIA 版型相關設定。
+name = 版型
+description = 版型相關功能與設定。
 core = 7.x
 package = TEIA
 version = 7.x-0.1
