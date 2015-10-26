@@ -1,0 +1,22 @@
+
+/**
+ * Donate button
+ */
+
+#block-teia-natural-valley-teia-donate-now .block-content {
+  border: none;
+  padding: 0;
+}
+
+#block-teia-natural-valley-teia-donate-now a#donate-now {
+  display: block;
+  padding: 0;
+  width: 280px;
+  height: 107px;
+  background: url("/sites/all/modules/features/teia_natural_valley/images/donate-natural-valley.jpg");
+  background-size: 280px 107px;
+}
+
+#block-teia-natural-valley-teia-donate-now a#donate-now:hover {
+  opacity: 0.7;
+}

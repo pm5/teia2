@@ -1,0 +1,10 @@
+name = 自然谷環境信託基地
+description = 自然谷相關功能，包括頁尾、側欄。
+core = 7.x
+package = TEIA
+dependencies[] = context
+dependencies[] = ctools
+stylesheets[screen][] = teia_natural_valley.css
+features[context][] = teia_natural_valley
+features[ctools][] = context:context:3
+features[features_api][] = api:2
