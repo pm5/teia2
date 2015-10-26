@@ -74,6 +74,7 @@ function teia_theme_block_info() {
   );
   $blocks['teia_footer'] = array(
     'info' => t('頁尾'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
   );
   return $blocks;
 }
