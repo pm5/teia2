@@ -34,10 +34,14 @@ function teia_natural_valley_block_view($delta = '') {
   } else if ($delta === 'teia_footer') {
     $block_path = drupal_lookup_path("source", "block/natural-valley/footer");
     $block_node = menu_get_object("node", 1, $block_path);
-    $block_body = field_get_items('node', $block_node, 'body');
+    $content = '';
+    if ($block_node) {
+      $block_body = field_get_items("node", $block_node, "body");
+      $content = $block_body[0]['value'];
+    }
     return array(
       'subject' => '<none>',
-      'content' => $block_body[0]['value'],
+      'content' => $content,
     );
   }
 }

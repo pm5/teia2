@@ -33,9 +33,9 @@ function teia_theme_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-50',
         ),
-        'teia_theme-teia_footer_copyright' => array(
+        'teia_theme-teia_footer' => array(
           'module' => 'teia_theme',
-          'delta' => 'teia_footer_copyright',
+          'delta' => 'teia_footer',
           'region' => 'footer',
           'weight' => '-10',
         ),
