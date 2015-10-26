@@ -31,7 +31,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* 欄位: Field: 標題圖片 */
+  /* Field: Field: 標題圖片 */
   $handler->display->display_options['fields']['field_title_image']['id'] = 'field_title_image';
   $handler->display->display_options['fields']['field_title_image']['table'] = 'field_data_field_title_image';
   $handler->display->display_options['fields']['field_title_image']['field'] = 'field_title_image';
@@ -46,7 +46,7 @@ function teia_theme_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_title_image']['field_api_classes'] = TRUE;
-  /* 欄位: Content: 標題 */
+  /* Field: Content: 標題 */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -57,14 +57,14 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['field_api_classes'] = TRUE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 1;
-  /* 欄位: Content: Post date */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = '';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'long';
-  /* 欄位: Content: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -176,7 +176,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '2';
   $handler->display->display_options['pager']['options']['offset'] = '1';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* 欄位: Field: 標題圖片 */
+  /* Field: Field: 標題圖片 */
   $handler->display->display_options['fields']['field_title_image']['id'] = 'field_title_image';
   $handler->display->display_options['fields']['field_title_image']['table'] = 'field_data_field_title_image';
   $handler->display->display_options['fields']['field_title_image']['field'] = 'field_title_image';
@@ -191,7 +191,7 @@ function teia_theme_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_title_image']['field_api_classes'] = TRUE;
-  /* 欄位: Content: 標題 */
+  /* Field: Content: 標題 */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -202,7 +202,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['field_api_classes'] = TRUE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 1;
-  /* 欄位: Content: Post date */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -261,7 +261,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['pager']['options']['offset'] = '1';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* 欄位: Content: 標題 */
+  /* Field: Content: 標題 */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -272,7 +272,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['field_api_classes'] = TRUE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 1;
-  /* 欄位: Content: Post date */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -297,7 +297,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* 欄位: Field: 標題圖片 */
+  /* Field: Field: 標題圖片 */
   $handler->display->display_options['fields']['field_title_image']['id'] = 'field_title_image';
   $handler->display->display_options['fields']['field_title_image']['table'] = 'field_data_field_title_image';
   $handler->display->display_options['fields']['field_title_image']['field'] = 'field_title_image';
@@ -312,7 +312,7 @@ function teia_theme_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_title_image']['field_api_classes'] = TRUE;
-  /* 欄位: Content: 標題 */
+  /* Field: Content: 標題 */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -348,7 +348,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* 欄位: Field: 標題圖片 */
+  /* Field: Field: 標題圖片 */
   $handler->display->display_options['fields']['field_title_image']['id'] = 'field_title_image';
   $handler->display->display_options['fields']['field_title_image']['table'] = 'field_data_field_title_image';
   $handler->display->display_options['fields']['field_title_image']['field'] = 'field_title_image';
@@ -363,7 +363,7 @@ function teia_theme_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_title_image']['field_api_classes'] = TRUE;
-  /* 欄位: Content: 標題 */
+  /* Field: Content: 標題 */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -467,7 +467,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* 欄位: 欄位: 標題圖片 */
+  /* Field: Field: 標題圖片 */
   $handler->display->display_options['fields']['field_title_image']['id'] = 'field_title_image';
   $handler->display->display_options['fields']['field_title_image']['table'] = 'field_data_field_title_image';
   $handler->display->display_options['fields']['field_title_image']['field'] = 'field_title_image';
@@ -482,7 +482,7 @@ function teia_theme_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_title_image']['field_api_classes'] = TRUE;
-  /* 欄位: 內容: 標題 */
+  /* Field: Content: 標題 */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -491,7 +491,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['field_api_classes'] = TRUE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 1;
-  /* 欄位: 內容: 發表日期 */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -502,7 +502,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'medium_zh';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
-  /* 欄位: 內容: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -514,7 +514,7 @@ function teia_theme_views_default_views() {
     'trim_length' => '200',
   );
   $handler->display->display_options['fields']['body']['field_api_classes'] = TRUE;
-  /* 欄位: 內容: » 更多內容 */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -524,17 +524,17 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = '» 更多內容';
-  /* Sort criterion: 內容: 置頂 */
+  /* Sort criterion: Content: Sticky */
   $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['table'] = 'node';
   $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['order'] = 'DESC';
-  /* Sort criterion: 內容: 發表日期 */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: 內容: Has taxonomy term ID (with depth) */
+  /* Contextual filter: Content: Has taxonomy term ID (with depth) */
   $handler->display->display_options['arguments']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
   $handler->display->display_options['arguments']['term_node_tid_depth']['table'] = 'node';
   $handler->display->display_options['arguments']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
@@ -551,7 +551,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['arguments']['term_node_tid_depth']['validate']['type'] = 'taxonomy_term';
   $handler->display->display_options['arguments']['term_node_tid_depth']['depth'] = '2';
   $handler->display->display_options['arguments']['term_node_tid_depth']['break_phrase'] = TRUE;
-  /* Contextual filter: 內容: Has taxonomy term ID depth modifier */
+  /* Contextual filter: Content: Has taxonomy term ID depth modifier */
   $handler->display->display_options['arguments']['term_node_tid_depth_modifier']['id'] = 'term_node_tid_depth_modifier';
   $handler->display->display_options['arguments']['term_node_tid_depth_modifier']['table'] = 'node';
   $handler->display->display_options['arguments']['term_node_tid_depth_modifier']['field'] = 'term_node_tid_depth_modifier';
@@ -560,7 +560,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['arguments']['term_node_tid_depth_modifier']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['term_node_tid_depth_modifier']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['term_node_tid_depth_modifier']['specify_validation'] = TRUE;
-  /* Filter criterion: 內容: Published or admin */
+  /* Filter criterion: Content: Published or admin */
   $handler->display->display_options['filters']['status_extra']['id'] = 'status_extra';
   $handler->display->display_options['filters']['status_extra']['table'] = 'node';
   $handler->display->display_options['filters']['status_extra']['field'] = 'status_extra';
@@ -634,14 +634,14 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['pager']['options']['offset'] = '1';
   $handler->display->display_options['defaults']['empty'] = FALSE;
-  /* 無查詢結果的行為: 全域: Unfiltered text */
+  /* No results behavior: Global: Unfiltered text */
   $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
   $handler->display->display_options['empty']['area_text_custom']['content'] = '<div></div>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* 欄位: 欄位: 標題圖片 */
+  /* Field: Field: 標題圖片 */
   $handler->display->display_options['fields']['field_title_image']['id'] = 'field_title_image';
   $handler->display->display_options['fields']['field_title_image']['table'] = 'field_data_field_title_image';
   $handler->display->display_options['fields']['field_title_image']['field'] = 'field_title_image';
@@ -656,7 +656,7 @@ function teia_theme_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_title_image']['field_api_classes'] = TRUE;
-  /* 欄位: 內容: 標題 */
+  /* Field: Content: 標題 */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -667,7 +667,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['field_api_classes'] = TRUE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 1;
-  /* 欄位: 內容: 發表日期 */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -735,14 +735,14 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
   $handler->display->display_options['pager']['options']['offset'] = '1';
   $handler->display->display_options['defaults']['empty'] = FALSE;
-  /* 無查詢結果的行為: 全域: Unfiltered text */
+  /* No results behavior: Global: Unfiltered text */
   $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
   $handler->display->display_options['empty']['area_text_custom']['content'] = '<div></div>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* 欄位: 內容: 標題 */
+  /* Field: Content: 標題 */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -753,7 +753,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['field_api_classes'] = TRUE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 1;
-  /* 欄位: 內容: 發表日期 */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -803,14 +803,14 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '2';
   $handler->display->display_options['pager']['options']['offset'] = '1';
   $handler->display->display_options['defaults']['empty'] = FALSE;
-  /* 無查詢結果的行為: 全域: Unfiltered text */
+  /* No results behavior: Global: Unfiltered text */
   $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
   $handler->display->display_options['empty']['area_text_custom']['content'] = '<div></div>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* 欄位: 內容: 標題 */
+  /* Field: Content: 標題 */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -821,7 +821,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['field_api_classes'] = TRUE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 1;
-  /* 欄位: 內容: 發表日期 */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -866,7 +866,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'compact list';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* 欄位: 內容: 標題 */
+  /* Field: Content: 標題 */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -878,7 +878,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['field_api_classes'] = TRUE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 1;
-  /* 欄位: 內容: 發表日期 */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -888,7 +888,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['created']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['created']['element_wrapper_class'] = 'post-date';
   $handler->display->display_options['fields']['created']['date_format'] = 'medium_zh';
-  /* 欄位: 內容: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -903,7 +903,7 @@ function teia_theme_views_default_views() {
     'trim_length' => '200',
   );
   $handler->display->display_options['fields']['body']['field_api_classes'] = TRUE;
-  /* 欄位: 內容文字 */
+  /* Field: 內容文字 */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -915,7 +915,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'field-content';
-  /* 欄位: 內容: » 更多內容 */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -964,7 +964,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* 欄位: 欄位: 標題圖片 */
+  /* Field: Field: 標題圖片 */
   $handler->display->display_options['fields']['field_title_image']['id'] = 'field_title_image';
   $handler->display->display_options['fields']['field_title_image']['table'] = 'field_data_field_title_image';
   $handler->display->display_options['fields']['field_title_image']['field'] = 'field_title_image';
@@ -979,7 +979,7 @@ function teia_theme_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_title_image']['field_api_classes'] = TRUE;
-  /* 欄位: 內容: 標題 */
+  /* Field: Content: 標題 */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -991,7 +991,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['field_api_classes'] = TRUE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 1;
-  /* 欄位: 內容: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -1006,7 +1006,7 @@ function teia_theme_views_default_views() {
     'trim_length' => '200',
   );
   $handler->display->display_options['fields']['body']['field_api_classes'] = TRUE;
-  /* 欄位: 內容文字 */
+  /* Field: 內容文字 */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -1017,7 +1017,7 @@ function teia_theme_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'field-content';
-  /* 欄位: 內容: » 更多內容 */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -1074,7 +1074,7 @@ function teia_theme_views_default_views() {
     t('所有'),
     t('%1'),
     t('Page'),
-    t('更多'),
+    t('more'),
     t('Feed'),
     t('Content pane'),
     t('TEIA'),

@@ -33,6 +33,12 @@ function teia_natural_valley_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-50',
         ),
+        'teia_natural_valley-teia_footer' => array(
+          'module' => 'teia_natural_valley',
+          'delta' => 'teia_footer',
+          'region' => 'footer',
+          'weight' => '-10',
+        ),
       ),
     ),
   );

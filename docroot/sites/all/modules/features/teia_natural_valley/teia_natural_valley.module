@@ -12,7 +12,10 @@ include_once 'teia_natural_valley.features.inc';
 function teia_natural_valley_block_info() {
   $blocks = array();
   $blocks['teia_donate_now'] = array(
-    'info' => t('自然谷募款鍵'),
+    'info' => t('自然谷: 募款鍵'),
+  );
+  $blocks['teia_footer'] = array(
+    'info' => t('自然谷: 頁尾'),
   );
   return $blocks;
 }
@@ -25,6 +28,11 @@ function teia_natural_valley_block_view($delta = '') {
     return array(
       'subject' => '<none>',
       'content' => '<div><a href="https://e-info.neticrm.tw/civicrm/contribute/transact?reset=1&amp;id=67" id="donate-now" target="_blank"></a></div>',
+    );
+  } else if ($delta === 'teia_footer') {
+    return array(
+      'subject' => '<none>',
+      'content' => '<div>foobar</div>',
     );
   }
 }
