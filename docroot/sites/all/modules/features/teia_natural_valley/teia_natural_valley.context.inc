@@ -33,6 +33,24 @@ function teia_natural_valley_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-50',
         ),
+        'menu_block-teia-natural-valley-support' => array(
+          'module' => 'menu_block',
+          'delta' => 'teia-natural-valley-support',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'menu_block-teia-natural-valley-join' => array(
+          'module' => 'menu_block',
+          'delta' => 'teia-natural-valley-join',
+          'region' => 'sidebar_second',
+          'weight' => '0',
+        ),
+        'panels_mini-teia_natural_valley_events' => array(
+          'module' => 'panels_mini',
+          'delta' => 'teia_natural_valley_events',
+          'region' => 'sidebar_second',
+          'weight' => '10',
+        ),
         'teia_natural_valley-teia_footer' => array(
           'module' => 'teia_natural_valley',
           'delta' => 'teia_footer',

@@ -45,3 +45,44 @@ function teia_natural_valley_block_view($delta = '') {
     );
   }
 }
+
+/**
+ * Implements hook_menu_block_get_menus()
+ */
+function teia_natural_valley_menu_block_get_menus() {
+  $menus = array();
+  $menus['teia-natural-valley-support'] = '支持我們';
+  $menus['teia-natural-valley-join'] = '加入我們';
+  return $menus;
+}
+
+/**
+ * Implements hook_menu_block_blocks()
+ */
+function teia_natural_valley_menu_block_blocks() {
+  return array(
+    'teia-natural-valley-support' => array(
+      'menu_name' => 'menu-content-menu',
+      'parent_mlid' => 3014,
+      'title_link' => FALSE,
+      'admin_title' => '自然谷: 支持我們',
+      'level' => 1,
+      'follow' => 0,
+      'depth' => 1,
+      'expanded' => TRUE,
+      'sort' => FALSE,
+    ),
+    'teia-natural-valley-join' => array(
+      'menu_name' => 'menu-content-menu',
+      'parent_mlid' => 6476,
+      'title_link' => FALSE,
+      'admin_title' => '自然谷: 加入我們',
+      'level' => 1,
+      'follow' => 0,
+      'depth' => 1,
+      'expanded' => TRUE,
+      'sort' => FALSE,
+    ),
+  );
+}
+
