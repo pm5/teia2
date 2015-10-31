@@ -1,0 +1,8 @@
+name = 網站基本功能
+description = 全域設定與基本功能
+core = 7.x
+package = TEIA
+version = 7.x-1.0
+features[features_api][] = api:2
+features[metatag][] = node
+features_exclude[dependencies][metatag] = metatag
