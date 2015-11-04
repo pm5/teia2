@@ -18,15 +18,14 @@ function teia_species_feeds_importer_default() {
     'name' => '生態資料',
     'description' => '自然谷',
     'fetcher' => array(
-      'plugin_key' => 'FeedsFileFetcher',
+      'plugin_key' => 'FeedsHTTPFetcher',
       'config' => array(
-        'allowed_extensions' => 'txt csv tsv xml opml',
-        'direct' => 0,
-        'directory' => 'public://feeds',
-        'allowed_schemes' => array(
-          'flickr' => 'flickr',
-          'public' => 'public',
-        ),
+        'auto_detect_feeds' => FALSE,
+        'use_pubsubhubbub' => FALSE,
+        'designated_hub' => '',
+        'request_timeout' => NULL,
+        'auto_scheme' => 'http',
+        'accept_invalid_cert' => FALSE,
       ),
     ),
     'parser' => array(
@@ -113,7 +112,7 @@ function teia_species_feeds_importer_default() {
     ),
     'content_type' => '',
     'update' => 0,
-    'import_period' => '-1',
+    'import_period' => '900',
     'expire_period' => 3600,
     'import_on_create' => 1,
     'process_in_background' => 0,
