@@ -1,6 +1,7 @@
-name = teia_species
+name = 生態資料
+description = 「生態資料庫」功能。
 core = 7.x
-package = Features
+package = TEIA
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = feeds
