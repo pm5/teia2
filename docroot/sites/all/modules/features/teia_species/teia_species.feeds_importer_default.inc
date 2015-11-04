@@ -49,26 +49,56 @@ function teia_species_feeds_importer_default() {
             'unique' => 1,
           ),
           1 => array(
+            'source' => '已發表(1有 0無)',
+            'target' => 'status',
+            'unique' => FALSE,
+          ),
+          2 => array(
+            'source' => '特別註記',
+            'target' => 'field_species_features',
+            'unique' => FALSE,
+          ),
+          3 => array(
+            'source' => '別名',
+            'target' => 'field_species_alt_names',
+            'unique' => FALSE,
+          ),
+          4 => array(
             'source' => '學名',
             'target' => 'field_scientific_name',
             'unique' => FALSE,
           ),
-          2 => array(
-            'source' => '年份/月/序號',
-            'target' => 'field_story_id',
+          5 => array(
+            'source' => '分佈',
+            'target' => 'field_species_distrib',
             'unique' => FALSE,
           ),
-          3 => array(
+          6 => array(
+            'source' => '生態',
+            'target' => 'field_species_life',
+            'unique' => FALSE,
+          ),
+          7 => array(
+            'source' => '補充',
+            'target' => 'field_species_suppl',
+            'unique' => FALSE,
+          ),
+          8 => array(
             'source' => '網站類別',
             'target' => 'field_species_type',
             'unique' => FALSE,
           ),
-          4 => array(
+          9 => array(
+            'source' => '年份/月/序號',
+            'target' => 'field_story_id',
+            'unique' => FALSE,
+          ),
+          10 => array(
             'source' => '季節',
             'target' => 'field_species_season',
             'unique' => FALSE,
           ),
-          5 => array(
+          11 => array(
             'source' => '導覽五感',
             'target' => 'field_species_sense',
             'unique' => FALSE,

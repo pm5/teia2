@@ -19,10 +19,10 @@ function teia_species_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '4',
+          'weight' => '9',
         ),
         'path' => array(
-          'weight' => '2',
+          'weight' => '7',
         ),
       ),
       'display' => array(),
