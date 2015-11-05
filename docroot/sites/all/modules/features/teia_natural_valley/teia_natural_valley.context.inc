@@ -51,10 +51,16 @@ function teia_natural_valley_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '10',
         ),
-        'teia_natural_valley-teia_footer' => array(
+        'teia_natural_valley-teia_footer_left' => array(
           'module' => 'teia_natural_valley',
-          'delta' => 'teia_footer',
-          'region' => 'footer',
+          'delta' => 'teia_footer_left',
+          'region' => 'footer_left',
+          'weight' => '-10',
+        ),
+        'teia_natural_valley-teia_footer_right' => array(
+          'module' => 'teia_natural_valley',
+          'delta' => 'teia_footer_right',
+          'region' => 'footer_right',
           'weight' => '-10',
         ),
       ),
