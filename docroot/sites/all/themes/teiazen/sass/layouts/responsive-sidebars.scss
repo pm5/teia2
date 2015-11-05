@@ -66,7 +66,7 @@ $zen-auto-include-flow-item-base: false;
 #header,
 #navigation,
 #main,
-#footer {
+.footer.wrapper {
   @include zen-grid-container();
 }
 
@@ -136,10 +136,44 @@ $zen-auto-include-flow-item-base: false;
   }
 
   /**
-   * Footer hack.
+   * Footer
    */
-  #footer #block-panels-mini-footer {
-    @include zen-grid-item(6, 4);
+
+  .footer.wrapper {
+    display: block;
+    min-height: 10em;
+    background: $light-color;
+    color: $white-background;
+  }
+
+  footer.footer {
+    @include zen-grid-item(8, 3, left);
+    @include zen-nested-container();
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+      visibility: hidden;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .region.region-footer {
+    display: block;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .region.region-footer-left {
+    @include zen-grid-item(8, 1, left);
+  }
+
+  .region.region-footer-right {
+    @include zen-grid-item(4, 1, right);
   }
 
   /**
