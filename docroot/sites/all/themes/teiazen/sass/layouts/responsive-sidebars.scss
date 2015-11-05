@@ -155,6 +155,10 @@ $zen-auto-include-flow-item-base: false;
       clear: both;
       visibility: hidden;
     }
+
+    li {
+      list-style: none;
+    }
   }
 
   .region.region-footer {

@@ -215,8 +215,12 @@
     clear: both;
     visibility: hidden;
   }
+  /* line 159, ../../sass/layouts/responsive-sidebars.scss */
+  footer.footer li {
+    list-style: none;
+  }
 
-  /* line 160, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 164, ../../sass/layouts/responsive-sidebars.scss */
   .region.region-footer {
     display: block;
     max-width: 60%;
@@ -224,7 +228,7 @@
     margin-right: auto;
   }
 
-  /* line 167, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 171, ../../sass/layouts/responsive-sidebars.scss */
   .region.region-footer-left {
     float: left;
     width: 66.66667%;
@@ -239,7 +243,7 @@
     word-wrap: break-word;
   }
 
-  /* line 171, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 175, ../../sass/layouts/responsive-sidebars.scss */
   .region.region-footer-right {
     float: right;
     width: 33.33333%;
@@ -257,13 +261,13 @@
   /**
    * Panels layout
    */
-  /* line 179, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 183, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-panel {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 182, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 186, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-3col-33-stacked .panel-col-first {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -273,7 +277,7 @@
     padding-right: 13.33333px;
     margin-right: 6.66667px;
   }
-  /* line 186, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 190, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-3col-33-stacked .panel-col {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -283,7 +287,7 @@
     padding-right: 13.33333px;
     margin-right: 6.66667px;
   }
-  /* line 190, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 194, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-3col-33-stacked .panel-col-last {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -293,25 +297,25 @@
     padding-right: 13.33333px;
     margin-right: -13.33333px;
   }
-  /* line 194, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 198, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-3col-33-stacked .inside {
     margin: 0;
   }
-  /* line 199, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 203, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-2col-stacked .panel-col-first {
     width: 50%;
     padding-left: 0;
     padding-right: 10px;
     margin-right: 10px;
   }
-  /* line 202, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 206, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-2col-stacked .panel-col-last {
     width: 50%;
     padding-left: 0;
     padding-right: 10px;
     margin-right: -10px;
   }
-  /* line 205, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 209, ../../sass/layouts/responsive-sidebars.scss */
   .use-zen-columns #content .panel-2col-stacked .inside {
     margin: 0;
   }
