@@ -125,7 +125,17 @@
 
 
   <div class="footer wrapper">
-    <?php print render($page['footer']); ?>
+    <?php
+      $footer =
+        render($page['footer_left'])
+        . render($page['footer'])
+        . render($page['footer_right']);
+    ?>
+    <?php if ($footer): ?>
+      <footer class="footer">
+        <?php print $footer; ?>
+      </footer>
+    <?php endif; ?>
   </div>
 
 </div><!-- /#page -->
