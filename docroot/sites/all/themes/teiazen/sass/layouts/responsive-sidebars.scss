@@ -161,6 +161,12 @@ $zen-auto-include-flow-item-base: false;
     }
   }
 
+  #footer.footer {
+    a {
+      color: #fff;
+    }
+  }
+
   .region.region-footer {
     display: block;
     max-width: 80%;
