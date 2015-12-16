@@ -23,6 +23,10 @@ function teia_natural_valley_block_info() {
     'info' => t('自然谷: 頁尾: 左'),
     'cache' => DRUPAL_CACHE_GLOBAL,
   );
+  $blocks['support'] = array(
+    'info' => t('支持我們'),
+    //'cache' => DRUPAL_CACHE_GLOBAL,
+  );
   return $blocks;
 }
 
@@ -57,25 +61,8 @@ function teia_natural_valley_block_view($delta = '') {
       'subject' => '',
       'content' => teia_natural_valley_node_content('block/natural-valley/footer-right'),
     );
-  }
-}
-
-/**
- * Implements hook_menu_block_get_menus()
- */
-function teia_natural_valley_menu_block_get_menus() {
-  $menus = array();
-  $menus['teia-natural-valley-support'] = '支持我們';
-  $menus['teia-natural-valley-join'] = '加入我們';
-  return $menus;
-}
-
-/**
- * Implements hook_menu_block_blocks()
- */
-function teia_natural_valley_menu_block_blocks() {
-  return array(
-    'teia-natural-valley-support' => array(
+  } else if ($delta === 'support') {
+    $config = array(
       'menu_name' => 'menu-content-menu',
       'parent_mlid' => 3014,
       'title_link' => FALSE,
@@ -85,7 +72,38 @@ function teia_natural_valley_menu_block_blocks() {
       'depth' => 1,
       'expanded' => TRUE,
       'sort' => FALSE,
-    ),
+    );
+    $menu = menu_tree_build($config);
+    unset($menu['subject']);
+    unset($menu['subject_array']);
+    $output = array(
+      'subject' => t('支持自然谷'),
+      'content' => array(
+        'pretext' => array(
+          '#type' => 'markup',
+          '#markup' => teia_natural_valley_node_content('natural-valley/support'),
+        ),
+        'menu' => $menu,
+      )
+    );
+    return $output;
+  }
+}
+
+/**
+ * Implements hook_menu_block_get_menus()
+ */
+function teia_natural_valley_menu_block_get_menus() {
+  $menus = array();
+  $menus['teia-natural-valley-join'] = '加入我們';
+  return $menus;
+}
+
+/**
+ * Implements hook_menu_block_blocks()
+ */
+function teia_natural_valley_menu_block_blocks() {
+  return array(
     'teia-natural-valley-join' => array(
       'menu_name' => 'menu-content-menu',
       'parent_mlid' => 6476,

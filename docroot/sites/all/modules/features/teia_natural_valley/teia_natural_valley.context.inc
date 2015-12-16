@@ -33,9 +33,9 @@ function teia_natural_valley_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-50',
         ),
-        'menu_block-teia-natural-valley-support' => array(
-          'module' => 'menu_block',
-          'delta' => 'teia-natural-valley-support',
+        'teia_natural_valley-support' => array(
+          'module' => 'teia_natural_valley',
+          'delta' => 'support',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
