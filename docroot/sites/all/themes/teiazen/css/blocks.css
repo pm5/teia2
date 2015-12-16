@@ -32,139 +32,140 @@
 /* line 23, ../sass/blocks.scss */
 .block h2.block-title {
   /* Block title */
+  font-weight: 400;
 }
 
-/* line 28, ../sass/blocks.scss */
+/* line 29, ../sass/blocks.scss */
 #block-aggregator-category-1 {
   /* Block for the latest news items in the first category */
 }
 
-/* line 31, ../sass/blocks.scss */
+/* line 32, ../sass/blocks.scss */
 #block-aggregator-feed-1 {
   /* Block for the latest news items in the first feed */
 }
 
-/* line 34, ../sass/blocks.scss */
+/* line 35, ../sass/blocks.scss */
 #block-block-1 {
   /* First block created with "Add block" link */
 }
 
-/* line 37, ../sass/blocks.scss */
+/* line 38, ../sass/blocks.scss */
 #block-blog-recent {
   /* "Recent blog posts" block */
 }
 
-/* line 40, ../sass/blocks.scss */
+/* line 41, ../sass/blocks.scss */
 #block-book-navigation {
   /* "Book navigation" block for the current book's table of contents */
 }
 
-/* line 43, ../sass/blocks.scss */
+/* line 44, ../sass/blocks.scss */
 #block-comment-recent {
   /* "Recent comments" block */
 }
 
-/* line 46, ../sass/blocks.scss */
+/* line 47, ../sass/blocks.scss */
 #block-forum-active {
   /* "Active forum topics" block */
 }
 
-/* line 49, ../sass/blocks.scss */
+/* line 50, ../sass/blocks.scss */
 #block-forum-new {
   /* "New forum topics" block */
 }
 
-/* line 52, ../sass/blocks.scss */
+/* line 53, ../sass/blocks.scss */
 #block-locale-language {
   /* Language switcher block */
 }
 
-/* line 55, ../sass/blocks.scss */
+/* line 56, ../sass/blocks.scss */
 #block-menu-menu-NAME {
   /* Custom menu block */
 }
 
-/* line 58, ../sass/blocks.scss */
+/* line 59, ../sass/blocks.scss */
 #block-node-recent {
   /* "Recent content" block */
 }
 
-/* line 61, ../sass/blocks.scss */
+/* line 62, ../sass/blocks.scss */
 #block-node-syndicate {
   /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */
 }
 
-/* line 64, ../sass/blocks.scss */
+/* line 65, ../sass/blocks.scss */
 #block-poll-recent {
   /* "Most recent poll" block */
 }
 
-/* line 67, ../sass/blocks.scss */
+/* line 68, ../sass/blocks.scss */
 #block-profile-author-information {
   /* "Author information" block for the profile of the page's author */
 }
 
-/* line 70, ../sass/blocks.scss */
+/* line 71, ../sass/blocks.scss */
 #block-search-form {
   /* "Search form" block */
 }
 
-/* line 73, ../sass/blocks.scss */
+/* line 74, ../sass/blocks.scss */
 #block-shortcut-shortcuts {
   /* "Shortcuts" block */
 }
 
-/* line 76, ../sass/blocks.scss */
+/* line 77, ../sass/blocks.scss */
 #block-statistics-popular {
   /* "Popular content" block */
 }
 
-/* line 79, ../sass/blocks.scss */
+/* line 80, ../sass/blocks.scss */
 #block-system-main-menu {
   /* "Main menu" block */
 }
 
-/* line 82, ../sass/blocks.scss */
+/* line 83, ../sass/blocks.scss */
 #block-system-management {
   /* "Management" block for Drupal management menu */
 }
 
-/* line 85, ../sass/blocks.scss */
+/* line 86, ../sass/blocks.scss */
 #block-system-navigation {
   /* "Navigation" block for Drupal navigation menu */
 }
 
-/* line 88, ../sass/blocks.scss */
+/* line 89, ../sass/blocks.scss */
 #block-system-user-menu {
   /* "User menu" block for Drupal user menu */
 }
 
-/* line 91, ../sass/blocks.scss */
+/* line 92, ../sass/blocks.scss */
 #block-system-help {
   /* "System help" block */
 }
 
-/* line 94, ../sass/blocks.scss */
+/* line 95, ../sass/blocks.scss */
 #block-system-main {
   /* "Main page content" block */
 }
 
-/* line 97, ../sass/blocks.scss */
+/* line 98, ../sass/blocks.scss */
 #block-system-powered-by {
   /* "Powered by Drupal" block */
 }
 
-/* line 100, ../sass/blocks.scss */
+/* line 101, ../sass/blocks.scss */
 #block-user-login {
   /* "User login form" block */
 }
 
-/* line 103, ../sass/blocks.scss */
+/* line 104, ../sass/blocks.scss */
 #block-user-new {
   /* "Who's new" block for a list of the newest users */
 }
 
-/* line 106, ../sass/blocks.scss */
+/* line 107, ../sass/blocks.scss */
 #block-user-online {
   /* "Who's online" block for a list of the online users */
 }
@@ -172,7 +173,7 @@
 /**
  * Second sidebar
  */
-/* line 114, ../sass/blocks.scss */
+/* line 115, ../sass/blocks.scss */
 .region-sidebar-second h2.block-title {
   color: #ffffff;
   background: #4f915e;
@@ -182,23 +183,23 @@
   letter-spacing: 0.3em;
   text-align: center;
 }
-/* line 124, ../sass/blocks.scss */
+/* line 125, ../sass/blocks.scss */
 .region-sidebar-second .block-content {
   border-color: #4f915e;
   border-style: solid;
   border-width: 0 4px 4px 4px;
   padding: 1em 10px;
 }
-/* line 130, ../sass/blocks.scss */
+/* line 131, ../sass/blocks.scss */
 .region-sidebar-second .block-content p, .region-sidebar-second .block-content pre {
   margin-top: 0.2em;
 }
-/* line 134, ../sass/blocks.scss */
+/* line 135, ../sass/blocks.scss */
 .region-sidebar-second .block-content div.more-link,
 .region-sidebar-second .block-content ul.inline li.node-readmore {
   color: #745e4f;
 }
-/* line 138, ../sass/blocks.scss */
+/* line 139, ../sass/blocks.scss */
 .region-sidebar-second .block-content ul.inline li.node-readmore {
   float: right;
   padding: 0;
@@ -207,7 +208,7 @@
 /**
  * Panels
  */
-/* line 149, ../sass/blocks.scss */
+/* line 150, ../sass/blocks.scss */
 .panel-pane:after {
   content: "";
   display: block;
@@ -215,7 +216,7 @@
   clear: both;
 }
 
-/* line 157, ../sass/blocks.scss */
+/* line 158, ../sass/blocks.scss */
 #content .panel-pane {
   margin-bottom: 1.5em;
 }
