@@ -16,7 +16,10 @@ function teia_einfo_default_page_manager_pages() {
   $page->admin_title = '環境資訊中心';
   $page->admin_description = '';
   $page->path = 'e-info';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => '環境資訊中心',
