@@ -26,7 +26,7 @@
 - name: ensure apache site is configured
   template: >
     src=site.conf
-    dest=/etc/apache2/sites-available/default
+    dest=/etc/apache2/sites-available/000-default.conf
   register: siteconf
 
 - name: ensure php max execution time is configured

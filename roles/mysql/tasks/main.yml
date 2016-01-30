@@ -36,7 +36,7 @@
 
 - name: copy database dump file to db server when it exists
   ignore_errors: yes
-  copy: src=database.mysql.gz dest=/tmp
+  copy: src=data/database.mysql.gz dest=/tmp
   register: dbfile
 
 - name: ensure database is provisioned when needed
