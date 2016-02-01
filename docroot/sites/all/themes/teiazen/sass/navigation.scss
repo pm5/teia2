@@ -181,6 +181,14 @@ $framing-radius: 1.3em;
     background: $content-menu-fifth;
     outline: 0;
   }
+
+  .sf-depth-1 > .sf-sub-indicator {
+    display: none;
+  }
+
+  .sf-sub-indicator {
+    background-image: url(/sites/all/libraries/superfish/images/arrows-ffffff.png);
+  }
 }
 
 /**

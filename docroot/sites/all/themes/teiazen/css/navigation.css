@@ -184,21 +184,29 @@
   background: #5c4b43;
   outline: 0;
 }
+/* line 185, ../sass/navigation.scss */
+.sf-menu.main-menu.sf-horizontal .sf-depth-1 > .sf-sub-indicator {
+  display: none;
+}
+/* line 189, ../sass/navigation.scss */
+.sf-menu.main-menu.sf-horizontal .sf-sub-indicator {
+  background-image: url(/sites/all/libraries/superfish/images/arrows-ffffff.png);
+}
 
 /**
  * Secondary menu
  */
-/* line 190, ../sass/navigation.scss */
+/* line 198, ../sass/navigation.scss */
 #block-menu-block-teia-theme-secondary-menu {
   width: 100%;
   margin-bottom: 0;
 }
-/* line 193, ../sass/navigation.scss */
+/* line 201, ../sass/navigation.scss */
 #block-menu-block-teia-theme-secondary-menu .menu {
   margin-bottom: 1em;
 }
 
-/* line 198, ../sass/navigation.scss */
+/* line 206, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu {
   /*li.last a {*/
   /*background: $bright-color;*/
@@ -207,26 +215,26 @@
   /*}*/
   /*}*/
 }
-/* line 199, ../sass/navigation.scss */
+/* line 207, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu .menu {
   padding: 0;
   text-align: right;
 }
-/* line 203, ../sass/navigation.scss */
+/* line 211, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu li {
   display: inline-block;
 }
-/* line 206, ../sass/navigation.scss */
+/* line 214, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu a {
   padding: 0.35em 0.7em;
   color: #ffffff;
   background: #4f915e;
 }
-/* line 209, ../sass/navigation.scss */
+/* line 217, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu a.active, .menu-name-menu-secondary-menu a:focus, .menu-name-menu-secondary-menu a:hover, .menu-name-menu-secondary-menu a:visited {
   color: #ffffff;
 }
-/* line 216, ../sass/navigation.scss */
+/* line 224, ../sass/navigation.scss */
 .menu-name-menu-secondary-menu a:hover {
   background: #466b54;
 }
