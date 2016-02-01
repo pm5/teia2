@@ -326,7 +326,7 @@ function teia_species_field_default_field_instances() {
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_species_season',
-    'label' => '觀賞季節',
+    'label' => '季節',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -525,7 +525,7 @@ function teia_species_field_default_field_instances() {
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_species_type',
-    'label' => '類別',
+    'label' => '網站類別',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -694,6 +694,8 @@ function teia_species_field_default_field_instances() {
   t('分佈');
   t('別名');
   t('參考資料');
+  t('Body');
+  t('季節');
   t('學名');
   t('導覽五感');
   t('小知識');
@@ -707,7 +709,7 @@ function teia_species_field_default_field_instances() {
   t('補充');
   t('觀賞季節');
   t('請以頓號「、」分隔。');
-  t('類別');
+  t('網站類別');
 
   return $field_instances;
 }

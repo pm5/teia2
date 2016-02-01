@@ -15,8 +15,8 @@ function teia_species_feeds_importer_default() {
   $feeds_importer->api_version = 1;
   $feeds_importer->id = 'species';
   $feeds_importer->config = array(
-    'name' => '生態資料',
-    'description' => '自然谷',
+    'name' => '自然谷生態資料庫 - 生態資料',
+    'description' => '從「自然谷生態資料庫分類」Google 試算表匯入。',
     'fetcher' => array(
       'plugin_key' => 'FeedsHTTPFetcher',
       'config' => array(
@@ -111,8 +111,8 @@ function teia_species_feeds_importer_default() {
       ),
     ),
     'content_type' => '',
-    'update' => 0,
-    'import_period' => '900',
+    'update' => 1,
+    'import_period' => '-1',
     'expire_period' => 3600,
     'import_on_create' => 1,
     'process_in_background' => 0,

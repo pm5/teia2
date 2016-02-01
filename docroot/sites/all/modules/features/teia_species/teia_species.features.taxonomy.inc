@@ -10,7 +10,7 @@
 function teia_species_taxonomy_default_vocabularies() {
   return array(
     'species_season' => array(
-      'name' => '物種季節',
+      'name' => '生態資料庫 - 季節',
       'machine_name' => 'species_season',
       'description' => '自然谷',
       'hierarchy' => 0,
@@ -33,7 +33,7 @@ function teia_species_taxonomy_default_vocabularies() {
       ),
     ),
     'species_sense' => array(
-      'name' => '導覽五感',
+      'name' => '生態資料庫 - 導覽五感',
       'machine_name' => 'species_sense',
       'description' => '',
       'hierarchy' => 0,
@@ -56,7 +56,7 @@ function teia_species_taxonomy_default_vocabularies() {
       ),
     ),
     'species_type' => array(
-      'name' => '物種類別',
+      'name' => '生態資料庫 - 網站類別',
       'machine_name' => 'species_type',
       'description' => '',
       'hierarchy' => 0,
