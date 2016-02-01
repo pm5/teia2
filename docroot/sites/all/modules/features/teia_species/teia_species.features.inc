@@ -32,7 +32,7 @@ function teia_species_node_info() {
       'base' => 'node_content',
       'description' => t('自然谷「生態資料庫」中的生態資料。'),
       'has_title' => '1',
-      'title_label' => t('物種名稱'),
+      'title_label' => t('中文名'),
       'help' => '',
     ),
   );
