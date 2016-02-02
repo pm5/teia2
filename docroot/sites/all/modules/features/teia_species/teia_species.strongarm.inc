@@ -41,10 +41,13 @@ function teia_species_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '14',
+          'weight' => '15',
         ),
         'path' => array(
           'weight' => '10',
+        ),
+        'redirect' => array(
+          'weight' => '20',
         ),
       ),
       'display' => array(),
