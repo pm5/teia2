@@ -83,6 +83,10 @@ $zen-auto-include-flow-item-base: false;
     width: $wide-width;
   }
 
+  .inline {
+    display: inline;
+  }
+
   /**
    * Header grid container.  Set to absolute position to make room for navigation region at the top right.
    */
