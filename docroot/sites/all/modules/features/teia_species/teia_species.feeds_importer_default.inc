@@ -162,6 +162,11 @@ function teia_species_feeds_importer_default() {
             'target' => 'field_title_image',
             'unique' => FALSE,
           ),
+          3 => array(
+            'source' => '分類全名',
+            'target' => 'field_species_full_name',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '1',
         'update_non_existent' => 'skip',

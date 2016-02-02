@@ -875,6 +875,48 @@ function teia_species_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'taxonomy_term-species_type-field_species_full_name'.
+  $field_instances['taxonomy_term-species_type-field_species_full_name'] = array(
+    'bundle' => 'species_type',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_species_full_name',
+    'label' => '分類全名',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-species_type-field_title_image'.
   $field_instances['taxonomy_term-species_type-field_title_image'] = array(
     'bundle' => 'species_type',
@@ -889,6 +931,12 @@ function teia_species_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
@@ -930,7 +978,7 @@ function teia_species_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -938,6 +986,7 @@ function teia_species_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('中文名');
   t('分佈');
+  t('分類全名');
   t('別名');
   t('參考資料');
   t('季節');
