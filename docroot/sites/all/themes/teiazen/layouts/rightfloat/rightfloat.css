@@ -1,0 +1,30 @@
+
+.panel-rightfloat .panel-col-first .panel-pane::after {
+  display: none;
+  clear: none;
+}
+
+.panel-rightfloat .panel-col-first .inside {
+  margin: 0 .5em 1em 0;
+}
+
+.panel-rightfloat .panel-col-last {
+  float: right;
+  width: 50%;
+}
+* html .panel-rightfloat .panel-col-last {
+  width: 49.9%;
+}
+
+.panel-rightfloat .panel-col-last .inside {
+  margin: 0 0 1em .5em;
+}
+
+#panels-edit-display .panel-pane,
+#panels-edit-display .helperclass {
+  margin: .5em;
+}
+
+.panel-rightfloat .panel-separator {
+  margin: 0 0 1em 0;
+}
