@@ -224,3 +224,18 @@ function teiazen_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+/**
+ * Override or insert variables into the taxonomy-term templates.
+ *
+ * @param $variables
+ *   An array of variables to pass to the theme template.
+ * @param $hook
+ *   The name of the template being rendered ("taxonomy_term" in this case.)
+ */
+function teiazen_preprocess_taxonomy_term(&$variables, $hook) {
+  if ($variables['view_mode'] === 'teaser_pic_medium') {
+    $variables['theme_hook_suggestions'][] = 'taxonomy_term__' . $variables['view_mode'];
+    $variables['theme_hook_suggestions'][] = 'taxonomy_term__' . $variables['vocabulary_machine_name'] . '__' . $variables['view_mode'];
+  }
+}
