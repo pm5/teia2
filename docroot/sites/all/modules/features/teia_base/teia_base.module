@@ -3,3 +3,15 @@
  * @file
  * Drupal needs this blank file.
  */
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function teia_base_entity_info_alter(&$entity_info)
+{
+  $entity_info['taxonomy_term']['view modes']['teaser'] = array(
+    'label' => t('Teaser'),
+    'custom settings' => TRUE,
+  );
+}
+

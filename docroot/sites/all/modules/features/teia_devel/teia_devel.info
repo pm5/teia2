@@ -5,6 +5,7 @@ dependencies[] = ctools
 dependencies[] = devel
 dependencies[] = devel_generate
 dependencies[] = strongarm
+dependencies[] = feeds_tamper_ui
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[variable][] = block_cache
