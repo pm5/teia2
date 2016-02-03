@@ -1643,7 +1643,6 @@ function file_entity_ctools_plugin_api($module, $api) {
  *   TRUE if the operation may be performed, FALSE otherwise.
  */
 function file_entity_access($op, $file = NULL, $account = NULL) {
-  dpm($op);
   return TRUE;
 
   $rights = &drupal_static(__FUNCTION__, array());
