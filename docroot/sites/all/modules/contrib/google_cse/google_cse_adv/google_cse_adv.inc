@@ -5,6 +5,9 @@
  * Uses Google Custom Search Engine (CSE) without frames and ads.
  */
 
+/**
+ * Maximum number of results from a Google search.
+ */
 define('GOOGLE_MAX_SEARCH_RESULTS', 1000);
 
 /**
@@ -101,13 +104,11 @@ function google_cse_adv_get_response($url) {
 /**
  * Returns the thumbnail properly themed if configured to do so.
  *
- * @param array $title
- *   Title of the image.
- * @param array $image_att
- *   Image attributes
+ * @param array $img
+ *   Image array.
  *
  * @return string
- *   The HTML for the image or empty string.
+ *   The HTML for the image.
  */
 function _google_cse_adv_thumbnail($title, $image_att) {
   if (variable_get('google_cse_results_display_images', TRUE)) {
@@ -260,7 +261,6 @@ function google_cse_adv_response_results($response, $keys, $conditions) {
       );
     }
 
-
     // No pager query was executed - we have to set the pager manually.
     $limit = variable_get('google_cse_adv_results_per_page', 10);
     pager_default_initialize($total, $limit);
@@ -274,7 +274,6 @@ function google_cse_adv_response_results($response, $keys, $conditions) {
 }
 
 /**
-
  * Check Return if the response from Google is accurate.
  *
  * Google initially estimates the exact number of results
@@ -299,7 +298,6 @@ function google_cse_adv_result_is_accurate($response) {
 
   return $accurate;
 }
-
 
 
 /**
@@ -336,7 +334,7 @@ function google_cse_adv_get_accurate_num_of_results($keys, $total) {
     // attribute (EN) of the search result tag (RES).
     $attributes = $xml->RES->attributes();
     $total_num_results += (int) $attributes['EN'];
-  }
+ }
 
   // If we do not find an accurate result we will use the initial estimate.
   if (!$total_num_results) {

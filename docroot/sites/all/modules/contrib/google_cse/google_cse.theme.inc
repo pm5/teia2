@@ -5,12 +5,42 @@
  * Themeable functions for Google Custom Search Engine.
  */
 
+function google_cse_get_cse_tag() {
+  $display = variable_get('google_cse_custom_results_display', 'results-only');
+
+  switch ($display) {
+    case 'overlay':
+    case 'compact':
+    case 'full-width':
+      return '<gcse:search gname="google_cse"></gcse:search>';
+
+    case 'two-page':
+      return '<gcse:searchbox-only gname="google_cse"></gcse:searchbox-only><gcse:searchresults-only gname="google_cse"></gcse:searchresults-only>';
+
+
+    case 'two-column':
+      return '<gcse:searchbox gname="google_cse"></gcse:searchbox><gcse:searchresults gname="google_cse"></gcse:searchresults>';
+
+
+    case 'results-only':
+      return '<gcse:searchresults-only gname="google_cse"></gcse:searchresults-only>';
+
+    case 'google-hosted':
+      return '<gcse:searchbox-only gname="google_cse"></gcse:searchbox-only>';
+
+    default:
+      watchdog('google_cse', 'Invalid custom result display %display',
+               array('%display' => $display), WATCHDOG_CRITICAL);
+  }
+}
+
 /**
  * The search results page can be themed/customized.
  */
 function template_preprocess_google_cse_results(&$variables) {
   $query = google_cse_build_query(isset($_GET['query']) ? $_GET['query'] : '', NULL, FALSE);
   $variables['results_searchbox_form'] = $variables['form'] ? drupal_get_form('google_cse_results_searchbox_form') : '';
+  $variables['cse_tag'] = google_cse_get_cse_tag();
   $variables['noscript'] = t('!google, or enable JavaScript to view them here.', array(
     '!google' => l(t('View the results at Google'), 'http://' . variable_get('google_cse_domain', 'www.google.com') . '/cse', array(
       'query' => $query,
@@ -19,29 +49,10 @@ function template_preprocess_google_cse_results(&$variables) {
   $variables['suffix'] = filter_xss_admin(variable_get('google_cse_results_suffix', ''));
 
   if (google_cse_validate_request()) {
-    drupal_add_js('
-      (function() {
-         var cx = \'' .variable_get('google_cse_cx', '') . '\';
-         var gcse = document.createElement(\'script\');
-         gcse.type = \'text/javascript\';
-         gcse.async = true;
-         gcse.src = (document.location.protocol == \'https:\' ? \'https:\' : \'http:\') +
-         \'//www.google.com/cse/cse.js?cx=\' + cx;
-         var s = document.getElementsByTagName(\'script\')[0];
-         s.parentNode.insertBefore(gcse, s);
-      }
-    )();', array('type' => 'inline', 'scope' => 'footer'));
+    drupal_add_js(drupal_get_path('module', 'google_cse') . '/google_cse_results.js',
+                  array('scope' => 'footer'));
     drupal_add_css('' . variable_get('google_cse_custom_css', '') . '', 'external');
   }
-}
-
-/**
- * Display an Add-to-Google button.
- */
-function template_preprocess_google_cse_results_gadget(&$variables) {
-  $cx = explode(':', variable_get('google_cse_cx', ''));
-  $variables['creator'] = rawurlencode($cx[0]);
-  $variables['id'] = isset($cx[1]) ? rawurlencode($cx[1]) : '';
 }
 
 /**
@@ -92,9 +103,7 @@ function google_cse_results_searchbox_form($form, &$form_state) {
   }
   $form['query']['#size'] = intval(variable_get('google_cse_results_searchbox_width', 40));
   $form['query']['#title'] = t('Enter your keywords');
-  if (variable_get('google_cse_results_gadget', 1)) {
-    $form['sa']['#suffix'] = theme('google_cse_results_gadget');
-  }
+
   google_cse_sitesearch_form($form);
   return $form;
 }

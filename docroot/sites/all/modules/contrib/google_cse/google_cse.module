@@ -28,7 +28,6 @@ function google_cse_conditions_callback($keys) {
  * Implements hook_search_execute().
  */
 function google_cse_search_execute($keys = NULL, $conditions = NULL) {
-
   if (variable_get('google_cse_use_adv', 0)) {
     // Firstly, load the needed modules.
     module_load_include('inc', 'google_cse', 'google_cse_adv/google_cse_adv');
@@ -38,6 +37,9 @@ function google_cse_search_execute($keys = NULL, $conditions = NULL) {
 
     // Allow other modules to alter the keys.
     drupal_alter('google_cse_searched_keys', $keys);
+
+    // Allow other modules to alter the results.
+    drupal_alter('google_cse_searched_results', $results);
 
     return $results;
   }
@@ -64,6 +66,7 @@ function google_cse_build_query($keys, $sitesearch = NULL, $here = TRUE) {
  * Implements hook_search_page().
  */
 function google_cse_search_page($results) {
+
   if (!variable_get('google_cse_use_adv', 0)) {
     $output['#theme'] = 'google_cse_results';
 
@@ -128,11 +131,6 @@ function google_cse_theme($existing, $type, $theme, $path) {
       'file' => 'google_cse.theme.inc',
       'template' => 'google_cse_results',
     ),
-    'google_cse_results_gadget' => array(
-      'variables' => array(),
-      'file' => 'google_cse.theme.inc',
-      'template' => 'google_cse_results_gadget',
-    ),
     'google_cse_adv_results' => array(
       'variables' => array('form' => FALSE, 'path' => $path),
       'file' => 'google_cse.theme.inc',
@@ -184,7 +182,7 @@ function google_cse_results_tab() {
 function google_cse_permission() {
   return array(
     'search Google CSE' => array(
-      'title' => t('Use Google CSE'),
+      'title' => t('Use Google CSE search'),
     ),
   );
 }
@@ -244,7 +242,7 @@ function google_cse_sitesearch_form(&$form) {
       '#options' => $options,
       '#default_value' => google_cse_sitesearch_default(),
     );
-    if ($type == 'select' && isset($form['sa'])) {
+    if ($form['sitesearch']['#type'] == 'select' && isset($form['sa'])) {
       $form['sa']['#weight'] = 10;
     }
   }
@@ -290,9 +288,6 @@ function google_cse_sitesearch_default() {
  */
 function google_cse_form_search_form_alter(&$form, &$form_state, $form_id) {
   if ($form['module']['#value'] == 'google_cse') {
-    if (variable_get('google_cse_results_gadget', 1)) {
-      $form['basic']['op']['#suffix'] = theme('google_cse_results_gadget');
-    }
     google_cse_sitesearch_form($form);
     $form['#attributes']['class'][] = 'google-cse';
   }
@@ -308,6 +303,7 @@ function google_cse_form_search_block_form_alter(&$form, &$form_state, $form_id)
     $form['#attributes']['class'][] = 'google-cse';
   }
 }
+
 
 /**
  * Implements hook_proxy_settings_info().

@@ -10,7 +10,6 @@
  */
 function google_cse_admin_settings() {
   $form = array();
-
   $form['google_cse'] = array(
     '#title' => t('Google CSE'),
     '#type' => 'fieldset',
@@ -64,13 +63,6 @@ function google_cse_admin_settings() {
       'FORID:1' => t('Top and bottom'),
     ),
     '#description' => t('AdSense ads are also displayed when the CSE links or redirects to Google.'),
-  );
-
-  $form['google_cse']['google_cse_results_gadget'] = array(
-    '#title' => t('Search results "Add to Google" Google Gadget'),
-    '#type' => 'checkbox',
-    '#default_value' => variable_get('google_cse_results_gadget', 1),
-    '#description' => t('If enabled, an "Add to Google" button will be displayed above the search results.'),
   );
 
   $form['google_cse']['google_cse_results_prefix'] = array(
@@ -189,56 +181,56 @@ function google_cse_admin_settings() {
     '#title' => t('Country restriction'),
     '#type' => 'textfield',
     '#default_value' => variable_get('google_cse_cr', ''),
-    '#description' => t('Enter a 9-letter country code, e.g. <em>countryNZ</em>, and optional boolean operators, to restrict search results to documents (not) originating in particular countries. See the <a target="_blank" href="http://www.google.com/coop/docs/cse/resultsxml.html#crsp"><em>cr</em> parameter</a>.'),
+    '#description' => t('Enter a 9-letter country code, e.g. <em>countryNZ</em>, and optional boolean operators, to restrict search results to documents (not) originating in particular countries. See the <a target="_blank" href="https://developers.google.com/custom-search/docs/xml_results#crsp"><em>cr</em> parameter</a>.'),
   );
 
   $form['google_cse']['advanced']['google_cse_gl'] = array(
     '#title' => t('Country boost'),
     '#type' => 'textfield',
     '#default_value' => variable_get('google_cse_gl', ''),
-    '#description' => t('Enter a 2-letter country code, e.g. <em>uk</em>, to boost documents written in a particular country. See the <a target="_blank" href="http://www.google.com/coop/docs/cse/resultsxml.html#glsp"><em>gl</em> parameter</a>.'),
+    '#description' => t('Enter a 2-letter country code, e.g. <em>uk</em>, to boost documents written in a particular country. See the <a target="_blank" href="https://developers.google.com/custom-search/docs/xml_results#glsp"><em>gl</em> parameter</a>.'),
   );
 
   $form['google_cse']['advanced']['google_cse_hl'] = array(
     '#title' => t('Interface language'),
     '#type' => 'textfield',
     '#default_value' => variable_get('google_cse_hl', ''),
-    '#description' => t('Enter a supported 2- or 5-character language code, e.g. <em>fr</em>, to set the language of the user interface. See the <a target="_blank" href="http://www.google.com/coop/docs/cse/resultsxml.html#hlsp"><em>hl</em> parameter</a>.'),
+    '#description' => t('Enter a supported 2- or 5-character language code, e.g. <em>fr</em>, to set the language of the user interface. See the <a target="_blank" href="https://developers.google.com/custom-search/docs/xml_results#hlsp"><em>hl</em> parameter</a>.'),
   );
 
   $form['google_cse']['advanced']['google_cse_locale_hl'] = array(
     '#title' => t('Set interface language dynamically'),
     '#type' => 'checkbox',
     '#default_value' => variable_get('google_cse_locale_hl', ''),
-    '#description' => t('The language restriction can be set dynamically if the locale module is enabled. Note the locale language code must match one of the <a target="_blank" href="http://www.google.com/coop/docs/cse/resultsxml.html#interfaceLanguages">supported language codes</a>.'),
+    '#description' => t('The language restriction can be set dynamically if the locale module is enabled. Note the locale language code must match one of the <a target="_blank" href="https://developers.google.com/custom-search/docs/xml_results#interfaceLanguages">supported language codes</a>.'),
   );
 
   $form['google_cse']['advanced']['google_cse_ie'] = array(
     '#title' => t('Input encoding'),
     '#type' => 'textfield',
-    '#default_value' => variable_get('google_cse_ie', ''),
-    '#description' => t('The default <em>utf-8</em> is recommended. See the <a target="_blank" href="http://www.google.com/coop/docs/cse/resultsxml.html#iesp"><em>ie</em> parameter</a>.'),
+    '#default_value' => variable_get('google_cse_ie', 'utf-8'),
+    '#description' => t('The default <em>utf-8</em> is recommended. See the <a target="_blank" href="https://developers.google.com/custom-search/docs/xml_results#iesp"><em>ie</em> parameter</a>.'),
   );
 
   $form['google_cse']['advanced']['google_cse_lr'] = array(
     '#title' => t('Language restriction'),
     '#type' => 'textfield',
     '#default_value' => variable_get('google_cse_lr', ''),
-    '#description' => t('Enter a supported 7- or 10-character language code, e.g. <em>lang_en</em>, and optional boolean operators, to restrict search results to documents (not) written in particular languages. See the <a target="_blank" href="http://www.google.com/coop/docs/cse/resultsxml.html#lrsp"><em>lr</em> parameter</a>.'),
+    '#description' => t('Enter a supported 7- or 10-character language code, e.g. <em>lang_en</em>, and optional boolean operators, to restrict search results to documents (not) written in particular languages. See the <a target="_blank" href="https://developers.google.com/custom-search/docs/xml_results#lrsp"><em>lr</em> parameter</a>.'),
   );
 
   $form['google_cse']['advanced']['google_cse_locale_lr'] = array(
     '#title' => t('Set language restriction dynamically'),
     '#type' => 'checkbox',
     '#default_value' => variable_get('google_cse_locale_lr', ''),
-    '#description' => t('The language restriction can be set dynamically if the locale module is enabled. Note the locale language code must match one of the <a target="_blank" href="http://www.google.com/coop/docs/cse/resultsxml.html#languageCollections">supported language codes</a>.'),
+    '#description' => t('The language restriction can be set dynamically if the locale module is enabled. Note the locale language code must match one of the <a target="_blank" href="https://developers.google.com/custom-search/docs/xml_results#languageCollections">supported language codes</a>.'),
   );
 
   $form['google_cse']['advanced']['google_cse_oe'] = array(
     '#title' => t('Output encoding'),
     '#type' => 'textfield',
     '#default_value' => variable_get('google_cse_oe', ''),
-    '#description' => t('The default <em>utf-8</em> is recommended. See the <a target="_blank" href="http://www.google.com/coop/docs/cse/resultsxml.html#oesp"><em>oe</em> parameter</a>.'),
+    '#description' => t('The default <em>utf-8</em> is recommended. See the <a target="_blank" href="https://developers.google.com/custom-search/docs/xml_results#oesp"><em>oe</em> parameter</a>.'),
   );
 
   $form['google_cse']['advanced']['google_cse_safe'] = array(
@@ -251,7 +243,7 @@ function google_cse_admin_settings() {
       'high' => t('High'),
     ),
     '#default_value' => variable_get('google_cse_safe', ''),
-    '#description' => t('SafeSearch filters search results for adult content. See the <a target="_blank" href="http://www.google.com/coop/docs/cse/resultsxml.html#safesp"><em>safe</em> parameter</a>.'),
+    '#description' => t('SafeSearch filters search results for adult content. See the <a target="_blank" href="https://developers.google.com/custom-search/docs/xml_results#safesp"><em>safe</em> parameter</a>.'),
   );
 
   $form['google_cse']['advanced']['google_cse_custom_css'] = array(
@@ -260,21 +252,23 @@ function google_cse_admin_settings() {
     '#default_value' => variable_get('google_cse_custom_css', ''),
     '#description' => t('Set a custom stylesheet to override or add any styles not allowed in the CSE settings (such as "background-color: none;"). Include <span style="color:red; font-weight:bold;">!important</span> for overrides.<br/>Example: <em>//replacewithrealsite.com/sites/all/modules/google_cse/default.css</em>'),
   );
-  
+
   $form['google_cse']['advanced']['google_cse_custom_results_display'] = array(
     '#title' => t('Layout of Search Engine'),
     '#type' => 'radios',
-    '#default_value' => variable_get('google_cse_custom_results_display', '<gcse:search></gcse:search>'),
+    '#default_value' => variable_get('google_cse_custom_results_display', 'results-only'),
     '#options' => array(
-      '<gcse:search></gcse:search>' => t('Overlay'),
-      '<gcse:searchbox-only></gcse:searchbox-only><gcse:searchresults-only></gcse:searchresults-only>' => t('Two page'),
-      '<gcse:search></gcse:search>&nbsp;' => t('Full width'),
-      '<gcse:searchbox></gcse:searchbox><gcse:searchresults></gcse:searchresults>' => t('Two column'),
-      '<gcse:search></gcse:search>&nbsp;&nbsp;' => t('Compact'),
-      '<gcse:searchresults-only></gcse:searchresults-only>' => t('Results only'),
-      '<gcse:searchbox-only></gcse:searchbox-only>' => t('Google hosted'),
+      'overlay' => t('Overlay'),
+      'two-page' => t('Two page'),
+      'full-width' => t('Full width'),
+      'two-column' => t('Two column'),
+      'compact' => t('Compact'),
+      'results-only' => t('Results only'),
+      'google-hosted' => t('Google hosted'),
     ),
-    '#description' => t('Set the search engine layout, as found in the Layout tab of <a target="_blank" href="https://www.google.com/cse/lookandfeel/layout?cx='.variable_get('google_cse_cx', '').'">Custom Search settings</a>. '),
+    '#description' => t('Set the search engine layout, as found in the Layout tab of <a target="_blank" href="@url">Custom Search settings</a>.', array(
+      '@url' => 'https://www.google.com/cse/lookandfeel/layout?cx=' . variable_get('google_cse_cx', ''),
+    )),
   );
 
   $form['google_cse_adv'] = array(
@@ -285,7 +279,7 @@ function google_cse_admin_settings() {
   );
 
   $form['google_cse_adv']['google_cse_use_adv'] = array(
-    '#title' => t('Use advanced, non-adds version, search engine (You will need a pay account)'),
+    '#title' => t('Use advanced, ad-free version, search engine (You will need a paid account with Google)'),
     '#type' => 'checkbox',
     '#default_value' => variable_get('google_cse_use_adv', 0),
     '#description' => t('If enabled, search results will be fetch using Adv engine.'),
