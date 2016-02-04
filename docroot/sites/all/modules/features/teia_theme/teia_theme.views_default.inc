@@ -569,6 +569,7 @@ function teia_theme_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'full list';
   $handler->display->display_options['path'] = 'taxonomy/term/%';
@@ -1055,6 +1056,45 @@ function teia_theme_views_default_views() {
       'label' => '內容: Has taxonomy term ID depth modifier',
     ),
   );
+
+  /* Display: Content pane（展示） */
+  $handler = $view->new_display('panel_pane', 'Content pane（展示）', 'album_pane');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'album';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'entity';
+  $handler->display->display_options['row_options']['view_mode'] = 'teaser_pic_medium';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['allow']['use_pager'] = 'use_pager';
+  $handler->display->display_options['allow']['items_per_page'] = 'items_per_page';
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
+  $handler->display->display_options['argument_input'] = array(
+    'term_node_tid_depth' => array(
+      'type' => 'user',
+      'context' => 'entity:field_collection_item.archived',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => '內容: Has taxonomy term ID (with depth)',
+    ),
+    'term_node_tid_depth_modifier' => array(
+      'type' => 'user',
+      'context' => 'entity:field_collection_item.archived',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => '內容: Has taxonomy term ID depth modifier',
+    ),
+  );
   $translatables['taxonomy_term'] = array(
     t('Master'),
     t('更多內容'),
@@ -1090,6 +1130,8 @@ function teia_theme_views_default_views() {
     t('Content pane: 最新內容 (輪播)'),
     t('[title_field]
   [body]'),
+    t('Content pane（展示）'),
+    t('View panes'),
   );
   $export['taxonomy_term'] = $view;
 

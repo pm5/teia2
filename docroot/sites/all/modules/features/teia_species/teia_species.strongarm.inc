@@ -13,6 +13,13 @@ function teia_species_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_species';
+  $strongarm->value = 'edit-panelizer';
+  $export['additional_settings__active_tab_species'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__species';
   $strongarm->value = array(
     'view_modes' => array(
@@ -70,6 +77,65 @@ function teia_species_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_taxonomy_term__species_type';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(
+        'metatags' => array(
+          'weight' => '6',
+        ),
+        'path' => array(
+          'weight' => '5',
+        ),
+        'redirect' => array(
+          'weight' => '4',
+        ),
+        'name' => array(
+          'weight' => '0',
+        ),
+        'description' => array(
+          'weight' => '3',
+        ),
+      ),
+      'display' => array(
+        'description' => array(
+          'default' => array(
+            'weight' => '1',
+            'visible' => TRUE,
+          ),
+          'teaser' => array(
+            'weight' => '1',
+            'visible' => TRUE,
+          ),
+          'teaser_pic_medium' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'teaser_pic_small' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'slider' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
+    ),
+  );
+  $export['field_bundle_settings_taxonomy_term__species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_species';
   $strongarm->value = '0';
   $export['language_content_type_species'] = $strongarm;
@@ -84,9 +150,109 @@ function teia_species_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_species_season';
+  $strongarm->value = array(
+    'main-menu' => 'main-menu',
+    'menu-content-menu' => 0,
+    'menu-english-main-menu' => 0,
+    'features' => 0,
+    'management' => 0,
+    'navigation' => 0,
+    'menu-secondary-menu' => 0,
+    'user-menu' => 0,
+    'devel' => 0,
+  );
+  $export['menu_options_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_species_sense';
+  $strongarm->value = array(
+    'main-menu' => 'main-menu',
+    'menu-content-menu' => 0,
+    'menu-english-main-menu' => 0,
+    'features' => 0,
+    'management' => 0,
+    'navigation' => 0,
+    'menu-secondary-menu' => 0,
+    'user-menu' => 0,
+    'devel' => 0,
+  );
+  $export['menu_options_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_species_type';
+  $strongarm->value = array(
+    'main-menu' => 'main-menu',
+    'menu-content-menu' => 0,
+    'menu-english-main-menu' => 0,
+    'management' => 0,
+    'user-menu' => 0,
+    'features' => 0,
+    'navigation' => 0,
+    'menu-secondary-menu' => 0,
+    'devel' => 0,
+  );
+  $export['menu_options_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_species';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_species'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_species_season';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_species_sense';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_species_type';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__species';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__species'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_taxonomy_term__species_season';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_taxonomy_term__species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_taxonomy_term__species_sense';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_taxonomy_term__species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_taxonomy_term__species_type';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_taxonomy_term__species_type'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -129,6 +295,21 @@ function teia_species_strongarm() {
         'choice' => 0,
       ),
       'teaser' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'teaser_pic_small' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'slider' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
@@ -212,18 +393,33 @@ function teia_species_strongarm() {
     'status' => 1,
     'view modes' => array(
       'page_manager' => array(
-        'status' => 0,
-        'default' => 0,
+        'status' => 1,
+        'default' => 1,
         'choice' => 0,
       ),
       'default' => array(
         'status' => 0,
-        'default' => 0,
+        'default' => 1,
         'choice' => 0,
       ),
       'teaser' => array(
         'status' => 1,
         'default' => 1,
+        'choice' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'teaser_pic_small' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'slider' => array(
+        'status' => 0,
+        'default' => 0,
         'choice' => 0,
       ),
     ),
@@ -257,6 +453,321 @@ function teia_species_strongarm() {
   $strongarm->name = 'pathauto_taxonomy_term_species_type_pattern';
   $strongarm->value = 'natural-valley/species/term/[term:tid]';
   $export['pathauto_taxonomy_term_species_type_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_display_descendants_species_season';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_display_descendants_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_display_descendants_species_sense';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_display_descendants_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_display_descendants_species_type';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_display_descendants_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_display_num_species_season';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_display_num_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_display_num_species_sense';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_display_num_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_display_num_species_type';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_display_num_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_end_all_species_season';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_end_all_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_end_all_species_sense';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_end_all_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_end_all_species_type';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_end_all_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_expanded_species_season';
+  $strongarm->value = 1;
+  $export['taxonomy_menu_expanded_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_expanded_species_sense';
+  $strongarm->value = 1;
+  $export['taxonomy_menu_expanded_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_expanded_species_type';
+  $strongarm->value = 1;
+  $export['taxonomy_menu_expanded_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_flat_species_season';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_flat_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_flat_species_sense';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_flat_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_flat_species_type';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_flat_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_hide_empty_terms_species_season';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_hide_empty_terms_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_hide_empty_terms_species_sense';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_hide_empty_terms_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_hide_empty_terms_species_type';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_hide_empty_terms_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_path_species_season';
+  $strongarm->value = 'taxonomy_menu_path_default';
+  $export['taxonomy_menu_path_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_path_species_sense';
+  $strongarm->value = 'taxonomy_menu_path_default';
+  $export['taxonomy_menu_path_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_path_species_type';
+  $strongarm->value = 'taxonomy_menu_path_default';
+  $export['taxonomy_menu_path_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_rebuild_species_season';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_rebuild_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_rebuild_species_sense';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_rebuild_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_rebuild_species_type';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_rebuild_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_sync_species_season';
+  $strongarm->value = 1;
+  $export['taxonomy_menu_sync_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_sync_species_sense';
+  $strongarm->value = 1;
+  $export['taxonomy_menu_sync_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_sync_species_type';
+  $strongarm->value = 1;
+  $export['taxonomy_menu_sync_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_term_item_description_species_season';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_term_item_description_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_term_item_description_species_sense';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_term_item_description_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_term_item_description_species_type';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_term_item_description_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_vocab_menu_species_season';
+  $strongarm->value = '0';
+  $export['taxonomy_menu_vocab_menu_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_vocab_menu_species_sense';
+  $strongarm->value = '0';
+  $export['taxonomy_menu_vocab_menu_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_vocab_menu_species_type';
+  $strongarm->value = '0';
+  $export['taxonomy_menu_vocab_menu_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_vocab_parent_species_season';
+  $strongarm->value = '0';
+  $export['taxonomy_menu_vocab_parent_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_vocab_parent_species_sense';
+  $strongarm->value = '0';
+  $export['taxonomy_menu_vocab_parent_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_vocab_parent_species_type';
+  $strongarm->value = '0';
+  $export['taxonomy_menu_vocab_parent_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_item_description_species_season';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_voc_item_description_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_item_description_species_sense';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_voc_item_description_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_item_description_species_type';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_voc_item_description_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_item_species_season';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_voc_item_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_item_species_sense';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_voc_item_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_item_species_type';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_voc_item_species_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_name_species_season';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_voc_name_species_season'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_name_species_sense';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_voc_name_species_sense'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_name_species_type';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_voc_name_species_type'] = $strongarm;
 
   return $export;
 }

@@ -485,5 +485,203 @@ function teia_species_panelizer_defaults() {
   $panelizer->display = $display;
   $export['node:species:default:species_data'] = $panelizer;
 
+  $panelizer = new stdClass();
+  $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
+  $panelizer->api_version = 1;
+  $panelizer->name = 'taxonomy_term:species_type:default';
+  $panelizer->title = '預設';
+  $panelizer->panelizer_type = 'taxonomy_term';
+  $panelizer->panelizer_key = 'species_type';
+  $panelizer->no_blocks = FALSE;
+  $panelizer->css_id = '';
+  $panelizer->css = '';
+  $panelizer->pipeline = 'standard';
+  $panelizer->contexts = array();
+  $panelizer->relationships = array();
+  $panelizer->access = array();
+  $panelizer->view_mode = 'page_manager';
+  $panelizer->css_class = '';
+  $panelizer->title_element = 'H2';
+  $panelizer->link_to_entity = TRUE;
+  $panelizer->extra = array();
+  $display = new panels_display();
+  $display->layout = 'flexible';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'center' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'f3f506b1-1862-4c30-ae42-19f77e009551';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-498f264c-653a-4616-b80d-0d2e8b3571c8';
+    $pane->panel = 'center';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'taxonomy_term-album_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'use_pager' => 1,
+      'pager_id' => '0',
+      'items_per_page' => '10',
+      'arguments' => array(
+        'term_node_tid_depth' => '%taxonomy_term:tid',
+        'term_node_tid_depth_modifier' => '',
+      ),
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '498f264c-653a-4616-b80d-0d2e8b3571c8';
+    $display->content['new-498f264c-653a-4616-b80d-0d2e8b3571c8'] = $pane;
+    $display->panels['center'][0] = 'new-498f264c-653a-4616-b80d-0d2e8b3571c8';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-498f264c-653a-4616-b80d-0d2e8b3571c8';
+  $panelizer->display = $display;
+  $export['taxonomy_term:species_type:default'] = $panelizer;
+
+  $panelizer = new stdClass();
+  $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
+  $panelizer->api_version = 1;
+  $panelizer->name = 'taxonomy_term:species_type:default:teaser';
+  $panelizer->title = '預設';
+  $panelizer->panelizer_type = 'taxonomy_term';
+  $panelizer->panelizer_key = 'species_type';
+  $panelizer->no_blocks = FALSE;
+  $panelizer->css_id = '';
+  $panelizer->css = '';
+  $panelizer->pipeline = 'standard';
+  $panelizer->contexts = array();
+  $panelizer->relationships = array();
+  $panelizer->access = array();
+  $panelizer->view_mode = 'teaser';
+  $panelizer->css_class = '';
+  $panelizer->title_element = 'H2';
+  $panelizer->link_to_entity = TRUE;
+  $panelizer->extra = array();
+  $display = new panels_display();
+  $display->layout = 'flexible';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'center' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '55eacb4c-bb6f-41c1-a441-ad7f5b0d2a23';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-a9d8b282-b989-4b1a-9260-e72a658e8d61';
+    $pane->panel = 'center';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'taxonomy_term:field_title_image';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'file_rendered',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'image_style' => 'title_image',
+        'image_link' => 'content',
+        'file_view_mode' => 'default',
+      ),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'a9d8b282-b989-4b1a-9260-e72a658e8d61';
+    $display->content['new-a9d8b282-b989-4b1a-9260-e72a658e8d61'] = $pane;
+    $display->panels['center'][0] = 'new-a9d8b282-b989-4b1a-9260-e72a658e8d61';
+    $pane = new stdClass();
+    $pane->pid = 'new-8364661e-84a9-41b5-a1ea-9d54b8386fbf';
+    $pane->panel = 'center';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'taxonomy_term:field_species_full_name';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'title_linked',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'title_style' => '_none',
+        'title_link' => 'content',
+        'title_class' => '',
+      ),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '8364661e-84a9-41b5-a1ea-9d54b8386fbf';
+    $display->content['new-8364661e-84a9-41b5-a1ea-9d54b8386fbf'] = $pane;
+    $display->panels['center'][1] = 'new-8364661e-84a9-41b5-a1ea-9d54b8386fbf';
+    $pane = new stdClass();
+    $pane->pid = 'new-5026bf6f-67fd-4828-a5f6-22e457c4f69b';
+    $pane->panel = 'center';
+    $pane->type = 'term_description';
+    $pane->subtype = 'term_description';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '5026bf6f-67fd-4828-a5f6-22e457c4f69b';
+    $display->content['new-5026bf6f-67fd-4828-a5f6-22e457c4f69b'] = $pane;
+    $display->panels['center'][2] = 'new-5026bf6f-67fd-4828-a5f6-22e457c4f69b';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = '0';
+  $panelizer->display = $display;
+  $export['taxonomy_term:species_type:default:teaser'] = $panelizer;
+
   return $export;
 }
