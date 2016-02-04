@@ -13,5 +13,29 @@ function teia_base_entity_info_alter(&$entity_info)
     'label' => t('Teaser'),
     'custom settings' => TRUE,
   );
+  $entity_info['taxonomy_term']['view modes']['teaser_pic_medium'] = array(
+    'label' => t('Teaser /w medium picture'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['taxonomy_term']['view modes']['teaser_pic_small'] = array(
+    'label' => t('Teaser /w small picture'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['taxonomy_term']['view modes']['slider'] = array(
+    'label' => t('Slider'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['teaser_pic_medium'] = array(
+    'label' => t('Teaser /w medium picture'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['teaser_pic_small'] = array(
+    'label' => t('Teaser /w small picture'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['slider'] = array(
+    'label' => t('Slider'),
+    'custom settings' => TRUE,
+  );
 }
 
