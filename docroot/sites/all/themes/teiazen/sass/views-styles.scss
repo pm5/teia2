@@ -68,7 +68,8 @@
     .view.full.list,
     .view.compact.list,
     .view.full.card,
-    .view.compact.card {
+    .view.compact.card,
+    .view.album {
       .view-content {
         .field-publish-date {
           color: $grey-text;
@@ -158,6 +159,31 @@
         @include zen-grid-flow-item(1, 2, false, false);
         @include zen-float(right);
         @include zen-clear(right);
+      }
+    }
+
+    .view.album > .view-content {
+      .views-row {
+        @include zen-grid-flow-item(4, 12);
+        @include zen-float(left);
+        @include zen-clear(none);
+        margin-bottom: $zen-gutter-width;
+        & > div {
+          height: 265px;
+          background: #f1a534;
+          border-radius: 1em;
+          img {
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+          }
+          h3 {
+            margin: 0.3em 1em;
+            color: $white-background;
+          }
+        }
+      }
+      .views-row:nth-child(3n+3) {
+        @include zen-grid-flow-item(4, 12, false, false);
       }
     }
 

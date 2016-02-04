@@ -44,7 +44,8 @@
 <div id="taxonomy-term-<?php print $term->tid; ?>" class="<?php print $classes; ?>">
 
   <?php print render(field_view_field('taxonomy_term', $term, 'field_title_image', array('label' => 'hidden', 'type' => 'file_rendered'))); ?>
-  <a href="<?php print $term_url; ?>"><h3 class="field-title-field"><?php print $term_name; ?></h3></a>
+  <a href="<?php print $term_url; ?>"><h3 class="field-title-field"><?php print render(field_view_field('taxonomy_term', $term, 'field_species_full_name', array('label' => 'hidden'))); ?></h3></a>
   <?php print $term->description; ?>
 
 </div>
+
