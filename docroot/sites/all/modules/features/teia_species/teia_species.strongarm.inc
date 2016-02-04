@@ -37,6 +37,18 @@ function teia_species_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'teaser_pic_medium' => array(
+        'custom_settings' => TRUE,
+      ),
+      'teaser_pic_small' => array(
+        'custom_settings' => TRUE,
+      ),
+      'slider' => array(
+        'custom_settings' => TRUE,
+      ),
+      'species_data' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
