@@ -13,6 +13,6 @@ function teia_species_entity_info_alter(&$entity_info)
 {
   $entity_info['node']['view modes']['species_data'] = array(
     'label' => t('Species Data'),
-    'custom settings' => TRUE,
+    'custom settings' => FALSE,
   );
 }
