@@ -24,6 +24,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -37,6 +43,18 @@ function teia_species_field_default_field_instances() {
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
@@ -76,6 +94,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 6,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -83,6 +107,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -123,6 +159,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -130,6 +172,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -170,6 +224,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 7,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -177,6 +237,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -217,6 +289,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 5,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -224,6 +302,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -264,6 +354,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 10,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -271,6 +367,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -311,6 +419,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 8,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -318,6 +432,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -358,6 +484,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 12,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -365,6 +497,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -404,6 +548,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 13,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -411,6 +561,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -447,6 +609,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 15,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -454,6 +622,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -491,6 +671,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 9,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -498,6 +684,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -538,6 +736,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 11,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -545,6 +749,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -585,6 +801,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -592,6 +814,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -632,6 +866,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 17,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -639,6 +879,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -678,6 +930,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 14,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -685,6 +943,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -721,6 +991,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 16,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -728,6 +1004,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -769,6 +1057,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'file_rendered',
         'weight' => 0,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -776,6 +1070,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -838,6 +1144,12 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 3,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'species_data' => array(
         'label' => 'above',
         'settings' => array(),
@@ -845,6 +1157,18 @@ function teia_species_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -890,11 +1214,29 @@ function teia_species_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'teaser_pic_small' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'taxonomy_term',
@@ -933,11 +1275,29 @@ function teia_species_field_default_field_instances() {
         'type' => 'image',
         'weight' => 0,
       ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'teaser_pic_small' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'taxonomy_term',
