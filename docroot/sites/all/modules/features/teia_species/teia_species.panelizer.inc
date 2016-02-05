@@ -514,10 +514,39 @@ function teia_species_panelizer_defaults() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = '%taxonomy_term:field_species_full_name';
   $display->uuid = 'f3f506b1-1862-4c30-ae42-19f77e009551';
   $display->content = array();
   $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-f0c2cc83-e1e6-4845-bace-63351bb1c4c3';
+    $pane->panel = 'center';
+    $pane->type = 'node';
+    $pane->subtype = 'node';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'nid' => '9641',
+      'links' => 0,
+      'leave_node_title' => 0,
+      'identifier' => '',
+      'build_mode' => 'full',
+      'link_node_title' => 0,
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'f0c2cc83-e1e6-4845-bace-63351bb1c4c3';
+    $display->content['new-f0c2cc83-e1e6-4845-bace-63351bb1c4c3'] = $pane;
+    $display->panels['center'][0] = 'new-f0c2cc83-e1e6-4845-bace-63351bb1c4c3';
     $pane = new stdClass();
     $pane->pid = 'new-498f264c-653a-4616-b80d-0d2e8b3571c8';
     $pane->panel = 'center';
@@ -543,11 +572,11 @@ function teia_species_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '498f264c-653a-4616-b80d-0d2e8b3571c8';
     $display->content['new-498f264c-653a-4616-b80d-0d2e8b3571c8'] = $pane;
-    $display->panels['center'][0] = 'new-498f264c-653a-4616-b80d-0d2e8b3571c8';
+    $display->panels['center'][1] = 'new-498f264c-653a-4616-b80d-0d2e8b3571c8';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-498f264c-653a-4616-b80d-0d2e8b3571c8';
   $panelizer->display = $display;
