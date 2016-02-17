@@ -36,6 +36,7 @@ function teia_species_panelizer_defaults() {
     'style_settings' => array(
       'default' => NULL,
       'center' => NULL,
+      'middle' => NULL,
     ),
   );
   $display->cache = array();
@@ -106,13 +107,16 @@ function teia_species_panelizer_defaults() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
+      'label' => 'hidden',
       'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(),
       'context' => 'panelizer',
+      'override_title' => 1,
+      'override_title_text' => '%node:field_species_tip_title',
+      'override_title_heading' => 'h3',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -193,27 +197,23 @@ function teia_species_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-5aa52357-e68e-4136-a4fa-726cb8eb330b';
+    $pane->pid = 'new-206d5b88-0f74-4612-bbf2-d8ad6e9b51a8';
     $pane->panel = 'left';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:title_field';
+    $pane->subtype = 'node:field_species_name_display';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'inline',
-      'formatter' => 'title_linked',
+      'label' => 'hidden',
+      'formatter' => 'computed_field_unsanitized',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'title_style' => '_none',
-        'title_link' => 'content',
-        'title_class' => '',
-      ),
+      'formatter_settings' => array(),
       'context' => 'panelizer',
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'override_title_heading' => 'span',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -223,9 +223,9 @@ function teia_species_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '5aa52357-e68e-4136-a4fa-726cb8eb330b';
-    $display->content['new-5aa52357-e68e-4136-a4fa-726cb8eb330b'] = $pane;
-    $display->panels['left'][0] = 'new-5aa52357-e68e-4136-a4fa-726cb8eb330b';
+    $pane->uuid = '206d5b88-0f74-4612-bbf2-d8ad6e9b51a8';
+    $display->content['new-206d5b88-0f74-4612-bbf2-d8ad6e9b51a8'] = $pane;
+    $display->panels['left'][0] = 'new-206d5b88-0f74-4612-bbf2-d8ad6e9b51a8';
     $pane = new stdClass();
     $pane->pid = 'new-56ec8127-9251-432c-8ce4-5a65f655caaf';
     $pane->panel = 'left';
@@ -519,35 +519,6 @@ function teia_species_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-f0c2cc83-e1e6-4845-bace-63351bb1c4c3';
-    $pane->panel = 'center';
-    $pane->type = 'node';
-    $pane->subtype = 'node';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'nid' => '9641',
-      'links' => 0,
-      'leave_node_title' => 0,
-      'identifier' => '',
-      'build_mode' => 'full',
-      'link_node_title' => 0,
-      'override_title' => 1,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'f0c2cc83-e1e6-4845-bace-63351bb1c4c3';
-    $display->content['new-f0c2cc83-e1e6-4845-bace-63351bb1c4c3'] = $pane;
-    $display->panels['center'][0] = 'new-f0c2cc83-e1e6-4845-bace-63351bb1c4c3';
-    $pane = new stdClass();
     $pane->pid = 'new-498f264c-653a-4616-b80d-0d2e8b3571c8';
     $pane->panel = 'center';
     $pane->type = 'views_panes';
@@ -572,11 +543,11 @@ function teia_species_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = '498f264c-653a-4616-b80d-0d2e8b3571c8';
     $display->content['new-498f264c-653a-4616-b80d-0d2e8b3571c8'] = $pane;
-    $display->panels['center'][1] = 'new-498f264c-653a-4616-b80d-0d2e8b3571c8';
+    $display->panels['center'][0] = 'new-498f264c-653a-4616-b80d-0d2e8b3571c8';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-498f264c-653a-4616-b80d-0d2e8b3571c8';
   $panelizer->display = $display;

@@ -391,7 +391,7 @@ function teia_species_field_default_field_instances() {
     'label' => '特徵',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -470,6 +470,67 @@ function teia_species_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-species-field_species_name_display'.
+  $field_instances['node-species-field_species_name_display'] = array(
+    'bundle' => 'species',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'computed_field',
+        'settings' => array(),
+        'type' => 'computed_field_plain',
+        'weight' => 18,
+      ),
+      'slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'species_data' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_medium' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_pic_small' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_species_name_display',
+    'label' => '中文名顯示',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'computed_field',
+      'settings' => array(),
+      'type' => 'computed',
+      'weight' => 21,
+    ),
+  );
+
   // Exported field_instance: 'node-species-field_species_ref'.
   $field_instances['node-species-field_species_ref'] = array(
     'bundle' => 'species',
@@ -521,7 +582,7 @@ function teia_species_field_default_field_instances() {
     'label' => '參考資料',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -583,7 +644,7 @@ function teia_species_field_default_field_instances() {
     'fences_wrapper' => 'div',
     'field_name' => 'field_species_season',
     'label' => '季節',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -644,7 +705,7 @@ function teia_species_field_default_field_instances() {
     'fences_wrapper' => 'div',
     'field_name' => 'field_species_sense',
     'label' => '導覽五感',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -1026,7 +1087,7 @@ function teia_species_field_default_field_instances() {
     'fences_wrapper' => 'div',
     'field_name' => 'field_story_id',
     'label' => '年/月/序號',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -1345,6 +1406,7 @@ function teia_species_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('中文名');
+  t('中文名顯示');
   t('分佈');
   t('分類全名');
   t('別名');
