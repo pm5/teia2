@@ -24,6 +24,9 @@
 .field-FIELDNAME { /* Underscores in field name are replaced with dashes. */
 }
 
+.field-scientific-name {
+  p { display: inline; }
+}
 
 /*
  * If you don't use the Fences module, that's fine. Really. I think. Just use

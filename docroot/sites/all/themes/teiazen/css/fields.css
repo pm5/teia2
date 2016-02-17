@@ -29,11 +29,16 @@
   /* Underscores in field name are replaced with dashes. */
 }
 
+/* line 28, ../sass/fields.scss */
+.field-scientific-name p {
+  display: inline;
+}
+
 /*
  * If you don't use the Fences module, that's fine. Really. I think. Just use
  * these selectors instead:
  */
-/* line 33, ../sass/fields.scss */
+/* line 36, ../sass/fields.scss */
 .field {
   /* Wrapper for any field. */
 }
@@ -44,7 +49,7 @@
 /*
  * Field types (Contrib)
  */
-/* line 83, ../sass/fields.scss */
+/* line 86, ../sass/fields.scss */
 .field-type-datetime {
   /* Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy types. */
 }
@@ -52,7 +57,7 @@
 /*
  * Named fields
  */
-/* line 105, ../sass/fields.scss */
+/* line 108, ../sass/fields.scss */
 .field-name-field-FIELDNAME {
   /* Underscores in field name are replaced with dashes. */
 }
