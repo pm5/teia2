@@ -239,7 +239,7 @@ function teia_species_feeds_importer_default() {
           4 => array(
             'source' => '學名',
             'target' => 'field_scientific_name',
-            'unique' => FALSE,
+            'format' => 'markdown',
           ),
           5 => array(
             'source' => '分佈',
@@ -284,12 +284,12 @@ function teia_species_feeds_importer_default() {
           13 => array(
             'source' => '特徵',
             'target' => 'field_species_features',
-            'unique' => FALSE,
+            'format' => 'markdown',
           ),
           14 => array(
             'source' => '參考資料',
             'target' => 'field_species_ref',
-            'unique' => FALSE,
+            'format' => 'markdown',
           ),
           15 => array(
             'source' => '特別註記',
